@@ -1,0 +1,2 @@
+:remote-repo {:git-url "https://github.com/scicloj/macroexpand-2025"
+              :branch  "main"}
