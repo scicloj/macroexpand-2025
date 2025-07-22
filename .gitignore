@@ -1,3 +1,4 @@
 .aider*
 .cpcache/
 .nrepl-port
+site/_site
