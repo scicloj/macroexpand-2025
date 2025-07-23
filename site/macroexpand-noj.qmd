@@ -3,6 +3,8 @@
 The Macroexpand-Noj project is focused on helping [Noj](https://scicloj.github.io/noj) grow.
 
 ### Preferred topics
+(tentative)
+
 (Please see the [Speakers](./speakers.html) chapter for guidelines.)
 
 The following will be prioiritized in talk proposals:
