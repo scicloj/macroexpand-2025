@@ -1,4 +1,4 @@
-## Macroexpand Deep - the first Clojure AI conference
+## Macroexpand-Deep - the first Clojure AI conference
 
 The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.
 

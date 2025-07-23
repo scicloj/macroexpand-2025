@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/index.html</loc>
-    <lastmod>2025-07-23T15:19:53.875Z</lastmod>
-  </url>
-  <url>
     <loc>https://scicloj.github.io/macroexpand-2025/macroexpand-deep.html</loc>
-    <lastmod>2025-07-23T14:50:25.322Z</lastmod>
+    <lastmod>2025-07-23T15:30:27.023Z</lastmod>
   </url>
   <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/speakers.html</loc>
-    <lastmod>2025-07-23T15:24:21.351Z</lastmod>
+    <loc>https://scicloj.github.io/macroexpand-2025/index.html</loc>
+    <lastmod>2025-07-23T15:31:51.009Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/macroexpand-noj.html</loc>
     <lastmod>2025-07-23T14:50:28.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/speakers.html</loc>
+    <lastmod>2025-07-23T15:24:21.351Z</lastmod>
   </url>
 </urlset>
