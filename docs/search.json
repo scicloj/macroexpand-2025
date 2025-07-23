@@ -4,14 +4,14 @@
     "href": "macroexpand-deep.html",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "K## Macroexpand-Deep - the first Clojure AI conference\nThe Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\nPreferred topics\n(tentative)\n(Please see the Speakers chapter for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
+    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
   },
   {
     "objectID": "macroexpand-deep.html#macroexpand-deep---the-first-clojure-ai-conference",
     "href": "macroexpand-deep.html#macroexpand-deep---the-first-clojure-ai-conference",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(Please see the Speakers chapter for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
+    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
   },
   {
     "objectID": "index.html",
@@ -39,14 +39,14 @@
     "href": "index.html#goals",
     "title": "Macroexpand 2025",
     "section": "Goals",
-    "text": "Goals\n\nBuild new open collaborations around key Clojure growth priorities.\nCreate a welcoming environment for newcomers to get involved.\nStrengthen community support by connecting practitioners.\nTalk Driven Development - use the conferences as a clear target date for projects to reach sharing milestones.\nBuild on lessons learned from SciNoj Light.\nFollow our our conference-making approach that we 🎥 discussed recently."
+    "text": "Goals\n\nBuild new open collaborations around key Clojure growth priorities.\nCreate a welcoming environment for newcomers to get involved.\nStrengthen community support by connecting practitioners.\nTalk Driven Development - use the conferences as a clear target date for projects to reach sharing milestones.\nBuild on lessons learned from SciNoj Light.\nFollow our our conference-making approach that we 🎥 recently discussed."
   },
   {
     "objectID": "index.html#chat",
     "href": "index.html#chat",
     "title": "Macroexpand 2025",
     "section": "Chat",
-    "text": "Chat\nAll communication of the conference took place at the Clojurians Zulip chat. A dedicated channel will be created soon."
+    "text": "Chat\nAll communication of the conference will take place at the Clojurians Zulip chat. A dedicated channel will be created soon."
   },
   {
     "objectID": "index.html#contact",
@@ -60,27 +60,27 @@
     "href": "macroexpand-noj.html",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(tentative)\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
+    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
     "href": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(tentative)\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
+    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "speakers.html",
     "href": "speakers.html",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.\nOur guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.\nThese guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.\n\n\n\nContact us early with project ideas - we can help shape them and suggest new ones.\nAll talks must include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nIf these hosting options do not work for you, let us discuss alternatives.\nTalk proposals should already include self-contained notes as advanced working drafts.\nIt is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.\n\nEach of the two conferences, Macroexpand-Noj & Macroexpand-Deep, has a list of preferred topics, that will be prioritized.\nTeam presentations are welcome.\n\nWe encourage collaboration with friends from other fields, including non-programmers.\nIf you want to create a project for the conference but prefer not to present, you can collaborate with others who will present on your behalf.\nWe may help you team up with co-presenters.\n\nWe are here to help - reach out to brainstorm ideas or find collaborators."
+    "text": "At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.\nOur guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.\nNote these guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.\n\n\n\nContact us early with project ideas - we can help shape them and suggest new ones.\nAll talks must include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nIf these hosting options do not work for you, let us discuss alternatives.\nIt is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.\n\nTalk proposals should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.\nEach of the two conferences, Macroexpand-Noj & Macroexpand-Deep, has a list of preferred topics, that will be prioritized.\nTeam presentations are welcome.\n\nWe encourage collaboration with friends from other fields, including non-programmers.\nIf you want to create a project for the conference but prefer not to be the one presentint it, you can collaborate with others who will present on your behalf.\nWe may help you team up with co-presenters.\n\nWe are here to help - reach out to brainstorm ideas or find collaborators."
   },
   {
     "objectID": "speakers.html#speakers",
     "href": "speakers.html#speakers",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.\nOur guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.\nThese guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.\n\n\n\nContact us early with project ideas - we can help shape them and suggest new ones.\nAll talks must include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nIf these hosting options do not work for you, let us discuss alternatives.\nTalk proposals should already include self-contained notes as advanced working drafts.\nIt is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.\n\nEach of the two conferences, Macroexpand-Noj & Macroexpand-Deep, has a list of preferred topics, that will be prioritized.\nTeam presentations are welcome.\n\nWe encourage collaboration with friends from other fields, including non-programmers.\nIf you want to create a project for the conference but prefer not to present, you can collaborate with others who will present on your behalf.\nWe may help you team up with co-presenters.\n\nWe are here to help - reach out to brainstorm ideas or find collaborators."
+    "text": "At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.\nOur guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.\nNote these guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.\n\n\n\nContact us early with project ideas - we can help shape them and suggest new ones.\nAll talks must include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nIf these hosting options do not work for you, let us discuss alternatives.\nIt is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.\n\nTalk proposals should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.\nEach of the two conferences, Macroexpand-Noj & Macroexpand-Deep, has a list of preferred topics, that will be prioritized.\nTeam presentations are welcome.\n\nWe encourage collaboration with friends from other fields, including non-programmers.\nIf you want to create a project for the conference but prefer not to be the one presentint it, you can collaborate with others who will present on your behalf.\nWe may help you team up with co-presenters.\n\nWe are here to help - reach out to brainstorm ideas or find collaborators."
   }
 ]
