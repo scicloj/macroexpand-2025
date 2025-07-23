@@ -1,0 +1,17 @@
+## Speaker Guidelines
+
+At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.
+
+Our guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.
+
+These guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.
+
+- Contact us early with project ideas - we can help shape them and suggest new ones.
+- All talks must include clear notes and reproducible code, hosted on [Clojure Civitas](https://clojurecivitas.github.io/) or [Clojure Data Tutorials](https://scicloj.github.io/clojure-data-tutorials/).
+  - If these hosting options do not work for you, let's discuss alternatives.
+  - Talk proposals should already include self-contained notes as advanced working drafts.
+  - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
+- Each of the two conferences, [Macroexpand-Noj](./macroexpand-noj.html) & [Macroexpand-Deep](./macroexpand-deep.html), has a list of preferred topics, that will be prioritized.
+- Team presentations are welcome - especially across domains and communities. We encourage collaboration with friends from other fields, including non-programmers.
+- If you prefer not to present but want to create a project for the conference, you can collaborate with others who will present on your behalf.
+- We're here to help - reach out to brainstorm ideas or find collaborators.

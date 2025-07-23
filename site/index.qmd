@@ -1,0 +1,21 @@
+Macroexpand 2025 is a pair of Clojure conferences organised by [Scicloj](https://scicloj.github.io/). They will focus on two high-priority topics on our journey to make Clojure grow to new fields.
+
+These conferences will follow our our conference-making approach that we 🎥 [discussed recently](https://www.youtube.com/watch?v=n6ICeRyXHsI) and developed around the [SciNo Light](https://scicloj.github.io/scinoj-light-1/) conference.
+
+## Timeline
+
+|when|what|
+|-|-|
+|**start now**|discuss your project ideas with us|
+|**till Sep 1**|submit talk proposals|
+|**Oct 17-18**|[Macroexpand-Noj](./macroexpand-noj.html)|
+|**Oct 24-25**|[Macroexpand-Deep](./macroexpand-deep.html)|
+
+## Speakers
+Please see the [Speakers](./speakers.html) chapter for guidelines.
+
+## Chat
+All communication of the conference took place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
+
+## Contact
+<a class="btn btn-info btn-lg px-4 mb-2 rounded" href="https://scicloj.github.io/docs/community/contact/" role="button">Any questions? Let us talk</a>

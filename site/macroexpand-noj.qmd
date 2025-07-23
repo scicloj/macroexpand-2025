@@ -1,0 +1,12 @@
+## Macroexpand-Noj - growing the Noj ecosystem
+
+The Macroexpand-Noj project is focused on helping [Noj](https://scicloj.github.io/noj) grow.
+
+### Preferred topics
+
+The following will be prioiritized in talk proposals:
+
+* Documentation of relevant libraries, theory, and methods
+* Real-world data analysis examples (including follow-ups from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/))
+* New tools, libraries, and features
+

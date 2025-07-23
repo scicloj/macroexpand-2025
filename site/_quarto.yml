@@ -1,6 +1,10 @@
 project:
   type: website
 
+format:
+  html:
+    theme: cosmo
+  
 website:
   title: "Macroexpand 2025"
   site-url: "https://scicloj.github.io/macroexpand-2025"
@@ -9,3 +13,6 @@ website:
     search: true
     right:
     - {href: index.qmd, text: Home}
+    - {href: speakers.qmd, text: Speakers}
+    - {href: macroexpand-noj.qmd, text: "Macroexpand-Noj"}
+    - {href: macroexpand-deep.qmd, text: "Macroexpand-Deep"}

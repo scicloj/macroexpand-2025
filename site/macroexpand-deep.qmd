@@ -1,0 +1,13 @@
+## Macroexpand Deep - the first Clojure AI conference
+
+The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.
+
+Here, by the obviously-vague term 'AI systems', we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.
+
+Focus: using or building deep learning with Clojure:
+* Building systems with LLMs and embeddings
+* Testing algorithms in specific scenarios
+* Creating and training network architectures
+* Understanding trained networks (e.g., mechanistic interpretability)
+* New tools and improvements
+

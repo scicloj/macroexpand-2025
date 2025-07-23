@@ -6,6 +6,6 @@
              :source-path "notebooks/index.clj"
              :format [:quarto :html]
              :run-quarto false
-             :base-target-path "site"
-             :hide-code true})
+             :base-target-path "site"})
+
 
