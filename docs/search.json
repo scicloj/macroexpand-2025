@@ -14,6 +14,13 @@
     "text": "Timeline\n\n\n\nwhen\nwhat\n\n\n\n\nstart now\ndiscuss your project ideas with us\n\n\ntill Sep 1\nsubmit talk proposals\n\n\nOct 17-18\nMacroexpand-Noj\n\n\nOct 24-25\nMacroexpand-Deep"
   },
   {
+    "objectID": "index.html#speakers",
+    "href": "index.html#speakers",
+    "title": "Macroexpand 2025",
+    "section": "Speakers",
+    "text": "Speakers\nPlease see the Speakers chapter for guidelines."
+  },
+  {
     "objectID": "index.html#chat",
     "href": "index.html#chat",
     "title": "Macroexpand 2025",
@@ -28,53 +35,18 @@
     "text": "Contact\nAny questions? Let us talk"
   },
   {
-    "objectID": "index.html#speaker-guidelines",
-    "href": "index.html#speaker-guidelines",
+    "objectID": "macroexpand-noj.html",
+    "href": "macroexpand-noj.html",
     "title": "Macroexpand 2025",
-    "section": "Speaker guidelines",
-    "text": "Speaker guidelines"
-  },
-  {
-    "objectID": "index.html#speakers",
-    "href": "index.html#speakers",
-    "title": "Macroexpand 2025",
-    "section": "Speakers",
-    "text": "Speakers\nPlease see the Speakers chapter for guidelines."
-  },
-  {
-    "objectID": "draft.html",
-    "href": "draft.html",
-    "title": "Proposed Scicloj Conferences for Oct. 2025",
     "section": "",
-    "text": ", deepening our discussions at the Scicoj AI group.\nHi. Following a chat with @**siyoungb** , here is an initial concept for the next conferences we are hoping to organise."
+    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
-    "objectID": "draft.html#goals",
-    "href": "draft.html#goals",
-    "title": "Proposed Scicloj Conferences for Oct. 2025",
-    "section": "Goals",
-    "text": "Goals\n\nBuild new open collaborations around key Clojure growth priorities\nStrengthen community support by connecting practitioners\nSet a clear target date for projects to reach sharing milestones\nBuild on lessons learned from scinoj-light-1"
-  },
-  {
-    "objectID": "draft.html#timeline",
-    "href": "draft.html#timeline",
-    "title": "Proposed Scicloj Conferences for Oct. 2025",
-    "section": "Timeline",
-    "text": "Timeline\nTwo online conferences will run in late October. Each spans Friday and Saturday to accommodate different time zones.\n\nStart now - discuss your project ideas with organizers\nUntil Sep 1st - submit talk proposals\nOct 17-18 - Macroexpand Noj\nOct 24-25 - Macroexpand Deep"
-  },
-  {
-    "objectID": "draft.html#agenda",
-    "href": "draft.html#agenda",
-    "title": "Proposed Scicloj Conferences for Oct. 2025",
-    "section": "Agenda",
-    "text": "Agenda\nWorking titles for the two conferences:\n\nMacroexpand Noj - growing the Noj ecosystem\nFocus: helping Noj grow through: 1. Real-world data analysis examples (including follow-ups from scinoj-light-1) 2. Library, theory, and methods documentation 3. New tools and features\n\n\nMacroexpand Deep - the first Clojure AI conference\nFocus: using or building deep learning with Clojure: 1. Building systems with LLMs and embeddings 2. Testing algorithms in specific scenarios 3. Creating and training network architectures 4. Understanding trained networks (mechanistic interpretability) 5. New tools and improvements"
-  },
-  {
-    "objectID": "draft.html#speaker-guidelines",
-    "href": "draft.html#speaker-guidelines",
-    "title": "Proposed Scicloj Conferences for Oct. 2025",
-    "section": "Speaker Guidelines",
-    "text": "Speaker Guidelines\n\nContact us early with project ideas - we can help shape them.\nAll talks will include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nAlternative hosting options available if needed.\nTalk proposals should include advanced working drafts.\n\nTeam presentations welcome - especially across domains and communities.\nIf you prefer not to present, you can prepare content for others to present.\nWe’re here to help - reach out to brainstorm ideas or find collaborators."
+    "objectID": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
+    "href": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
+    "title": "Macroexpand 2025",
+    "section": "",
+    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "speakers.html",
@@ -89,20 +61,6 @@
     "title": "Macroexpand 2025",
     "section": "",
     "text": "At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.\nOur guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.\nThese guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.\n\nContact us early with project ideas - we can help shape them and suggest new ones.\nAll talks must include clear notes and reproducible code, hosted on Clojure Civitas or Clojure Data Tutorials.\n\nIf these hosting options do not work for you, let’s discuss alternatives.\nTalk proposals should already include self-contained notes as advanced working drafts.\nIt is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.\n\nEach of the two conferences, Macroexpand-Noj & Macroexpand-Deep, has a list of preferred topics, that will be prioritized.\nTeam presentations are welcome - especially across domains and communities. We encourage collaboration with friends from other fields, including non-programmers.\nIf you prefer not to present but want to create a project for the conference, you can collaborate with others who will present on your behalf.\nWe’re here to help - reach out to brainstorm ideas or find collaborators."
-  },
-  {
-    "objectID": "macroexpand-noj.html",
-    "href": "macroexpand-noj.html",
-    "title": "Macroexpand 2025",
-    "section": "",
-    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
-  },
-  {
-    "objectID": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
-    "href": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
-    "title": "Macroexpand 2025",
-    "section": "",
-    "text": "The Macroexpand-Noj project is focused on helping Noj grow.\n\n\n(Please see the Speakers chapter for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "macroexpand-deep.html",

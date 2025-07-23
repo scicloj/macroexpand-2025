@@ -8,7 +8,6 @@ format:
 website:
   title: "Macroexpand 2025"
   site-url: "https://scicloj.github.io/macroexpand-2025"
-  open-graph: true
   navbar:
     search: true
     right:
