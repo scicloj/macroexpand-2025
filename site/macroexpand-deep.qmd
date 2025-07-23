@@ -1,4 +1,4 @@
-K## Macroexpand-Deep - the first Clojure AI conference
+## Macroexpand-Deep - the first Clojure AI conference
 
 The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.
 
@@ -7,7 +7,7 @@ Here, by the obviously-vague term 'AI systems', we typically mean systems that i
 ### Preferred topics
 (tentative)
 
-(Please see the [Speakers](./speakers.html) chapter for guidelines.)
+(Please see the [Speakers](./speakers.html) page for guidelines.)
 
 * Building systems with LLMs and embeddings
 * Testing algorithms in specific scenarios

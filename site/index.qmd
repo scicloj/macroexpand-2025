@@ -19,10 +19,10 @@ Please see the [Speakers](./speakers.html) chapter for guidelines.
 * Strengthen community support by connecting practitioners.
 * Talk Driven Development - use the conferences as a clear target date for projects to reach sharing milestones.
 * Build on lessons learned from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/).
-* Follow our our conference-making approach that we 🎥 [discussed recently](https://www.youtube.com/watch?v=n6ICeRyXHsI).
+* Follow our our conference-making approach that we 🎥 [recently discussed](https://www.youtube.com/watch?v=n6ICeRyXHsI).
 
 ## Chat
-All communication of the conference took place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
+All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
 ## Contact
 <a class="btn btn-info btn-lg px-4 mb-2 rounded" href="https://scicloj.github.io/docs/community/contact/" role="button">Any questions? Let us talk</a>
