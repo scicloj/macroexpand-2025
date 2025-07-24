@@ -12,6 +12,7 @@ website:
   open-graph: true
   image: "images/sci-cloj-logo-transparent.png"
   navbar:
+    logo: "images/sci-cloj-logo-transparent.svg"
     search: true
     right:
     - {href: index.qmd, text: Home}
