@@ -7,7 +7,10 @@ format:
   
 website:
   title: "Macroexpand 2025"
+  description: "Clojure online conferences by Scicloj"
   site-url: "https://scicloj.github.io/macroexpand-2025"
+  open-graph: true
+  image: "imanges/sci-cloj-logo-transparent.svg"
   navbar:
     search: true
     right:
