@@ -4,14 +4,14 @@
     "href": "macroexpand-deep.html",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
+    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure. It is one of the Macroexpand 2025 pair of conferences.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
   },
   {
     "objectID": "macroexpand-deep.html#macroexpand-deep---the-first-clojure-ai-conference",
     "href": "macroexpand-deep.html#macroexpand-deep---the-first-clojure-ai-conference",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
+    "text": "The Macroexpand-Deep conference focuses the development of reserach around AI systems in Clojure. It is one of the Macroexpand 2025 pair of conferences.\nHere, by the obviously-vague term ‘AI systems’, we typically mean systems that involve the composition of deep networks with other components. However, we are open to alternative interpretations, of course.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\n\nBuilding systems with LLMs and embeddings\nTesting algorithms in specific scenarios\nCreating and training network architectures\nUnderstanding trained networks (e.g., mechanistic interpretability)\nNew tools and improvements"
   },
   {
     "objectID": "index.html",
@@ -60,14 +60,14 @@
     "href": "macroexpand-noj.html",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
+    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science. It is one of the Macroexpand 2025 pair of conferences.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
     "href": "macroexpand-noj.html#macroexpand-noj---growing-the-noj-ecosystem",
     "title": "Macroexpand 2025",
     "section": "",
-    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
+    "text": "The Macroexpand-Noj conference is focused on the growth of the Noj toolkit for data science. It is one of the Macroexpand 2025 pair of conferences.\n\n\n(tentative)\n(Please see the Speakers page for guidelines.)\nThe following will be prioiritized in talk proposals:\n\nDocumentation of relevant libraries, theory, and methods\nReal-world data analysis examples (including follow-ups from SciNoj Light)\nNew tools, libraries, and features"
   },
   {
     "objectID": "speakers.html",

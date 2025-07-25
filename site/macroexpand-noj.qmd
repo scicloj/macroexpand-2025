@@ -1,6 +1,7 @@
 ## Macroexpand-Noj - growing the Noj ecosystem
 
-The Macroexpand-Noj conference is focused on the growth of the [Noj](https://scicloj.github.io/noj) toolkit for data science.
+The Macroexpand-Noj conference is focused on the growth of the [Noj](https://scicloj.github.io/noj) toolkit for data science. It is one of the [Macroexpand 2025](./) pair of conferences.
+
 
 ### Preferred topics
 (tentative)
