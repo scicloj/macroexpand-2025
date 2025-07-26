@@ -16,6 +16,6 @@ Note these guidelines may differ from typical tech conference requirements. If y
 - Each of the two conferences, [Macroexpand-Noj](./macroexpand-noj.html) & [Macroexpand-Deep](./macroexpand-deep.html), has a list of preferred topics, that will be prioritized.
 - Team presentations are welcome.
   - We encourage collaboration with friends from other fields, including non-programmers.
-  - If you want to create a project for the conference but prefer not to be the one presentint it, you can collaborate with others who will present on your behalf.
+  - If you want to create a project for the conference but prefer not to be the one presenting it, you can collaborate with others who will present on your behalf.
   - We may help you team up with co-presenters.
 - We are here to help - reach out to brainstorm ideas or find collaborators.
