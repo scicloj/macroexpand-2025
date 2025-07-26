@@ -10,6 +10,7 @@ Note these guidelines may differ from typical tech conference requirements. If y
 
 - Contact us early with project ideas - we can help shape them and suggest new ones.
 - All talks must include clear notes and reproducible code, hosted on [Clojure Civitas](https://clojurecivitas.github.io/) or [Clojure Data Tutorials](https://scicloj.github.io/clojure-data-tutorials/).
+  - We recommend Timothy Prately's 🎥 [tutorial](https://www.youtube.com/watch?v=lceazLPcSZg) to Clojure Civitas as a way to eget started.
   - If these hosting options do not work for you, let us discuss alternatives.
   - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
 - Talk *proposals* should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.
