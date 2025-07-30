@@ -17,6 +17,9 @@ These conferences are related and informed by the [Macroexpand Gatherings](https
 ## Speakers
 Please see the [Speakers](./speakers.html) chapter for guidelines.
 
+## Target audience
+The kind of audience we have in mind is of general Clojure programmers. Some talks will also be useful and interesting for people who are new to Clojure as well.
+
 ## Goals
 * Build new open collaborations around key Clojure growth priorities.
 * Create a welcoming environment for newcomers to get involved.

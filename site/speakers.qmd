@@ -13,6 +13,7 @@ Note these guidelines may differ from typical tech conference requirements. If y
   - We recommend Timothy Prately's 🎥 [tutorial](https://www.youtube.com/watch?v=lceazLPcSZg) to Clojure Civitas as a way to eget started.
   - If these hosting options do not work for you, let us discuss alternatives.
   - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
+- The kind of audience you should have in mind is of general Clojure programmers. We do recommend making your talk useful and interesting for people who are new to Clojure as well.
 - Talk *proposals* should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.
 - Each of the two conferences, [Macroexpand-Noj](./macroexpand-noj.html) & [Macroexpand-Deep](./macroexpand-deep.html), has a list of preferred topics, that will be prioritized.
 - Team presentations are welcome.
