@@ -1,23 +1,28 @@
-![](images/sci-cloj-logo-transparent.svg){width=20% fig-alt="Scicloj logo"}
+<div class="main-page">
+<div class="conf-description">
+
+![](images/sci-cloj-logo-transparent.svg){class="scicloj-logo" width=20% fig-alt="Scicloj logo"}
+
+# Macroexpand 2025
 
 Macroexpand 2025 is a pair of online Clojure conferences organised by [Scicloj](https://scicloj.github.io/). They will focus on two high-priority topics on our journey to make Clojure grow to new fields: **Noj** and **AI**.
 
 These conferences are related and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, that focuses on in-depth discussions around Clojure growth.
+</div>
 
-## Timeline
-(tentative)
+## Event Timeline (Tentative)
 
-|when|what|
+|**Timeline**|**Event Details**|
 |-|-|
-|**start now**|discuss your project ideas with us|
-|**till Sep 1**|submit talk proposals|
-|**Oct 17-18**|[Macroexpand-Noj](./macroexpand-noj.html) - growing the [Noj](https://scicloj.github.io/noj/) ecosystem|
-|**Oct 24-25**|[Macroexpand-Deep](./macroexpand-deep.html) - the first Clojure AI conference|
+|**Ongoing**|Project idea discussions are not open|
+|**September 1, 2025**|Final deadline for talk proposal submissions|
+|**October 17-18, 2025**|[Macroexpand-Noj](./macroexpand-noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem|
+|**October 24-25, 2025**|[Macroexpand-Deep](./macroexpand-deep.html) - The first Clojure AI conference|
 
 ## Speakers
 Please see the [Speakers](./speakers.html) chapter for guidelines.
 
-## Target audience
+## Target Audience
 The kind of audience we have in mind is of general Clojure programmers. Some talks will also be useful and interesting for people who are new to Clojure as well.
 
 ## Goals
@@ -32,4 +37,5 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
 ## Contact
-<a class="btn btn-info btn-lg px-4 mb-2 rounded" href="https://scicloj.github.io/docs/community/contact/" role="button">Any questions? Let us talk</a>
+<a class="btn" href="https://scicloj.github.io/docs/community/contact/" role="button">Any questions? Let us talk</a>
+</div>

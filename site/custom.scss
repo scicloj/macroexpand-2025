@@ -1,0 +1,126 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+    
+// variables
+// color variables
+$primary-blue: #4299e1;
+$primary-green: #48bb78;
+$primary-color-gradient-horizontal: linear-gradient(90deg, $primary-blue, $primary-green);
+$primary-color-gradient-vertical: linear-gradient(180deg, $primary-blue, $primary-green);
+
+// simple link hover effect
+$exclude-non-text-links: ':not(.navbar-brand):not(.nav-link):not(.btn)';
+
+// main page styles
+.main-page {
+
+  // main content logo and conference description
+  .conf-description {
+    margin: 2rem 0;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: $primary-color-gradient-horizontal;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+    border-bottom: none;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $primary-color-gradient-horizontal;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    tr:hover {
+      background: #ebf8ff;
+      transform: scale(1.01);
+      transition: all 0.3s ease;
+    }
+
+    th {
+      background: $primary-color-gradient-horizontal;
+      color: #fff !important;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 1.5rem 1rem;
+    }
+
+    td {
+      padding: 1rem;
+    }
+  }
+}
+
+// default link styles excluding non-text links
+a#{$exclude-non-text-links} {
+  color: $primary-blue;
+  position: relative;
+  font-weight:600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: $primary-color-gradient-horizontal;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease;
+  }
+
+  &:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+
+// button styles
+.btn {
+  background: $primary-color-gradient-horizontal;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color .3s ease;
+
+  &:hover {
+    color: #fff;
+  }
+}

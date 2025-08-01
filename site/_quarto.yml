@@ -1,9 +1,12 @@
 project:
   type: website
+  output-dir: ../docs
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - custom.scss
   
 website:
   title: "Macroexpand 2025"
