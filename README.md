@@ -17,8 +17,6 @@ cd site && quarto preview
 
 ## Publishing
 
-The site is published using the `./docs` directory at the project root. To render the site for publishing, run:
-
-```bash
-cd site && quarto render
-```
+The site is automatically published using a GitHub Actions workflow(`.github/workflows/publish.yml`).
+Whenever a new commit is pushed to the main branch, the workflow builds the updated site and deploys it to the `gh-pages` branch.
+The live site is available at: https://scicloj.github.io/macroexpand-2025/

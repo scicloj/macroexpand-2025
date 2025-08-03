@@ -50,6 +50,10 @@ a:not([class]) {
   border-radius: $default-border-radius;
   font-weight: bold;
   transition: background-color .3s ease;
+
+  &:hover {
+    color: $on-primary;
+  }
 }
 
 .btn {
@@ -66,7 +70,7 @@ a:not([class]) {
 }
 
 /**
- * Custom styles
+ * Any custom styles goes here.
  */
 
 // main page styles

@@ -37,5 +37,5 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
 ## Contact
-<a class="btn btn-gradient" href="https://scicloj.github.io/docs/community/contact/" role="button">Any questions? Let us talk</a>
+[Any questions? Let us talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
 </div>
