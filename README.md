@@ -12,7 +12,7 @@ Make sure you have [Quarto](https://quarto.org/docs/get-started/) installed befo
 To enable hot-reloading during development, run the following command at the project root:
 
 ```bash
-cd site && quarto preview
+quarto preview site
 ```
 
 ## Publishing
