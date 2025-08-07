@@ -70,6 +70,26 @@ a:not([class]) {
   }
 }
 
+// header styles
+// h2
+h2 {
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+  border-bottom: none;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: $primary-blue-green-gradient-horizontal;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+}
+
 // gradient table styles
 table.gradient-table  {
   width: 100%;
@@ -160,25 +180,5 @@ table.gradient-table  {
         line-height: 1.6;
       }
     }
-  }
-
-  // main content logo and conference description
-
-  h2 {
-    margin-bottom: 2rem;
-    position: relative;
-    padding-bottom: 1rem;
-    border-bottom: none;
-  }
-
-  h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: $primary-blue-green-gradient-horizontal;
-    width: 60px;
-    height: 4px;
-    border-radius: 2px;
   }
 }
