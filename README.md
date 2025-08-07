@@ -8,12 +8,17 @@ At the moment, all the relevant content is under the [site](./site) directory.
 Later on, when we have data about speakers, schedule, sessions, etc., we will turn it into a data-driven Clojure project as we did with the previous conference.
 
 ## Development
-Make sure you have [Quarto](https://quarto.org/docs/get-started/) installed before starting.
-To enable hot-reloading during development, run the following command at the project root:
+First, make sure you have [Quarto](https://quarto.org/docs/get-started/) installed before starting if you haven't already.
 
-```bash
-quarto preview site
-```
+This project setup references the setup from [Clojure Civitas](https://github.com/ClojureCivitas/clojurecivitas.github.io) 
+with its easy setup for Qaurto website using [Clay](https://scicloj.github.io/clay/).
+
+Follow [these instructions](https://github.com/ClojureCivitas/clojurecivitas.github.io?tab=readme-ov-file#preview-a-webpage-optional-recommended) 
+from Clojure Civitas' repo to preview the site locally while developing.
+
+If you wish to make changes to the main page,
+you can edit the [index.qmd](https://github.com/scicloj/macroexpand-2025/blob/main/site/index.qmd).
+For other pages, edit `clj` files under the `pages` directory at the root.
 
 ## Publishing
 

@@ -1,5 +1,12 @@
 .aider*
 .cpcache/
 .nrepl-port
-site/_site
-docs/
+.clj-kondo/
+.idea/libraries
+.lsp/.cache
+*.iml
+.DS_Store
+
+site/*/
+!site/images/
+temp

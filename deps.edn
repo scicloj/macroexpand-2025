@@ -1,2 +1,13 @@
-{:deps {org.scicloj/noj {:mvn/version "2-beta18"}}
- :paths ["src" "notebooks"]}
+{:paths ["pages"]
+
+ :deps
+ {org.clojure/clojure {:mvn/version "1.12.1"}
+  org.scicloj/noj     {:mvn/version "2-beta18"}
+
+  org.scicloj/clay    {#_#_:mvn/version "2-beta49"
+                       :git/url "https://github.com/scicloj/clay.git"
+                       :git/sha "0f1be77748dbaa918569171b3d0812a755f727d2"}}
+
+ :aliases
+ {:clay {:main-opts ["-m" "scicloj.clay.v2.main"]
+         :jvm-opts  ["-Dclojure.main.report=stderr"]}}}

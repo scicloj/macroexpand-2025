@@ -3,16 +3,43 @@ on:
   push:
     branches: main
 
-name: Quarto Publish
+name: Clay Quarto Render and Publish
+
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Clojure
+        uses: DeLaGuardo/setup-clojure@13.2
+        with:
+          cli: 'latest'
+
+      - name: Cache Clojure Dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.deps.clj
+          key: cljdeps-${{ hashFiles('deps.edn') }}
+          restore-keys: cljdeps-
+
+      - name: Build the Content from pages/*.clj
+        run: clojure -M:clay -A:markdown
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

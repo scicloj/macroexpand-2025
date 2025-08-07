@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: ../docs
 
 format:
   html:
@@ -21,5 +20,5 @@ website:
     right:
     - {href: index.qmd, text: Home}
     - {href: speakers.qmd, text: Speakers}
-    - {href: macroexpand-noj.qmd, text: "Macroexpand-Noj"}
-    - {href: macroexpand-deep.qmd, text: "Macroexpand-Deep"}
+    - {href: macroexpand_noj.qmd, text: "Macroexpand-Noj"}
+    - {href: macroexpand_deep.qmd, text: "Macroexpand-Deep"}

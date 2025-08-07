@@ -1,2 +1,18 @@
-{:remote-repo {:git-url "https://github.com/scicloj/macroexpand-2025"
-               :branch  "main"}}
+{:remote-repo        {:git-url "https://github.com/scicloj/macroexpand-2025"
+                      :branch  "main"}
+ :base-target-path   "temp"
+ :base-source-path   "pages"
+ :quarto-target-path "site"
+ :quarto             []
+ :subdirs-to-sync    ["pages"]
+ :keep-sync-root     false
+ :flatten-targets    false
+ :hide-ui-header     true
+
+ ;; aliases to build the site into quarto format(.qmd)
+ :markdown
+ {:render           true
+  :base-target-path "site"
+  :format           [:quarto :html]
+  :run-quarto       false
+  :hide-info-line   true}}
