@@ -1,5 +1,4 @@
-^{:kindly/hide-code true
-  :clay             {:quarto {}}}
+^:kindly/hide-code
 (ns speakers
   (:require
    [scicloj.kindly.v4.api :as kindly]))

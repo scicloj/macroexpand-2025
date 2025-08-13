@@ -1,5 +1,4 @@
-^{:kindly/hide-code true
-  :clay             {:quarto {}}}
+^:kindly/hide-code
 (ns macroexpand-deep)
 
 ;; ## Macroexpand-Deep - the first Clojure AI conference

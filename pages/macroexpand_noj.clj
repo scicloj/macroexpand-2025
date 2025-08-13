@@ -1,5 +1,4 @@
-^{:kindly/hide-code true
-  :clay             {:quarto {}}}
+^:kindly/hide-code
 (ns macroexpand-noj)
 
 ;; ## Macroexpand-Noj - growing the Noj ecosystem

@@ -3,7 +3,7 @@
  :base-target-path   "temp"
  :base-source-path   "pages"
  :quarto-target-path "site"
- :quarto             []
+ :quarto             {:format {:html {:toc false}}}
  :subdirs-to-sync    ["pages"]
  :keep-sync-root     false
  :flatten-targets    false
