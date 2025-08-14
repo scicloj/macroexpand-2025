@@ -20,7 +20,7 @@
 ;; - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
 ;; - The kind of audience you should have in mind is of general Clojure programmers. We do recommend making your talk useful and interesting for people who are new to Clojure as well.
 ;; - Talk *proposals* should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.
-;; - Each of the two conferences, [Macroexpand-Noj](./macroexpand-noj.html) & [Macroexpand-Deep](./macroexpand-deep.html), has a list of preferred topics, that will be prioritized.
+;; - Each of the two conferences, [Macroexpand-Noj](./macroexpand_noj.html) & [Macroexpand-Deep](./macroexpand_deep.html), has a list of preferred topics, that will be prioritized.
 ;; - Team presentations are welcome.
 ;; - We encourage collaboration with friends from other fields, including non-programmers.
 ;; - If you want to create a project for the conference but prefer not to be the one presenting it, you can collaborate with others who will present on your behalf.
