@@ -65,6 +65,15 @@ a:not([class]) {
     background: $primary-blue-green-gradient-horizontal;
   }
 
+  &.btn-vertical-gradient {
+    background: $primary-blue-green-gradient-vertical;
+  }
+
+  &.btn-large {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+
   &.btn-gradient--vertical {
     background: $primary-blue-green-gradient-vertical;
   }

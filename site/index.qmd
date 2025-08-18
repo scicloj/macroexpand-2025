@@ -20,6 +20,12 @@ Macroexpand 2025 is a pair of online Clojure conferences organised by [Scicloj](
 These conferences are related and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, that focuses on in-depth discussions around Clojure growth.
 </div>
 
+## Call for Proposals
+
+:::{style="text-align: center;"}
+[Click Here to Submit a Talk Proposal!](https://forms.gle/rQj5cR1FPAYR7mA97){class="btn btn-vertical-gradient btn-large" target="_blank"}
+:::
+
 ## Event Timeline (Tentative)
 
 |**Timeline**|**Event Details**|
@@ -31,12 +37,15 @@ These conferences are related and informed by the [Macroexpand Gatherings](https
 : {.gradient-table}
 
 ## Speakers
+
 Please see the [Speakers](./speakers.html) chapter for guidelines.
 
 ## Target Audience
+
 The kind of audience we have in mind is of general Clojure programmers. Some talks will also be useful and interesting for people who are new to Clojure as well.
 
 ## Goals
+
 * Build new open collaborations around key Clojure growth priorities.
 * Create a welcoming environment for newcomers to get involved.
 * Strengthen community support by connecting practitioners.
@@ -45,8 +54,10 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 * Follow our our conference-making approach that we 🎥 [recently discussed](https://www.youtube.com/watch?v=n6ICeRyXHsI).
 
 ## Chat
+
 All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
 ## Contact
+
 [Any questions? Let us talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
 </div>
