@@ -31,7 +31,7 @@ These conferences are related and informed by the [Macroexpand Gatherings](https
 |**Timeline**|**Event Details**|
 |-|-|
 |**Ongoing**|Project idea discussions are not open|
-|**September 1, 2025**|Final deadline for talk proposal submissions|
+|**September 8, 2025**|Final deadline for talk proposal submissions|
 |**October 17-18, 2025**|[Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem|
 |**October 24-25, 2025**|[Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference|
 : {.gradient-table}
