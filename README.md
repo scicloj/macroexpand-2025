@@ -13,7 +13,8 @@ First, make sure you have [Quarto](https://quarto.org/docs/get-started/) install
 This project setup references the setup from [Clojure Civitas](https://github.com/ClojureCivitas/clojurecivitas.github.io) 
 with its easy setup for Qaurto website using [Clay](https://scicloj.github.io/clay/).
 
-Follow [these instructions](https://github.com/ClojureCivitas/clojurecivitas.github.io?tab=readme-ov-file#preview-a-webpage-optional-recommended) 
+Follow [these instructions](https://github.com/ClojureCivitas/clojurecivitas.github.io?tab=readme-ov-file#preview-your-namespace-as-a-webpage-optional-recommended).
+
 from Clojure Civitas' repo to preview the site locally while developing.
 
 If you wish to make changes to the main page,
