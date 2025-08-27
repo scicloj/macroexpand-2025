@@ -25,6 +25,7 @@
 ;; 
 ;; The following will be prioritized in talk proposals:
 ;; 
+;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, hands-on tutorials introducing Noj components, data science workflows, and practical techniques
 ;; * **Documentation** - Making libraries, theory, and methods accessible to the community
 ;; * **Real-world Analysis** - Practical data science examples and case studies (including follow-ups from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/))
 ;; * **Tools & Libraries** - New features, integrations, and ecosystem improvements

@@ -27,6 +27,7 @@
 ;; 
 ;; The following areas will be prioritized in talk proposals:
 ;; 
+;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, step-by-step guides to AI concepts, LLM integration, neural network basics, and getting started with Clojure AI tools
 ;; * **LLMs & Embeddings** - Building applications with language models, RAG systems, prompt engineering, and vector databases
 ;; * **Algorithm Evaluation** - Evaluating AI algorithms in specific domains, benchmarking, and comparative studies
 ;; * **Neural Network Architectures** - Creating, training, and deploying neural networks using Clojure-based tools
