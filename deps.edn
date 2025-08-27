@@ -8,4 +8,9 @@
 
  :aliases
  {:clay {:main-opts ["-m" "scicloj.clay.v2.main"]
-         :jvm-opts  ["-Dclojure.main.report=stderr"]}}}
+         :jvm-opts  ["-Dclojure.main.report=stderr"]}
+  :nrepl {:extra-paths ["test"]
+          :extra-deps {nrepl/nrepl {:mvn/version "1.3.1"}}
+	  ;; this allows nrepl to interrupt runaway repl evals
+          :jvm-opts ["-Djdk.attach.allowAttachSelf"]
+          :main-opts ["-m" "nrepl.cmdline" "--port" "7888"]}}}
