@@ -16,3 +16,4 @@
 ;; * Documentation of relevant libraries, theory, and methods
 ;; * Real-world data analysis examples (including follow-ups from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/))
 ;; * New tools, libraries, and features
+;; * Broader topics of data processing, data engineering, visual tooling, data visualization, data modelling, scientific computing, and machine learning
