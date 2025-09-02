@@ -36,6 +36,7 @@
 ;; * **Tools & Libraries** - New frameworks, improvements to existing tools, and interop with Python/Java AI ecosystems
 ;; * **Production AI** - Deployment strategies, monitoring, and scaling AI systems built with Clojure
 ;; * **Research & Theory** - Novel approaches, theoretical foundations, and experimental work
+;; * **AI, Ethics, and social implications**
 ;;
 ;; ### Why Clojure for AI?
 ;;
