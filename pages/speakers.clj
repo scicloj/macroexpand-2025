@@ -11,13 +11,6 @@
 ;; 
 ;; Note these guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.
 ;;
-;; ### Call for Speakers
-;;
-;; We invite you to submit your talk proposals for the Macroexpand conferences.
-;; Please check out [the guidelines](#guidelines) and click the button below to fill out the form:
-;;
-;; [Click Here to Submit a Talk Proposal!](https://forms.gle/rQj5cR1FPAYR7mA97){class="btn btn-vertical-gradient" target="_blank"}
-;;
 ;; ### Guidelines
 ;; 
 ;; - Contact us early with project ideas - we can help shape them and suggest new ones.

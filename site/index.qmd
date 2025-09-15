@@ -20,12 +20,6 @@ Macroexpand 2025 is a pair of online Clojure conferences organised by [Scicloj](
 These conferences are related and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, that focuses on in-depth discussions around Clojure growth.
 </div>
 
-## Call for Proposals
-
-:::{style="text-align: center;"}
-[Click Here to Submit a Talk Proposal!](https://forms.gle/rQj5cR1FPAYR7mA97){class="btn btn-vertical-gradient btn-large" target="_blank"}
-:::
-
 ## Event Timeline
 
 |**Timeline**|**Event Details**|
