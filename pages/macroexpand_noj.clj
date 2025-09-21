@@ -13,17 +13,15 @@
 ;;
 ;; ### Call for Proposals
 ;; 
-;; **Submission Deadline: September 8, 2025**
-;;
-;; We invite you to share your work with the Noj ecosystem and broader data science community. All talks must include reproducible code and clear documentation.
-;;
-;; [Submit Your Talk Proposal](https://forms.gle/rQj5cR1FPAYR7mA97){class="btn btn-gradient" target="_blank"}
+;; ### Speakers
+;; 
+;; The Call for Proposals is already closed, but if you have any late ideas you wish to discuss, please reach out.
 ;;
 ;; Please review our [speaker guidelines](./speakers.html) for detailed requirements and recommendations.
 ;;
 ;; ### Preferred Topics
 ;; 
-;; The following will be prioritized in talk proposals:
+;; The following have been prioritised in reviewing the talk proposals:
 ;; 
 ;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, hands-on tutorials introducing Noj components, data science workflows, and practical techniques
 ;; * **Documentation** - Making libraries, theory, and methods accessible to the community

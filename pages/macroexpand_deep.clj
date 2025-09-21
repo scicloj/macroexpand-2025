@@ -13,19 +13,15 @@
 ;;
 ;; Whether you're building production AI applications, conducting research, or exploring the intersection of functional programming and machine learning, this conference provides a platform to share your work and learn from others pushing the boundaries.
 ;;
-;; ### Call for Proposals
+;; ### Speakers
 ;; 
-;; **Submission Deadline: September 8, 2025**
-;;
-;; We invite pioneering work at the intersection of Clojure and AI. All talks must include reproducible code and clear documentation.
-;;
-;; [Submit Your Talk Proposal](https://forms.gle/rQj5cR1FPAYR7mA97){class="btn btn-gradient" target="_blank"}
+;; The Call for Proposals is already closed, but if you have any late ideas you wish to discuss, please reach out.
 ;;
 ;; Please review our [speaker guidelines](./speakers.html) for detailed requirements and recommendations.
 ;;
-;; ### Preferred Topics
+;;; ### Preferred Topics
 ;; 
-;; The following areas will be prioritized in talk proposals:
+;; The following have been prioritised in reviewing the talk proposals:
 ;; 
 ;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, step-by-step guides to AI concepts, LLM integration, neural network basics, and getting started with Clojure AI tools
 ;; * **LLMs & Embeddings** - Building applications with language models, RAG systems, prompt engineering, and vector databases
