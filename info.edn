@@ -1,0 +1,154 @@
+{;; Conference metadata
+ :conference {:name "Macroexpand 2025"
+              :tagline "Clojure through Data and AI"
+              :year 2025
+              :format :online
+              :organizer "Scicloj"
+              :organizer-url "https://scicloj.github.io/"}
+
+ ;; Two conferences
+ :conferences {:macroexpand-noj {:name "Macroexpand-Noj"
+                                 :subtitle "Growing the Noj ecosystem"
+                                 :dates ["2025-10-17" "2025-10-18"]
+                                 :focus "Data Science with the Noj toolkit"
+                                 :description "A two-day online event bringing together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities."}
+
+               :macroexpand-deep {:name "Macroexpand-Deep"
+                                  :subtitle "The first Clojure AI conference"
+                                  :dates ["2025-10-24" "2025-10-25"]
+                                  :focus "AI systems development in Clojure"
+                                  :description "The first dedicated Clojure AI conference, exploring AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches."}}
+
+ ;; Important dates
+ :timeline {:cfp-open "2025-06-01"
+            :cfp-deadline "2025-09-08"
+            :schedule-announcement "2025-09-15"
+            :macroexpand-noj-start "2025-10-17"
+            :macroexpand-noj-end "2025-10-18"
+            :macroexpand-deep-start "2025-10-24"
+            :macroexpand-deep-end "2025-10-25"}
+
+ ;; People involved (speakers, hosts, organizers)
+ :people {:example-speaker {:full-name "Example Speaker"
+                            :images ["example-speaker.jpg"]
+                            :bio "This is a placeholder bio for an example speaker. Replace with actual speaker information."
+                            :affiliation "Example Organization"
+                            :github "example-github"
+                            :twitter "example-twitter"
+                            :website "https://example.com"}
+          
+          }
+
+ ;; Speakers list (references to :people keys)
+ :speakers [:example-speaker]
+
+ ;; Hosts/organizers list
+ :hosts [:daniel-slutsky]
+
+ ;; Talk sessions
+ :sessions {"Example Tutorial Talk" {:session-type :tutorial
+                                     :conference :macroexpand-noj
+                                     :speakers #{:example-speaker}
+                                     :abstract "This is a placeholder for a tutorial talk abstract. Tutorial talks are highly prioritized for both conferences."
+                                     :duration-minutes 45
+                                     :youtube-id nil
+                                     :notebook-url nil
+                                     :slides-url nil}
+
+            "Example Data Analysis" {:session-type :data-analysis
+                                     :conference :macroexpand-noj
+                                     :speakers #{}
+                                     :abstract "A practical data science example showcasing Noj capabilities."
+                                     :duration-minutes 30}
+
+            "Example AI Application" {:session-type :ai-application
+                                      :conference :macroexpand-deep
+                                      :speakers #{}
+                                      :abstract "Building AI applications with Clojure, demonstrating LLM integration or neural network usage."
+                                      :duration-minutes 30}}
+
+ ;; Session types for categorization
+ :session-types {:tutorial "Tutorial Talk"
+                 :data-analysis "Data Analysis"
+                 :tools-libraries "Tools & Libraries"
+                 :documentation "Documentation"
+                 :ai-application "AI Application"
+                 :research "Research & Theory"
+                 :production "Production Systems"}
+
+ ;; Schedule drafts (to be filled when speakers are confirmed)
+ :schedule-drafts {:draft-1 [{:day :day-1-noj
+                              :time "14:00 UTC"
+                              :title "Opening Remarks"
+                              :duration-minutes 15}
+
+                             {:day :day-1-noj
+                              :time "14:15 UTC"
+                              :title "Example Tutorial Talk"
+                              :duration-minutes 45}
+
+                             {:day :day-1-noj
+                              :time "15:00 UTC"
+                              :title "Break"
+                              :duration-minutes 15}
+
+                             {:day :day-2-noj
+                              :time "14:00 UTC"
+                              :title "Example Data Analysis"
+                              :duration-minutes 30}
+
+                             {:day :day-1-deep
+                              :time "14:00 UTC"
+                              :title "Opening - First Clojure AI Conference"
+                              :duration-minutes 15}
+
+                             {:day :day-1-deep
+                              :time "14:15 UTC"
+                              :title "Example AI Application"
+                              :duration-minutes 30}]}
+
+ ;; Topics prioritized for each conference
+ :preferred-topics {:macroexpand-noj ["Tutorial Talks (Highly Prioritized)"
+                                      "Documentation"
+                                      "Real-world Analysis"
+                                      "Tools & Libraries"
+                                      "Data Engineering"
+                                      "Visualization"
+                                      "Scientific Computing"
+                                      "Machine Learning"]
+
+                    :macroexpand-deep ["Tutorial Talks (Highly Prioritized)"
+                                       "LLMs & Embeddings"
+                                       "Algorithm Evaluation"
+                                       "Neural Network Architectures"
+                                       "Interpretability"
+                                       "Hybrid Systems"
+                                       "Tools & Libraries"
+                                       "Production AI"
+                                       "Research & Theory"
+                                       "Social Implications of AI"]}
+
+ ;; Links and resources
+ :links {:cfp-form nil ;; Form closed, was: "https://forms.gle/rQj5cR1FPAYR7mA97"
+         :zulip-chat "https://scicloj.github.io/docs/community/chat/"
+         :contact "https://scicloj.github.io/docs/community/contact/"
+         :clojure-civitas "https://clojurecivitas.github.io/"
+         :clojure-data-tutorials "https://scicloj.github.io/clojure-data-tutorials/"
+         :noj "https://scicloj.github.io/noj/"
+         :macroexpand-gatherings "https://scicloj.github.io/docs/community/groups/macroexpand/"
+         :scinoj-light "https://scicloj.github.io/scinoj-light-1/"}
+
+ ;; Requirements for speakers
+ :speaker-requirements {:reproducible-code true
+                        :hosted-notes true
+                        :hosting-options ["Clojure Civitas" "Clojure Data Tutorials"]
+                        :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg"
+                        :target-audience "General Clojure programmers, including beginners"}
+
+ ;; Conference goals
+ :goals ["Build new open collaborations around key Clojure growth priorities"
+         "Create a welcoming environment for newcomers to get involved"
+         "Strengthen community support by connecting practitioners"
+         "Talk Driven Development - use conferences as target dates for project milestones"
+         "Build on lessons learned from SciNoj Light"
+         "Follow our conference-making approach"]}
