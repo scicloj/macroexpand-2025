@@ -21,7 +21,7 @@
 ;;
 ;; ### Preferred Topics
 ;; 
-;; The following have been prioritised in reviewing the talk proposals:
+;; The following have been prioritized in reviewing the talk proposals:
 ;; 
 ;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, hands-on tutorials introducing Noj components, data science workflows, and practical techniques
 ;; * **Documentation** - Making libraries, theory, and methods accessible to the community

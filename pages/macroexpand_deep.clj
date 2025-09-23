@@ -19,9 +19,9 @@
 ;;
 ;; Please review our [speaker guidelines](./speakers.html) for detailed requirements and recommendations.
 ;;
-;;; ### Preferred Topics
+;; ### Preferred Topics
 ;; 
-;; The following have been prioritised in reviewing the talk proposals:
+;; The following have been prioritized in reviewing the talk proposals:
 ;; 
 ;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, step-by-step guides to AI concepts, LLM integration, neural network basics, and getting started with Clojure AI tools
 ;; * **LLMs & Embeddings** - Building applications with language models, RAG systems, prompt engineering, and vector databases

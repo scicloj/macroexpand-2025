@@ -5,7 +5,7 @@
 ![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo"}
 :::
 
-::: {.conf-intro__title-wrppaer}
+::: {.conf-intro__title-wrapper}
 # Macroexpand 2025 {class="conf-intro__title"}
 
 ::: {.conf-intro__subtitle} 
@@ -17,7 +17,7 @@ Clojure through Data and AI
 <div class="conf-intro__description">
 Macroexpand 2025 is a pair of online Clojure conferences organised by [Scicloj](https://scicloj.github.io/). They will focus on two high-priority topics on our journey to make Clojure grow to new fields: **Noj** and **AI**.
 
-These conferences are related and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, that focuses on in-depth discussions around Clojure growth.
+These conferences are related to and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, which focuses on in-depth discussions around Clojure growth.
 </div>
 
 ## Event Timeline
@@ -45,7 +45,7 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 * Strengthen community support by connecting practitioners.
 * Talk Driven Development - use the conferences as a clear target date for projects to reach sharing milestones.
 * Build on lessons learned from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/).
-* Follow our our conference-making approach that we 🎥 [recently discussed](https://www.youtube.com/watch?v=n6ICeRyXHsI).
+* Follow our conference-making approach that we 🎥 [recently discussed](https://www.youtube.com/watch?v=n6ICeRyXHsI).
 
 ## Chat
 

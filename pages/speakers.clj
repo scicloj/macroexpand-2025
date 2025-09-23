@@ -15,7 +15,7 @@
 ;; 
 ;; - Contact us early with project ideas - we can help shape them and suggest new ones.
 ;; - All talks must include clear notes and reproducible code, hosted on [Clojure Civitas](https://clojurecivitas.github.io/) or [Clojure Data Tutorials](https://scicloj.github.io/clojure-data-tutorials/).
-;; - We recommend Timothy Prately's 🎥 [tutorial](https://www.youtube.com/watch?v=lceazLPcSZg) to Clojure Civitas as a way to get started.
+;; - We recommend Timothy Pratley's 🎥 [tutorial](https://www.youtube.com/watch?v=lceazLPcSZg) to Clojure Civitas as a way to get started.
 ;; - If these hosting options do not work for you, let us discuss alternatives.
 ;; - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
 ;; - The kind of audience you should have in mind is of general Clojure programmers. We do recommend making your talk useful and interesting for people who are new to Clojure as well.
