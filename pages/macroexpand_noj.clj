@@ -152,24 +152,113 @@
         day2-slots (sort (:slots day2-data))
         all-time-slots (map first day1-slots)]
     (kind/hiccup
-     [:table {:style "width: 100%; border-collapse: collapse; margin: 1rem 0;"}
-      [:thead
-       [:tr
-        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 15%;"} "Time (UTC)"]
-        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 42.5%;"}
-         (:date day1-data)]
-        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 42.5%;"}
-         (:date day2-data)]]]
-      [:tbody
-       (for [time-slot all-time-slots]
-         (let [day1-session (get (into {} day1-slots) time-slot)
-               day2-session (get (into {} day2-slots) time-slot)]
-           [:tr
-            [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa; vertical-align: top;"} time-slot]
-            [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
-             day1-session]
-            [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
-             day2-session]]))]])))
+     [:div
+      ;; Add responsive CSS
+      [:style "
+        .schedule-container {
+          width: 100%;
+        }
+        .schedule-table {
+          width: 100%; 
+          border-collapse: collapse; 
+          margin: 1rem 0;
+        }
+        .schedule-table th,
+        .schedule-table td {
+          border: 1px solid #ddd; 
+          padding: 12px; 
+          vertical-align: top;
+        }
+        .schedule-table th {
+          background-color: #f8f9fa; 
+          text-align: left; 
+          font-weight: bold;
+        }
+        .time-col { width: 15%; }
+        .day-col { width: 42.5%; }
+        .time-cell {
+          font-family: monospace; 
+          background-color: #f8f9fa;
+        }
+        .session-cell {
+          padding: 8px;
+        }
+        
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+          .schedule-table {
+            display: none;
+          }
+          .mobile-schedule {
+            display: block;
+          }
+          .mobile-day-section {
+            margin-bottom: 2rem;
+          }
+          .mobile-day-section h3 {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 0 0 1rem 0;
+            border: 1px solid #ddd;
+            font-size: 1.1rem;
+          }
+          .mobile-time-slot {
+            border: 1px solid #ddd;
+            margin-bottom: 0.5rem;
+          }
+          .mobile-time-header {
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            font-family: monospace;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+          }
+          .mobile-session-content {
+            padding: 8px;
+          }
+        }
+        
+        /* Hide mobile layout on desktop */
+        @media (min-width: 769px) {
+          .mobile-schedule {
+            display: none;
+          }
+        }
+      "]
+
+      ;; Desktop three-column table
+      [:table {:class "schedule-table"}
+       [:thead
+        [:tr
+         [:th {:class "time-col"} "Time (UTC)"]
+         [:th {:class "day-col"} (:date day1-data)]
+         [:th {:class "day-col"} (:date day2-data)]]]
+       [:tbody
+        (for [time-slot all-time-slots]
+          (let [day1-session (get (into {} day1-slots) time-slot)
+                day2-session (get (into {} day2-slots) time-slot)]
+            [:tr
+             [:td {:class "time-cell"} time-slot]
+             [:td {:class "session-cell"} day1-session]
+             [:td {:class "session-cell"} day2-session]]))]]
+
+      ;; Mobile stacked layout
+      [:div {:class "mobile-schedule"}
+       [:div {:class "mobile-day-section"}
+        [:h3 (:date day1-data)]
+        (for [time-slot all-time-slots]
+          (let [day1-session (get (into {} day1-slots) time-slot)]
+            [:div {:class "mobile-time-slot"}
+             [:div {:class "mobile-time-header"} time-slot]
+             [:div {:class "mobile-session-content"} day1-session]]))]
+
+       [:div {:class "mobile-day-section"}
+        [:h3 (:date day2-data)]
+        (for [time-slot all-time-slots]
+          (let [day2-session (get (into {} day2-slots) time-slot)]
+            [:div {:class "mobile-time-slot"}
+             [:div {:class "mobile-time-header"} time-slot]
+             [:div {:class "mobile-session-content"} day2-session]]))]]])))
 
 ^:kindly/hide-code
 (columnar-schedule-table (:day1 schedule-data) (:day2 schedule-data))
