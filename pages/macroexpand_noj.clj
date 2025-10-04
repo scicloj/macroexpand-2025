@@ -23,29 +23,98 @@
   (edn/read-string (slurp "info.edn")))
 
 ^:kindly/hide-code
+(defn format-speaker-list [speakers people-data]
+  (when (seq speakers)
+    (->> speakers
+         (map #(get-in people-data [% :full-name]))
+         (filter some?)
+         (str/join ", "))))
+
+^:kindly/hide-code
+(defn session-card-new [session-key session-data people-data]
+  (let [session-title (:title session-data)
+        speakers (:speakers session-data)
+        speaker-names (format-speaker-list speakers people-data)
+        abstract (:abstract session-data)
+        speaker-images (when (seq speakers)
+                         (for [speaker-key speakers]
+                           (let [speaker-data (get people-data speaker-key)]
+                             (some-> speaker-data
+                                     :images
+                                     first
+                                     (as-> img
+                                           [:img {:src (str "images/" img)
+                                                  :alt (:full-name speaker-data)
+                                                  :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))))]
+    (kind/hiccup
+     [:div {:style "margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"}
+
+      [:details
+       [:summary {:style "cursor: pointer; list-style: none; padding: 0.5rem 0;"}
+        [:div {:style "display: flex; align-items: center; justify-content: space-between;"}
+         [:h3 {:style "display: inline; margin: 0; font-size: 1.25rem;"}
+          session-title]
+         (when (seq (remove nil? speaker-images))
+           [:div {:style "display: flex; align-items: center; flex-shrink: 0;"}
+            (remove nil? speaker-images)])]]
+
+       ;; Expanded content
+       [:div {:style "padding: 1rem 0;"}
+        ;; Abstract section
+        [:div {:style "margin-bottom: 1.5rem;"}
+         [:h4 "Abstract"]
+         [:p abstract]]
+
+        ;; Speaker details with images
+        (when (seq speakers)
+          [:div
+           [:h4 (if (> (count speakers) 1) "Speakers" "Speaker")]
+           (for [speaker-key speakers]
+             (let [speaker-data (get people-data speaker-key)
+                   speaker-image (some-> speaker-data
+                                         :images
+                                         first
+                                         (as-> img
+                                               [:img {:src (str "images/" img)
+                                                      :alt (:full-name speaker-data)
+                                                      :style "width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"}]))]
+               [:div {:key speaker-key :style "margin-bottom: 1.5rem; overflow: hidden;"}
+                (when speaker-image speaker-image)
+                [:div
+                 [:h5 {:style "margin-bottom: 0.5rem;"} (:full-name speaker-data)]
+                 [:p (:bio speaker-data)]]
+                [:div {:style "clear: both;"}]]))])]]])))
+
+^:kindly/hide-code
 (defn session-key->display
-  "Convert a session key to display text"
-  [session-key sessions-data]
+  "Convert a session key to display content with collapsible card"
+  [session-key sessions-data people-data]
   (cond
-    (nil? session-key) "TBD"
-    (= :break session-key) "Break"
-    (= :session/opening session-key) "Opening & Welcome"
-    (= :welcome-day-2 session-key) "Welcome Day 2"
-    (= :closing-day-1 session-key) "Closing Day 1"
-    (= :conference-wrap-up session-key) "Conference Wrap-up"
-    :else (get-in sessions-data [session-key :title] "TBD")))
+    (nil? session-key)
+    (kind/hiccup [:div {:style "padding: 0.5rem; color: #666;"} "TBD"])
+
+    (#{:break :closing-day-1 :conference-wrap-up :welcome-day-2} session-key)
+    (let [session-data (get sessions-data session-key)
+          title (:title session-data)]
+      (kind/hiccup [:div {:style "padding: 0.5rem; color: #666; font-style: italic;"} title]))
+
+    :else
+    (let [session-data (get sessions-data session-key)]
+      (if session-data
+        (session-card-new session-key session-data people-data)
+        (kind/hiccup [:div {:style "padding: 0.5rem; color: #666;"} "TBD"])))))
 
 ^:kindly/hide-code
 (defn schedule-vector->slots
-  "Convert schedule vector to time slot map"
-  [schedule-vec sessions-data]
+  "Convert schedule vector to time slot map with session cards"
+  [schedule-vec sessions-data people-data]
   (let [start-hour 9]
     (into {}
           (map-indexed
            (fn [idx session-key]
              (let [hour (+ start-hour idx)]
                [(format "%02d:00-%02d:00" hour (inc hour))
-                (session-key->display session-key sessions-data)]))
+                (session-key->display session-key sessions-data people-data)]))
            schedule-vec))))
 
 ^:kindly/hide-code
@@ -70,11 +139,12 @@
         dates (:dates noj-conf)
         [date1 date2] dates
         schedule (:schedule noj-conf)
-        sessions (:sessions conference-info)]
+        sessions (:sessions conference-info)
+        people (:people conference-info)]
     {:day1 {:date (date-string->day-name date1)
-            :slots (schedule-vector->slots (:day1 schedule) sessions)}
+            :slots (schedule-vector->slots (:day1 schedule) sessions people)}
      :day2 {:date (date-string->day-name date2)
-            :slots (schedule-vector->slots (:day2 schedule) sessions)}}))
+            :slots (schedule-vector->slots (:day2 schedule) sessions people)}}))
 
 ^:kindly/hide-code
 (defn schedule-table [day-data]
@@ -87,11 +157,9 @@
     [:tbody
      (for [[time-slot session] (sort (:slots day-data))]
        [:tr
-        [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa;"} time-slot]
-        [:td {:style "border: 1px solid #ddd; padding: 12px;"}
-         (if (= session "TBD")
-           [:em {:style "color: #666;"} session]
-           session)]])]]))
+        [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa; vertical-align: top;"} time-slot]
+        [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
+         session]])]]))
 
 ^:kindly/hide-code
 (kind/hiccup
