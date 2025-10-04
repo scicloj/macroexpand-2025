@@ -36,7 +36,7 @@ Sort alphabetically by name
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Conference Organizer</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Conference Organizer • Speaker</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
  His approach towards open-source communities is drawn from his past experiences in various activist groups.
  </p></div></div></div>
 ```
@@ -51,6 +51,13 @@ Sort alphabetically by name
 
 ```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Edward Widjaja" src="images/edward-widjaja.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Edward Widjaja</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Edward Widjaja is a final-year Data Science and Engineering student at the University of Hong Kong. He's always been interested in anything nerdy; from algorithms and trading systems to quirky side projects, he is now channeling that curiosity into finance. Currently taking a semester off to work at a bank, he's exploring how emerging technologies intersect with financial markets. His goal is to build a career that combines data-driven decision-making with practical financial solutions. In his spare time, Edward enjoys swimming, gaming, and chatting about anything from market trends to tech experiments, so feel free to reach out!</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Harold" src="images/harold.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Harold</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Speaker</p><p style="margin: 0; line-height: 1.6;">Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML
+ </p></div></div></div>
 ```
 
 

@@ -23,20 +23,30 @@
   (edn/read-string (slurp "info.edn")))
 
 ^:kindly/hide-code
-(defn generate-schedule-slots
-  "Generate hourly time slots from 8am to 8pm UTC"
-  []
-  (let [hours (range 8 21)] ; 8am to 8pm (21 exclusive)
+(defn session-key->display
+  "Convert a session key to display text"
+  [session-key sessions-data]
+  (cond
+    (nil? session-key) "TBD"
+    (= :break session-key) "Break"
+    (= :session/opening session-key) "Opening & Welcome"
+    (= :welcome-day-2 session-key) "Welcome Day 2"
+    (= :closing-day-1 session-key) "Closing Day 1"
+    (= :conference-wrap-up session-key) "Conference Wrap-up"
+    :else (get-in sessions-data [session-key :title] "TBD")))
+
+^:kindly/hide-code
+(defn schedule-vector->slots
+  "Convert schedule vector to time slot map"
+  [schedule-vec sessions-data]
+  (let [start-hour 9]
     (into {}
-          (map (fn [hour]
-                 [(format "%02d:00-%02d:00" hour (inc hour))
-                  (cond
-                    (= hour 8) "Opening & Welcome"
-                    (= hour 12) "Break"
-                    (= hour 16) "Break"
-                    (= hour 19) "Closing"
-                    :else "TBD")])
-               hours))))
+          (map-indexed
+           (fn [idx session-key]
+             (let [hour (+ start-hour idx)]
+               [(format "%02d:00-%02d:00" hour (inc hour))
+                (session-key->display session-key sessions-data)]))
+           schedule-vec))))
 
 ^:kindly/hide-code
 (defn date-string->day-name
@@ -59,14 +69,12 @@
   (let [noj-conf (get-in conference-info [:conferences :macroexpand-noj])
         dates (:dates noj-conf)
         [date1 date2] dates
-        base-slots (generate-schedule-slots)]
+        schedule (:schedule noj-conf)
+        sessions (:sessions conference-info)]
     {:day1 {:date (date-string->day-name date1)
-            :slots (assoc base-slots
-                          "19:00-20:00" "Closing Day 1")}
+            :slots (schedule-vector->slots (:day1 schedule) sessions)}
      :day2 {:date (date-string->day-name date2)
-            :slots (-> base-slots
-                       (assoc "08:00-09:00" "Welcome Day 2")
-                       (assoc "19:00-20:00" "Conference Wrap-up"))}}))
+            :slots (schedule-vector->slots (:day2 schedule) sessions)}}))
 
 ^:kindly/hide-code
 (defn schedule-table [day-data]
