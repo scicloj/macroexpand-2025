@@ -10,32 +10,7 @@
 ;; 
 ;; ### About the Conference
 ;;
-;; This two-day online event brings together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities. Whether you're analyzing real-world datasets, building new tools, or documenting existing libraries, this conference is for you.
-;;
-;; ### Call for Proposals
-;; 
-;; ### Speakers
-;; 
-;; The Call for Proposals is already closed, but if you have any late ideas you wish to discuss, please reach out.
-;;
-;; Please review our [speaker guidelines](./speakers.html) for detailed requirements and recommendations.
-;;
-;; ### Preferred Topics
-;; 
-;; The following have been prioritized in reviewing the talk proposals:
-;; 
-;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, hands-on tutorials introducing Noj components, data science workflows, and practical techniques
-;; * **Documentation** - Making libraries, theory, and methods accessible to the community
-;; * **Real-world Analysis** - Practical data science examples and case studies (including follow-ups from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/))
-;; * **Tools & Libraries** - New features, integrations, and ecosystem improvements
-;; * **Data Engineering** - Processing pipelines, ETL, and data infrastructure
-;; * **Visualization** - Interactive graphics, dashboards, and visual analytics
-;; * **Scientific Computing** - Numerical methods, statistics, and domain-specific applications
-;; * **Machine Learning** - Models, workflows, and ML engineering with Clojure
-;;
-;; ### Target Audience
-;;
-;; General Clojure programmers interested in data science, from beginners exploring data tools to experienced practitioners sharing advanced techniques. Talks should be accessible while providing depth and practical value.
+;; A two-day online event for sharing practical data science experiences, showcasing Noj ecosystem tools, and advancing Clojure's data science capabilities through tutorials, case studies, and technical discussions. Designed for Clojure programmers at all levels interested in data science.
 ;;
 ;; ### Schedule (Draft)
 ;;

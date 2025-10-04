@@ -1,5 +1,6 @@
 ^:kindly/hide-code
-(ns macroexpand-deep)
+(ns macroexpand-deep
+  (:require [scicloj.kindly.v4.kind :as kind]))
 
 ;; ## Macroexpand-Deep - the first Clojure AI conference
 ;; 
@@ -9,41 +10,165 @@
 ;;
 ;; ### About the Conference
 ;;
-;; This two-day online event explores AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches. By 'AI systems', we typically mean compositions of deep networks with other components, but we welcome alternative interpretations and novel approaches that leverage Clojure's functional paradigm.
+;; A two-day online event exploring AI systems in Clojure - from LLMs and neural networks to symbolic AI and hybrid approaches. Share production applications, research insights, and novel techniques that leverage Clojure's unique strengths for AI development. For Clojure programmers at all levels and AI practitioners curious about functional approaches.
 ;;
-;; Whether you're building production AI applications, conducting research, or exploring the intersection of functional programming and machine learning, this conference provides a platform to share your work and learn from others pushing the boundaries.
+;; ### Schedule (Draft)
 ;;
-;; ### Speakers
-;; 
-;; The Call for Proposals is already closed, but if you have any late ideas you wish to discuss, please reach out.
-;;
-;; Please review our [speaker guidelines](./speakers.html) for detailed requirements and recommendations.
-;;
-;; ### Preferred Topics
-;; 
-;; The following have been prioritized in reviewing the talk proposals:
-;; 
-;; * **Tutorial Talks** (Highly Prioritized) - Beginner-friendly, step-by-step guides to AI concepts, LLM integration, neural network basics, and getting started with Clojure AI tools
-;; * **LLMs & Embeddings** - Building applications with language models, RAG systems, prompt engineering, and vector databases
-;; * **Algorithm Evaluation** - Evaluating AI algorithms in specific domains, benchmarking, and comparative studies
-;; * **Neural Network Architectures** - Creating, training, and deploying neural networks using Clojure-based tools
-;; * **Interpretability** - Understanding trained models, mechanistic interpretability, and explainable AI
-;; * **Hybrid Systems** - Combining symbolic and neural approaches, reasoning systems, and knowledge graphs
-;; * **Tools & Libraries** - New frameworks, improvements to existing tools, and interop with Python/Java AI ecosystems
-;; * **Production AI** - Deployment strategies, monitoring, and scaling AI systems built with Clojure
-;; * **Research & Theory** - Novel approaches, theoretical foundations, and experimental work
-;; * **Social implications of AI**
-;;
-;; ### Why Clojure for AI?
-;;
-;; Clojure offers unique advantages for AI development: immutable data structures for reproducible experiments, REPL-driven development for rapid prototyping, seamless Java/Python interop for leveraging existing AI libraries, and functional composition for building complex AI pipelines. This conference celebrates and advances these strengths.
-;;
-;; ### Target Audience
-;;
-;; Clojure programmers interested in AI, from those taking first steps with machine learning to researchers developing novel approaches. We also welcome AI practitioners from other languages curious about Clojure's potential in this space.
-;;
+;; All times are in UTC. The schedule below is a proof-of-concept showing available time slots.
+
+^:kindly/hide-code
+(def schedule-data
+  {:day1 {:date "Friday, October 24, 2025"
+          :slots {"08:00-09:00" "Opening & Welcome"
+                  "09:00-10:00" "TBD"
+                  "10:00-11:00" "TBD"
+                  "11:00-12:00" "TBD"
+                  "12:00-13:00" "Break"
+                  "13:00-14:00" "TBD"
+                  "14:00-15:00" "TBD"
+                  "15:00-16:00" "TBD"
+                  "16:00-17:00" "Break"
+                  "17:00-18:00" "TBD"
+                  "18:00-19:00" "TBD"
+                  "19:00-20:00" "Closing Day 1"}}
+   :day2 {:date "Saturday, October 25, 2025"
+          :slots {"08:00-09:00" "Welcome Day 2"
+                  "09:00-10:00" "TBD"
+                  "10:00-11:00" "TBD"
+                  "11:00-12:00" "TBD"
+                  "12:00-13:00" "Break"
+                  "13:00-14:00" "TBD"
+                  "14:00-15:00" "TBD"
+                  "15:00-16:00" "TBD"
+                  "16:00-17:00" "Break"
+                  "17:00-18:00" "TBD"
+                  "18:00-19:00" "TBD"
+                  "19:00-20:00" "Conference Wrap-up"}}})
+
+^:kindly/hide-code
+(defn schedule-table [day-data]
+  (kind/hiccup
+   [:table {:style "width: 100%; border-collapse: collapse; margin: 1rem 0;"}
+    [:thead
+     [:tr
+      [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold;"} "Time (UTC)"]
+      [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold;"} "Session"]]]
+    [:tbody
+     (for [[time-slot session] (sort (:slots day-data))]
+       [:tr
+        [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa;"} time-slot]
+        [:td {:style "border: 1px solid #ddd; padding: 12px;"}
+         (if (= session "TBD")
+           [:em {:style "color: #666;"} session]
+           session)]])]]))
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div
+  [:h4 {:style "margin-top: 2rem; color: #2c5282;"} (:date (:day1 schedule-data))]
+  (schedule-table (:day1 schedule-data))
+
+  [:h4 {:style "margin-top: 2rem; color: #2c5282;"} (:date (:day2 schedule-data))]
+  (schedule-table (:day2 schedule-data))
+
+  [:p {:id "timezone-notice-deep" :style "margin-top: 1rem; color: #666; font-size: 0.9rem;"}
+   [:em "Times will be displayed in your local timezone"]]
+
+  [:p {:style "margin-top: 0.5rem; font-style: italic; color: #666;"}
+   "* Schedule is subject to change. Final schedule with confirmed speakers will be published closer to the conference date."]])
+
 ;; ### Connect & Discuss
 ;;
 ;; Join the conversation at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) where we discuss AI projects and help each other explore this exciting frontier.
-;;
-;; [Questions? Let's talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 2rem 0;"}
+  [:a {:href "https://scicloj.github.io/docs/community/contact/"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none;"}
+   "Questions? Let's talk"]])
+
+^:kindly/hide-code
+(kind/hiccup
+ [:script {:type "text/javascript"}
+  "
+// Automatically convert times to user's timezone on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  
+  // Update timezone notice
+  const timezoneNotice = document.getElementById('timezone-notice-deep');
+  if (timezoneNotice) {
+    timezoneNotice.innerHTML = '<em>All times shown in ' + userTimezone + '</em>';
+  }
+  
+  // Find all tables and process them
+  const tables = document.querySelectorAll('table');
+  
+  tables.forEach(table => {
+    const timeHeader = table.querySelector('th');
+    if (timeHeader && timeHeader.textContent.includes('Time')) {
+      // Update header to show timezone
+      timeHeader.textContent = 'Time (' + userTimezone + ')';
+      
+      // Find date from previous H4 element
+      let dateElement = table.previousElementSibling;
+      while (dateElement && dateElement.tagName !== 'H4') {
+        dateElement = dateElement.previousElementSibling;
+      }
+      
+      if (dateElement) {
+        const dateText = dateElement.textContent.trim();
+        const dateMatch = dateText.match(/(\\w+), (\\w+) (\\d+), (\\d+)/);
+        
+        if (dateMatch) {
+          const [, , month, day, year] = dateMatch;
+          const monthNames = ['January','February','March','April','May','June',
+                             'July','August','September','October','November','December'];
+          const monthNum = monthNames.indexOf(month);
+          
+          if (monthNum !== -1) {
+            const cells = table.querySelectorAll('td');
+            for (let i = 0; i < cells.length; i += 2) {
+              const timeCell = cells[i];
+              const timeText = timeCell.textContent.trim();
+              
+              if (timeText.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
+                const [startTime, endTime] = timeText.split('-');
+                const [startHour] = startTime.split(':');
+                const [endHour] = endTime.split(':');
+                
+                // Create dates in UTC since schedule times are in UTC
+                const startDate = new Date(Date.UTC(year, monthNum, day, parseInt(startHour), 0));
+                const endDate = new Date(Date.UTC(year, monthNum, day, parseInt(endHour), 0));
+                
+                const localStartTime = startDate.toLocaleTimeString('en-US', {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  hour12: false,
+                  timeZone: userTimezone
+                });
+                
+                const localEndTime = endDate.toLocaleTimeString('en-US', {
+                  hour: '2-digit',
+                  minute: '2-digit', 
+                  hour12: false,
+                  timeZone: userTimezone
+                });
+                
+                // Store UTC time as tooltip
+                timeCell.title = 'UTC: ' + timeText;
+                timeCell.style.cursor = 'help';
+                
+                timeCell.textContent = localStartTime + '-' + localEndTime;
+              }
+            }
+          }
+        }
+      }
+    }
+  });
+});
+"])
