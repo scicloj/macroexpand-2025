@@ -1,0 +1,142 @@
+---
+format:
+  html: {toc: false, toc-depth: 4, theme: cosmo}
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="people_files/md-default0.js" type="text/javascript"></script><script src="people_files/md-default1.js" type="text/javascript"></script>
+
+# People
+
+Meet the amazing people behind Macroexpand 2025! Our conferences bring together speakers, organizers, and community members who are passionate about growing Clojure in data science and AI.
+
+
+## Conference Organizers
+
+Sort alphabetically by name
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Ben Sless" src="images/ben-sless.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Ben Sless</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Software engineer, father of three, enthusiastic Clojurian</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Christian Weilbach" src="images/christian-weilbach.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Christian Weilbach</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Christian Weilbach is a long-time Clojure developer working on distributed systems such as replikativ, Datahike, and supporting libraries. He has also worked with Clojure during his PhD on probabilistic programming, besides work on different simulators and inference systems in Julia, Python and C++. He has published many machine learning & AI related papers in top tier venues and is working on an organizational framework of life & intelligence (both in theory and implementation).</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Conference Organizer</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+ His approach towards open-source communities is drawn from his past experiences in various activist groups.
+ </p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Szmulewicz" src="images/daniel-szmulewicz.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Szmulewicz</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Functional programmer. Closet philosopher. Emacs meshugge.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Edward Widjaja" src="images/edward-widjaja.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Edward Widjaja</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Edward Widjaja is a final-year Data Science and Engineering student at the University of Hong Kong. He's always been interested in anything nerdy; from algorithms and trading systems to quirky side projects, he is now channeling that curiosity into finance. Currently taking a semester off to work at a bank, he's exploring how emerging technologies intersect with financial markets. His goal is to build a career that combines data-driven decision-making with practical financial solutions. In his spare time, Edward enjoys swimming, gaming, and chatting about anything from market trends to tech experiments, so feel free to reach out!</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Jan Wedekind" src="images/jan-wedekind.png" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Jan Wedekind</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Jan studied compiler construction and robotics and later did a PhD in computer vision. He currently works in industry developing inspection software. His first programming languages were Omikron Basic and later Borland Pascal. In industry he used C++, Ruby, and Python. In his spare time he got interested in Ruby, GNU Guile, and finally Clojure.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Jelena Losic" src="images/jelena-losic.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Jelena Losic</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">I am Jelena, function programming developer with 10 years of industry experience and mathematical educational background. I am curious about the networks and laws that are applicable in large scales, leading to better understanding of big data.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Justin Tirrell" src="images/justin-tirrell.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Justin Tirrell</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">I'm Justin, I'm a Clojure maximalist and independent software developer. I like working on trading systems and GUIs and rolling my own software tools and yak shaving.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Kira Howe" src="images/kira-howe.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Kira Howe</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Kira's been writing software for the past decade with a focus on data-intensive web apps and a particular interest in Clojure programming and data visualization. She loves open source development, fostering communities online and in-person, and learning new things. When she's not at her desk, you can find Kira teaching yoga, playing violin, or running with her dog.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Ludger Solbach" src="images/ludger-solbach.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Ludger Solbach</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Ludger Solbach is a software architect for 'msg for automotive' in Germany.
+He is the creator of Overarch, a lightweight system modeling and visualization tool
+and QClojure, a library for programming quantum computers.
+His favorite programming language by far is Clojure, a modern functional LISP.
+He uses it for his open source work, at work when feasible, and to create
+models for his 3D-Printer.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Luke Zeitlin" src="images/luke-zeitlin.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Luke Zeitlin</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">I'm a programmer, musician and clojure enthusiast and former co-founder of Gybe, a water quality remote sensing startup. I'm interested in music, DSP, functional programming and plants.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Matthias Buehlmaier" src="images/matthias-buehlmaier.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Matthias Buehlmaier</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Matthias Buehlmaier is an associate professor of teaching in finance and the BBA(IBGM) program director at HKU Business School, University of Hong Kong (HKU). He is a winner of several teaching and research awards, e.g. the Outstanding Teaching Award and the Teaching Innovation Award granted by HKU. His research has appeared in the Review of Financial Studies (Oxford University Press) and has been featured in the Harvard Law School Forum on Corporate Governance and Financial Regulation.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Mike Travers" src="images/mike-travers.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Mike Travers</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Mike Travers is an independent consultant and software engineer based in the San Francisco Bay Area, with over 40 years of experience designing systems that make programming more expressive and accessible. As the founder of Hyperphor (1988-present), Mike specializes in scientific knowledge management, AI applications, scientific visualization, and interaction design for commercial and academic clients. He has...</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Stoica Ovidiu" src="images/stoica-ovidiu.png" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Stoica Ovidiu</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Ovidiu Stoica is a software developer with 10 years of experience, out of which the last 5 are in Clojure. He has been building voice AI agents for the last 1.5 years for enterprise clients and is the creator of simulflow - a voice AI agent clojure framework.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Tanvi Nagar" src="images/tanvi-nagar.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Tanvi Nagar</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Tanvi Nagar is a final year student at the University of Hong Kong, studying International Business and Global Management. She is passionate about mathematics, finance and their integration with technology - which is why she chose Information Systems and Analytics as her second major. Hoping to build a career in finance, she has solidified her technical and professional skills through roles in Financial Services Consulting, Corporate Banking and Wealth Management. Being a curious mind, she is always looking to broaden her horizons through learning about new things, travelling the world and plays badminton in her free time along with reading voraciously.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Teodor Heggelund" src="images/teodor-heggelund.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Teodor Heggelund</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Timothy Pratley</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Žygimantas Medelis</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.</p></div></div></div>
+```
+
+
+---
+
+*Learn more about our [sessions](sessions.html) and the [conferences](index.html).*

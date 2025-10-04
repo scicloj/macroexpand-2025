@@ -9,4 +9,4 @@
 
 site/*/
 !site/images/
-temp
+tempprivate-data/

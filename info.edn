@@ -1,154 +1,429 @@
-{;; Conference metadata
- :conference {:name "Macroexpand 2025"
-              :tagline "Clojure through Data and AI"
-              :year 2025
-              :format :online
-              :organizer "Scicloj"
-              :organizer-url "https://scicloj.github.io/"}
-
- ;; Two conferences
- :conferences {:macroexpand-noj {:name "Macroexpand-Noj"
-                                 :subtitle "Growing the Noj ecosystem"
-                                 :dates ["2025-10-17" "2025-10-18"]
-                                 :focus "Data Science with the Noj toolkit"
-                                 :description "A two-day online event bringing together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities."}
-
-               :macroexpand-deep {:name "Macroexpand-Deep"
-                                  :subtitle "The first Clojure AI conference"
-                                  :dates ["2025-10-24" "2025-10-25"]
-                                  :focus "AI systems development in Clojure"
-                                  :description "The first dedicated Clojure AI conference, exploring AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches."}}
-
- ;; Important dates
- :timeline {:cfp-open "2025-06-01"
-            :cfp-deadline "2025-09-08"
-            :schedule-announcement "2025-09-15"
-            :macroexpand-noj-start "2025-10-17"
-            :macroexpand-noj-end "2025-10-18"
-            :macroexpand-deep-start "2025-10-24"
-            :macroexpand-deep-end "2025-10-25"}
-
- ;; People involved (speakers, hosts, organizers)
- :people {:example-speaker {:full-name "Example Speaker"
-                            :images ["example-speaker.jpg"]
-                            :bio "This is a placeholder bio for an example speaker. Replace with actual speaker information."
-                            :affiliation "Example Organization"
-                            :github "example-github"
-                            :twitter "example-twitter"
-                            :website "https://example.com"}
-          
-          }
-
- ;; Speakers list (references to :people keys)
- :speakers [:example-speaker]
-
- ;; Hosts/organizers list
- :hosts [:daniel-slutsky]
-
- ;; Talk sessions
- :sessions {"Example Tutorial Talk" {:session-type :tutorial
-                                     :conference :macroexpand-noj
-                                     :speakers #{:example-speaker}
-                                     :abstract "This is a placeholder for a tutorial talk abstract. Tutorial talks are highly prioritized for both conferences."
-                                     :duration-minutes 45
-                                     :youtube-id nil
-                                     :notebook-url nil
-                                     :slides-url nil}
-
-            "Example Data Analysis" {:session-type :data-analysis
-                                     :conference :macroexpand-noj
-                                     :speakers #{}
-                                     :abstract "A practical data science example showcasing Noj capabilities."
-                                     :duration-minutes 30}
-
-            "Example AI Application" {:session-type :ai-application
-                                      :conference :macroexpand-deep
-                                      :speakers #{}
-                                      :abstract "Building AI applications with Clojure, demonstrating LLM integration or neural network usage."
-                                      :duration-minutes 30}}
-
- ;; Session types for categorization
- :session-types {:tutorial "Tutorial Talk"
-                 :data-analysis "Data Analysis"
-                 :tools-libraries "Tools & Libraries"
-                 :documentation "Documentation"
-                 :ai-application "AI Application"
-                 :research "Research & Theory"
-                 :production "Production Systems"}
-
- ;; Schedule drafts (to be filled when speakers are confirmed)
- :schedule-drafts {:draft-1 [{:day :day-1-noj
-                              :time "14:00 UTC"
-                              :title "Opening Remarks"
-                              :duration-minutes 15}
-
-                             {:day :day-1-noj
-                              :time "14:15 UTC"
-                              :title "Example Tutorial Talk"
-                              :duration-minutes 45}
-
-                             {:day :day-1-noj
-                              :time "15:00 UTC"
-                              :title "Break"
-                              :duration-minutes 15}
-
-                             {:day :day-2-noj
-                              :time "14:00 UTC"
-                              :title "Example Data Analysis"
-                              :duration-minutes 30}
-
-                             {:day :day-1-deep
-                              :time "14:00 UTC"
-                              :title "Opening - First Clojure AI Conference"
-                              :duration-minutes 15}
-
-                             {:day :day-1-deep
-                              :time "14:15 UTC"
-                              :title "Example AI Application"
-                              :duration-minutes 30}]}
-
- ;; Topics prioritized for each conference
- :preferred-topics {:macroexpand-noj ["Tutorial Talks (Highly Prioritized)"
-                                      "Documentation"
-                                      "Real-world Analysis"
-                                      "Tools & Libraries"
-                                      "Data Engineering"
-                                      "Visualization"
-                                      "Scientific Computing"
-                                      "Machine Learning"]
-
-                    :macroexpand-deep ["Tutorial Talks (Highly Prioritized)"
-                                       "LLMs & Embeddings"
-                                       "Algorithm Evaluation"
-                                       "Neural Network Architectures"
-                                       "Interpretability"
-                                       "Hybrid Systems"
-                                       "Tools & Libraries"
-                                       "Production AI"
-                                       "Research & Theory"
-                                       "Social Implications of AI"]}
-
- ;; Links and resources
- :links {:cfp-form nil ;; Form closed, was: "https://forms.gle/rQj5cR1FPAYR7mA97"
-         :zulip-chat "https://scicloj.github.io/docs/community/chat/"
-         :contact "https://scicloj.github.io/docs/community/contact/"
-         :clojure-civitas "https://clojurecivitas.github.io/"
-         :clojure-data-tutorials "https://scicloj.github.io/clojure-data-tutorials/"
-         :noj "https://scicloj.github.io/noj/"
-         :macroexpand-gatherings "https://scicloj.github.io/docs/community/groups/macroexpand/"
-         :scinoj-light "https://scicloj.github.io/scinoj-light-1/"}
-
- ;; Requirements for speakers
- :speaker-requirements {:reproducible-code true
-                        :hosted-notes true
-                        :hosting-options ["Clojure Civitas" "Clojure Data Tutorials"]
-                        :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg"
-                        :target-audience "General Clojure programmers, including beginners"}
-
- ;; Conference goals
- :goals ["Build new open collaborations around key Clojure growth priorities"
-         "Create a welcoming environment for newcomers to get involved"
-         "Strengthen community support by connecting practitioners"
-         "Talk Driven Development - use conferences as target dates for project milestones"
-         "Build on lessons learned from SciNoj Light"
-         "Follow our conference-making approach"]}
+{:conference
+ {:name "Macroexpand 2025",
+  :tagline "Clojure through Data and AI",
+  :year 2025,
+  :format :online,
+  :organizer "Scicloj",
+  :organizer-url "https://scicloj.github.io/"},
+ :speakers
+ [:matthias-buehlmaier
+  :kira-howe
+  :ludger-solbach
+  :timothy-pratley
+  :jelena-losic
+  :daniel-szmulewicz
+  :ygimantas-medelis
+  :christian-weilbach
+  :stoica-ovidiu
+  :edward-widjaja
+  :jan-wedekind
+  :mike-travers
+  :tanvi-nagar
+  :luke-zeitlin
+  :ben-sless
+  :justin-tirrell],
+ :goals
+ ["Build new open collaborations around key Clojure growth priorities"
+  "Create a welcoming environment for newcomers to get involved"
+  "Strengthen community support by connecting practitioners"
+  "Talk Driven Development - use conferences as target dates for project milestones"
+  "Build on lessons learned from SciNoj Light"
+  "Follow our conference-making approach"],
+ :hosts [:daniel-slutsky],
+ :schedule-drafts
+ {:draft-1
+  [{:day :day-1-noj,
+    :time "14:00 UTC",
+    :title "Opening Remarks",
+    :duration-minutes 15}
+   {:day :day-1-noj,
+    :time "14:15 UTC",
+    :title "Example Tutorial Talk",
+    :duration-minutes 45}
+   {:day :day-1-noj,
+    :time "15:00 UTC",
+    :title "Break",
+    :duration-minutes 15}
+   {:day :day-2-noj,
+    :time "14:00 UTC",
+    :title "Example Data Analysis",
+    :duration-minutes 30}
+   {:day :day-1-deep,
+    :time "14:00 UTC",
+    :title "Opening - First Clojure AI Conference",
+    :duration-minutes 15}
+   {:day :day-1-deep,
+    :time "14:15 UTC",
+    :title "Example AI Application",
+    :duration-minutes 30}]},
+ :conferences
+ {:macroexpand-noj
+  {:name "Macroexpand-Noj",
+   :subtitle "Growing the Noj ecosystem",
+   :dates ["2025-10-17" "2025-10-18"],
+   :focus "Data Science with the Noj toolkit",
+   :description
+   "A two-day online event bringing together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities."},
+  :macroexpand-deep
+  {:name "Macroexpand-Deep",
+   :subtitle "The first Clojure AI conference",
+   :dates ["2025-10-24" "2025-10-25"],
+   :focus "AI systems development in Clojure",
+   :description
+   "The first dedicated Clojure AI conference, exploring AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches."}},
+ :preferred-topics
+ {:macroexpand-noj
+  ["Tutorial Talks (Highly Prioritized)"
+   "Documentation"
+   "Real-world Analysis"
+   "Tools & Libraries"
+   "Data Engineering"
+   "Visualization"
+   "Scientific Computing"
+   "Machine Learning"],
+  :macroexpand-deep
+  ["Tutorial Talks (Highly Prioritized)"
+   "LLMs & Embeddings"
+   "Algorithm Evaluation"
+   "Neural Network Architectures"
+   "Interpretability"
+   "Hybrid Systems"
+   "Tools & Libraries"
+   "Production AI"
+   "Research & Theory"
+   "Social Implications of AI"]},
+ :speaker-requirements
+ {:reproducible-code true,
+  :hosted-notes true,
+  :hosting-options ["Clojure Civitas" "Clojure Data Tutorials"],
+  :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg",
+  :target-audience "General Clojure programmers, including beginners"},
+ :sessions
+ {"Building Dynamic Entity Extraction with Bosquet"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-deep,
+   :preferred-time nil,
+   :speakers #{:ygimantas-medelis},
+   :submission-timestamp "26/09/2025 06:22:32",
+   :abstract
+   "Every text processing application needs to answer a  question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how Bosquet, an LLM orchestration library, can help with building  entity extraction pipelines.",
+   :session-type :talk,
+   :approved-recording true},
+  "Computing with units in Clojure"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time
+   "October 17th, 10 AM CET — or another timeslot, preferrably before noon on the day of the conference.",
+   :speakers #{:teodor-heggelund},
+   :submission-timestamp "22/09/2025 11:11:54",
+   :abstract
+   "A quantity's unit plays a prominent role in science and engineering. Is it 5 milliseconds, 5 tons of 5 light-years? In software programming, we often resort to variables names as now-instant, time-ms and force-kn to convey the interpretation of a number such as \"5\".\n\nCome learn about units, unit systems and a pure data, REPL-friendly Clojure approach.",
+   :session-type :talk,
+   :approved-recording true},
+  "Elements of Malli"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time "every day past 20:00",
+   :speakers #{:ben-sless},
+   :submission-timestamp "27/09/2025 16:26:11",
+   :abstract
+   "Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
+   :session-type :talk,
+   :approved-recording true},
+  "A Clojure-based Portfolio Analysis Tool based on LLM Integration"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-deep,
+   :preferred-time "Saturday / Sunday: 8 am - 10 pm HKT",
+   :speakers #{:matthias-buehlmaier :edward-widjaja :tanvi-nagar},
+   :submission-timestamp "21/09/2025 19:20:51",
+   :abstract
+   "This research paper / talk presents the design and implementation of a Portfolio Analysis Program built almost entirely in Clojure for The University of Hong Kong's Center for Investment Management.\n\nThe program enables users to construct custom portfolios from individual stocks or asset classes, evaluate performance using key financial metrics, and visualize results interactively.\n\nWhat sets this tool apart is its integration of financial market narratives through a Large Language Model (LLM), which contextualizes portfolio performances using real-time financial news.",
+   :session-type :talk,
+   :approved-recording true},
+  "Water Quality - Remote Sensing"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time "afternoon / evening",
+   :speakers #{:luke-zeitlin},
+   :submission-timestamp "29/09/2025 21:20:14",
+   :abstract
+   "Using multispectral satellite imagery in cloud optimized geotiffs to perform simple band-ratio indicies of water quality in the browser in a Clay notebook.",
+   :session-type :talk,
+   :approved-recording true},
+  "Functional Quantum Computing with QClojure"
+  {:prefer-prerecorded :maybe,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time "Friday 3pm-8pm",
+   :speakers #{:ludger-solbach},
+   :submission-timestamp "23/09/2025 22:52:21",
+   :abstract
+   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations. \nThis talk gives a short introduction to quantum computing and the goals and features of QClojure.\nIn a short live coding session we will create some quantum states and circuits and run some algorithms on a quantum computing simulation.\nWe will also address some implementation topics like complex linear algebra and quantum algorithms.\nThe talk will close with future plans for QClojure, like running on real quantum hardware and quantum machine learning (QML).",
+   :session-type :talk,
+   :approved-recording true},
+  "Growing a DSL"
+  {:prefer-prerecorded :maybe,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time nil,
+   :speakers #{:daniel-szmulewicz},
+   :submission-timestamp "27/09/2025 20:20:10",
+   :abstract
+   "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon  FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
+   :session-type :talk,
+   :approved-recording true},
+  "Building Realtime Voice AI Agents with Clojure - Best Practices"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-deep,
+   :preferred-time nil,
+   :speakers #{:stoica-ovidiu},
+   :submission-timestamp "29/09/2025 16:50:25",
+   :abstract
+   "Exploring how to build reliable voice AI agents in a functional data driven way with Clojure. This talk will go over all of the pieces involved in voice ai from best models to use, turn detection, context management to scripting and instruction following to hosting and scaling. By the end you will better understand what it takes to build highly reliable voice AI agents with Clojure",
+   :session-type :talk,
+   :approved-recording true},
+  "Rolling Regressions in Clojure for Real-Time Alpha and Beta Monitoring"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time "Saturday / Sunday : 8 am - 10 pm HKT",
+   :speakers #{:matthias-buehlmaier :edward-widjaja :tanvi-nagar},
+   :submission-timestamp "21/09/2025 19:11:47",
+   :abstract
+   "This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual(synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.",
+   :session-type :talk,
+   :approved-recording true},
+  "Natural language interfaces for scientific computing"
+  {:prefer-prerecorded nil,
+   :approved-to-speak nil,
+   :approved-civitas-notebook nil,
+   :conference :macroexpand-deep,
+   :preferred-time nil,
+   :speakers #{:mike-travers},
+   :submission-timestamp "22/09/2025 05:33:48",
+   :abstract
+   "Previous work in end-user scientific computing has focused on manipulable visual representations of programs. LLM technology provides an alternate path for non-programmers to engage with the complexity of scientific data. This talk will esplore the use of LLMs, ontologies, and domain-specific languages to support natural language queries, visualization, and general computing. Clojure's flexibility as back-end, front-end, and knowledge representation language is a key enabler.",
+   :session-type :talk,
+   :approved-recording nil},
+  "Building QClojure with AI assistance"
+  {:prefer-prerecorded :maybe,
+   :approved-to-speak true,
+   :approved-civitas-notebook :not-relevant,
+   :conference :macroexpand-deep,
+   :preferred-time "Friday 3pm-8pm",
+   :speakers #{:ludger-solbach},
+   :submission-timestamp "24/09/2025 10:14:12",
+   :abstract
+   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations.\nIt has been build with AI assistance right from the beginning. Four months in the implementation, I have gained some\nexperience with AI assisted coding, which I'd like to share in this talk.\n\nFirst I like to give an overview of QClojure to set the stage.\nI will show the tools and the workflow for AI assisted coding, including some prompts.\nThen we look at the actual process of working with the AI.\nFinally I will give you some of my best practices and summarize with the lessons learned.",
+   :session-type :talk,
+   :approved-recording true},
+  "Computer Graphics with Clojure, LWJGL, and Fastmath"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-noj,
+   :preferred-time "October 18th, 10am to 9pm",
+   :speakers #{:jan-wedekind},
+   :submission-timestamp "23/09/2025 00:09:04",
+   :abstract
+   "sfsim is a space flight simulator under development. It makes use of Clojure, LWJGL, and Fastmath among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.",
+   :session-type :talk,
+   :approved-recording true},
+  "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability"
+  {:prefer-prerecorded nil,
+   :approved-to-speak true,
+   :approved-civitas-notebook nil,
+   :conference :macroexpand-deep,
+   :preferred-time nil,
+   :speakers #{:jelena-losic},
+   :submission-timestamp "21/09/2025 23:54:01",
+   :abstract
+   "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using libpython-clj to call PyTorch Geometric from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
+   :session-type :talk,
+   :approved-recording :partial},
+  "AI panel"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook :not-relevant,
+   :conference :macroexpand-deep,
+   :preferred-time nil,
+   :speakers #{:kira-howe},
+   :submission-timestamp "02/10/2025 15:39:54",
+   :abstract "TBA",
+   :session-type :talk,
+   :approved-recording true},
+  "Experimenting with LLM Subliminal Learning in Clojure"
+  {:prefer-prerecorded :maybe,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-deep,
+   :preferred-time "Flexible",
+   :speakers #{:justin-tirrell},
+   :submission-timestamp "28/09/2025 21:27:34",
+   :abstract
+   "I read the paper \"Subliminal Learning: Language models transmit behavioral traits via hidden signals in data\" and wanted to explore these concepts myself. In this talk I replicate some of the results from the paper interactively in a live coding demo. Specifically, we will look at running multiple interdependent batch processing jobs from a Clojure REPL.",
+   :session-type :talk,
+   :approved-recording true},
+  "Compiling Probabilistic Programs to Neural Networks"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook true,
+   :conference :macroexpand-deep,
+   :preferred-time "9:00-24:00",
+   :speakers #{:christian-weilbach},
+   :submission-timestamp "29/09/2025 17:51:08",
+   :abstract
+   "We will take a look at how one can write a stochastic simulator for a simple business model, how embeddings and a graph neural network architecture for the compute graph of the simulator can be constructed, and how this neural network can be trained to provide fast inference over unknown variables of the simulator to guide the business process in real-time. We will then discuss the underlying methodology of probabilistic programming more systematically through the Daphne compiler [1], and how it provides different ways to compile a subset of Clojure simulator programs to neural network architectures, and as of lately also CUDA. The goal of this discussion is to provide understanding of both the methodology and applications of probabilistic programming, as well as to gather more feedback from the Clojure community to render Daphne not only an academic platform, but also more practical. One such potential practical ...\n\n[1] https://github.com/plai-group/daphne",
+   :session-type :talk,
+   :approved-recording true},
+  "Clay workshop"
+  {:prefer-prerecorded false,
+   :approved-to-speak true,
+   :approved-civitas-notebook :not-relevant,
+   :conference :macroexpand-noj,
+   :preferred-time nil,
+   :speakers #{:timothy-pratley},
+   :submission-timestamp "02/10/2025 15:38:37",
+   :abstract "TBA",
+   :session-type :talk,
+   :approved-recording true}},
+ :timeline
+ {:cfp-open "2025-06-01",
+  :cfp-deadline "2025-09-08",
+  :schedule-announcement "2025-09-15",
+  :macroexpand-noj-start "2025-10-17",
+  :macroexpand-noj-end "2025-10-18",
+  :macroexpand-deep-start "2025-10-24",
+  :macroexpand-deep-end "2025-10-25"},
+ :session-types
+ {:tutorial "Tutorial Talk",
+  :data-analysis "Data Analysis",
+  :tools-libraries "Tools & Libraries",
+  :documentation "Documentation",
+  :ai-application "AI Application",
+  :research "Research & Theory",
+  :production "Production Systems"},
+ :people
+ {:teodor-heggelund
+  {:full-name "Teodor Heggelund",
+   :bio
+   "Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.",
+   :images ["teodor-heggelund.jpg"]},
+  :matthias-buehlmaier
+  {:full-name "Matthias Buehlmaier",
+   :bio
+   "Matthias Buehlmaier is an associate professor of teaching in finance and the BBA(IBGM) program director at HKU Business School, University of Hong Kong (HKU). He is a winner of several teaching and research awards, e.g. the Outstanding Teaching Award and the Teaching Innovation Award granted by HKU. His research has appeared in the Review of Financial Studies (Oxford University Press) and has been featured in the Harvard Law School Forum on Corporate Governance and Financial Regulation.",
+   :images ["matthias-buehlmaier.jpg"]},
+  :kira-howe
+  {:full-name "Kira Howe",
+   :bio
+   "Kira's been writing software for the past decade with a focus on data-intensive web apps and a particular interest in Clojure programming and data visualization. She loves open source development, fostering communities online and in-person, and learning new things. When she's not at her desk, you can find Kira teaching yoga, playing violin, or running with her dog.",
+   :images ["kira-howe.jpeg"]},
+  :ludger-solbach
+  {:full-name "Ludger Solbach",
+   :bio
+   "Ludger Solbach is a software architect for 'msg for automotive' in Germany.\nHe is the creator of Overarch, a lightweight system modeling and visualization tool\nand QClojure, a library for programming quantum computers.\nHis favorite programming language by far is Clojure, a modern functional LISP.\nHe uses it for his open source work, at work when feasible, and to create\nmodels for his 3D-Printer.",
+   :images ["ludger-solbach.jpg"]},
+  :timothy-pratley
+  {:full-name "Timothy Pratley",
+   :bio
+   "Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.",
+   :images ["timothy-pratley.jpg"]},
+  :jelena-losic
+  {:full-name "Jelena Losic",
+   :bio
+   "I am Jelena, function programming developer with 10 years of industry experience and mathematical educational background. I am curious about the networks and laws that are applicable in large scales, leading to better understanding of big data.",
+   :images ["jelena-losic.jpeg"]},
+  :daniel-szmulewicz
+  {:full-name "Daniel Szmulewicz",
+   :bio "Functional programmer. Closet philosopher. Emacs meshugge.",
+   :images ["daniel-szmulewicz.jpg"]},
+  :harold
+  {:full-name "Harold",
+   :images ["harold.jpeg"],
+   :bio
+   "Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML\n "},
+  :ygimantas-medelis
+  {:full-name "Žygimantas Medelis",
+   :bio
+   "Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.",
+   :images nil},
+  :siyoung-byun
+  {:full-name "Siyoung Byun",
+   :images ["siyoung-byun.jpg"],
+   :bio
+   "Siyoung Byun is currently a freelance fullstack Clojure developer living in Seoul, South Korea. She studied Astrophysics for her undergrad in Canada,  where she first got into programming and data analysis while running simulations of dying stars crashing into each other. Ever since she was introduced to Clojure at a previous employer in 2018, it quickly became her favorite programming language and her passion. \n Beyond software development and data analysis, she likes to hike, bike, knit, sew and snuggle with her cat in her free time.\n "},
+  :christian-weilbach
+  {:full-name "Christian Weilbach",
+   :bio
+   "Christian Weilbach is a long-time Clojure developer working on distributed systems such as replikativ, Datahike, and supporting libraries. He has also worked with Clojure during his PhD on probabilistic programming, besides work on different simulators and inference systems in Julia, Python and C++. He has published many machine learning & AI related papers in top tier venues and is working on an organizational framework of life & intelligence (both in theory and implementation).",
+   :images ["christian-weilbach.jpg"]},
+  :stoica-ovidiu
+  {:full-name "Stoica Ovidiu",
+   :bio
+   "Ovidiu Stoica is a software developer with 10 years of experience, out of which the last 5 are in Clojure. He has been building voice AI agents for the last 1.5 years for enterprise clients and is the creator of simulflow - a voice AI agent clojure framework.",
+   :images ["stoica-ovidiu.png"]},
+  :edward-widjaja
+  {:full-name "Edward Widjaja",
+   :bio
+   "Edward Widjaja is a final-year Data Science and Engineering student at the University of Hong Kong. He's always been interested in anything nerdy; from algorithms and trading systems to quirky side projects, he is now channeling that curiosity into finance. Currently taking a semester off to work at a bank, he's exploring how emerging technologies intersect with financial markets. His goal is to build a career that combines data-driven decision-making with practical financial solutions. In his spare time, Edward enjoys swimming, gaming, and chatting about anything from market trends to tech experiments, so feel free to reach out!",
+   :images ["edward-widjaja.jpg"]},
+  :daniel-slutsky
+  {:full-name "Daniel Slutsky",
+   :images ["daniel-slutsky.jpeg"],
+   :bio
+   "Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.\n His approach towards open-source communities is drawn from his past experiences in various activist groups.\n "},
+  :jan-wedekind
+  {:full-name "Jan Wedekind",
+   :bio
+   "Jan studied compiler construction and robotics and later did a PhD in computer vision. He currently works in industry developing inspection software. His first programming languages were Omikron Basic and later Borland Pascal. In industry he used C++, Ruby, and Python. In his spare time he got interested in Ruby, GNU Guile, and finally Clojure.",
+   :images ["jan-wedekind.png"]},
+  :mike-travers
+  {:full-name "Mike Travers",
+   :bio
+   "Mike Travers is an independent consultant and software engineer based in the San Francisco Bay Area, with over 40 years of experience designing systems that make programming more expressive and accessible. As the founder of Hyperphor (1988-present), Mike specializes in scientific knowledge management, AI applications, scientific visualization, and interaction design for commercial and academic clients. He has...",
+   :images ["mike-travers.jpg"]},
+  :tanvi-nagar
+  {:full-name "Tanvi Nagar",
+   :bio
+   "Tanvi Nagar is a final year student at the University of Hong Kong, studying International Business and Global Management. She is passionate about mathematics, finance and their integration with technology - which is why she chose Information Systems and Analytics as her second major. Hoping to build a career in finance, she has solidified her technical and professional skills through roles in Financial Services Consulting, Corporate Banking and Wealth Management. Being a curious mind, she is always looking to broaden her horizons through learning about new things, travelling the world and plays badminton in her free time along with reading voraciously.",
+   :images ["tanvi-nagar.jpg"]},
+  :luke-zeitlin
+  {:full-name "Luke Zeitlin",
+   :bio
+   "I'm a programmer, musician and clojure enthusiast and former co-founder of Gybe, a water quality remote sensing startup. I'm interested in music, DSP, functional programming and plants.",
+   :images ["luke-zeitlin.jpg"]},
+  :ben-sless
+  {:full-name "Ben Sless",
+   :bio "Software engineer, father of three, enthusiastic Clojurian",
+   :images ["ben-sless.jpg"]},
+  :justin-tirrell
+  {:full-name "Justin Tirrell",
+   :bio "I'm Justin, I'm a Clojure maximalist and independent software developer. I like working on trading systems and GUIs and rolling my own software tools and yak shaving.",
+   :images ["justin-tirrell.jpeg"]}},
+ :links
+ {:cfp-form nil,
+  :zulip-chat "https://scicloj.github.io/docs/community/chat/",
+  :contact "https://scicloj.github.io/docs/community/contact/",
+  :clojure-civitas "https://clojurecivitas.github.io/",
+  :clojure-data-tutorials
+  "https://scicloj.github.io/clojure-data-tutorials/",
+  :noj "https://scicloj.github.io/noj/",
+  :macroexpand-gatherings
+  "https://scicloj.github.io/docs/community/groups/macroexpand/",
+  :scinoj-light "https://scicloj.github.io/scinoj-light-1/"}}

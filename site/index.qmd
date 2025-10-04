@@ -1,42 +1,111 @@
-<div class="main-page">
+---
+format:
+  html: {toc: false, toc-depth: 4, theme: cosmo}
 
-::: {.conf-intro}
-::: {.conf-intro__scicloj-logo}
-![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo"}
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="index_files/md-default0.js" type="text/javascript"></script><script src="index_files/md-default1.js" type="text/javascript"></script>
+![Scicloj logo](images/sci-cloj-logo-transparent.svg){fig-align="center" width="120px"}
+
+
+```{=html}
+<div><style>
+.people-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+.small-photo {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.small-photo:hover {
+  transform: scale(1.15);
+}
+</style><div class="main-page"><div class="conf-intro"><div class="conf-intro__title-wrapper"><h1 class="conf-intro__title">Macroexpand 2025</h1><div class="conf-intro__subtitle">Clojure through Data and AI</div></div></div><div class="conf-intro__description">Macroexpand 2025 is a pair of online Clojure conferences organised by <a href="https://scicloj.github.io/">Scicloj</a>. They will focus on two high-priority topics on our journey to make Clojure grow to new fields: <strong>Noj</strong> and <strong>AI</strong>.<br /><br />These conferences are related to and informed by the <a href="https://scicloj.github.io/docs/community/groups/macroexpand/">Macroexpand Gatherings</a> series, which focuses on in-depth discussions around Clojure growth.</div></div></div>
+```
+
+
+
+## Our Community
+
+Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.
+
+
+## Our Community
+
+Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.
+
+::: {.people-gallery}
+[![Ben Sless](images/ben-sless.jpg){width="80px" height="80px" .person-photo}](./people.html#ben-sless)
+[![Christian Weilbach](images/christian-weilbach.jpg){width="80px" height="80px" .person-photo}](./people.html#christian-weilbach)
+[![Daniel Slutsky](images/daniel-slutsky.jpeg){width="80px" height="80px" .person-photo}](./people.html#daniel-slutsky)
+[![Daniel Szmulewicz](images/daniel-szmulewicz.jpg){width="80px" height="80px" .person-photo}](./people.html#daniel-szmulewicz)
+[![Edward Widjaja](images/edward-widjaja.jpg){width="80px" height="80px" .person-photo}](./people.html#edward-widjaja)
+[![Harold](images/harold.jpeg){width="80px" height="80px" .person-photo}](./people.html#harold)
+[![Jan Wedekind](images/jan-wedekind.png){width="80px" height="80px" .person-photo}](./people.html#jan-wedekind)
+[![Jelena Losic](images/jelena-losic.jpeg){width="80px" height="80px" .person-photo}](./people.html#jelena-losic)
+[![Justin Tirrell](images/justin-tirrell.jpeg){width="80px" height="80px" .person-photo}](./people.html#justin-tirrell)
+[![Kira Howe](images/kira-howe.jpeg){width="80px" height="80px" .person-photo}](./people.html#kira-howe)
+[![Ludger Solbach](images/ludger-solbach.jpg){width="80px" height="80px" .person-photo}](./people.html#ludger-solbach)
+[![Luke Zeitlin](images/luke-zeitlin.jpg){width="80px" height="80px" .person-photo}](./people.html#luke-zeitlin)
+[![Matthias Buehlmaier](images/matthias-buehlmaier.jpg){width="80px" height="80px" .person-photo}](./people.html#matthias-buehlmaier)
+[![Mike Travers](images/mike-travers.jpg){width="80px" height="80px" .person-photo}](./people.html#mike-travers)
+[![Siyoung Byun](images/siyoung-byun.jpg){width="80px" height="80px" .person-photo}](./people.html#siyoung-byun)
+[![Stoica Ovidiu](images/stoica-ovidiu.png){width="80px" height="80px" .person-photo}](./people.html#stoica-ovidiu)
+[![Tanvi Nagar](images/tanvi-nagar.jpg){width="80px" height="80px" .person-photo}](./people.html#tanvi-nagar)
+[![Teodor Heggelund](images/teodor-heggelund.jpg){width="80px" height="80px" .person-photo}](./people.html#teodor-heggelund)
+[![Timothy Pratley](images/timothy-pratley.jpg){width="80px" height="80px" .person-photo}](./people.html#timothy-pratley)
 :::
 
-::: {.conf-intro__title-wrapper}
-# Macroexpand 2025 {class="conf-intro__title"}
 
-::: {.conf-intro__subtitle} 
-Clojure through Data and AI 
-:::
-:::
-:::
 
-<div class="conf-intro__description">
-Macroexpand 2025 is a pair of online Clojure conferences organised by [Scicloj](https://scicloj.github.io/). They will focus on two high-priority topics on our journey to make Clojure grow to new fields: **Noj** and **AI**.
-
-These conferences are related to and informed by the [Macroexpand Gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series, which focuses on in-depth discussions around Clojure growth.
-</div>
 
 ## Event Timeline
 
-|**Timeline**|**Event Details**|
-|-|-|
-|**Ongoing**|Project idea discussions|
-|**September 8, 2025**|Final deadline for talk proposal submissions|
-|**October 17-18, 2025**|[Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem|
-|**October 24-25, 2025**|[Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference|
-: {.gradient-table}
+| **Timeline** | **Event Details** |
+  |--|--|
+  | **Ongoing** | Project idea discussions |
+  | **September 8, 2025** | Final deadline for talk proposal submissions |
+  | **October 17-18, 2025** | [Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
+  | **October 24-25, 2025** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
+  
+  : {.gradient-table}
+
 
 ## Speakers
 
 Please see the [Speakers](./speakers.html) chapter for guidelines.
 
+
+## Sessions
+
+Explore all the conference [Sessions](./sessions.html) organized by track, with speaker details and abstracts.
+
+
 ## Target Audience
 
 The kind of audience we have in mind is of general Clojure programmers. Some talks will also be useful and interesting for people who are new to Clojure as well.
+
 
 ## Goals
 
@@ -47,11 +116,12 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 * Build on lessons learned from [SciNoj Light](https://scicloj.github.io/scinoj-light-1/).
 * Follow our conference-making approach that we 🎥 [recently discussed](https://www.youtube.com/watch?v=n6ICeRyXHsI).
 
+
 ## Chat
 
 All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
+
 ## Contact
 
 [Any questions? Let us talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
-</div>
