@@ -70,6 +70,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 [![Luke Zeitlin](images/luke-zeitlin.jpg){width="80px" height="80px" .person-photo}](./people.html#luke-zeitlin)
 [![Matthias Buehlmaier](images/matthias-buehlmaier.jpg){width="80px" height="80px" .person-photo}](./people.html#matthias-buehlmaier)
 [![Mike Travers](images/mike-travers.jpg){width="80px" height="80px" .person-photo}](./people.html#mike-travers)
+[![Peter Stromberg](images/peter-stromberg.jpg){width="80px" height="80px" .person-photo}](./people.html#peter-stromberg)
 [![Siyoung Byun](images/siyoung-byun.jpg){width="80px" height="80px" .person-photo}](./people.html#siyoung-byun)
 [![Stoica Ovidiu](images/stoica-ovidiu.png){width="80px" height="80px" .person-photo}](./people.html#stoica-ovidiu)
 [![Tanvi Nagar](images/tanvi-nagar.jpg){width="80px" height="80px" .person-photo}](./people.html#tanvi-nagar)

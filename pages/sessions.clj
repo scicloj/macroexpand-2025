@@ -116,17 +116,13 @@
       (map (fn [[title data]]
              (session-card title data (:people conference-data))))))
 
-;; ### Other Sessions
+#_(def other-sessions (get sessions-by-conference nil []))
 
-^:kindly/hide-code
-(def other-sessions (get sessions-by-conference nil []))
-
-^:kindly/hide-code
-(when (seq other-sessions)
-  (kind/fragment
-   (->> other-sessions
-        (map (fn [[title data]]
-               (session-card title data (:people conference-data)))))))
+#_(when (seq other-sessions)
+    (kind/fragment
+     (->> other-sessions
+          (map (fn [[title data]]
+                 (session-card title data (:people conference-data)))))))
 
 ;; ---
 

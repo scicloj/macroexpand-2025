@@ -96,142 +96,104 @@
   [:h4 {:style "margin-top: 2rem; color: #2c5282;"} (:date (:day2 schedule-data))]
   (schedule-table (:day2 schedule-data))
 
-  [:p {:style "margin-top: 1rem; font-style: italic; color: #666;"}
+  [:p {:id "timezone-notice" :style "margin-top: 1rem; color: #666; font-size: 0.9rem;"}
+   [:em "Times will be displayed in your local timezone"]]
+
+  [:p {:style "margin-top: 0.5rem; font-style: italic; color: #666;"}
    "* Schedule is subject to change. Final schedule with confirmed speakers will be published closer to the conference date."]])
 
 ;; ### Connect & Discuss
 ;;
 ;; Join the conversation at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) where we coordinate projects and help each other with data science in Clojure.
-;;
-;; [Questions? Let's talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
 
 ^:kindly/hide-code
 (kind/hiccup
- [:div
-  [:div {:style "margin: 2rem 0; text-align: center;"}
-   [:button {:id "global-timezone-toggle"
-             :style "background: #2c5282; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;"
-             :onclick "toggleAllTimezones()"} "Show Times in My Timezone"]
-   [:div {:id "timezone-info" :style "margin-top: 0.5rem; color: #666; font-style: italic; font-size: 0.85rem;"}]]
+ [:div {:style "text-align: center; margin: 2rem 0;"}
+  [:a {:href "https://scicloj.github.io/docs/community/contact/"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none;"}
+   "Questions? Let's talk"]])
 
-  [:script {:type "text/javascript"}
-   "
-function toggleAllTimezones() {
-  const button = document.getElementById('global-timezone-toggle');
-  const timezoneInfo = document.getElementById('timezone-info');
-  const tables = document.querySelectorAll('.schedule-table');
-  
-  const isShowingUTC = button.textContent.includes('My Timezone');
-  
-  if (isShowingUTC) {
-    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    
-    // Update all schedule tables
-    tables.forEach(table => {
-      const timeCells = table.querySelectorAll('.time-cell');
-      
-      timeCells.forEach(cell => {
-        const dateStr = cell.dataset.date;
-        const timeRange = cell.dataset.timeRange;
-        
-        if (dateStr && timeRange) {
-          const [startTime, endTime] = timeRange.split('-');
-          const [startHour] = startTime.split(':');
-          const [endHour] = endTime.split(':');
-          
-          // Parse date string like 'Thursday, October 17, 2025'
-          const dateMatch = dateStr.match(/(\\w+), (\\w+) (\\d+), (\\d+)/);
-          if (dateMatch) {
-            const [, , month, day, year] = dateMatch;
-            const monthNames = ['January','February','March','April','May','June',
-                               'July','August','September','October','November','December'];
-            const monthNum = monthNames.indexOf(month);
-            
-            if (monthNum !== -1) {
-              const startDate = new Date(year, monthNum, day, parseInt(startHour), 0);
-              const endDate = new Date(year, monthNum, day, parseInt(endHour), 0);
-              
-              const localStartTime = startDate.toLocaleTimeString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: false,
-                timeZone: userTimezone
-              });
-              
-              const localEndTime = endDate.toLocaleTimeString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit', 
-                hour12: false,
-                timeZone: userTimezone
-              });
-              
-              cell.textContent = localStartTime + '-' + localEndTime;
-            }
-          }
-        }
-      });
-      
-      // Update table headers
-      const headers = table.querySelectorAll('th');
-      if (headers.length > 0) {
-        headers[0].textContent = 'Time (Local)';
-      }
-    });
-    
-    button.textContent = 'Show Times in UTC';
-    timezoneInfo.textContent = 'Times shown in ' + userTimezone + ' timezone';
-  } else {
-    // Reset to UTC
-    tables.forEach(table => {
-      const timeCells = table.querySelectorAll('.time-cell');
-      
-      timeCells.forEach(cell => {
-        const timeRange = cell.dataset.timeRange;
-        if (timeRange) {
-          cell.textContent = timeRange;
-        }
-      });
-      
-      // Update table headers back to UTC
-      const headers = table.querySelectorAll('th');
-      if (headers.length > 0) {
-        headers[0].textContent = 'Time (UTC)';
-      }
-    });
-    
-    button.textContent = 'Show Times in My Timezone';
-    timezoneInfo.textContent = '';
-  }
-}
-
-// Add class to existing tables for easier targeting
+^:kindly/hide-code
+(kind/hiccup
+ [:script {:type "text/javascript"}
+  "
+// Automatically convert times to user's timezone on page load
 document.addEventListener('DOMContentLoaded', function() {
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  
+  // Update timezone notice
+  const timezoneNotice = document.getElementById('timezone-notice');
+  if (timezoneNotice) {
+    timezoneNotice.innerHTML = '<em>All times shown in ' + userTimezone + '</em>';
+  }
+  
+  // Find all tables and process them
   const tables = document.querySelectorAll('table');
+  
   tables.forEach(table => {
-    if (table.querySelector('th') && table.querySelector('th').textContent.includes('Time')) {
-      table.classList.add('schedule-table');
+    const timeHeader = table.querySelector('th');
+    if (timeHeader && timeHeader.textContent.includes('Time')) {
+      // Update header to show timezone
+      timeHeader.textContent = 'Time (' + userTimezone + ')';
       
-      // Add data attributes to time cells
-      const timeCells = table.querySelectorAll('td');
-      timeCells.forEach((cell, index) => {
-        if (index % 2 === 0) { // Time columns (every other cell)
-          const timeText = cell.textContent.trim();
-          if (timeText.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
-            cell.classList.add('time-cell');
-            cell.dataset.timeRange = timeText;
-            
-            // Find the date from the preceding h4
-            let dateElement = cell.closest('table').previousElementSibling;
-            while (dateElement && dateElement.tagName !== 'H4') {
-              dateElement = dateElement.previousElementSibling;
-            }
-            if (dateElement) {
-              cell.dataset.date = dateElement.textContent.trim();
+      // Find date from previous H4 element
+      let dateElement = table.previousElementSibling;
+      while (dateElement && dateElement.tagName !== 'H4') {
+        dateElement = dateElement.previousElementSibling;
+      }
+      
+      if (dateElement) {
+        const dateText = dateElement.textContent.trim();
+        const dateMatch = dateText.match(/(\\w+), (\\w+) (\\d+), (\\d+)/);
+        
+        if (dateMatch) {
+          const [, , month, day, year] = dateMatch;
+          const monthNames = ['January','February','March','April','May','June',
+                             'July','August','September','October','November','December'];
+          const monthNum = monthNames.indexOf(month);
+          
+          if (monthNum !== -1) {
+            const cells = table.querySelectorAll('td');
+            for (let i = 0; i < cells.length; i += 2) {
+              const timeCell = cells[i];
+              const timeText = timeCell.textContent.trim();
+              
+              if (timeText.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
+                const [startTime, endTime] = timeText.split('-');
+                const [startHour] = startTime.split(':');
+                const [endHour] = endTime.split(':');
+                
+                // Create dates in UTC since schedule times are in UTC
+                const startDate = new Date(Date.UTC(year, monthNum, day, parseInt(startHour), 0));
+                const endDate = new Date(Date.UTC(year, monthNum, day, parseInt(endHour), 0));
+                
+                const localStartTime = startDate.toLocaleTimeString('en-US', {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  hour12: false,
+                  timeZone: userTimezone
+                });
+                
+                const localEndTime = endDate.toLocaleTimeString('en-US', {
+                  hour: '2-digit',
+                  minute: '2-digit', 
+                  hour12: false,
+                  timeZone: userTimezone
+                });
+                
+                // Store UTC time as tooltip
+                timeCell.title = 'UTC: ' + timeText;
+                timeCell.style.cursor = 'help';
+                
+                timeCell.textContent = localStartTime + '-' + localEndTime;
+              }
             }
           }
         }
-      });
+      }
     }
   });
 });
-"]])
+"])

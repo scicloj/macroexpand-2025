@@ -145,13 +145,19 @@ models for his 3D-Printer.</p></div><div style="clear: both;"></div></div></div>
 
 
 ```{=html}
+<div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><h3 style="display: inline; margin: 0; font-size: 1.25rem;">Panel: broader implications of AI</h3><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Kira Howe" src="images/kira-howe.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" /></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4>Abstract</h4><p>TBA</p></div><div><h4>Speaker</h4><div key="kira-howe" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Kira Howe" src="images/kira-howe.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" /><div><h5 style="margin-bottom: 0.5rem;">Kira Howe</h5><p>Kira's been writing software for the past decade with a focus on data-intensive web apps and a particular interest in Clojure programming and data visualization. She loves open source development, fostering communities online and in-person, and learning new things. When she's not at her desk, you can find Kira teaching yoga, playing violin, or running with her dog.</p></div><div style="clear: both;"></div></div></div></div></details></div>
+```
+
+
+
+```{=html}
 <div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><h3 style="display: inline; margin: 0; font-size: 1.25rem;">Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability</h3><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Jelena Losic" src="images/jelena-losic.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" /></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4>Abstract</h4><p>Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using libpython-clj to call PyTorch Geometric from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.</p></div><div><h4>Speaker</h4><div key="jelena-losic" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Jelena Losic" src="images/jelena-losic.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" /><div><h5 style="margin-bottom: 0.5rem;">Jelena Losic</h5><p>I am Jelena, function programming developer with 10 years of industry experience and mathematical educational background. I am curious about the networks and laws that are applicable in large scales, leading to better understanding of big data.</p></div><div style="clear: both;"></div></div></div></div></details></div>
 ```
 
 
 
 ```{=html}
-<div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><h3 style="display: inline; margin: 0; font-size: 1.25rem;">AI panel</h3><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Kira Howe" src="images/kira-howe.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" /></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4>Abstract</h4><p>TBA</p></div><div><h4>Speaker</h4><div key="kira-howe" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Kira Howe" src="images/kira-howe.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" /><div><h5 style="margin-bottom: 0.5rem;">Kira Howe</h5><p>Kira's been writing software for the past decade with a focus on data-intensive web apps and a particular interest in Clojure programming and data visualization. She loves open source development, fostering communities online and in-person, and learning new things. When she's not at her desk, you can find Kira teaching yoga, playing violin, or running with her dog.</p></div><div style="clear: both;"></div></div></div></div></details></div>
+<div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><h3 style="display: inline; margin: 0; font-size: 1.25rem;">Panel: AI assistants</h3><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Peter Stromberg" src="images/peter-stromberg.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" /></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4>Abstract</h4><p></p></div><div><h4>Speaker</h4><div key="peter-stromberg" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Peter Stromberg" src="images/peter-stromberg.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" /><div><h5 style="margin-bottom: 0.5rem;">Peter Stromberg</h5><p>Peter Strömberg is a curious coder since 40+ years and is extra fascinated by making software that he uses do new things. These days he practically lives in VS Code and is making Clojure related extensions for it. Peter maintains Calva, Joyride, and Calva Backseat Driver. Backseat Driver is an AI extension for VS Code Copilot, giving the AI tools for using the Clojure REPL, as well as for structural editing.</p></div><div style="clear: both;"></div></div></div></div></details></div>
 ```
 
 
@@ -167,18 +173,6 @@ models for his 3D-Printer.</p></div><div style="clear: both;"></div></div></div>
 
 [1] https://github.com/plai-group/daphne</p></div><div><h4>Speaker</h4><div key="christian-weilbach" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Christian Weilbach" src="images/christian-weilbach.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" /><div><h5 style="margin-bottom: 0.5rem;">Christian Weilbach</h5><p>Christian Weilbach is a long-time Clojure developer working on distributed systems such as replikativ, Datahike, and supporting libraries. He has also worked with Clojure during his PhD on probabilistic programming, besides work on different simulators and inference systems in Julia, Python and C++. He has published many machine learning & AI related papers in top tier venues and is working on an organizational framework of life & intelligence (both in theory and implementation).</p></div><div style="clear: both;"></div></div></div></div></details></div>
 ```
-
-
-
-### Other Sessions
-
-
-::: {.printedClojure}
-```clojure
-nil
-
-```
-:::
 
 
 ---
