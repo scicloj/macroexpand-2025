@@ -30,8 +30,9 @@
 ;; ## All Sessions
 
 ^:kindly/hide-code
-(defn session-card-new [session-title session-data people-data]
-  (let [speakers (:speakers session-data)
+(defn session-card-new [session-key session-data people-data]
+  (let [session-title (:title session-data)
+        speakers (:speakers session-data)
         speaker-names (format-speaker-list speakers people-data)
         abstract (:abstract session-data)
         speaker-images (when (seq speakers)
@@ -100,8 +101,8 @@
 ^:kindly/hide-code
 (kind/fragment
  (->> noj-sessions
-      (map (fn [[title data]]
-             (session-card title data (:people conference-data))))))
+      (map (fn [[session-key data]]
+             (session-card session-key data (:people conference-data))))))
 
 ;; ### Macroexpand-Deep Sessions 🤖
 
@@ -113,8 +114,8 @@
 ^:kindly/hide-code
 (kind/fragment
  (->> deep-sessions
-      (map (fn [[title data]]
-             (session-card title data (:people conference-data))))))
+      (map (fn [[session-key data]]
+             (session-card session-key data (:people conference-data))))))
 
 #_(def other-sessions (get sessions-by-conference nil []))
 
