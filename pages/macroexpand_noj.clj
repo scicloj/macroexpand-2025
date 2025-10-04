@@ -147,37 +147,32 @@
             :slots (schedule-vector->slots (:day2 schedule) sessions people)}}))
 
 ^:kindly/hide-code
-(defn schedule-table [day-data]
-  (kind/hiccup
-   [:table {:style "width: 100%; border-collapse: collapse; margin: 1rem 0;"}
-    [:thead
-     [:tr
-      [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold;"} "Time (UTC)"]
-      [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold;"} "Session"]]]
-    [:tbody
-     (for [[time-slot session] (sort (:slots day-data))]
+(defn columnar-schedule-table [day1-data day2-data]
+  (let [day1-slots (sort (:slots day1-data))
+        day2-slots (sort (:slots day2-data))
+        all-time-slots (map first day1-slots)]
+    (kind/hiccup
+     [:table {:style "width: 100%; border-collapse: collapse; margin: 1rem 0;"}
+      [:thead
        [:tr
-        [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa; vertical-align: top;"} time-slot]
-        [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
-         session]])]]))
+        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 15%;"} "Time (UTC)"]
+        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 42.5%;"}
+         (:date day1-data)]
+        [:th {:style "border: 1px solid #ddd; padding: 12px; background-color: #f8f9fa; text-align: left; font-weight: bold; width: 42.5%;"}
+         (:date day2-data)]]]
+      [:tbody
+       (for [time-slot all-time-slots]
+         (let [day1-session (get (into {} day1-slots) time-slot)
+               day2-session (get (into {} day2-slots) time-slot)]
+           [:tr
+            [:td {:style "border: 1px solid #ddd; padding: 12px; font-family: monospace; background-color: #f8f9fa; vertical-align: top;"} time-slot]
+            [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
+             day1-session]
+            [:td {:style "border: 1px solid #ddd; padding: 8px; vertical-align: top;"}
+             day2-session]]))]])))
 
 ^:kindly/hide-code
-(kind/md "::: {.panel-tabset}")
-
-^:kindly/hide-code
-(kind/md (str "## " (:date (:day1 schedule-data))))
-
-^:kindly/hide-code
-(schedule-table (:day1 schedule-data))
-
-^:kindly/hide-code
-(kind/md (str "## " (:date (:day2 schedule-data))))
-
-^:kindly/hide-code
-(schedule-table (:day2 schedule-data))
-
-^:kindly/hide-code
-(kind/md ":::")
+(columnar-schedule-table (:day1 schedule-data) (:day2 schedule-data))
 
 ^:kindly/hide-code
 (kind/hiccup
@@ -224,60 +219,66 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update header to show timezone
       timeHeader.textContent = 'Time (' + userTimezone + ')';
       
-      // Find date from previous H4 element
-      let dateElement = table.previousElementSibling;
-      while (dateElement && dateElement.tagName !== 'H4') {
-        dateElement = dateElement.previousElementSibling;
-      }
+      // Get date headers (2nd and 3rd columns)
+      const headers = table.querySelectorAll('th');
+      const day1Header = headers[1];
+      const day2Header = headers[2];
       
-      if (dateElement) {
-        const dateText = dateElement.textContent.trim();
+      // Extract dates from headers
+      const processDateHeader = (header) => {
+        if (!header) return null;
+        const dateText = header.textContent.trim();
         const dateMatch = dateText.match(/(\\w+), (\\w+) (\\d+), (\\d+)/);
-        
         if (dateMatch) {
           const [, , month, day, year] = dateMatch;
           const monthNames = ['January','February','March','April','May','June',
                              'July','August','September','October','November','December'];
           const monthNum = monthNames.indexOf(month);
-          
-          if (monthNum !== -1) {
-            const cells = table.querySelectorAll('td');
-            for (let i = 0; i < cells.length; i += 2) {
-              const timeCell = cells[i];
-              const timeText = timeCell.textContent.trim();
-              
-              if (timeText.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
-                const [startTime, endTime] = timeText.split('-');
-                const [startHour] = startTime.split(':');
-                const [endHour] = endTime.split(':');
-                
-                // Create dates in UTC since schedule times are in UTC
-                const startDate = new Date(Date.UTC(year, monthNum, day, parseInt(startHour), 0));
-                const endDate = new Date(Date.UTC(year, monthNum, day, parseInt(endHour), 0));
-                
-                const localStartTime = startDate.toLocaleTimeString('en-US', {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                  hour12: false,
-                  timeZone: userTimezone
-                });
-                
-                const localEndTime = endDate.toLocaleTimeString('en-US', {
-                  hour: '2-digit',
-                  minute: '2-digit', 
-                  hour12: false,
-                  timeZone: userTimezone
-                });
-                
-                // Store UTC time as tooltip
-                timeCell.title = 'UTC: ' + timeText;
-                timeCell.style.cursor = 'help';
-                
-                timeCell.textContent = localStartTime + '-' + localEndTime;
-              }
-            }
-          }
+          return { month: monthNum, day: parseInt(day), year: parseInt(year) };
         }
+        return null;
+      };
+      
+      const day1Date = processDateHeader(day1Header);
+      const day2Date = processDateHeader(day2Header);
+      
+      if (day1Date && day2Date) {
+        const rows = table.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const cells = row.querySelectorAll('td');
+          const timeCell = cells[0];
+          
+          if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
+            const timeText = timeCell.textContent.trim();
+            const [startTime, endTime] = timeText.split('-');
+            const [startHour] = startTime.split(':');
+            const [endHour] = endTime.split(':');
+            
+            // Convert for day 1 (using day1Date)
+            const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), 0));
+            const endDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(endHour), 0));
+            
+            const localStartTime = startDate1.toLocaleTimeString('en-US', {
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: false,
+              timeZone: userTimezone
+            });
+            
+            const localEndTime = endDate1.toLocaleTimeString('en-US', {
+              hour: '2-digit',
+              minute: '2-digit', 
+              hour12: false,
+              timeZone: userTimezone
+            });
+            
+            // Store UTC time as tooltip
+            timeCell.title = 'UTC: ' + timeText;
+            timeCell.style.cursor = 'help';
+            
+            timeCell.textContent = localStartTime + '-' + localEndTime;
+          }
+        });
       }
     }
   });
