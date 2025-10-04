@@ -342,7 +342,7 @@
    :session-type :talk,
    :approved-recording true},
   :session/panel-ai-assistants
-  {:speakers #{:peter-stromberg},
+  {:speakers #{:peter-stromberg :bruce-hauman},
    :conference :macroexpand-deep,
    :title "Panel: AI assistants"},
   :session/building-dynamic-entity-extraction-with-bosquet
