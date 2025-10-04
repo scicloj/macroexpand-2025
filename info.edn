@@ -21,7 +21,8 @@
   :tanvi-nagar
   :luke-zeitlin
   :ben-sless
-  :justin-tirrell],
+  :justin-tirrell
+  :cameron-barre],
  :goals
  ["Build new open collaborations around key Clojure growth priorities"
   "Create a welcoming environment for newcomers to get involved"
@@ -93,8 +94,8 @@
      :session/panel-ai-assistants
      :session/panel-ai-assistants
      :session/building-realtime-voice-ai-agents-with-clojure---best-practices
+     :session/building-event-sourced-agentic-applications-with-grain
      :session/lightning-galks
-     :session/TBD
      :session/conclusion]}}},
  :preferred-topics
  {:macroexpand-noj
@@ -124,7 +125,12 @@
   :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg",
   :target-audience "General Clojure programmers, including beginners"},
  :sessions
- {:session/natural-language-interfaces-for-scientific-computing
+ {:session/building-event-sourced-agentic-applications-with-grain
+  {:speakers #{:cameron-barre}
+   :title "Building Event Sourced Agentic Applications with Grain"
+   :abstract "Learn how ObneyAI uses its open source Clojure framework called Grain to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
+   :conference :macroexpand-deep}
+  :session/natural-language-interfaces-for-scientific-computing
   {:prefer-prerecorded nil,
    :approved-to-speak nil,
    :approved-civitas-notebook nil,
@@ -434,7 +440,11 @@
   :research "Research & Theory",
   :production "Production Systems"},
  :people
- {:teodor-heggelund
+ {:cameron-barre
+  {:full-name "Cameron Barre"
+   :bio "Cameron Barre has been a professional Clojure developer since 2016 and is currently CTO at a small consultancy in the AI engineering space called ObneyAI."
+   :images ["cameron-barre.jpeg"]}
+  :teodor-heggelund
   {:full-name "Teodor Heggelund",
    :bio
    "Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.",

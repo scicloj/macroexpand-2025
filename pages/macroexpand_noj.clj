@@ -162,14 +162,26 @@
          session]])]]))
 
 ^:kindly/hide-code
+(kind/md "::: {.panel-tabset}")
+
+^:kindly/hide-code
+(kind/md (str "## " (:date (:day1 schedule-data))))
+
+^:kindly/hide-code
+(schedule-table (:day1 schedule-data))
+
+^:kindly/hide-code
+(kind/md (str "## " (:date (:day2 schedule-data))))
+
+^:kindly/hide-code
+(schedule-table (:day2 schedule-data))
+
+^:kindly/hide-code
+(kind/md ":::")
+
+^:kindly/hide-code
 (kind/hiccup
  [:div
-  [:h4 {:style "margin-top: 2rem; color: #2c5282;"} (:date (:day1 schedule-data))]
-  (schedule-table (:day1 schedule-data))
-
-  [:h4 {:style "margin-top: 2rem; color: #2c5282;"} (:date (:day2 schedule-data))]
-  (schedule-table (:day2 schedule-data))
-
   [:p {:id "timezone-notice" :style "margin-top: 1rem; color: #666; font-size: 0.9rem;"}
    [:em "Times will be displayed in your local timezone"]]
 

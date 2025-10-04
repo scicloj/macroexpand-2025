@@ -30,6 +30,12 @@ Sort alphabetically by name
 
 
 ```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Cameron Barre" src="images/cameron-barre.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Cameron Barre</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Cameron Barre has been a professional Clojure developer since 2016 and is currently CTO at a small consultancy in the AI engineering space called ObneyAI.</p></div></div></div>
+```
+
+
+
+```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Christian Weilbach" src="images/christian-weilbach.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Christian Weilbach</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Christian Weilbach is a long-time Clojure developer working on distributed systems such as replikativ, Datahike, and supporting libraries. He has also worked with Clojure during his PhD on probabilistic programming, besides work on different simulators and inference systems in Julia, Python and C++. He has published many machine learning & AI related papers in top tier venues and is working on an organizational framework of life & intelligence (both in theory and implementation).</p></div></div></div>
 ```
 

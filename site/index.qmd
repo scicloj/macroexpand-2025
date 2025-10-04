@@ -57,6 +57,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 
 ::: {.people-gallery}
 [![Ben Sless](images/ben-sless.jpg){width="80px" height="80px" .person-photo}](./people.html#ben-sless)
+[![Cameron Barre](images/cameron-barre.jpeg){width="80px" height="80px" .person-photo}](./people.html#cameron-barre)
 [![Christian Weilbach](images/christian-weilbach.jpg){width="80px" height="80px" .person-photo}](./people.html#christian-weilbach)
 [![Daniel Slutsky](images/daniel-slutsky.jpeg){width="80px" height="80px" .person-photo}](./people.html#daniel-slutsky)
 [![Daniel Szmulewicz](images/daniel-szmulewicz.jpg){width="80px" height="80px" .person-photo}](./people.html#daniel-szmulewicz)
