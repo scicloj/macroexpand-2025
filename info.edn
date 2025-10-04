@@ -256,7 +256,10 @@
    "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using libpython-clj to call PyTorch Geometric from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
    :session-type :talk,
    :approved-recording :partial},
-  "AI panel"
+  "Panel: AI assistants"
+  {:speakers #{:peter-stromberg}
+   :conference :macroexpand-deep,}
+  "Panel: broader implications of AI"
   {:prefer-prerecorded false,
    :approved-to-speak true,
    :approved-civitas-notebook :not-relevant,
@@ -319,7 +322,12 @@
   :research "Research & Theory",
   :production "Production Systems"},
  :people
- {:teodor-heggelund
+ {:peter-stromberg
+  {:full-name "Peter Stromberg"
+   :bio
+   "Peter Strömberg is a curious coder since 40+ years and is extra fascinated by making software that he uses do new things. These days he practically lives in VS Code and is making Clojure related extensions for it. Peter maintains Calva, Joyride, and Calva Backseat Driver. Backseat Driver is an AI extension for VS Code Copilot, giving the AI tools for using the Clojure REPL, as well as for structural editing."
+   :images ["peter-stromberg.jpg"]}
+  :teodor-heggelund
   {:full-name "Teodor Heggelund",
    :bio
    "Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.",
