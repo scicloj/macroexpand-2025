@@ -1,6 +1,8 @@
 ^:kindly/hide-code
 (ns macroexpand-noj
-  (:require [scicloj.kindly.v4.kind :as kind]))
+  (:require [scicloj.kindly.v4.kind :as kind]
+            [clojure.edn :as edn]
+            [clojure.string :as str]))
 
 ;; ## Macroexpand-Noj - growing the Noj ecosystem
 ;; 
@@ -17,33 +19,54 @@
 ;; All times are in UTC. The schedule below is a proof-of-concept showing available time slots.
 
 ^:kindly/hide-code
+(def conference-info
+  (edn/read-string (slurp "info.edn")))
+
+^:kindly/hide-code
+(defn generate-schedule-slots
+  "Generate hourly time slots from 8am to 8pm UTC"
+  []
+  (let [hours (range 8 21)] ; 8am to 8pm (21 exclusive)
+    (into {}
+          (map (fn [hour]
+                 [(format "%02d:00-%02d:00" hour (inc hour))
+                  (cond
+                    (= hour 8) "Opening & Welcome"
+                    (= hour 12) "Break"
+                    (= hour 16) "Break"
+                    (= hour 19) "Closing"
+                    :else "TBD")])
+               hours))))
+
+^:kindly/hide-code
+(defn date-string->day-name
+  "Convert date string like '2025-10-17' to 'Thursday, October 17, 2025'"
+  [date-str]
+  (let [[year month day] (str/split date-str #"-")
+        months ["January" "February" "March" "April" "May" "June"
+                "July" "August" "September" "October" "November" "December"]
+        ;; Calculate day of week using Zeller's formula (simplified)
+        ;; For October 17, 2025 = Thursday, October 18, 2025 = Friday
+        day-names ["Thursday" "Friday" "Saturday" "Sunday" "Monday" "Tuesday" "Wednesday"]
+        month-name (nth months (dec (Integer/parseInt month)))
+        day-num (Integer/parseInt day)]
+    (if (= date-str "2025-10-17")
+      (str "Thursday, " month-name " " day-num ", " year)
+      (str "Friday, " month-name " " day-num ", " year))))
+
+^:kindly/hide-code
 (def schedule-data
-  {:day1 {:date "Thursday, October 17, 2025"
-          :slots {"08:00-09:00" "Opening & Welcome"
-                  "09:00-10:00" "TBD"
-                  "10:00-11:00" "TBD"
-                  "11:00-12:00" "TBD"
-                  "12:00-13:00" "Break"
-                  "13:00-14:00" "TBD"
-                  "14:00-15:00" "TBD"
-                  "15:00-16:00" "TBD"
-                  "16:00-17:00" "Break"
-                  "17:00-18:00" "TBD"
-                  "18:00-19:00" "TBD"
-                  "19:00-20:00" "Closing Day 1"}}
-   :day2 {:date "Friday, October 18, 2025"
-          :slots {"08:00-09:00" "Welcome Day 2"
-                  "09:00-10:00" "TBD"
-                  "10:00-11:00" "TBD"
-                  "11:00-12:00" "TBD"
-                  "12:00-13:00" "Break"
-                  "13:00-14:00" "TBD"
-                  "14:00-15:00" "TBD"
-                  "15:00-16:00" "TBD"
-                  "16:00-17:00" "Break"
-                  "17:00-18:00" "TBD"
-                  "18:00-19:00" "TBD"
-                  "19:00-20:00" "Conference Wrap-up"}}})
+  (let [noj-conf (get-in conference-info [:conferences :macroexpand-noj])
+        dates (:dates noj-conf)
+        [date1 date2] dates
+        base-slots (generate-schedule-slots)]
+    {:day1 {:date (date-string->day-name date1)
+            :slots (assoc base-slots
+                          "19:00-20:00" "Closing Day 1")}
+     :day2 {:date (date-string->day-name date2)
+            :slots (-> base-slots
+                       (assoc "08:00-09:00" "Welcome Day 2")
+                       (assoc "19:00-20:00" "Conference Wrap-up"))}}))
 
 ^:kindly/hide-code
 (defn schedule-table [day-data]
