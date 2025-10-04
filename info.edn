@@ -440,7 +440,14 @@
   :research "Research & Theory",
   :production "Production Systems"},
  :people
- {:cameron-barre
+ {:bruce-hauman
+  {:full-name "Bruce Hauman"
+   :bio "Bruce Hauman is a prolific toolmaker and long-time contributor to the Clojure community, perhaps best known as the creator of Figwheel—the build tool that introduced live code reloading and made real-time browser development a reality for ClojureScript developers. Bruce’s legendary 2014 “Flappy Bird” demo not only turned heads, but set a new standard for interactive coding, enabling developers to see their changes instantly and stay in the creative flow.
+Bruce also built Devcards, a library for interactive documentation that brings a visual REPL experience to ClojureScript, and Rebel Readline, the feature-rich REPL for Clojure and ClojureScript, complete with syntax highlighting, code completion, and inline documentation.
+Bruce’s latest project, Clojure MCP, tackles the next frontier: enabling AI assistants to work Clojure projects by connecting directly to live REPLs, providing real-time feedback and validation to improve the quality of AI-generated Clojure code.
+Beyond his tool building chops, Bruce is guided by a profound respect for users and a conviction that developer tooling should be radically better—simple, powerful, and joyful to use. He’s also a fan of the outdoors: an avid canoe tripper, Appalachian Trail thru-hiker, and, currently, the hands-on renovator of a former church-turned-home in Saskatchewan."
+   :images ["bruce-hauman.jpeg"]}
+  :cameron-barre
   {:full-name "Cameron Barre"
    :bio "Cameron Barre has been a professional Clojure developer since 2016 and is currently CTO at a small consultancy in the AI engineering space called ObneyAI."
    :images ["cameron-barre.jpeg"]}
