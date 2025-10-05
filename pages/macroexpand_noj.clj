@@ -43,9 +43,9 @@
                                      :images
                                      first
                                      (as-> img
-                                           [:img {:src (str "images/" img)
-                                                  :alt (:full-name speaker-data)
-                                                  :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))))]
+                                         [:img {:src (str "images/" img)
+                                                :alt (:full-name speaker-data)
+                                                :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))))]
     (kind/hiccup
      [:div {:style "margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"}
 
@@ -63,7 +63,7 @@
         ;; Abstract section
         [:div {:style "margin-bottom: 1.5rem;"}
          [:h4 "Abstract"]
-         [:p abstract]]
+         (kind/md abstract)]
 
         ;; Speaker details with images
         (when (seq speakers)
@@ -75,9 +75,9 @@
                                          :images
                                          first
                                          (as-> img
-                                               [:img {:src (str "images/" img)
-                                                      :alt (:full-name speaker-data)
-                                                      :style "width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"}]))]
+                                             [:img {:src (str "images/" img)
+                                                    :alt (:full-name speaker-data)
+                                                    :style "width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"}]))]
                [:div {:key speaker-key :style "margin-bottom: 1.5rem; overflow: hidden;"}
                 (when speaker-image speaker-image)
                 [:div
