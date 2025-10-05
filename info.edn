@@ -43,7 +43,7 @@
      :session/macroexpand-3
      :session/noj-foundations
      :session/elements-of-malli
-     :session/lightning-galks
+     :session/lightning-talks
      :session/conclusion]}},
   :macroexpand-deep
   {:name "Macroexpand-Deep",
@@ -76,7 +76,7 @@
      :session/panel-ai-assistants
      :session/building-realtime-voice-ai-agents-with-clojure---best-practices
      :session/building-event-sourced-agentic-applications-with-grain
-     :session/lightning-galks
+     :session/lightning-talks
      :session/conclusion]}}},
  :preferred-topics
  {:macroexpand-noj
@@ -152,7 +152,7 @@
    "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon  FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
    :session-type :talk},
-  :session/lightning-galks
+  :session/lightning-talks
   {:title "Lightning Talks",
    :abstract "Various short talks by conference participants",
    :session-type :lightning,
