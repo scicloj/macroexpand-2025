@@ -284,7 +284,7 @@
    :approved-civitas-notebook :not-relevant,
    :conference :macroexpand-deep,
    :preferred-time nil,
-   :speakers #{:kira-howe :daniel-slutsky},
+   :speakers #{:kira-howe :siyoung-byun :daniel-slutsky},
    :submission-timestamp "02/10/2025 15:39:54",
    :abstract "We will discuss the broader picture of the AI rush and a few of the ways it affects our lives."
    :title "Panel: broader implications of AI",
