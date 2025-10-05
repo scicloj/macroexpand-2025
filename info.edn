@@ -292,7 +292,7 @@
    :session-type :talk,
    :approved-recording true},
   :session/panel-ai-assistants
-  {:speakers #{:peter-stromberg :bruce-hauman},
+  {:speakers #{:peter-stromberg :bruce-hauman :eric-dallo},
    :conference :macroexpand-deep,
    :title "Panel: AI assistants"
    :abstract "We will have a conversation with a few of the toolmakers behind Clojure's main AI assistants."},
@@ -436,6 +436,10 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   {:full-name "Daniel Szmulewicz",
    :bio "Functional programmer. Closet philosopher. Emacs meshugge.",
    :images ["daniel-szmulewicz.jpg"]},
+  :eric-dallo
+  {:full-name "Eric Dallo"
+   :bio "Eric Dallo is a Emacs, NixOS fanatic, he loves programming, especially when focused on dev tooling, He maintains clojure-lsp, ECA, deps-bin, lsp-mode, and other related libraries, Eric works with Clojure at Nubank and currently is focused on AI pair programming mutli-editors with ECA."
+   :images ["eric-dallo.jpeg"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio
