@@ -51,7 +51,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Speaker</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
  His approach towards open-source communities is drawn from his past experiences in various activist groups.
  </p></div></div></div>
 ```
@@ -71,7 +71,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Harold" src="images/harold.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Harold</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Speaker</p><p style="margin: 0; line-height: 1.6;">Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Harold" src="images/harold.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Harold</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML
  </p></div></div></div>
 ```
 

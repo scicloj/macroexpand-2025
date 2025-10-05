@@ -175,7 +175,7 @@
    :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablec/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the Noj toolkit. It will be a free-form session with audience participation.",
    :session-type :workshop,
    :conference :macroexpand-noj,
-   :speakers #{}},
+   :speakers #{:daniel-slutsky}},
   :session/experimenting-with-llm-subliminal-learning-in-clojure
   {:conference :macroexpand-deep,
    :speakers #{:justin-tirrell},
@@ -188,7 +188,7 @@
    :abstract "We will explore the workflow and ergonomics for publishihg at [Clojure Civitas](https://clojurecivitas.github.io), the new platform where Clojurians share thare ideas and explorations.",
    :session-type :workshop,
    :conference :macroexpand-noj,
-   :speakers #{}},
+   :speakers #{:timothy-pratley}},
   :session/computing-with-units-in-clojure
   {:prefer-prerecorded false,
    :approved-to-speak true,
