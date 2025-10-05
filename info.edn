@@ -200,7 +200,7 @@
    :speakers #{:teodor-heggelund},
    :submission-timestamp "22/09/2025 11:11:54",
    :abstract
-   "A quantity's unit plays a prominent role in science and engineering. Is it 5 milliseconds, 5 tons of 5 light-years? In software programming, we often resort to variables names as now-instant, time-ms and force-kn to convey the interpretation of a number such as \"5\".\n\nCome learn about units, unit systems and a pure data, REPL-friendly Clojure approach.",
+   "A quantity's unit plays a prominent role in science and engineering. Is it 5 milliseconds, 5 tons or 5 light-years? If you've ever named your variables now-instant, time-ms or force-kn to convey the interpretation of a number, this talk is for you!\n\nCome learn about units, unit systems and a pure data, REPL-friendly Clojure approach.",
    :title "Computing with units in Clojure",
    :session-type :talk,
    :approved-recording true},
