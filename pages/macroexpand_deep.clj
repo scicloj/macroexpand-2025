@@ -365,6 +365,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const day2Date = processDateHeader(day2Header);
     
     if (day1Date && day2Date) {
+      // Function to convert time text
+      const convertTime = (timeText, date) => {
+        const [startHour, startMinute] = timeText.split(':');
+        const startDate = new Date(Date.UTC(date.year, date.month, date.day, parseInt(startHour), parseInt(startMinute)));
+        return startDate.toLocaleTimeString('en-US', {
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false,
+          timeZone: userTimezone
+        });
+      };
+      
+      // Convert desktop table times
       const rows = table.querySelectorAll('tbody tr');
       rows.forEach(row => {
         const cells = row.querySelectorAll('td');
@@ -372,23 +385,26 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}/)) {
           const timeText = timeCell.textContent.trim();
-          const [startHour, startMinute] = timeText.split(':');
-          
-          // Convert for day 1 (using day1Date) 
-          const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), parseInt(startMinute)));
-          
-          const localStartTime = startDate1.toLocaleTimeString('en-US', {
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: false,
-            timeZone: userTimezone
-          });
+          const localStartTime = convertTime(timeText, day1Date);
           
           // Store UTC time as tooltip
           timeCell.title = 'UTC: ' + timeText;
           timeCell.style.cursor = 'help';
-          
           timeCell.textContent = localStartTime;
+        }
+      });
+      
+      // Convert mobile layout times
+      const mobileTimeHeaders = document.querySelectorAll('.mobile-time-header');
+      mobileTimeHeaders.forEach(timeHeader => {
+        if (timeHeader.textContent.match(/\\d{2}:\\d{2}/)) {
+          const timeText = timeHeader.textContent.trim();
+          const localStartTime = convertTime(timeText, day1Date);
+          
+          // Store UTC time as tooltip
+          timeHeader.title = 'UTC: ' + timeText;
+          timeHeader.style.cursor = 'help';
+          timeHeader.textContent = localStartTime;
         }
       });
     }

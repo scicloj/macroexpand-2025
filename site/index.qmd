@@ -74,6 +74,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 [![Tanvi Nagar](images/tanvi-nagar.jpg){width="80px" height="80px" .person-photo}](./people.html#tanvi-nagar)
 [![Teodor Heggelund](images/teodor-heggelund.jpg){width="80px" height="80px" .person-photo}](./people.html#teodor-heggelund)
 [![Timothy Pratley](images/timothy-pratley.jpg){width="80px" height="80px" .person-photo}](./people.html#timothy-pratley)
+[![Žygimantas Medelis](images/zygimantas-medelis.jpeg){width="80px" height="80px" .person-photo}](./people.html#zygimantas-medelis)
 :::
 
 
