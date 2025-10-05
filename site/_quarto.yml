@@ -21,6 +21,5 @@ website:
     - {href: index.qmd, text: Home}
     - {href: sessions.qmd, text: Sessions}
     - {href: people.qmd, text: People}
-    - {href: speakers.qmd, text: Speakers}
     - {href: macroexpand_noj.qmd, text: "Macroexpand-Noj"}
     - {href: macroexpand_deep.qmd, text: "Macroexpand-Deep"}

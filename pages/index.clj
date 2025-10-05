@@ -74,10 +74,6 @@
        (filter #(:images (second %)))
        (sort-by #(:full-name (second %)))))
 
-;; ## Our Community
-
-;; Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.
-
 ^:kindly/hide-code
 (kind/md
  (str "::: {.people-gallery}\n"
@@ -103,13 +99,15 @@
   
   : {.gradient-table}")
 
-;; ## Speakers
+;; ## How to Participate
 
-;; Please see the [Speakers](./speakers.html) chapter for guidelines.
-
-;; ## Sessions
-
-;; Explore all the conference [Sessions](./sessions.html) organized by track, with speaker details and abstracts.
+;; -  **🎟️ Free & Online** - Both conferences are completely free to attend!
+;; - **💻 Platform** - Join via Zoom (link provided upon registration)
+;; - **💬 Community** - Join the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) for real-time discussions
+;; - **📹 Recordings** - All talks will be recorded and shared publicly afterwards
+;; - **⏱️ Format** - Most sessions are 30 minutes talk + 20 minutes discussion
+;; - **📝 Registration** - Registration form coming soon! Check back here or follow us on Zulip for updates
+;; - **📢 Call for Proposals** - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!
 
 ;; ## Target Audience
 
