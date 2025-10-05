@@ -284,7 +284,7 @@
    :approved-civitas-notebook :not-relevant,
    :conference :macroexpand-deep,
    :preferred-time nil,
-   :speakers #{:kira-howe :siyoung-byun :daniel-slutsky},
+   :speakers #{:kira-howe :siavash-mohammady :siyoung-byun :daniel-slutsky},
    :submission-timestamp "02/10/2025 15:39:54",
    :abstract "We will discuss the broader picture of the AI rush and a few of the ways it affects our lives."
    :title "Panel: broader implications of AI",
@@ -301,7 +301,7 @@
    :approved-civitas-notebook true,
    :conference :macroexpand-deep,
    :preferred-time nil,
-   :speakers #{:ygimantas-medelis},
+   :speakers #{:zygimantas-medelis},
    :submission-timestamp "26/09/2025 06:22:32",
    :abstract
    "Every text processing application needs to answer a  question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how Bosquet, an LLM orchestration library, can help with building  entity extraction pipelines.",
@@ -445,11 +445,15 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
    :images ["harold.jpeg"],
    :bio
    "Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML\n "},
-  :ygimantas-medelis
+  :zygimantas-medelis
   {:full-name "Žygimantas Medelis",
    :bio
    "Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.",
    :images nil},
+  :siavash-mohammady
+  {:full-name "Siavash Mohammady"
+   :images ["siavash-mohammady.png"]
+   :bio ""}
   :siyoung-byun
   {:full-name "Siyoung Byun",
    :images ["siyoung-byun.jpg"],
