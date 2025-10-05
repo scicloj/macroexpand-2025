@@ -9,7 +9,7 @@
 (def conference-data
   (edn/read-string (slurp "info.edn")))
 
-;; ![Scicloj logo](images/sci-cloj-logo-transparent.svg){fig-align="center" width="120px"}
+;; ![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo" fig-align="center" width="120px"}
 
 ^:kindly/hide-code
 (kind/hiccup
