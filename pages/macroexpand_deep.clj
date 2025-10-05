@@ -14,9 +14,7 @@
 ;;
 ;; A two-day online event exploring AI systems in Clojure - from LLMs and neural networks to symbolic AI and hybrid approaches. Share production applications, research insights, and novel techniques that leverage Clojure's unique strengths for AI development. For Clojure programmers at all levels and AI practitioners curious about functional approaches.
 ;;
-;; ### Schedule (Draft)
-;;
-;; All times are in UTC. The schedule below is a proof-of-concept showing available time slots.
+;; ### Tentative Schedule
 
 ^:kindly/hide-code
 (def conference-info
@@ -24,16 +22,17 @@
 
 ^:kindly/hide-code
 (defn date-string->day-name
-  "Convert date string like '2025-10-24' to 'Friday, October 24, 2025'"
+  "Convert date string like '2025-10-24' to 'Friday, October 24'"
   [date-str]
   (let [[year month day] (str/split date-str #"-")
         months ["January" "February" "March" "April" "May" "June"
                 "July" "August" "September" "October" "November" "December"]
         month-name (nth months (dec (Integer/parseInt month)))
         day-num (Integer/parseInt day)]
+    ;; Correct days: Oct 24, 2025 = Friday, Oct 25, 2025 = Saturday
     (if (= date-str "2025-10-24")
-      (str "Friday, " month-name " " day-num ", " year)
-      (str "Saturday, " month-name " " day-num ", " year))))
+      (str "Friday, " month-name " " day-num)
+      (str "Saturday, " month-name " " day-num))))
 
 ^:kindly/hide-code
 (defn format-speaker-list [speakers people-data]
@@ -65,7 +64,7 @@
       [:details
        [:summary {:style "cursor: pointer; list-style: none; padding: 0.5rem 0;"}
         [:div {:style "display: flex; align-items: center; justify-content: space-between;"}
-         [:h3 {:style "display: inline; margin: 0; font-size: 1.25rem;"}
+         [:p {:style "display: inline; margin: 0; font-size: 1rem; font-weight: bold;"}
           session-title]
          (when (seq (remove nil? speaker-images))
            [:div {:style "display: flex; align-items: center; flex-shrink: 0;"}
@@ -121,7 +120,7 @@
 (defn schedule-vector->slots
   "Convert schedule vector to time slot map with session cards"
   [schedule-vec sessions-data people-data]
-  (let [start-hour 8]
+  (let [start-hour 9]
     (into {}
           (map-indexed
            (fn [idx session-key]
@@ -171,8 +170,8 @@
           text-align: left; 
           font-weight: bold;
         }
-        .time-col { width: 15%; }
-        .day-col { width: 42.5%; }
+        .time-col { width: 12%; }
+        .day-col { width: 44%; }
         .time-cell {
           font-family: monospace; 
           background-color: #f8f9fa;
@@ -227,7 +226,7 @@
       [:table {:class "schedule-table"}
        [:thead
         [:tr
-         [:th {:class "time-col"} "Time (UTC)"]
+         [:th {:class "time-col" :id "time-header-deep"} "Time"]
          [:th {:class "day-col"} (:date day1-data)]
          [:th {:class "day-col"} (:date day2-data)]]]
        [:tbody
@@ -264,7 +263,7 @@
 (kind/hiccup
  [:div
   [:p {:id "timezone-notice-deep" :style "margin-top: 1rem; color: #666; font-size: 0.9rem;"}
-   [:em "Times will be displayed in your local timezone"]]
+   [:em "Detecting your timezone..."]]
 
   [:p {:style "margin-top: 0.5rem; font-style: italic; color: #666;"}
    "* Schedule is subject to change. Final schedule with confirmed speakers will be published closer to the conference date."]])
@@ -290,82 +289,83 @@
 document.addEventListener('DOMContentLoaded', function() {
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   
+  // Update time header to show user's timezone
+  const timeHeader = document.getElementById('time-header-deep');
+  if (timeHeader) {
+    timeHeader.textContent = 'Time (' + userTimezone + ')';
+  }
+  
   // Update timezone notice
   const timezoneNotice = document.getElementById('timezone-notice-deep');
   if (timezoneNotice) {
-    timezoneNotice.innerHTML = '<em>All times shown in ' + userTimezone + '</em>';
+    timezoneNotice.innerHTML = '<em>Times shown in your local timezone: ' + userTimezone + '</em>';
   }
   
   // Find all tables and process them
   const tables = document.querySelectorAll('table');
   
   tables.forEach(table => {
-    const timeHeader = table.querySelector('th');
-    if (timeHeader && timeHeader.textContent.includes('Time')) {
-      // Update header to show timezone
-      timeHeader.textContent = 'Time (' + userTimezone + ')';
-      
-      // Get date headers (2nd and 3rd columns)
-      const headers = table.querySelectorAll('th');
-      const day1Header = headers[1];
-      const day2Header = headers[2];
-      
-      // Extract dates from headers
-      const processDateHeader = (header) => {
-        if (!header) return null;
-        const dateText = header.textContent.trim();
-        const dateMatch = dateText.match(/(\\w+), (\\w+) (\\d+), (\\d+)/);
-        if (dateMatch) {
-          const [, , month, day, year] = dateMatch;
-          const monthNames = ['January','February','March','April','May','June',
-                             'July','August','September','October','November','December'];
-          const monthNum = monthNames.indexOf(month);
-          return { month: monthNum, day: parseInt(day), year: parseInt(year) };
-        }
-        return null;
-      };
-      
-      const day1Date = processDateHeader(day1Header);
-      const day2Date = processDateHeader(day2Header);
-      
-      if (day1Date && day2Date) {
-        const rows = table.querySelectorAll('tbody tr');
-        rows.forEach(row => {
-          const cells = row.querySelectorAll('td');
-          const timeCell = cells[0];
-          
-          if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
-            const timeText = timeCell.textContent.trim();
-            const [startTime, endTime] = timeText.split('-');
-            const [startHour] = startTime.split(':');
-            const [endHour] = endTime.split(':');
-            
-            // Convert for day 1 (using day1Date)
-            const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), 0));
-            const endDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(endHour), 0));
-            
-            const localStartTime = startDate1.toLocaleTimeString('en-US', {
-              hour: '2-digit',
-              minute: '2-digit',
-              hour12: false,
-              timeZone: userTimezone
-            });
-            
-            const localEndTime = endDate1.toLocaleTimeString('en-US', {
-              hour: '2-digit',
-              minute: '2-digit', 
-              hour12: false,
-              timeZone: userTimezone
-            });
-            
-            // Store UTC time as tooltip
-            timeCell.title = 'UTC: ' + timeText;
-            timeCell.style.cursor = 'help';
-            
-            timeCell.textContent = localStartTime + '-' + localEndTime;
-          }
-        });
+    // Get date headers (2nd and 3rd columns)
+    const headers = table.querySelectorAll('th');
+    const day1Header = headers[1];
+    const day2Header = headers[2];
+    
+    // Extract dates from headers
+    const processDateHeader = (header) => {
+      if (!header) return null;
+      const dateText = header.textContent.trim();
+      // Updated regex to match \"Friday, October 24\" format (no year)
+      const dateMatch = dateText.match(/(\\w+), (\\w+) (\\d+)/);
+      if (dateMatch) {
+        const [, , month, day] = dateMatch;
+        const monthNames = ['January','February','March','April','May','June',
+                           'July','August','September','October','November','December'];
+        const monthNum = monthNames.indexOf(month);
+        return { month: monthNum, day: parseInt(day), year: 2025 }; // Hardcode 2025
       }
+      return null;
+    };
+    
+    const day1Date = processDateHeader(day1Header);
+    const day2Date = processDateHeader(day2Header);
+    
+    if (day1Date && day2Date) {
+      const rows = table.querySelectorAll('tbody tr');
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        const timeCell = cells[0];
+        
+        if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
+          const timeText = timeCell.textContent.trim();
+          const [startTime, endTime] = timeText.split('-');
+          const [startHour] = startTime.split(':');
+          const [endHour] = endTime.split(':');
+          
+          // Convert for day 1 (using day1Date)
+          const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), 0));
+          const endDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(endHour), 0));
+          
+          const localStartTime = startDate1.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+            timeZone: userTimezone
+          });
+          
+          const localEndTime = endDate1.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit', 
+            hour12: false,
+            timeZone: userTimezone
+          });
+          
+          // Store UTC time as tooltip
+          timeCell.title = 'UTC: ' + timeText;
+          timeCell.style.cursor = 'help';
+          
+          timeCell.textContent = localStartTime + '-' + localEndTime;
+        }
+      });
     }
   });
 });
