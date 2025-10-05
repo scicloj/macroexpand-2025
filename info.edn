@@ -5,24 +5,6 @@
   :format :online,
   :organizer "Scicloj",
   :organizer-url "https://scicloj.github.io/"},
- :speakers
- [:matthias-buehlmaier
-  :kira-howe
-  :ludger-solbach
-  :timothy-pratley
-  :jelena-losic
-  :daniel-szmulewicz
-  :ygimantas-medelis
-  :christian-weilbach
-  :stoica-ovidiu
-  :edward-widjaja
-  :jan-wedekind
-  :mike-travers
-  :tanvi-nagar
-  :luke-zeitlin
-  :ben-sless
-  :justin-tirrell
-  :cameron-barre],
  :goals
  ["Build new open collaborations around key Clojure growth priorities"
   "Create a welcoming environment for newcomers to get involved"
@@ -30,7 +12,6 @@
   "Talk Driven Development - use conferences as target dates for project milestones"
   "Build on lessons learned from SciNoj Light"
   "Follow our conference-making approach"],
- :hosts [:daniel-slutsky],
  :conferences
  {:macroexpand-noj
   {:name "Macroexpand-Noj",

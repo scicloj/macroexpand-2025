@@ -127,7 +127,7 @@
           (map-indexed
            (fn [idx session-key]
              (let [hour (+ start-hour idx)]
-               [(format "%02d:00-%02d:00" hour (inc hour))
+               [(format "%02d:00" hour)
                 (session-key->display session-key sessions-data people-data)]))
            schedule-vec))))
 
@@ -151,44 +151,78 @@
         all-time-slots (map first day1-slots)]
     (kind/hiccup
      [:div
-      ;; Add responsive CSS
+      ;; Ultra-aggressive CSS to override any external table styles
       [:style "
         .schedule-container {
-          width: 100%;
+          width: 100% !important;
         }
-        .schedule-table {
-          width: 100%; 
-          border-collapse: collapse; 
-          margin: 1rem 0;
+        table.schedule-table {
+          width: 100% !important; 
+          border-collapse: collapse !important; 
+          margin: 1rem 0 !important;
+          table-layout: fixed !important;
         }
-        .schedule-table th,
-        .schedule-table td {
-          border: 1px solid #ddd; 
-          padding: 12px; 
-          vertical-align: top;
+        /* Override Quarto's automatic colgroup */
+        table.schedule-table colgroup col:first-child {
+          width: 120px !important;
         }
-        .schedule-table th {
-          background-color: #f8f9fa; 
-          text-align: left; 
-          font-weight: bold;
+        table.schedule-table colgroup col:nth-child(2),
+        table.schedule-table colgroup col:nth-child(3) {
+          width: calc((100% - 120px) / 2) !important;
         }
-        .time-col { width: 12%; }
-        .day-col { width: 44%; }
-        .time-cell {
-          font-family: monospace; 
-          background-color: #f8f9fa;
+        table.schedule-table th,
+        table.schedule-table td {
+          border: 1px solid #ddd !important; 
+          padding: 8px !important; 
+          vertical-align: top !important;
+          box-sizing: border-box !important;
         }
-        .session-cell {
-          padding: 8px;
+        table.schedule-table th {
+          background-color: #f8f9fa !important; 
+          text-align: left !important; 
+          font-weight: bold !important;
+        }
+        table.schedule-table th:first-child {
+          width: 120px !important; 
+          max-width: 120px !important;
+          min-width: 120px !important;
+          text-align: center !important;
+          padding: 6px !important;
+          word-wrap: break-word !important;
+          hyphens: auto !important;
+        }
+        table.schedule-table td:first-child { 
+          width: 120px !important; 
+          max-width: 120px !important;
+          min-width: 120px !important;
+          text-align: center !important;
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          padding: 6px !important;
+        }
+        table.schedule-table th:nth-child(2),
+        table.schedule-table th:nth-child(3),
+        table.schedule-table td:nth-child(2),
+        table.schedule-table td:nth-child(3) { 
+          width: calc((100% - 120px) / 2) !important;
+        }
+        table.schedule-table .time-cell {
+          font-family: monospace !important; 
+          background-color: #f8f9fa !important;
+          text-align: center !important;
+          font-size: 0.75rem !important;
+        }
+        table.schedule-table .session-cell {
+          padding: 8px !important;
         }
         
         /* Mobile responsive styles */
         @media (max-width: 768px) {
-          .schedule-table {
-            display: none;
+          table.schedule-table {
+            display: none !important;
           }
           .mobile-schedule {
-            display: block;
+            display: block !important;
           }
           .mobile-day-section {
             margin-bottom: 2rem;
@@ -219,18 +253,18 @@
         /* Hide mobile layout on desktop */
         @media (min-width: 769px) {
           .mobile-schedule {
-            display: none;
+            display: none !important;
           }
         }
       "]
 
-      ;; Desktop three-column table
+      ;; Desktop table layout with ultra-specific selectors
       [:table {:class "schedule-table"}
        [:thead
         [:tr
-         [:th {:class "time-col" :id "time-header-deep"} "Time"]
-         [:th {:class "day-col"} (:date day1-data)]
-         [:th {:class "day-col"} (:date day2-data)]]]
+         [:th {:id "time-header-deep"} "Time"]
+         [:th (:date day1-data)]
+         [:th (:date day2-data)]]]
        [:tbody
         (for [time-slot all-time-slots]
           (let [day1-session (get (into {} day1-slots) time-slot)
@@ -291,10 +325,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   
-  // Update time header to show user's timezone
+  // Update time header to show user's timezone (abbreviated)
   const timeHeader = document.getElementById('time-header-deep');
   if (timeHeader) {
-    timeHeader.textContent = 'Time (' + userTimezone + ')';
+    // Shorten timezone for compact display
+    const shortTz = userTimezone.split('/').pop() || userTimezone;
+    timeHeader.textContent = 'Time - ' + shortTz;
+    timeHeader.title = 'Times shown in: ' + userTimezone;
   }
   
   // Update timezone notice
@@ -337,15 +374,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const cells = row.querySelectorAll('td');
         const timeCell = cells[0];
         
-        if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}-\\d{2}:\\d{2}/)) {
+        if (timeCell && timeCell.textContent.match(/\\d{2}:\\d{2}/)) {
           const timeText = timeCell.textContent.trim();
-          const [startTime, endTime] = timeText.split('-');
-          const [startHour] = startTime.split(':');
-          const [endHour] = endTime.split(':');
+          const [startHour, startMinute] = timeText.split(':');
           
-          // Convert for day 1 (using day1Date)
-          const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), 0));
-          const endDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(endHour), 0));
+          // Convert for day 1 (using day1Date) 
+          const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), parseInt(startMinute)));
           
           const localStartTime = startDate1.toLocaleTimeString('en-US', {
             hour: '2-digit',
@@ -354,18 +388,11 @@ document.addEventListener('DOMContentLoaded', function() {
             timeZone: userTimezone
           });
           
-          const localEndTime = endDate1.toLocaleTimeString('en-US', {
-            hour: '2-digit',
-            minute: '2-digit', 
-            hour12: false,
-            timeZone: userTimezone
-          });
-          
           // Store UTC time as tooltip
           timeCell.title = 'UTC: ' + timeText;
           timeCell.style.cursor = 'help';
           
-          timeCell.textContent = localStartTime + '-' + localEndTime;
+          timeCell.textContent = localStartTime;
         }
       });
     }

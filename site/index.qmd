@@ -92,8 +92,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 
 ## How to Participate
 
-**🎟️ Free & Online** - Both conferences are completely free to attend!
-
+-  **🎟️ Free & Online** - Both conferences are completely free to attend!
 - **💻 Platform** - Join via Zoom (link provided upon registration)
 - **💬 Community** - Join the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) for real-time discussions
 - **📹 Recordings** - All talks will be recorded and shared publicly afterwards
