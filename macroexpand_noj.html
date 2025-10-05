@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9024aff429979bf84a7583d057308587.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cbfe3423f7c2d58eaabab9050db089fa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,10 +73,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Macroexpand 2025">
 <meta property="og:description" content="Clojure online conferences by Scicloj">
-<meta property="og:image" content="https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png">
+<meta property="og:image" content="https://scicloj.github.io/macroexpand-2025/images/teodor-heggelund.jpg">
 <meta property="og:site_name" content="Macroexpand 2025">
-<meta property="og:image:height" content="419">
-<meta property="og:image:width" content="390">
+<meta property="og:image:alt" content="Teodor Heggelund">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -105,8 +104,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./speakers.html"> 
-<span class="menu-text">Speakers</span></a>
+    <a class="nav-link" href="./sessions.html"> 
+<span class="menu-text">Sessions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./people.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./macroexpand_noj.html" aria-current="page"> 
@@ -152,38 +155,842 @@ ul.task-list li input[type="checkbox"] {
 <p>The Macroexpand-Noj conference is focused on the growth of the <a href="https://scicloj.github.io/noj">Noj</a> toolkit for data science. Noj is a Clojure toolkit that brings together data processing, visualization, and scientific computing libraries into a cohesive whole. This conference is one of the <a href="./">Macroexpand 2025</a> pair of conferences organized by <a href="https://scicloj.github.io/">Scicloj</a>.</p>
 <section id="about-the-conference" class="level3">
 <h3 class="anchored" data-anchor-id="about-the-conference">About the Conference</h3>
-<p>This two-day online event brings together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure’s data science capabilities. Whether you’re analyzing real-world datasets, building new tools, or documenting existing libraries, this conference is for you.</p>
+<p>A two-day online event for sharing practical data science experiences, showcasing Noj ecosystem tools, and advancing Clojure’s data science capabilities through tutorials, case studies, and technical discussions. Designed for Clojure programmers at all levels interested in data science.</p>
+<p>📌 <strong><a href="./#how-to-participate">How to participate, register, and join →</a></strong></p>
 </section>
-<section id="call-for-proposals" class="level3">
-<h3 class="anchored" data-anchor-id="call-for-proposals">Call for Proposals</h3>
-</section>
-<section id="speakers" class="level3">
-<h3 class="anchored" data-anchor-id="speakers">Speakers</h3>
-<p>The Call for Proposals is already closed, but if you have any late ideas you wish to discuss, please reach out.</p>
-<p>Please review our <a href="./speakers.html">speaker guidelines</a> for detailed requirements and recommendations.</p>
-</section>
-<section id="preferred-topics" class="level3">
-<h3 class="anchored" data-anchor-id="preferred-topics">Preferred Topics</h3>
-<p>The following have been prioritized in reviewing the talk proposals:</p>
-<ul>
-<li><strong>Tutorial Talks</strong> (Highly Prioritized) - Beginner-friendly, hands-on tutorials introducing Noj components, data science workflows, and practical techniques</li>
-<li><strong>Documentation</strong> - Making libraries, theory, and methods accessible to the community</li>
-<li><strong>Real-world Analysis</strong> - Practical data science examples and case studies (including follow-ups from <a href="https://scicloj.github.io/scinoj-light-1/">SciNoj Light</a>)</li>
-<li><strong>Tools &amp; Libraries</strong> - New features, integrations, and ecosystem improvements</li>
-<li><strong>Data Engineering</strong> - Processing pipelines, ETL, and data infrastructure</li>
-<li><strong>Visualization</strong> - Interactive graphics, dashboards, and visual analytics</li>
-<li><strong>Scientific Computing</strong> - Numerical methods, statistics, and domain-specific applications</li>
-<li><strong>Machine Learning</strong> - Models, workflows, and ML engineering with Clojure</li>
-</ul>
-</section>
-<section id="target-audience" class="level3">
-<h3 class="anchored" data-anchor-id="target-audience">Target Audience</h3>
-<p>General Clojure programmers interested in data science, from beginners exploring data tools to experienced practitioners sharing advanced techniques. Talks should be accessible while providing depth and practical value.</p>
+<section id="tentative-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="tentative-schedule">Tentative Schedule</h3>
+<div><style>
+        .schedule-container {
+          width: 100% !important;
+        }
+        table.schedule-table {
+          width: 100% !important; 
+          border-collapse: collapse !important; 
+          margin: 1rem 0 !important;
+          table-layout: fixed !important;
+        }
+        /* Override Quarto's automatic colgroup */
+        table.schedule-table colgroup col:first-child {
+          width: 120px !important;
+        }
+        table.schedule-table colgroup col:nth-child(2),
+        table.schedule-table colgroup col:nth-child(3) {
+          width: calc((100% - 120px) / 2) !important;
+        }
+        table.schedule-table th,
+        table.schedule-table td {
+          border: 1px solid #ddd !important; 
+          padding: 8px !important; 
+          vertical-align: top !important;
+          box-sizing: border-box !important;
+        }
+        table.schedule-table th {
+          background-color: #f8f9fa !important; 
+          text-align: left !important; 
+          font-weight: bold !important;
+        }
+        table.schedule-table th:first-child {
+          width: 120px !important; 
+          max-width: 120px !important;
+          min-width: 120px !important;
+          text-align: center !important;
+          padding: 6px !important;
+          word-wrap: break-word !important;
+          hyphens: auto !important;
+        }
+        table.schedule-table td:first-child { 
+          width: 120px !important; 
+          max-width: 120px !important;
+          min-width: 120px !important;
+          text-align: center !important;
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          padding: 6px !important;
+        }
+        table.schedule-table th:nth-child(2),
+        table.schedule-table th:nth-child(3),
+        table.schedule-table td:nth-child(2),
+        table.schedule-table td:nth-child(3) { 
+          width: calc((100% - 120px) / 2) !important;
+        }
+        table.schedule-table .time-cell {
+          font-family: monospace !important; 
+          background-color: #f8f9fa !important;
+          text-align: center !important;
+          font-size: 0.75rem !important;
+        }
+        table.schedule-table .session-cell {
+          padding: 8px !important;
+        }
+        
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+          table.schedule-table {
+            display: none !important;
+          }
+          .mobile-schedule {
+            display: block !important;
+          }
+          .mobile-day-section {
+            margin-bottom: 2rem;
+          }
+          .mobile-day-section h3 {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 0 0 1rem 0;
+            border: 1px solid #ddd;
+            font-size: 1.1rem;
+          }
+          .mobile-time-slot {
+            border: 1px solid #ddd;
+            margin-bottom: 0.5rem;
+          }
+          .mobile-time-header {
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            font-family: monospace;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+          }
+          .mobile-session-content {
+            padding: 8px;
+          }
+        }
+        
+        /* Hide mobile layout on desktop */
+        @media (min-width: 769px) {
+          .mobile-schedule {
+            display: none !important;
+          }
+        }
+      </style>
+<table class="schedule-table caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th id="time-header" data-quarto-table-cell-role="th">Time</th>
+<th data-quarto-table-cell-role="th">Friday, October 17</th>
+<th data-quarto-table-cell-role="th">Saturday, October 18</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="time-cell">09:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Opening &amp; Welcome</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Opening &amp; Welcome</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-1" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<td class="time-cell">10:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Computing with units in Clojure</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/teodor-heggelund.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Teodor Heggelund">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-2" class="anchored">Abstract</h4>
+<div>
+<p>A quantity's unit plays a prominent role in science and engineering. Is it 5 milliseconds, 5 tons of 5 light-years? In software programming, we often resort to variables names as now-instant, time-ms and force-kn to convey the interpretation of a number such as "5".</p>
+<p>Come learn about units, unit systems and a pure data, REPL-friendly Clojure approach.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker" class="anchored">Speaker</h4>
+<div data-key="teodor-heggelund" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/teodor-heggelund.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Teodor Heggelund">
+<div>
+<h5 id="teodor-heggelund" style="margin-bottom: 0.5rem;" class="anchored">Teodor Heggelund</h5>
+<p>Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Growing a DSL</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/daniel-szmulewicz.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Daniel Szmulewicz">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-3" class="anchored">Abstract</h4>
+<div>
+<p>Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon FFmpeg's filtergraphs, but it transforms the notoriously complex and error-prone string-based syntax with a structured, data-first approach amenable to composition and enhanced programmability.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-1" class="anchored">Speaker</h4>
+<div data-key="daniel-szmulewicz" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/daniel-szmulewicz.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Daniel Szmulewicz">
+<div>
+<h5 id="daniel-szmulewicz" style="margin-bottom: 0.5rem;" class="anchored">Daniel Szmulewicz</h5>
+<p>Functional programmer. Closet philosopher. Emacs meshugge.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="time-cell">11:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Rolling Regressions in Clojure for Real-Time Alpha and Beta Monitoring</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/matthias-buehlmaier.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Matthias Buehlmaier"><img src="images/edward-widjaja.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Edward Widjaja"><img src="images/tanvi-nagar.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Tanvi Nagar">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-4" class="anchored">Abstract</h4>
+<div>
+<p>This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual(synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.</p>
+</div>
+</div>
+<div>
+<h4 id="speakers" class="anchored">Speakers</h4>
+<div data-key="matthias-buehlmaier" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/matthias-buehlmaier.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Matthias Buehlmaier">
+<div>
+<h5 id="matthias-buehlmaier" style="margin-bottom: 0.5rem;" class="anchored">Matthias Buehlmaier</h5>
+<p>Matthias Buehlmaier is an associate professor of teaching in finance and the BBA(IBGM) program director at HKU Business School, University of Hong Kong (HKU). He is a winner of several teaching and research awards, e.g. the Outstanding Teaching Award and the Teaching Innovation Award granted by HKU. His research has appeared in the Review of Financial Studies (Oxford University Press) and has been featured in the Harvard Law School Forum on Corporate Governance and Financial Regulation.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div data-key="edward-widjaja" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/edward-widjaja.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Edward Widjaja">
+<div>
+<h5 id="edward-widjaja" style="margin-bottom: 0.5rem;" class="anchored">Edward Widjaja</h5>
+<p>Edward Widjaja is a final-year Data Science and Engineering student at the University of Hong Kong. He's always been interested in anything nerdy; from algorithms and trading systems to quirky side projects, he is now channeling that curiosity into finance. Currently taking a semester off to work at a bank, he's exploring how emerging technologies intersect with financial markets. His goal is to build a career that combines data-driven decision-making with practical financial solutions. In his spare time, Edward enjoys swimming, gaming, and chatting about anything from market trends to tech experiments, so feel free to reach out!</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div data-key="tanvi-nagar" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/tanvi-nagar.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Tanvi Nagar">
+<div>
+<h5 id="tanvi-nagar" style="margin-bottom: 0.5rem;" class="anchored">Tanvi Nagar</h5>
+<p>Tanvi Nagar is a final year student at the University of Hong Kong, studying International Business and Global Management. She is passionate about mathematics, finance and their integration with technology - which is why she chose Information Systems and Analytics as her second major. Hoping to build a career in finance, she has solidified her technical and professional skills through roles in Financial Services Consulting, Corporate Banking and Wealth Management. Being a curious mind, she is always looking to broaden her horizons through learning about new things, travelling the world and plays badminton in her free time along with reading voraciously.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Open Practice</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-5" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<td class="time-cell">12:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>TBD</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-6" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>TBD</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-7" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="time-cell">13:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>TBD</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-8" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Computer Graphics with Clojure, LWJGL, and Fastmath</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/jan-wedekind.png" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Jan Wedekind">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-9" class="anchored">Abstract</h4>
+<div>
+<p>sfsim is a space flight simulator under development. It makes use of Clojure, LWJGL, and Fastmath among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-2" class="anchored">Speaker</h4>
+<div data-key="jan-wedekind" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/jan-wedekind.png" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Jan Wedekind">
+<div>
+<h5 id="jan-wedekind" style="margin-bottom: 0.5rem;" class="anchored">Jan Wedekind</h5>
+<p>Jan studied compiler construction and robotics and later did a PhD in computer vision. He currently works in industry developing inspection software. His first programming languages were Omikron Basic and later Borland Pascal. In industry he used C++, Ruby, and Python. In his spare time he got interested in Ruby, GNU Guile, and finally Clojure.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<td class="time-cell">14:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Functional Quantum Computing with QClojure</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/ludger-solbach.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Ludger Solbach">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-10" class="anchored">Abstract</h4>
+<div>
+<p>QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations. This talk gives a short introduction to quantum computing and the goals and features of QClojure. In a short live coding session we will create some quantum states and circuits and run some algorithms on a quantum computing simulation. We will also address some implementation topics like complex linear algebra and quantum algorithms. The talk will close with future plans for QClojure, like running on real quantum hardware and quantum machine learning (QML).</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-3" class="anchored">Speaker</h4>
+<div data-key="ludger-solbach" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/ludger-solbach.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Ludger Solbach">
+<div>
+<h5 id="ludger-solbach" style="margin-bottom: 0.5rem;" class="anchored">Ludger Solbach</h5>
+<p>Ludger Solbach is a software architect for 'msg for automotive' in Germany. He is the creator of Overarch, a lightweight system modeling and visualization tool and QClojure, a library for programming quantum computers. His favorite programming language by far is Clojure, a modern functional LISP. He uses it for his open source work, at work when feasible, and to create models for his 3D-Printer.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Macroexpand 3</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-11" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="time-cell">15:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>TBD</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-12" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Macroexpand 3</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-13" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<td class="time-cell">16:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Clay Workshop</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/timothy-pratley.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Timothy Pratley">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-14" class="anchored">Abstract</h4>
+<div>
+<p>We will learn about how to use <a href="https://scicloj.github.io/clay/">Clay</a> for interactive data visualization, documentation, and publishing.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-4" class="anchored">Speaker</h4>
+<div data-key="timothy-pratley" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/timothy-pratley.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Timothy Pratley">
+<div>
+<h5 id="timothy-pratley" style="margin-bottom: 0.5rem;" class="anchored">Timothy Pratley</h5>
+<p>Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Noj Foundations</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/harold.jpeg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Harold"><img src="images/daniel-slutsky.jpeg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Daniel Slutsky">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-15" class="anchored">Abstract</h4>
+<div>
+
+</div>
+</div>
+<div>
+<h4 id="speakers-1" class="anchored">Speakers</h4>
+<div data-key="harold" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/harold.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Harold">
+<div>
+<h5 id="harold" style="margin-bottom: 0.5rem;" class="anchored">Harold</h5>
+<p>Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+<div data-key="daniel-slutsky" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/daniel-slutsky.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Daniel Slutsky">
+<div>
+<h5 id="daniel-slutsky" style="margin-bottom: 0.5rem;" class="anchored">Daniel Slutsky</h5>
+<p>Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries. His approach towards open-source communities is drawn from his past experiences in various activist groups.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="time-cell">17:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Clojure Civitas Workshop</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/timothy-pratley.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Timothy Pratley">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-16" class="anchored">Abstract</h4>
+<div>
+<p>We will explore the workflow and ergonomics for publishihg at <a href="https://clojurecivitas.github.io">Clojure Civitas</a>, the new platform where Clojurians share thare ideas and explorations.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-5" class="anchored">Speaker</h4>
+<div data-key="timothy-pratley" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/timothy-pratley.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Timothy Pratley">
+<div>
+<h5 id="timothy-pratley-1" style="margin-bottom: 0.5rem;" class="anchored">Timothy Pratley</h5>
+<p>Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Elements of Malli</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/ben-sless.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Ben Sless">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-17" class="anchored">Abstract</h4>
+<div>
+<p>Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema related needs, like explanation, coercion, parsing, generation, and the best performance possible. We'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-6" class="anchored">Speaker</h4>
+<div data-key="ben-sless" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/ben-sless.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Ben Sless">
+<div>
+<h5 id="ben-sless" style="margin-bottom: 0.5rem;" class="anchored">Ben Sless</h5>
+<p>Software engineer, father of three, enthusiastic Clojurian</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<td class="time-cell">18:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Noj Intro</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/daniel-slutsky.jpeg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Daniel Slutsky">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-18" class="anchored">Abstract</h4>
+<div>
+<p>We will practice basic data exploration with <a href="https://scicloj.github.io/tablec/">Tablecloth</a> and <a href="https://scicloj.github.io/tableplot/">Tableplot</a>, and maybe a few other parts of the Noj toolkit. It will be a free-form session with audience participation.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-7" class="anchored">Speaker</h4>
+<div data-key="daniel-slutsky" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/daniel-slutsky.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Daniel Slutsky">
+<div>
+<h5 id="daniel-slutsky-1" style="margin-bottom: 0.5rem;" class="anchored">Daniel Slutsky</h5>
+<p>Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries. His approach towards open-source communities is drawn from his past experiences in various activist groups.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Lightning Talks</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-19" class="anchored">Abstract</h4>
+<div>
+<p>Various short talks by conference participants</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="time-cell">19:00</td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Water Quality - Remote Sensing</p>
+<div style="display: flex; align-items: center; flex-shrink: 0;">
+<img src="images/luke-zeitlin.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Luke Zeitlin">
+</div>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-20" class="anchored">Abstract</h4>
+<div>
+<p>Using multispectral satellite imagery in cloud optimized geotiffs to perform simple band-ratio indicies of water quality in the browser in a Clay notebook.</p>
+</div>
+</div>
+<div>
+<h4 id="speaker-8" class="anchored">Speaker</h4>
+<div data-key="luke-zeitlin" style="margin-bottom: 1.5rem; overflow: hidden;">
+<img src="images/luke-zeitlin.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Luke Zeitlin">
+<div>
+<h5 id="luke-zeitlin" style="margin-bottom: 0.5rem;" class="anchored">Luke Zeitlin</h5>
+<p>I'm a programmer, musician and clojure enthusiast and former co-founder of Gybe, a water quality remote sensing startup. I'm interested in music, DSP, functional programming and plants.</p>
+</div>
+<div style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<details>
+<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<p>Conclusion</p>
+</div>
+</summary>
+<div style="padding: 1rem 0;">
+<div style="margin-bottom: 1.5rem;">
+<h4 id="abstract-21" class="anchored">Abstract</h4>
+<div>
+<p>TBD</p>
+</div>
+</div>
+</div>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+<div class="mobile-schedule"><div class="mobile-day-section"><h3 class="anchored">Friday, October 17</h3><div class="mobile-time-slot"><div class="mobile-time-header">09:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Opening &amp; Welcome</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">10:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Computing with units in Clojure</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Teodor Heggelund" src="images/teodor-heggelund.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>A quantity's unit plays a prominent role in science and engineering. Is it 5 milliseconds, 5 tons of 5 light-years? In software programming, we often resort to variables names as now-instant, time-ms and force-kn to convey the interpretation of a number such as "5".</p><p>Come learn about units, unit systems and a pure data, REPL-friendly Clojure approach.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="teodor-heggelund" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Teodor Heggelund" src="images/teodor-heggelund.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Teodor Heggelund</h5><p>Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">11:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Rolling Regressions in Clojure for Real-Time Alpha and Beta Monitoring</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Matthias Buehlmaier" src="images/matthias-buehlmaier.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"><img alt="Edward Widjaja" src="images/edward-widjaja.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"><img alt="Tanvi Nagar" src="images/tanvi-nagar.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual(synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.</p></div></div><div><h4 class="anchored">Speakers</h4><div key="matthias-buehlmaier" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Matthias Buehlmaier" src="images/matthias-buehlmaier.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Matthias Buehlmaier</h5><p>Matthias Buehlmaier is an associate professor of teaching in finance and the BBA(IBGM) program director at HKU Business School, University of Hong Kong (HKU). He is a winner of several teaching and research awards, e.g. the Outstanding Teaching Award and the Teaching Innovation Award granted by HKU. His research has appeared in the Review of Financial Studies (Oxford University Press) and has been featured in the Harvard Law School Forum on Corporate Governance and Financial Regulation.</p></div><div style="clear: both;"></div></div><div key="edward-widjaja" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Edward Widjaja" src="images/edward-widjaja.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Edward Widjaja</h5><p>Edward Widjaja is a final-year Data Science and Engineering student at the University of Hong Kong. He's always been interested in anything nerdy; from algorithms and trading systems to quirky side projects, he is now channeling that curiosity into finance. Currently taking a semester off to work at a bank, he's exploring how emerging technologies intersect with financial markets. His goal is to build a career that combines data-driven decision-making with practical financial solutions. In his spare time, Edward enjoys swimming, gaming, and chatting about anything from market trends to tech experiments, so feel free to reach out!</p></div><div style="clear: both;"></div></div><div key="tanvi-nagar" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Tanvi Nagar" src="images/tanvi-nagar.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Tanvi Nagar</h5><p>Tanvi Nagar is a final year student at the University of Hong Kong, studying International Business and Global Management. She is passionate about mathematics, finance and their integration with technology - which is why she chose Information Systems and Analytics as her second major. Hoping to build a career in finance, she has solidified her technical and professional skills through roles in Financial Services Consulting, Corporate Banking and Wealth Management. Being a curious mind, she is always looking to broaden her horizons through learning about new things, travelling the world and plays badminton in her free time along with reading voraciously.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">12:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">TBD</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">13:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">TBD</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">14:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Functional Quantum Computing with QClojure</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Ludger Solbach" src="images/ludger-solbach.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations. This talk gives a short introduction to quantum computing and the goals and features of QClojure. In a short live coding session we will create some quantum states and circuits and run some algorithms on a quantum computing simulation. We will also address some implementation topics like complex linear algebra and quantum algorithms. The talk will close with future plans for QClojure, like running on real quantum hardware and quantum machine learning (QML).</p></div></div><div><h4 class="anchored">Speaker</h4><div key="ludger-solbach" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Ludger Solbach" src="images/ludger-solbach.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Ludger Solbach</h5><p>Ludger Solbach is a software architect for 'msg for automotive' in Germany.
+He is the creator of Overarch, a lightweight system modeling and visualization tool
+and QClojure, a library for programming quantum computers.
+His favorite programming language by far is Clojure, a modern functional LISP.
+He uses it for his open source work, at work when feasible, and to create
+models for his 3D-Printer.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">15:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">TBD</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">16:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Clay Workshop</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>We will learn about how to use <a href="https://scicloj.github.io/clay/">Clay</a> for interactive data visualization, documentation, and publishing.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="timothy-pratley" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Timothy Pratley</h5><p>Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">17:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Clojure Civitas Workshop</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>We will explore the workflow and ergonomics for publishihg at <a href="https://clojurecivitas.github.io">Clojure Civitas</a>, the new platform where Clojurians share thare ideas and explorations.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="timothy-pratley" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Timothy Pratley</h5><p>Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">18:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Noj Intro</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>We will practice basic data exploration with <a href="https://scicloj.github.io/tablec/">Tablecloth</a> and <a href="https://scicloj.github.io/tableplot/">Tableplot</a>, and maybe a few other parts of the Noj toolkit. It will be a free-form session with audience participation.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="daniel-slutsky" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Daniel Slutsky</h5><p>Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+ His approach towards open-source communities is drawn from his past experiences in various activist groups.
+ </p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">19:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Water Quality - Remote Sensing</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Luke Zeitlin" src="images/luke-zeitlin.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>Using multispectral satellite imagery in cloud optimized geotiffs to perform simple band-ratio indicies of water quality in the browser in a Clay notebook.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="luke-zeitlin" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Luke Zeitlin" src="images/luke-zeitlin.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Luke Zeitlin</h5><p>I'm a programmer, musician and clojure enthusiast and former co-founder of Gybe, a water quality remote sensing startup. I'm interested in music, DSP, functional programming and plants.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div></div><div class="mobile-day-section"><h3 class="anchored">Saturday, October 18</h3><div class="mobile-time-slot"><div class="mobile-time-header">09:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Opening &amp; Welcome</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">10:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Growing a DSL</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Daniel Szmulewicz" src="images/daniel-szmulewicz.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon  FFmpeg's filtergraphs, but it transforms the notoriously complex and error-prone string-based syntax with a structured, data-first approach amenable to composition and enhanced programmability.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="daniel-szmulewicz" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Daniel Szmulewicz" src="images/daniel-szmulewicz.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Daniel Szmulewicz</h5><p>Functional programmer. Closet philosopher. Emacs meshugge.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">11:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Open Practice</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">12:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">TBD</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">13:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Computer Graphics with Clojure, LWJGL, and Fastmath</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Jan Wedekind" src="images/jan-wedekind.png" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>sfsim is a space flight simulator under development. It makes use of Clojure, LWJGL, and Fastmath among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="jan-wedekind" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Jan Wedekind" src="images/jan-wedekind.png" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Jan Wedekind</h5><p>Jan studied compiler construction and robotics and later did a PhD in computer vision. He currently works in industry developing inspection software. His first programming languages were Omikron Basic and later Borland Pascal. In industry he used C++, Ruby, and Python. In his spare time he got interested in Ruby, GNU Guile, and finally Clojure.</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">14:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Macroexpand 3</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">15:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Macroexpand 3</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">16:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Noj Foundations</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Harold" src="images/harold.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div></div></div><div><h4 class="anchored">Speakers</h4><div key="harold" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Harold" src="images/harold.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Harold</h5><p>Owner: TechAscent - Mathematician | Software Engineer | Cloud (AWS) | Clojure | JS | Data Science | AI/ML
+ </p></div><div style="clear: both;"></div></div><div key="daniel-slutsky" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Daniel Slutsky</h5><p>Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+ His approach towards open-source communities is drawn from his past experiences in various activist groups.
+ </p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">17:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Elements of Malli</p><div style="display: flex; align-items: center; flex-shrink: 0;"><img alt="Ben Sless" src="images/ben-sless.jpg" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"></div></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema related needs, like explanation, coercion, parsing, generation, and the best performance possible. We'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.</p></div></div><div><h4 class="anchored">Speaker</h4><div key="ben-sless" style="margin-bottom: 1.5rem; overflow: hidden;"><img alt="Ben Sless" src="images/ben-sless.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"><div><h5 style="margin-bottom: 0.5rem;" class="anchored">Ben Sless</h5><p>Software engineer, father of three, enthusiastic Clojurian</p></div><div style="clear: both;"></div></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">18:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Lightning Talks</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>Various short talks by conference participants</p></div></div></div></details></div></div></div><div class="mobile-time-slot"><div class="mobile-time-header">19:00</div><div class="mobile-session-content"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"><details><summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;"><div style="display: flex; align-items: center; justify-content: space-between;"><p style="display: inline; margin: 0; font-size: 1rem; font-weight: bold;">Conclusion</p></div></summary><div style="padding: 1rem 0;"><div style="margin-bottom: 1.5rem;"><h4 class="anchored">Abstract</h4><div><p>TBD</p></div></div></div></details></div></div></div></div></div></div>
+<div><p id="timezone-notice" style="margin-top: 1rem; color: #666; font-size: 0.9rem;"><em>Detecting your timezone...</em></p><p style="margin-top: 0.5rem; font-style: italic; color: #666;">* Schedule is subject to change. Final schedule with confirmed speakers will be published closer to the conference date.</p></div>
 </section>
 <section id="connect-discuss" class="level3">
 <h3 class="anchored" data-anchor-id="connect-discuss">Connect &amp; Discuss</h3>
 <p>Join the conversation at the <a href="https://scicloj.github.io/docs/community/chat/">Clojurians Zulip chat</a> where we coordinate projects and help each other with data science in Clojure.</p>
-<p><a href="https://scicloj.github.io/docs/community/contact/" class="btn btn-gradient" target="_blank">Questions? Let’s talk</a></p>
+<div style="text-align: center; margin: 2rem 0;"><a class="btn btn-gradient" href="https://scicloj.github.io/docs/community/contact/" style="display: inline-block; text-decoration: none;" target="_blank">Questions? Let's talk</a></div>
+<script type="text/javascript">
+// Automatically convert times to user's timezone on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  
+  // Update time header to show user's timezone (abbreviated)
+  const timeHeader = document.getElementById('time-header');
+  if (timeHeader) {
+    // Shorten timezone for compact display
+    const shortTz = userTimezone.split('/').pop() || userTimezone;
+    timeHeader.textContent = 'Time - ' + shortTz;
+    timeHeader.title = 'Times shown in: ' + userTimezone;
+  }
+  
+  // Update timezone notice
+  const timezoneNotice = document.getElementById('timezone-notice');
+  if (timezoneNotice) {
+    timezoneNotice.innerHTML = '<em>Times shown in your local timezone: ' + userTimezone + '</em>';
+  }
+  
+  // Find all tables and process them
+  const tables = document.querySelectorAll('table');
+  
+  tables.forEach(table => {
+    // Get date headers (2nd and 3rd columns)
+    const headers = table.querySelectorAll('th');
+    const day1Header = headers[1];
+    const day2Header = headers[2];
+      
+    // Extract dates from headers
+    const processDateHeader = (header) => {
+      if (!header) return null;
+      const dateText = header.textContent.trim();
+      // Updated regex to match "Friday, October 17" format (no year)
+      const dateMatch = dateText.match(/(\w+), (\w+) (\d+)/);
+      if (dateMatch) {
+        const [, , month, day] = dateMatch;
+        const monthNames = ['January','February','March','April','May','June',
+                           'July','August','September','October','November','December'];
+        const monthNum = monthNames.indexOf(month);
+        return { month: monthNum, day: parseInt(day), year: 2025 }; // Hardcode 2025
+      }
+      return null;
+    };
+    
+    const day1Date = processDateHeader(day1Header);
+    const day2Date = processDateHeader(day2Header);
+    
+    if (day1Date && day2Date) {
+      const rows = table.querySelectorAll('tbody tr');
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        const timeCell = cells[0];
+        
+        if (timeCell && timeCell.textContent.match(/\d{2}:\d{2}/)) {
+          const timeText = timeCell.textContent.trim();
+          const [startHour, startMinute] = timeText.split(':');
+          
+          // Convert for day 1 (using day1Date) 
+          const startDate1 = new Date(Date.UTC(day1Date.year, day1Date.month, day1Date.day, parseInt(startHour), parseInt(startMinute)));
+          
+          const localStartTime = startDate1.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+            timeZone: userTimezone
+          });
+          
+          // Store UTC time as tooltip
+          timeCell.title = 'UTC: ' + timeText;
+          timeCell.style.cursor = 'help';
+          
+          timeCell.textContent = localStartTime;
+        }
+      });
+    }
+  });
+});
+</script>
 
 
 </section>
