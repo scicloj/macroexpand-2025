@@ -449,7 +449,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   {:full-name "Žygimantas Medelis",
    :bio
    "Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.",
-   :images nil},
+   :images ["zygimantas-medelis.jpeg"]},
   :siavash-mohammady
   {:full-name "Siavash Mohammady"
    :images ["siavash-mohammady.png"]
