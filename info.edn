@@ -161,7 +161,8 @@
   {:title "Noj Foundations",
    :session-type :tutorial,
    :conference :macroexpand-noj,
-   :speakers #{:harold :daniel-slutsky}},
+   :speakers #{:harold :daniel-slutsky}
+   :abstract "This will be a tutorial session about some of the relevant high-performace libraries behind Noj such as [ham-fisted](https://github.com/cnuernber/ham-fisted), [dtype-next](https://github.com/cnuernber/dtype-next), and [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset). See [the session](https://www.youtube.com/watch?v=7Uc5GnYT03A) we had with Harold last May -- you may expect something similar."},
   :session/computer-graphics-with-clojure-lwjgl-and-fastmath
   {:prefer-prerecorded false,
    :conference :macroexpand-noj,
