@@ -77,6 +77,7 @@
      :session/building-realtime-voice-ai-agents-with-clojure---best-practices
      :session/building-event-sourced-agentic-applications-with-grain
      :session/lightning-talks
+     :session/jank-and-torch
      :session/conclusion]}}},
  :preferred-topics
  {:macroexpand-noj
@@ -106,7 +107,15 @@
   :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg",
   :target-audience "General Clojure programmers, including beginners"},
  :sessions
- {:session/building-event-sourced-agentic-applications-with-grain
+ {:session/jank-and-torch
+  {:speakers #{:jianling-zhong :shantanu-sardesai :monty-bichouna}
+   :title "Jank & Torch: Native Deep Learning in Clojure"
+   :abstract "In the field of AI, Python is the current reigning champ. But the Python ecosystem's dirty secret is that most of the libraries holding the system together are wrappers around C/C++ libraries that do most of the important work. 
+Jank is the native Clojure dialect built on compiler technologies like LLVM, giving it access into the same native libraries powering the Python ecosystem. As Jank heads towards its first alpha release, its most highly anticipated feature, seamless C++ interop is already capable of wrapping and using native C++ libraries for machine learning and artificial intelligence. In this talk, we will show how to leverage Jank's C++ interop to wrap the most popular deep learning library in usage right now, libtorch, which most would have known through its Python frontend, Pytorch.
+As a proof of concept, we will display an implementation of GPT-2, the LLM released in 2019 using our Torch wrapper.
+This talk will give Clojure practitioners interested in using Clojure for ML/AI a glimpse into the future of how important C++ libraries can be utilized with Jank."
+   :conference :macroexpand-deep}
+  :session/building-event-sourced-agentic-applications-with-grain
   {:speakers #{:cameron-barre}
    :title "Building Event Sourced Agentic Applications with Grain"
    :abstract "Learn how ObneyAI uses its open source Clojure framework called Grain to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
@@ -440,6 +449,18 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   {:full-name "Eric Dallo"
    :bio "Eric Dallo is a Emacs, NixOS fanatic, he loves programming, especially when focused on dev tooling, He maintains clojure-lsp, ECA, deps-bin, lsp-mode, and other related libraries, Eric works with Clojure at Nubank and currently is focused on AI pair programming mutli-editors with ECA."
    :images ["eric-dallo.jpeg"]}
+  :jianling-zhong
+  {:full-name "Jianling Zhong"
+   :bio "Jianling is a software engineer with a focus on machine learning. He has always been intrigued by how compilers work. He has been hacking on jank, even though he had little experience with Clojure! The work of bringing torch to jank is right up his alley."
+   :images ["jianling-zhong.jpeg"]}
+  :monty-bichouna
+  {:full-name "Monty Bichouna"
+   :bio "Monty is an aspiring compiler engineer who enjoys Lisps and always wanted a reason to learn Clojure. He found an excellent reason with jank, the native Clojure dialect."
+   :images ["monty-bichouna.jpeg"]}
+  :shantanu-sardesai
+  {:full-name "Shantanu :Sardesai"
+   :bio "Shantanu is a software engineer."
+   :images ["shantanu-sardesai.jpeg"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio
