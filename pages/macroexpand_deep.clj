@@ -45,6 +45,7 @@
          (str/join ", "))))
 
 ^:kindly/hide-code
+^:kindly/hide-code
 (defn session-card-new [session-key session-data people-data]
   (let [session-title (:title session-data)
         speakers (:speakers session-data)
@@ -52,14 +53,12 @@
         abstract (:abstract session-data)
         speaker-images (when (seq speakers)
                          (for [speaker-key speakers]
-                           (let [speaker-data (get people-data speaker-key)]
-                             (some-> speaker-data
-                                     :images
-                                     first
-                                     (as-> img
-                                         [:img {:src (str "images/" img)
-                                                :alt (:full-name speaker-data)
-                                                :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))))]
+                           (let [speaker-data (get people-data speaker-key)
+                                 speaker-image (or (some-> speaker-data :images first)
+                                                   "silhouette.svg")]
+                             [:img {:src (str "images/" speaker-image)
+                                    :alt (:full-name speaker-data)
+                                    :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))]
     (kind/hiccup
      [:div {:style "margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"}
 
@@ -68,9 +67,9 @@
         [:div {:style "display: flex; align-items: center; justify-content: space-between;"}
          [:p {:style "display: inline; margin: 0; font-size: 1rem; font-weight: bold;"}
           session-title]
-         (when (seq (remove nil? speaker-images))
+         (when (seq speaker-images)
            [:div {:style "display: flex; align-items: center; flex-shrink: 0;"}
-            (remove nil? speaker-images)])]]
+            speaker-images])]]
 
        ;; Expanded content
        [:div {:style "padding: 1rem 0;"}
@@ -85,15 +84,12 @@
            [:h4 (if (> (count speakers) 1) "Speakers" "Speaker")]
            (for [speaker-key speakers]
              (let [speaker-data (get people-data speaker-key)
-                   speaker-image (some-> speaker-data
-                                         :images
-                                         first
-                                         (as-> img
-                                             [:img {:src (str "images/" img)
-                                                    :alt (:full-name speaker-data)
-                                                    :style "width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"}]))]
+                   speaker-image-src (or (some-> speaker-data :images first)
+                                         "silhouette.svg")]
                [:div {:key speaker-key :style "margin-bottom: 1.5rem; overflow: hidden;"}
-                (when speaker-image speaker-image)
+                [:img {:src (str "images/" speaker-image-src)
+                       :alt (:full-name speaker-data)
+                       :style "width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;"}]
                 [:div
                  [:h5 {:style "margin-bottom: 0.5rem;"} (:full-name speaker-data)]
                  [:p (:bio speaker-data)]]

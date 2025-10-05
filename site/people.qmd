@@ -161,7 +161,7 @@ models for his 3D-Printer.</p></div></div></div>
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Žygimantas Medelis</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.</p></div></div></div>
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Žygimantas Medelis" src="images/silhouette.svg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Žygimantas Medelis</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.</p></div></div></div>
 ```
 
 

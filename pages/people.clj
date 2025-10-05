@@ -16,19 +16,20 @@
 ;; ## Conference Organizers
 
 ^:kindly/hide-code
+^:kindly/hide-code
 (defn person-card [person-key person-data roles]
   (let [name (:full-name person-data)
         bio (:bio person-data)
-        image (when-let [images (:images person-data)]
-                (str "images/" (first images)))
+        image (or (when-let [images (:images person-data)]
+                    (str "images/" (first images)))
+                  "images/silhouette.svg")
         role-text (str/join " • " roles)]
     (kind/hiccup
      [:div {:style "margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"}
       [:div {:style "display: flex; gap: 1.5rem; align-items: flex-start;"}
-       (when image
-         [:img {:src image
-                :alt name
-                :style "width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"}])
+       [:img {:src image
+              :alt name
+              :style "width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"}]
        [:div {:style "flex: 1;"}
         [:h3 {:style "margin: 0 0 0.5rem 0; color: #333;"} name]
         [:p {:style "margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;"} role-text]

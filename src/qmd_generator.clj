@@ -62,10 +62,11 @@
        (str "## Speaker" (when (> (count speakers) 1) "s") "\n\n"
             (->> speakers
                  (map (fn [speaker-key]
-                        (let [speaker-data (get people-data speaker-key)]
+                        (let [speaker-data (get people-data speaker-key)
+                              image-path (or (some-> speaker-data :images first convert-image-path)
+                                             "images/silhouette.svg")]
                           (str "### " (:full-name speaker-data) "\n\n"
-                               (when-let [images (:images speaker-data)]
-                                 (str "![" (:full-name speaker-data) "](" (convert-image-path (first images)) "){width=150}\n\n"))
+                               "![" (:full-name speaker-data) "](" image-path "){width=150}\n\n"
                                (:bio speaker-data) "\n\n"))))
                  (str/join))))
 
