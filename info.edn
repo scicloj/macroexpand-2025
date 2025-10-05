@@ -458,7 +458,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
    :bio "Monty is an aspiring compiler engineer who enjoys Lisps and always wanted a reason to learn Clojure. He found an excellent reason with jank, the native Clojure dialect."
    :images ["monty-bichouna.jpeg"]}
   :shantanu-sardesai
-  {:full-name "Shantanu :Sardesai"
+  {:full-name "Shantanu Sardesai"
    :bio "Shantanu is a software engineer."
    :images ["shantanu-sardesai.jpeg"]}
   :peter-stromberg
