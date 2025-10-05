@@ -117,7 +117,7 @@
    :abstract
    "Previous work in end-user scientific computing has focused on manipulable visual representations of programs. LLM technology provides an alternate path for non-programmers to engage with the complexity of scientific data. This talk will esplore the use of LLMs, ontologies, and domain-specific languages to support natural language queries, visualization, and general computing. Clojure's flexibility as back-end, front-end, and knowledge representation language is a key enabler.",
    :title "Natural language interfaces for scientific computing",
-   :session-type :talk,},
+   :session-type :talk},
   :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
   {:conference :macroexpand-deep,
    :speakers #{:jelena-losic},
@@ -125,7 +125,7 @@
    "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using libpython-clj to call PyTorch Geometric from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
    :title
    "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability",
-   :session-type :talk,},
+   :session-type :talk},
   :session/building-realtime-voice-ai-agents-with-clojure---best-practices
   {:conference :macroexpand-deep,
    :speakers #{:stoica-ovidiu},
@@ -151,7 +151,7 @@
    :abstract
    "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon  FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
-   :session-type :talk,},
+   :session-type :talk},
   :session/lightning-galks
   {:title "Lightning Talks",
    :abstract "Various short talks by conference participants",
@@ -160,6 +160,7 @@
   :session/noj-foundations
   {:title "Noj Foundations",
    :session-type :tutorial,
+   :conference :macroexpand-noj,
    :speakers #{:harold :daniel-slutsky}},
   :session/computer-graphics-with-clojure-lwjgl-and-fastmath
   {:prefer-prerecorded false,
@@ -168,11 +169,12 @@
    :abstract
    "sfsim is a space flight simulator under development. It makes use of Clojure, LWJGL, and Fastmath among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.",
    :title "Computer Graphics with Clojure, LWJGL, and Fastmath",
-   :session-type :talk,},
+   :session-type :talk},
   :session/noj-intro
   {:title "Noj Intro",
    :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablec/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the Noj toolkit. It will be a free-form session with audience participation.",
    :session-type :workshop,
+   :conference :macroexpand-noj,
    :speakers #{}},
   :session/experimenting-with-llm-subliminal-learning-in-clojure
   {:conference :macroexpand-deep,
@@ -180,11 +182,12 @@
    :abstract
    "I read the paper \"Subliminal Learning: Language models transmit behavioral traits via hidden signals in data\" and wanted to explore these concepts myself. In this talk I replicate some of the results from the paper interactively in a live coding demo. Specifically, we will look at running multiple interdependent batch processing jobs from a Clojure REPL.",
    :title "Experimenting with LLM Subliminal Learning in Clojure",
-   :session-type :talk,},
+   :session-type :talk},
   :session/clojure-civitas-workshop
   {:title "Clojure Civitas Workshop",
    :abstract "We will explore the workflow and ergonomics for publishihg at [Clojure Civitas](https://clojurecivitas.github.io), the new platform where Clojurians share thare ideas and explorations.",
    :session-type :workshop,
+   :conference :macroexpand-noj,
    :speakers #{}},
   :session/computing-with-units-in-clojure
   {:prefer-prerecorded false,
@@ -253,7 +256,7 @@
    :preferred-time nil,
    :speakers #{:timothy-pratley},
    :submission-timestamp "02/10/2025 15:38:37",
-   :abstract "TBA",
+   :abstract "We will learn about how to use [Clay](https://scicloj.github.io/clay/) for interactive data visualization, documentation, and publishing.",
    :title "Clay Workshop",
    :session-type :talk,
    :approved-recording true},
@@ -281,16 +284,17 @@
    :approved-civitas-notebook :not-relevant,
    :conference :macroexpand-deep,
    :preferred-time nil,
-   :speakers #{:kira-howe},
+   :speakers #{:kira-howe :daniel-slutsky},
    :submission-timestamp "02/10/2025 15:39:54",
-   :abstract "TBA",
+   :abstract "We will discuss the broader picture of the AI rush and a few of the ways it affects our lives."
    :title "Panel: broader implications of AI",
    :session-type :talk,
    :approved-recording true},
   :session/panel-ai-assistants
   {:speakers #{:peter-stromberg :bruce-hauman},
    :conference :macroexpand-deep,
-   :title "Panel: AI assistants"},
+   :title "Panel: AI assistants"
+   :abstract "We will have a conversation with a few of the toolmakers behind Clojure's main AI assistants."},
   :session/building-dynamic-entity-extraction-with-bosquet
   {:prefer-prerecorded false,
    :approved-to-speak true,
