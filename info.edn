@@ -453,12 +453,14 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   :siavash-mohammady
   {:full-name "Siavash Mohammady"
    :images ["siavash-mohammady.png"]
-   :bio ""}
+   :bio ""
+   :roles [:organizer]}
   :siyoung-byun
   {:full-name "Siyoung Byun",
    :images ["siyoung-byun.jpg"],
    :bio
-   "Siyoung Byun is currently a freelance fullstack Clojure developer living in Seoul, South Korea. She studied Astrophysics for her undergrad in Canada,  where she first got into programming and data analysis while running simulations of dying stars crashing into each other. Ever since she was introduced to Clojure at a previous employer in 2018, it quickly became her favorite programming language and her passion. \n Beyond software development and data analysis, she likes to hike, bike, knit, sew and snuggle with her cat in her free time.\n "},
+   "Siyoung Byun is currently a freelance fullstack Clojure developer living in Seoul, South Korea. She studied Astrophysics for her undergrad in Canada,  where she first got into programming and data analysis while running simulations of dying stars crashing into each other. Ever since she was introduced to Clojure at a previous employer in 2018, it quickly became her favorite programming language and her passion. \n Beyond software development and data analysis, she likes to hike, bike, knit, sew and snuggle with her cat in her free time.\n "
+   :roles [:organizer :host]},
   :christian-weilbach
   {:full-name "Christian Weilbach",
    :bio
@@ -478,7 +480,8 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   {:full-name "Daniel Slutsky",
    :images ["daniel-slutsky.jpeg"],
    :bio
-   "Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.\n His approach towards open-source communities is drawn from his past experiences in various activist groups.\n "},
+   "Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.\n His approach towards open-source communities is drawn from his past experiences in various activist groups.\n "
+   :roles [:organizer :host]},
   :jan-wedekind
   {:full-name "Jan Wedekind",
    :bio

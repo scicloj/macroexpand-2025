@@ -13,8 +13,6 @@
 
 ;; Meet the amazing people behind Macroexpand 2025! Our conferences bring together speakers, organizers, and community members who are passionate about growing Clojure in data science and AI.
 
-;; ## Conference Organizers
-
 ^:kindly/hide-code
 ^:kindly/hide-code
 (defn person-card [person-key person-data roles]
@@ -36,10 +34,18 @@
         [:p {:style "margin: 0; line-height: 1.6;"} bio]]]])))
 
 ^:kindly/hide-code
+^:kindly/hide-code
 (defn determine-roles [person-key conference-data]
-  (let [roles []
-        ;; Check if organizer
-        roles (if (contains? (set (:hosts conference-data)) person-key)
+  (let [person-data (get-in conference-data [:people person-key])
+        person-roles (set (:roles person-data))
+        roles []
+        ;; Check for explicit roles first
+        roles (cond-> roles
+                (contains? person-roles :organizer) (conj "Organizer")
+                (contains? person-roles :host) (conj "Host"))
+        ;; Check if in hosts list (backwards compatibility)
+        roles (if (and (empty? roles)
+                       (contains? (set (:hosts conference-data)) person-key))
                 (conj roles "Conference Organizer")
                 roles)
         ;; Check if Noj speaker

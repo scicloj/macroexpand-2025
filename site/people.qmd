@@ -17,9 +17,6 @@ format:
 
 Meet the amazing people behind Macroexpand 2025! Our conferences bring together speakers, organizers, and community members who are passionate about growing Clojure in data science and AI.
 
-
-## Conference Organizers
-
 Sort alphabetically by name
 
 
@@ -51,7 +48,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Daniel Slutsky" src="images/daniel-slutsky.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Daniel Slutsky</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Organizer • Host • Macroexpand-Noj Speaker • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.
  His approach towards open-source communities is drawn from his past experiences in various activist groups.
  </p></div></div></div>
 ```
@@ -132,6 +129,20 @@ models for his 3D-Printer.</p></div></div></div>
 
 ```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Peter Stromberg" src="images/peter-stromberg.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Peter Stromberg</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Peter Strömberg is a curious coder since 40+ years and is extra fascinated by making software that he uses do new things. These days he practically lives in VS Code and is making Clojure related extensions for it. Peter maintains Calva, Joyride, and Calva Backseat Driver. Backseat Driver is an AI extension for VS Code Copilot, giving the AI tools for using the Clojure REPL, as well as for structural editing.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Siavash Mohammady" src="images/siavash-mohammady.png" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Siavash Mohammady</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Organizer • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;"></p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Siyoung Byun" src="images/siyoung-byun.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Siyoung Byun</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Organizer • Host • Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Siyoung Byun is currently a freelance fullstack Clojure developer living in Seoul, South Korea. She studied Astrophysics for her undergrad in Canada,  where she first got into programming and data analysis while running simulations of dying stars crashing into each other. Ever since she was introduced to Clojure at a previous employer in 2018, it quickly became her favorite programming language and her passion. 
+ Beyond software development and data analysis, she likes to hike, bike, knit, sew and snuggle with her cat in her free time.
+ </p></div></div></div>
 ```
 
 
