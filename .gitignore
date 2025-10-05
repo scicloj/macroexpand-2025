@@ -10,3 +10,7 @@
 site/*/
 !site/images/
 tempprivate-data/
+
+temp
+
+.clojure-mcp
