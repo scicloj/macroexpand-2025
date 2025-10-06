@@ -296,7 +296,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :preferred-time nil,
    :speakers #{:kira-howe :siavash-mohammady :siyoung-byun},
    :submission-timestamp "02/10/2025 15:39:54",
-   :abstract "We will discuss the broader picture of the AI rush and a few of the ways it affects our lives."
+   :abstract "We will discuss the broader implications of the AI rush, a few of the ways it affects our lives, and what we might be able to do about it."
    :title "Panel: broader implications of AI",
    :session-type :talk,
    :approved-recording true},
