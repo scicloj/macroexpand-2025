@@ -459,7 +459,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
    :images ["monty-bichouna.jpeg"]}
   :shantanu-sardesai
   {:full-name "Shantanu Sardesai"
-   :bio "Shantanu is a software engineer."
+   :bio "Shantanu is a budding Clojure programmer and the newest member of the jank mentees team. With a background in mainstream languages like Kotlin and TypeScript, and a longstanding fascination with Clojure, compilers, and runtimes, he was naturally drawn to jank."
    :images ["shantanu-sardesai.jpeg"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
