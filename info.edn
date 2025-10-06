@@ -479,7 +479,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   :siavash-mohammady
   {:full-name "Siavash Mohammady"
    :images ["siavash-mohammady.png"]
-   :bio ""
+   :bio "Siavash is a Clojure developer with a knack for trying new things and crafting solutions through creative combinations of technology. He's worked on GIS software for agriculture, building a low-code BI tool powered by Clojure, LLMs, and rule engines to extract key reports for executives. These days, he's working on startcheck.xyz, an automatic pitch deck evaluation software."
    :roles [:organizer]}
   :siyoung-byun
   {:full-name "Siyoung Byun",
