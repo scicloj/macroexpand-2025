@@ -412,7 +412,7 @@ ul.task-list li input[type="checkbox"] {
 <td class="session-cell"><div style="padding: 0.5rem; color: #666;">
 TBD
 </div></td>
-<td class="session-cell"><div style="padding: 0.5rem; color: #666;">
+<td rowspan="2" class="session-cell"><div style="padding: 0.5rem; color: #666;">
 TBD
 </div></td>
 </tr>
@@ -434,9 +434,6 @@ TBD
 </div>
 </div>
 </details>
-</div></td>
-<td class="session-cell"><div style="padding: 0.5rem; color: #666;">
-TBD
 </div></td>
 </tr>
 <tr class="odd">
@@ -512,7 +509,7 @@ TBD
 </tr>
 <tr class="even">
 <td class="time-cell">14:00</td>
-<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<td rowspan="2" class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
 <details>
 <summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -565,7 +562,7 @@ TBD
 </div>
 </details>
 </div></td>
-<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
+<td rowspan="2" class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
 <details>
 <summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -621,112 +618,6 @@ TBD
 </tr>
 <tr class="odd">
 <td class="time-cell">15:00</td>
-<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
-<details>
-<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
-<div style="display: flex; align-items: center; justify-content: space-between;">
-<p>Panel: AI assistants</p>
-<div style="display: flex; align-items: center; flex-shrink: 0;">
-<img src="images/eric-dallo.jpeg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Eric Dallo"><img src="images/peter-stromberg.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Peter Stromberg"><img src="images/bruce-hauman.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Bruce Hauman">
-</div>
-</div>
-</summary>
-<div style="padding: 1rem 0;">
-<div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-9" class="anchored">Abstract</h4>
-<div>
-<p>We will have a conversation with a few of the toolmakers behind Clojure's main AI assistants.</p>
-</div>
-</div>
-<div>
-<h4 id="speakers-3" class="anchored">Speakers</h4>
-<div data-key="eric-dallo" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/eric-dallo.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Eric Dallo">
-<div>
-<h5 id="eric-dallo-1" style="margin-bottom: 0.5rem;" class="anchored">Eric Dallo</h5>
-<p>Eric Dallo is a Emacs, NixOS fanatic, he loves programming, especially when focused on dev tooling, He maintains clojure-lsp, ECA, deps-bin, lsp-mode, and other related libraries, Eric works with Clojure at Nubank and currently is focused on AI pair programming mutli-editors with ECA.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-<div data-key="peter-stromberg" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/peter-stromberg.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Peter Stromberg">
-<div>
-<h5 id="peter-stromberg-1" style="margin-bottom: 0.5rem;" class="anchored">Peter Stromberg</h5>
-<p>Peter Strömberg is a curious coder since 40+ years and is extra fascinated by making software that he uses do new things. These days he practically lives in VS Code and is making Clojure related extensions for it. Peter maintains Calva, Joyride, and Calva Backseat Driver. Backseat Driver is an AI extension for VS Code Copilot, giving the AI tools for using the Clojure REPL, as well as for structural editing.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-<div data-key="bruce-hauman" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/bruce-hauman.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Bruce Hauman">
-<div>
-<h5 id="bruce-hauman-1" style="margin-bottom: 0.5rem;" class="anchored">Bruce Hauman</h5>
-<p>Bruce Hauman is a prolific toolmaker and long-time contributor to the Clojure community, perhaps best known as the creator of Figwheel—the build tool that introduced live code reloading and made real-time browser development a reality for ClojureScript developers. Bruce’s legendary 2014 “Flappy Bird” demo not only turned heads, but set a new standard for interactive coding, enabling developers to see their changes instantly and stay in the creative flow. Bruce also built Devcards, a library for interactive documentation that brings a visual REPL experience to ClojureScript, and Rebel Readline, the feature-rich REPL for Clojure and ClojureScript, complete with syntax highlighting, code completion, and inline documentation. Bruce’s latest project, Clojure MCP, tackles the next frontier: enabling AI assistants to work Clojure projects by connecting directly to live REPLs, providing real-time feedback and validation to improve the quality of AI-generated Clojure code. Beyond his tool building chops, Bruce is guided by a profound respect for users and a conviction that developer tooling should be radically better—simple, powerful, and joyful to use. He’s also a fan of the outdoors: an avid canoe tripper, Appalachian Trail thru-hiker, and, currently, the hands-on renovator of a former church-turned-home in Saskatchewan.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-</div>
-</div>
-</details>
-</div></td>
-<td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
-<details>
-<summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
-<div style="display: flex; align-items: center; justify-content: space-between;">
-<p>Panel: broader implications of AI</p>
-<div style="display: flex; align-items: center; flex-shrink: 0;">
-<img src="images/kira-howe.jpeg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Kira Howe"><img src="images/siavash-mohammady.png" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Siavash Mohammady"><img src="images/siyoung-byun.jpg" class="img-fluid" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;" alt="Siyoung Byun">
-</div>
-</div>
-</summary>
-<div style="padding: 1rem 0;">
-<div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-10" class="anchored">Abstract</h4>
-<div>
-<p>We will discuss the broader implications of the AI rush, a few of the ways it affects our lives, and what we might be able to do about it.</p>
-</div>
-</div>
-<div>
-<h4 id="speakers-4" class="anchored">Speakers</h4>
-<div data-key="kira-howe" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/kira-howe.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Kira Howe">
-<div>
-<h5 id="kira-howe-1" style="margin-bottom: 0.5rem;" class="anchored">Kira Howe</h5>
-<p>Kira's been writing software for the past decade with a focus on data-intensive web apps and a particular interest in Clojure programming and data visualization. She loves open source development, fostering communities online and in-person, and learning new things. When she's not at her desk, you can find Kira teaching yoga, playing violin, or running with her dog.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-<div data-key="siavash-mohammady" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/siavash-mohammady.png" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Siavash Mohammady">
-<div>
-<h5 id="siavash-mohammady-1" style="margin-bottom: 0.5rem;" class="anchored">Siavash Mohammady</h5>
-<p>Siavash is a Clojure developer with a knack for trying new things and crafting solutions through creative combinations of technology. He's worked on GIS software for agriculture, building a low-code BI tool powered by Clojure, LLMs, and rule engines to extract key reports for executives. These days, he's working on startcheck.xyz, an automatic pitch deck evaluation software.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-<div data-key="siyoung-byun" style="margin-bottom: 1.5rem; overflow: hidden;">
-<img src="images/siyoung-byun.jpg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Siyoung Byun">
-<div>
-<h5 id="siyoung-byun-1" style="margin-bottom: 0.5rem;" class="anchored">Siyoung Byun</h5>
-<p>Siyoung Byun is currently a freelance fullstack Clojure developer living in Seoul, South Korea. She studied Astrophysics for her undergrad in Canada, where she first got into programming and data analysis while running simulations of dying stars crashing into each other. Ever since she was introduced to Clojure at a previous employer in 2018, it quickly became her favorite programming language and her passion. Beyond software development and data analysis, she likes to hike, bike, knit, sew and snuggle with her cat in her free time.</p>
-</div>
-<div style="clear: both;">
-
-</div>
-</div>
-</div>
-</div>
-</details>
-</div></td>
 </tr>
 <tr class="even">
 <td class="time-cell">16:00</td>
@@ -739,7 +630,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-11" class="anchored">Abstract</h4>
+<h4 id="abstract-9" class="anchored">Abstract</h4>
 <div>
 <p>TBD</p>
 </div>
@@ -759,7 +650,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-12" class="anchored">Abstract</h4>
+<h4 id="abstract-10" class="anchored">Abstract</h4>
 <div>
 <p>Exploring how to build reliable voice AI agents in a functional data driven way with Clojure. This talk will go over all of the pieces involved in voice ai from best models to use, turn detection, context management to scripting and instruction following to hosting and scaling. By the end you will better understand what it takes to build highly reliable voice AI agents with Clojure</p>
 </div>
@@ -783,7 +674,7 @@ TBD
 </tr>
 <tr class="odd">
 <td class="time-cell">17:00</td>
-<td class="session-cell"><div style="padding: 0.5rem; color: #666;">
+<td rowspan="2" class="session-cell"><div style="padding: 0.5rem; color: #666;">
 TBD
 </div></td>
 <td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
@@ -798,7 +689,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-13" class="anchored">Abstract</h4>
+<h4 id="abstract-11" class="anchored">Abstract</h4>
 <div>
 <p>Learn how ObneyAI uses its open source Clojure framework called Grain to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems.</p>
 </div>
@@ -822,9 +713,6 @@ TBD
 </tr>
 <tr class="even">
 <td class="time-cell">18:00</td>
-<td class="session-cell"><div style="padding: 0.5rem; color: #666;">
-TBD
-</div></td>
 <td class="session-cell"><div style="margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;">
 <details>
 <summary style="cursor: pointer; list-style: none; padding: 0.5rem 0;">
@@ -834,7 +722,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-14" class="anchored">Abstract</h4>
+<h4 id="abstract-12" class="anchored">Abstract</h4>
 <div>
 <p>Various short talks by conference participants</p>
 </div>
@@ -857,7 +745,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-15" class="anchored">Abstract</h4>
+<h4 id="abstract-13" class="anchored">Abstract</h4>
 <div>
 <p>I read the paper "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data" and wanted to explore these concepts myself. In this talk I replicate some of the results from the paper interactively in a live coding demo. Specifically, we will look at running multiple interdependent batch processing jobs from a Clojure REPL.</p>
 </div>
@@ -890,13 +778,13 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-16" class="anchored">Abstract</h4>
+<h4 id="abstract-14" class="anchored">Abstract</h4>
 <div>
 <p>In the field of AI, Python is the current reigning champ. But the Python ecosystem's dirty secret is that most of the libraries holding the system together are wrappers around C/C++ libraries that do most of the important work. Jank is the native Clojure dialect built on compiler technologies like LLVM, giving it access into the same native libraries powering the Python ecosystem. As Jank heads towards its first alpha release, its most highly anticipated feature, seamless C++ interop is already capable of wrapping and using native C++ libraries for machine learning and artificial intelligence. In this talk, we will show how to leverage Jank's C++ interop to wrap the most popular deep learning library in usage right now, libtorch, which most would have known through its Python frontend, Pytorch. As a proof of concept, we will display an implementation of GPT-2, the LLM released in 2019 using our Torch wrapper. This talk will give Clojure practitioners interested in using Clojure for ML/AI a glimpse into the future of how important C++ libraries can be utilized with Jank.</p>
 </div>
 </div>
 <div>
-<h4 id="speakers-5" class="anchored">Speakers</h4>
+<h4 id="speakers-3" class="anchored">Speakers</h4>
 <div data-key="monty-bichouna" style="margin-bottom: 1.5rem; overflow: hidden;">
 <img src="images/monty-bichouna.jpeg" class="img-fluid" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 1rem; float: left;" alt="Monty Bichouna">
 <div>
@@ -946,7 +834,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-17" class="anchored">Abstract</h4>
+<h4 id="abstract-15" class="anchored">Abstract</h4>
 <div>
 <p>Previous work in end-user scientific computing has focused on manipulable visual representations of programs. LLM technology provides an alternate path for non-programmers to engage with the complexity of scientific data. This talk will esplore the use of LLMs, ontologies, and domain-specific languages to support natural language queries, visualization, and general computing. Clojure's flexibility as back-end, front-end, and knowledge representation language is a key enabler.</p>
 </div>
@@ -976,7 +864,7 @@ TBD
 </summary>
 <div style="padding: 1rem 0;">
 <div style="margin-bottom: 1.5rem;">
-<h4 id="abstract-18" class="anchored">Abstract</h4>
+<h4 id="abstract-16" class="anchored">Abstract</h4>
 <div>
 <p>TBD</p>
 </div>
