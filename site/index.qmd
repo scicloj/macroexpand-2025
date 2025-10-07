@@ -12,7 +12,7 @@ format:
 .clay-side-by-side {margin: 1em 0}
 </style>
 <script src="index_files/md-default0.js" type="text/javascript"></script><script src="index_files/md-default1.js" type="text/javascript"></script>
-![Scicloj logo](images/sci-cloj-logo-transparent.svg){fig-align="center" width="120px"}
+![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo" fig-align="center" width="120px"}
 
 
 ```{=html}
@@ -52,22 +52,26 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 
 ::: {.people-gallery}
 [![Ben Sless](images/ben-sless.jpg){width="80px" height="80px" .person-photo}](./people.html#ben-sless)
-[![Bruce Hauman](images/bruce-hauman.jpeg){width="80px" height="80px" .person-photo}](./people.html#bruce-hauman)
+[![Bruce Hauman](images/bruce-hauman.jpg){width="80px" height="80px" .person-photo}](./people.html#bruce-hauman)
 [![Cameron Barre](images/cameron-barre.jpeg){width="80px" height="80px" .person-photo}](./people.html#cameron-barre)
 [![Christian Weilbach](images/christian-weilbach.jpg){width="80px" height="80px" .person-photo}](./people.html#christian-weilbach)
 [![Daniel Slutsky](images/daniel-slutsky.jpeg){width="80px" height="80px" .person-photo}](./people.html#daniel-slutsky)
 [![Daniel Szmulewicz](images/daniel-szmulewicz.jpg){width="80px" height="80px" .person-photo}](./people.html#daniel-szmulewicz)
 [![Edward Widjaja](images/edward-widjaja.jpg){width="80px" height="80px" .person-photo}](./people.html#edward-widjaja)
+[![Eric Dallo](images/eric-dallo.jpeg){width="80px" height="80px" .person-photo}](./people.html#eric-dallo)
 [![Harold](images/harold.jpeg){width="80px" height="80px" .person-photo}](./people.html#harold)
 [![Jan Wedekind](images/jan-wedekind.png){width="80px" height="80px" .person-photo}](./people.html#jan-wedekind)
 [![Jelena Losic](images/jelena-losic.jpeg){width="80px" height="80px" .person-photo}](./people.html#jelena-losic)
+[![Jianling Zhong](images/jianling-zhong.jpeg){width="80px" height="80px" .person-photo}](./people.html#jianling-zhong)
 [![Justin Tirrell](images/justin-tirrell.jpeg){width="80px" height="80px" .person-photo}](./people.html#justin-tirrell)
 [![Kira Howe](images/kira-howe.jpeg){width="80px" height="80px" .person-photo}](./people.html#kira-howe)
 [![Ludger Solbach](images/ludger-solbach.jpg){width="80px" height="80px" .person-photo}](./people.html#ludger-solbach)
 [![Luke Zeitlin](images/luke-zeitlin.jpg){width="80px" height="80px" .person-photo}](./people.html#luke-zeitlin)
 [![Matthias Buehlmaier](images/matthias-buehlmaier.jpg){width="80px" height="80px" .person-photo}](./people.html#matthias-buehlmaier)
 [![Mike Travers](images/mike-travers.jpg){width="80px" height="80px" .person-photo}](./people.html#mike-travers)
+[![Monty Bichouna](images/monty-bichouna.jpeg){width="80px" height="80px" .person-photo}](./people.html#monty-bichouna)
 [![Peter Stromberg](images/peter-stromberg.jpg){width="80px" height="80px" .person-photo}](./people.html#peter-stromberg)
+[![Shantanu Sardesai](images/shantanu-sardesai.jpeg){width="80px" height="80px" .person-photo}](./people.html#shantanu-sardesai)
 [![Siavash Mohammady](images/siavash-mohammady.png){width="80px" height="80px" .person-photo}](./people.html#siavash-mohammady)
 [![Siyoung Byun](images/siyoung-byun.jpg){width="80px" height="80px" .person-photo}](./people.html#siyoung-byun)
 [![Stoica Ovidiu](images/stoica-ovidiu.png){width="80px" height="80px" .person-photo}](./people.html#stoica-ovidiu)

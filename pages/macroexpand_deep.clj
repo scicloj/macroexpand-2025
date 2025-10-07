@@ -141,8 +141,49 @@
             :slots (schedule-vector->slots (:day2 schedule) sessions people)}}))
 
 ^:kindly/hide-code
+(defn analyze-schedule-spans
+  "Analyzes a schedule vector and returns info about sessions that span multiple slots.
+  Returns a map of {index -> {:session-key key :span count :render? bool}}"
+  [schedule-vec]
+  (loop [idx 0
+         result {}]
+    (if (>= idx (count schedule-vec))
+      result
+      (if (contains? result idx)
+        ;; Already processed as part of a span
+        (recur (inc idx) result)
+        ;; Find consecutive duplicates
+        (let [session-key (nth schedule-vec idx)
+              consecutive-count (count (take-while
+                                        #(= % session-key)
+                                        (drop idx schedule-vec)))]
+          (if (> consecutive-count 1)
+            ;; Multi-slot session - mark first as renderable with span, rest as non-renderable
+            (recur (+ idx consecutive-count)
+                   (merge result
+                          {idx {:session-key session-key
+                                :span consecutive-count
+                                :render? true}}
+                          (into {} (map (fn [i] [i {:session-key session-key
+                                                    :span 0
+                                                    :render? false}])
+                                        (range (inc idx) (+ idx consecutive-count))))))
+            ;; Single-slot session
+            (recur (inc idx)
+                   (assoc result idx {:session-key session-key
+                                      :span 1
+                                      :render? true}))))))))
+
+^:kindly/hide-code
 (defn columnar-schedule-table [day1-data day2-data]
-  (let [day1-slots (sort (:slots day1-data))
+  (let [deep-conf (get-in conference-info [:conferences :macroexpand-deep])
+        schedule (:schedule deep-conf)
+        day1-schedule (:day1 schedule)
+        day2-schedule (:day2 schedule)
+        day1-spans (analyze-schedule-spans day1-schedule)
+        day2-spans (analyze-schedule-spans day2-schedule)
+
+        day1-slots (sort (:slots day1-data))
         day2-slots (sort (:slots day2-data))
         all-time-slots (map first day1-slots)]
     (kind/hiccup
@@ -262,13 +303,23 @@
          [:th (:date day1-data)]
          [:th (:date day2-data)]]]
        [:tbody
-        (for [time-slot all-time-slots]
-          (let [day1-session (get (into {} day1-slots) time-slot)
+        (for [[idx time-slot] (map-indexed vector all-time-slots)]
+          (let [day1-span-info (get day1-spans idx)
+                day2-span-info (get day2-spans idx)
+                day1-session (get (into {} day1-slots) time-slot)
                 day2-session (get (into {} day2-slots) time-slot)]
             [:tr
              [:td {:class "time-cell"} time-slot]
-             [:td {:class "session-cell"} day1-session]
-             [:td {:class "session-cell"} day2-session]]))]]
+             (when (:render? day1-span-info true)
+               [:td (merge {:class "session-cell"}
+                           (when (> (:span day1-span-info 1) 1)
+                             {:rowspan (:span day1-span-info 1)}))
+                day1-session])
+             (when (:render? day2-span-info true)
+               [:td (merge {:class "session-cell"}
+                           (when (> (:span day2-span-info 1) 1)
+                             {:rowspan (:span day2-span-info 1)}))
+                day2-session])]))]]
 
       ;; Mobile stacked layout
       [:div {:class "mobile-schedule"}
