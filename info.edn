@@ -58,11 +58,11 @@
      :session/a-clojure-based-portfolio-analysis-tool-based-on-llm-integration
      :session/practice
      :session/TBD
-     :session/practice
      :session/building-qclojure-with-ai-assistance
-     :session/panel-broader-implications-of-ai
-     :session/panel-broader-implications-of-ai
+     :session/panel-ai-assistants
+     :session/panel-ai-assistants
      :session/TBD
+     :session/practice
      :session/practice
      :session/experimenting-with-llm-subliminal-learning-in-clojure
      :session/natural-language-interfaces-for-scientific-computing],
@@ -72,8 +72,8 @@
      :session/practice
      :session/practice
      :session/building-dynamic-entity-extraction-with-bosquet
-     :session/panel-ai-assistants
-     :session/panel-ai-assistants
+     :session/panel-broader-implications-of-ai
+     :session/panel-broader-implications-of-ai
      :session/building-realtime-voice-ai-agents-with-clojure---best-practices
      :session/building-event-sourced-agentic-applications-with-grain
      :session/lightning-talks
