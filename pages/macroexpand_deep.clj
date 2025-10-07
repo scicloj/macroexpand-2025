@@ -185,7 +185,16 @@
 
         day1-slots (sort (:slots day1-data))
         day2-slots (sort (:slots day2-data))
-        all-time-slots (map first day1-slots)]
+        all-time-slots (map first day1-slots)
+
+        ;; Helper to format time range for multi-slot sessions
+        format-time-range (fn [start-time span-count]
+                            (if (> span-count 1)
+                              (let [[hour _] (str/split start-time #":")
+                                    start-hour (Integer/parseInt hour)
+                                    end-hour (+ start-hour span-count)]
+                                (str start-time " - " (format "%02d:00" end-hour)))
+                              start-time))]
     (kind/hiccup
      [:div
       ;; Ultra-aggressive CSS to override any external table styles
@@ -321,23 +330,29 @@
                              {:rowspan (:span day2-span-info 1)}))
                 day2-session])]))]]
 
-      ;; Mobile stacked layout
+      ;; Mobile stacked layout - now respects spans
       [:div {:class "mobile-schedule"}
        [:div {:class "mobile-day-section"}
         [:h3 (:date day1-data)]
-        (for [time-slot all-time-slots]
-          (let [day1-session (get (into {} day1-slots) time-slot)]
-            [:div {:class "mobile-time-slot"}
-             [:div {:class "mobile-time-header"} time-slot]
-             [:div {:class "mobile-session-content"} day1-session]]))]
+        (for [[idx time-slot] (map-indexed vector all-time-slots)]
+          (let [day1-span-info (get day1-spans idx)
+                day1-session (get (into {} day1-slots) time-slot)]
+            (when (:render? day1-span-info true)
+              [:div {:class "mobile-time-slot"}
+               [:div {:class "mobile-time-header"}
+                (format-time-range time-slot (:span day1-span-info 1))]
+               [:div {:class "mobile-session-content"} day1-session]])))]
 
        [:div {:class "mobile-day-section"}
         [:h3 (:date day2-data)]
-        (for [time-slot all-time-slots]
-          (let [day2-session (get (into {} day2-slots) time-slot)]
-            [:div {:class "mobile-time-slot"}
-             [:div {:class "mobile-time-header"} time-slot]
-             [:div {:class "mobile-session-content"} day2-session]]))]]])))
+        (for [[idx time-slot] (map-indexed vector all-time-slots)]
+          (let [day2-span-info (get day2-spans idx)
+                day2-session (get (into {} day2-slots) time-slot)]
+            (when (:render? day2-span-info true)
+              [:div {:class "mobile-time-slot"}
+               [:div {:class "mobile-time-header"}
+                (format-time-range time-slot (:span day2-span-info 1))]
+               [:div {:class "mobile-session-content"} day2-session]])))]]])))
 
 ^:kindly/hide-code
 (columnar-schedule-table (:day1 schedule-data) (:day2 schedule-data))
