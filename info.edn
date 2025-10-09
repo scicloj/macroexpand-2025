@@ -64,8 +64,7 @@
      :session/TBD
      :session/practice
      :session/practice
-     :session/experimenting-with-llm-subliminal-learning-in-clojure
-     :session/natural-language-interfaces-for-scientific-computing],
+     :session/experimenting-with-llm-subliminal-learning-in-clojure],
     :day2
     [:session/opening
      :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
@@ -120,13 +119,6 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :title "Building Event Sourced Agentic Applications with Grain"
    :abstract "Learn how ObneyAI uses its open source Clojure framework called Grain to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
    :conference :macroexpand-deep}
-  :session/natural-language-interfaces-for-scientific-computing
-  {:conference :macroexpand-deep,
-   :speakers #{:mike-travers},
-   :abstract
-   "Previous work in end-user scientific computing has focused on manipulable visual representations of programs. LLM technology provides an alternate path for non-programmers to engage with the complexity of scientific data. This talk will esplore the use of LLMs, ontologies, and domain-specific languages to support natural language queries, visualization, and general computing. Clojure's flexibility as back-end, front-end, and knowledge representation language is a key enabler.",
-   :title "Natural language interfaces for scientific computing",
-   :session-type :talk},
   :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
   {:conference :macroexpand-deep,
    :speakers #{:jelena-losic},
@@ -515,11 +507,6 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
    :bio
    "Jan studied compiler construction and robotics and later did a PhD in computer vision. He currently works in industry developing inspection software. His first programming languages were Omikron Basic and later Borland Pascal. In industry he used C++, Ruby, and Python. In his spare time he got interested in Ruby, GNU Guile, and finally Clojure.",
    :images ["jan-wedekind.png"]},
-  :mike-travers
-  {:full-name "Mike Travers",
-   :bio
-   "Mike Travers is an independent consultant and software engineer based in the San Francisco Bay Area, with over 40 years of experience designing systems that make programming more expressive and accessible. As the founder of Hyperphor (1988-present), Mike specializes in scientific knowledge management, AI applications, scientific visualization, and interaction design for commercial and academic clients. He has...",
-   :images ["mike-travers.jpg"]},
   :tanvi-nagar
   {:full-name "Tanvi Nagar",
    :bio
