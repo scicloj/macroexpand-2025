@@ -146,7 +146,9 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :approved-recording true},
   :session/macroexpand-3
   {:title "Macroexpand 3",
-   :abstract "TBD",
+   :abstract "This meeting is part of the [macroexpand gatherings](https://scicloj.github.io/docs/community/groups/macroexpand/) series.
+ It will focus on dicussing the state of our community and initiating new projects for the near future.
+ The session will begin by a few brief experience reports and proposals by participants. Then we will expand the discussion till we converge to actionable steps we will follow up on."
    :session-type :discussion,
    :speakers #{}},
   :session/TBD
