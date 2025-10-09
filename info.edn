@@ -32,8 +32,7 @@
      :session/clay-workshop
      :session/clojure-civitas-workshop
      :session/noj-intro
-     :session/water-quality---remote-sensing
-     :session/TBD],
+     :session/water-quality---remote-sensing],
     :day2
     [:session/opening
      :session/growing-a-dsl
@@ -65,7 +64,8 @@
      :session/TBD
      :session/practice
      :session/practice
-     :session/experimenting-with-llm-subliminal-learning-in-clojure],
+     :session/experimenting-with-llm-subliminal-learning-in-clojure
+     :session/TBD],
     :day2
     [:session/opening
      :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
