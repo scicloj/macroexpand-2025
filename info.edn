@@ -32,7 +32,8 @@
      :session/clay-workshop
      :session/clojure-civitas-workshop
      :session/noj-intro
-     :session/water-quality---remote-sensing],
+     :session/water-quality---remote-sensing
+     :session/TBD],
     :day2
     [:session/opening
      :session/growing-a-dsl
