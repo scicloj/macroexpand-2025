@@ -36,8 +36,8 @@
     :day2
     [:session/opening
      :session/growing-a-dsl
+     :session/book-basket-analysis
      :session/open-practice
-     :session/TBD
      :session/computer-graphics-with-clojure-lwjgl-and-fastmath
      :session/macroexpand-3
      :session/macroexpand-3
@@ -107,7 +107,12 @@
   :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg",
   :target-audience "General Clojure programmers, including beginners"},
  :sessions
- {:session/jank-and-torch
+ {:session/book-basket-analysis
+  {:speakers #{:tomas-baranek}
+   :title "Book Basket Analysis: A Beginner's Journey with Scicloj"
+   :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with tablecloth for data manipulation and kindly for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
+   :conference :macroexpand-noj}
+  :session/jank-and-torch
   {:speakers #{:jianling-zhong :shantanu-sardesai :monty-bichouna}
    :title "Jank & Torch: Native Deep Learning in Clojure"
    :abstract "In the field of AI, Python is the current reigning champ. But the Python ecosystem's dirty secret is that most of the libraries holding the system together are wrappers around C/C++ libraries that do most of the important work. 
@@ -456,6 +461,13 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   {:full-name "Shantanu Sardesai"
    :bio "Shantanu is a budding Clojure programmer and the newest member of the jank mentees team. With a background in mainstream languages like Kotlin and TypeScript, and a longstanding fascination with Clojure, compilers, and runtimes, he was naturally drawn to jank."
    :images ["shantanu-sardesai.jpeg"]}
+  :tomas-baranek
+  {:full-name "Tomas Baranek"
+   :bio "Tomáš Baránek is a blend of publisher and programmer who brings a beginner's curiosity to data science with Clojure. As co-founder of Jan Melvil Publishing, he leads a small independent house that has released over 166 high-quality non-fiction titles since 2007, with average sales of 10,000 copies per book.
+Tomáš graduated in Mathematical Informatics from Masaryk University in 1996, and after decades in publishing, returned to coding in 2022—working almost exclusively in Clojure. His background bridges technical and literary worlds, allowing him to approach basket analysis from both perspectives: as a publisher seeking business insights and as a programmer exploring Scicloj's capabilities.
+In 2021, he co-founded Servantes, developing software for modern publishers worldwide. This presentation reflects his recent journey, having attended machine learning classes at his alma mater last year, and represents his practical experiments applying these concepts to his publishing business with Clojure tools.
+He lives in the Czech Republic, in city of Brno."
+   :images ["tomas-baranek.jpg"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio
@@ -538,3 +550,4 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   :macroexpand-gatherings
   "https://scicloj.github.io/docs/community/groups/macroexpand/",
   :scinoj-light "https://scicloj.github.io/scinoj-light-1/"}}
+
