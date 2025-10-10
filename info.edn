@@ -137,7 +137,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   {:conference :macroexpand-deep,
    :speakers #{:stoica-ovidiu},
    :abstract
-   "Exploring how to build reliable voice AI agents in a functional data driven way with Clojure. This talk will go over all of the pieces involved in voice ai from best models to use, turn detection, context management to scripting and instruction following to hosting and scaling. By the end you will better understand what it takes to build highly reliable voice AI agents with Clojure",
+   "Exploring how to build reliable voice AI agents in a functional data-driven way with Clojure. This talk will go over all of the pieces involved in voice ai from best models to use, turn detection, context management to scripting and instruction following to hosting and scaling. By the end you will better understand what it takes to build highly reliable voice AI agents with Clojure",
    :title
    "Building Realtime Voice AI Agents with Clojure - Best Practices",
    :session-type :talk,
@@ -158,7 +158,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   {:conference :macroexpand-noj,
    :speakers #{:daniel-szmulewicz},
    :abstract
-   "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon  FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
+   "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
    :session-type :talk},
   :session/lightning-talks
@@ -171,7 +171,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :session-type :tutorial,
    :conference :macroexpand-noj,
    :speakers #{:harold :daniel-slutsky}
-   :abstract "This will be a tutorial session about some of the relevant high-performace libraries behind Noj such as [ham-fisted](https://github.com/cnuernber/ham-fisted), [dtype-next](https://github.com/cnuernber/dtype-next), and [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset). See [the session](https://www.youtube.com/watch?v=7Uc5GnYT03A) we had with Harold last May -- you may expect something similar."},
+   :abstract "This will be a tutorial session about some of the relevant high-performance libraries behind Noj such as [ham-fisted](https://github.com/cnuernber/ham-fisted), [dtype-next](https://github.com/cnuernber/dtype-next), and [tech.ml.dataset](https://github.com/techascent/tech.ml.dataset). See [the session](https://www.youtube.com/watch?v=7Uc5GnYT03A) we had with Harold last May -- you may expect something similar."},
   :session/computer-graphics-with-clojure-lwjgl-and-fastmath
   {:prefer-prerecorded false,
    :conference :macroexpand-noj,
@@ -195,7 +195,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :session-type :talk},
   :session/clojure-civitas-workshop
   {:title "Clojure Civitas Workshop",
-   :abstract "We will explore the workflow and ergonomics for publishihg at [Clojure Civitas](https://clojurecivitas.github.io), the new platform where Clojurians share thare ideas and explorations.",
+   :abstract "We will explore the workflow and ergonomics for publishing at [Clojure Civitas](https://clojurecivitas.github.io), the new platform where Clojurians share their ideas and explorations.",
    :session-type :workshop,
    :conference :macroexpand-noj,
    :speakers #{:timothy-pratley}},
@@ -227,7 +227,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:ludger-solbach},
    :submission-timestamp "24/09/2025 10:14:12",
    :abstract
-   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations.\nIt has been build with AI assistance right from the beginning. Four months in the implementation, I have gained some\nexperience with AI assisted coding, which I'd like to share in this talk.\n\nFirst I like to give an overview of QClojure to set the stage.\nI will show the tools and the workflow for AI assisted coding, including some prompts.\nThen we look at the actual process of working with the AI.\nFinally I will give you some of my best practices and summarize with the lessons learned.",
+   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations.\nIt has been built with AI assistance right from the beginning. Four months into the implementation, I have gained some\nexperience with AI assisted coding, which I'd like to share in this talk.\n\nFirst I like to give an overview of QClojure to set the stage.\nI will show the tools and the workflow for AI assisted coding, including some prompts.\nThen we look at the actual process of working with the AI.\nFinally I will give you some of my best practices and summarize with the lessons learned.",
    :title "Building QClojure with AI assistance",
    :session-type :talk,
    :approved-recording true},
@@ -240,7 +240,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:luke-zeitlin},
    :submission-timestamp "29/09/2025 21:20:14",
    :abstract
-   "Using multispectral satellite imagery in cloud optimized geotiffs to perform simple band-ratio indicies of water quality in the browser in a Clay notebook.",
+   "Using multispectral satellite imagery in cloud-optimized geotiffs to perform simple band-ratio indices of water quality in the browser in a Clay notebook.",
    :title "Water Quality - Remote Sensing",
    :session-type :talk,
    :approved-recording true},
@@ -284,7 +284,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:ben-sless},
    :submission-timestamp "27/09/2025 16:26:11",
    :abstract
-   "Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
+   "Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema-related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
    :title "Elements of Malli",
    :session-type :talk,
    :approved-recording true},
@@ -315,7 +315,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:zygimantas-medelis},
    :submission-timestamp "26/09/2025 06:22:32",
    :abstract
-   "Every text processing application needs to answer a  question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how Bosquet, an LLM orchestration library, can help with building  entity extraction pipelines.",
+   "Every text processing application needs to answer a question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how Bosquet, an LLM orchestration library, can help with building entity extraction pipelines.",
    :title "Building Dynamic Entity Extraction with Bosquet",
    :session-type :talk,
    :approved-recording true},
@@ -379,7 +379,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:matthias-buehlmaier :edward-widjaja :tanvi-nagar},
    :submission-timestamp "21/09/2025 19:11:47",
    :abstract
-   "This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual(synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.",
+   "This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual (synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.",
    :title
    "Rolling Regressions in Clojure for Real-Time Alpha and Beta Monitoring",
    :session-type :talk,
