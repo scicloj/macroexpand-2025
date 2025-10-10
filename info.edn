@@ -522,7 +522,7 @@ He lives in the Czech Republic, in city of Brno."
   {:full-name "Daniel Slutsky",
    :images ["daniel-slutsky.jpeg"],
    :bio
-   "Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellnes app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.\n His approach towards open-source communities is drawn from his past experiences in various activist groups.\n "
+   "Daniel Slutsky is a data scientist at Endor Global, part of a team of Clojurians building a wellness app using biometric data from wearable devices. His main focus in recent years has been the Scicloj group, where he is involved in community building and co-maintaining a few of the tools and libraries.\n His approach towards open-source communities is drawn from his past experiences in various activist groups.\n "
    :roles [:organizer :host]},
   :jan-wedekind
   {:full-name "Jan Wedekind",
