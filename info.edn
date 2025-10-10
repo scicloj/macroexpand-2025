@@ -177,7 +177,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :conference :macroexpand-noj,
    :speakers #{:jan-wedekind},
    :abstract
-   "[sfsim](https://github.com/wedesoft/sfsim) is a space flight simulator under development. It makes use of Clojure, [LWJGL](https://www.lwjgl.org/), and [Fastmath](https://github.com/generateme/fastmath) among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.",
+   "[sfsim](https://github.com/wedesoft/sfsim) is a space flight simulator under development. It makes use of Clojure, [LWJGL](https://www.lwjgl.org/), and [Fastmath](https://github.com/generateme/fastmath) among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.\n\n[Read more at Clojure Civitas](https://clojurecivitas.github.io/opengl_visualization/main.html)",
    :title "Computer Graphics with Clojure, LWJGL, and Fastmath",
    :session-type :talk},
   :session/noj-intro
@@ -240,7 +240,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:luke-zeitlin},
    :submission-timestamp "29/09/2025 21:20:14",
    :abstract
-   "Using multispectral satellite imagery in cloud-optimized geotiffs to perform simple band-ratio indices of water quality in the browser in a Clay notebook.",
+   "Using multispectral satellite imagery in cloud-optimized geotiffs to perform simple band-ratio indices of water quality in the browser in a Clay notebook.\n\n[Read more at Clojure Civitas](https://clojurecivitas.github.io/earth_observation/waterquality.html)",
    :title "Water Quality - Remote Sensing",
    :session-type :talk,
    :approved-recording true},
@@ -253,7 +253,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:matthias-buehlmaier :edward-widjaja :tanvi-nagar},
    :submission-timestamp "21/09/2025 19:20:51",
    :abstract
-   "This research paper / talk presents the design and implementation of a Portfolio Analysis Program built almost entirely in Clojure for The University of Hong Kong's Center for Investment Management.\n\nThe program enables users to construct custom portfolios from individual stocks or asset classes, evaluate performance using key financial metrics, and visualize results interactively.\n\nWhat sets this tool apart is its integration of financial market narratives through a Large Language Model (LLM), which contextualizes portfolio performances using real-time financial news.",
+   "This research paper / talk presents the design and implementation of a Portfolio Analysis Program built almost entirely in Clojure for The University of Hong Kong's Center for Investment Management.\n\nThe program enables users to construct custom portfolios from individual stocks or asset classes, evaluate performance using key financial metrics, and visualize results interactively.\n\nWhat sets this tool apart is its integration of financial market narratives through a Large Language Model (LLM), which contextualizes portfolio performances using real-time financial news.\n\n[Read more at Clojure Civitas](https://clojurecivitas.github.io/finance/portfolio_analysis/llm_financial_advisor.html)",
    :title
    "A Clojure-based Portfolio Analysis Tool based on LLM Integration",
    :session-type :talk,
@@ -379,7 +379,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:matthias-buehlmaier :edward-widjaja :tanvi-nagar},
    :submission-timestamp "21/09/2025 19:11:47",
    :abstract
-   "This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual (synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.",
+   "This paper / talk presents a functional, reproducible implementation of rolling regression in Clojure to estimate time-varying alpha(α) and beta(β) for student-managed portfolios at the Centre for Investment Management (CIM), The University of Hong Kong. Unlike traditional CAPM tests based on passive index data, our analysis uses actual (synthetic) trades executed by junior portfolio managers- undergraduate students who manage simulated equity portfolios over multiple semesters.\n\n[Read more at Clojure Civitas](https://clojurecivitas.github.io/finance/portfolio_analysis/alpha_beta_regression.html)",
    :title
    "Rolling Regressions in Clojure for Real-Time Alpha and Beta Monitoring",
    :session-type :talk,
