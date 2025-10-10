@@ -110,26 +110,26 @@
  {:session/book-basket-analysis
   {:speakers #{:tomas-baranek}
    :title "Book Basket Analysis: A Beginner's Journey with Scicloj"
-   :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with tablecloth for data manipulation and kindly for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
+   :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with [Tablecloth](https://scicloj.github.io/tablecloth/) for data manipulation and [Kindly](https://scicloj.github.io/kindly/) for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
    :conference :macroexpand-noj}
   :session/jank-and-torch
   {:speakers #{:jianling-zhong :shantanu-sardesai :monty-bichouna}
    :title "Jank & Torch: Native Deep Learning in Clojure"
    :abstract "In the field of AI, Python is the current reigning champ. But the Python ecosystem's dirty secret is that most of the libraries holding the system together are wrappers around C/C++ libraries that do most of the important work. 
-Jank is the native Clojure dialect built on compiler technologies like LLVM, giving it access into the same native libraries powering the Python ecosystem. As Jank heads towards its first alpha release, its most highly anticipated feature, seamless C++ interop is already capable of wrapping and using native C++ libraries for machine learning and artificial intelligence. In this talk, we will show how to leverage Jank's C++ interop to wrap the most popular deep learning library in usage right now, libtorch, which most would have known through its Python frontend, Pytorch.
+[Jank](https://github.com/jank-lang/jank) is the native Clojure dialect built on compiler technologies like LLVM, giving it access into the same native libraries powering the Python ecosystem. As Jank heads towards its first alpha release, its most highly anticipated feature, seamless C++ interop is already capable of wrapping and using native C++ libraries for machine learning and artificial intelligence. In this talk, we will show how to leverage Jank's C++ interop to wrap the most popular deep learning library in usage right now, [libtorch](https://pytorch.org/cppdocs/), which most would have known through its Python frontend, [PyTorch](https://pytorch.org/).
 As a proof of concept, we will display an implementation of GPT-2, the LLM released in 2019 using our Torch wrapper.
 This talk will give Clojure practitioners interested in using Clojure for ML/AI a glimpse into the future of how important C++ libraries can be utilized with Jank."
    :conference :macroexpand-deep}
   :session/building-event-sourced-agentic-applications-with-grain
   {:speakers #{:cameron-barre}
    :title "Building Event Sourced Agentic Applications with Grain"
-   :abstract "Learn how ObneyAI uses its open source Clojure framework called Grain to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
+   :abstract "Learn how ObneyAI uses its open source Clojure framework called [Grain](https://github.com/ObneyAI/grain) to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
    :conference :macroexpand-deep}
   :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
   {:conference :macroexpand-deep,
    :speakers #{:jelena-losic},
    :abstract
-   "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using libpython-clj to call PyTorch Geometric from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
+   "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using [libpython-clj](https://github.com/clj-python/libpython-clj) to call [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
    :title
    "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability",
    :session-type :talk},
@@ -158,7 +158,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   {:conference :macroexpand-noj,
    :speakers #{:daniel-szmulewicz},
    :abstract
-   "Bioscoop is a DSL to program videos (instead of non-linear editing). It builds upon FFmpeg's filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
+   "[Bioscoop](https://github.com/danielsz/bioscoop) is a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) to program videos (instead of non-linear editing). It builds upon [FFmpeg](https://ffmpeg.org/)'s filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
    :session-type :talk},
   :session/lightning-talks
@@ -177,12 +177,12 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :conference :macroexpand-noj,
    :speakers #{:jan-wedekind},
    :abstract
-   "sfsim is a space flight simulator under development. It makes use of Clojure, LWJGL, and Fastmath among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.",
+   "[sfsim](https://github.com/wedesoft/sfsim) is a space flight simulator under development. It makes use of Clojure, [LWJGL](https://www.lwjgl.org/), and [Fastmath](https://github.com/generateme/fastmath) among other libraries. More than half of the code deals with graphics. This talk gives a short introduction using LWJGL's cross-platform OpenGL bindings to get started with rendering data from NASA's CGI Moon Kit.",
    :title "Computer Graphics with Clojure, LWJGL, and Fastmath",
    :session-type :talk},
   :session/noj-intro
   {:title "Noj Intro",
-   :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablec/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the Noj toolkit. It will be a free-form session with audience participation.",
+   :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablec/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the [Noj](https://scicloj.github.io/noj/) toolkit. It will be a free-form session with audience participation.",
    :session-type :workshop,
    :conference :macroexpand-noj,
    :speakers #{:daniel-slutsky}},
@@ -227,7 +227,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:ludger-solbach},
    :submission-timestamp "24/09/2025 10:14:12",
    :abstract
-   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations.\nIt has been built with AI assistance right from the beginning. Four months into the implementation, I have gained some\nexperience with AI assisted coding, which I'd like to share in this talk.\n\nFirst I like to give an overview of QClojure to set the stage.\nI will show the tools and the workflow for AI assisted coding, including some prompts.\nThen we look at the actual process of working with the AI.\nFinally I will give you some of my best practices and summarize with the lessons learned.",
+   "[QClojure](https://github.com/lsolbach/QClojure) is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations.\nIt has been built with AI assistance right from the beginning. Four months into the implementation, I have gained some\nexperience with AI assisted coding, which I'd like to share in this talk.\n\nFirst I like to give an overview of QClojure to set the stage.\nI will show the tools and the workflow for AI assisted coding, including some prompts.\nThen we look at the actual process of working with the AI.\nFinally I will give you some of my best practices and summarize with the lessons learned.",
    :title "Building QClojure with AI assistance",
    :session-type :talk,
    :approved-recording true},
@@ -284,7 +284,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:ben-sless},
    :submission-timestamp "27/09/2025 16:26:11",
    :abstract
-   "Malli is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema-related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
+   "[Malli](https://github.com/metosin/malli) is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema-related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
    :title "Elements of Malli",
    :session-type :talk,
    :approved-recording true},
@@ -315,7 +315,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:zygimantas-medelis},
    :submission-timestamp "26/09/2025 06:22:32",
    :abstract
-   "Every text processing application needs to answer a question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how Bosquet, an LLM orchestration library, can help with building entity extraction pipelines.",
+   "Every text processing application needs to answer a question: what is this text about? Named entity extraction is one part of the answer to this. It identifies and links words to real-world entities—turning \"Macroexpand 2025\" into structured data about a specific technology conference happening in a specific year.\n\nThis extraction process involves multiple steps that can be implemented using LLMs. This presentation demonstrates how [Bosquet](https://github.com/zmedelis/bosquet), an LLM orchestration library, can help with building entity extraction pipelines.",
    :title "Building Dynamic Entity Extraction with Bosquet",
    :session-type :talk,
    :approved-recording true},
@@ -338,7 +338,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:christian-weilbach},
    :submission-timestamp "29/09/2025 17:51:08",
    :abstract
-   "We will take a look at how one can write a stochastic simulator for a simple business model, how embeddings and a graph neural network architecture for the compute graph of the simulator can be constructed, and how this neural network can be trained to provide fast inference over unknown variables of the simulator to guide the business process in real-time. We will then discuss the underlying methodology of probabilistic programming more systematically through the Daphne compiler [1], and how it provides different ways to compile a subset of Clojure simulator programs to neural network architectures, and as of lately also CUDA. The goal of this discussion is to provide understanding of both the methodology and applications of probabilistic programming, as well as to gather more feedback from the Clojure community to render Daphne not only an academic platform, but also more practical. One such potential practical ...\n\n[1] https://github.com/plai-group/daphne",
+   "We will take a look at how one can write a stochastic simulator for a simple business model, how embeddings and a graph neural network architecture for the compute graph of the simulator can be constructed, and how this neural network can be trained to provide fast inference over unknown variables of the simulator to guide the business process in real-time. We will then discuss the underlying methodology of probabilistic programming more systematically through the [Daphne](https://github.com/plai-group/daphne) compiler, and how it provides different ways to compile a subset of Clojure simulator programs to neural network architectures, and as of lately also CUDA. The goal of this discussion is to provide understanding of both the methodology and applications of probabilistic programming, as well as to gather more feedback from the Clojure community to render Daphne not only an academic platform, but also more practical. One such potential practical integration we will discuss is with LLMs that can help with the simulator construction.",
    :title "Compiling Probabilistic Programs to Neural Networks",
    :session-type :talk,
    :approved-recording true},
@@ -351,7 +351,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{:ludger-solbach},
    :submission-timestamp "23/09/2025 22:52:21",
    :abstract
-   "QClojure is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations. \nThis talk gives a short introduction to quantum computing and the goals and features of QClojure.\nIn a short live coding session we will create some quantum states and circuits and run some algorithms on a quantum computing simulation.\nWe will also address some implementation topics like complex linear algebra and quantum algorithms.\nThe talk will close with future plans for QClojure, like running on real quantum hardware and quantum machine learning (QML).",
+   "[QClojure](https://github.com/lsolbach/QClojure) is a functional quantum computing library for Clojure with backend protocols, simulation backends and visualizations. \nThis talk gives a short introduction to quantum computing and the goals and features of QClojure.\nIn a short live coding session we will create some quantum states and circuits and run some algorithms on a quantum computing simulation.\nWe will also address some implementation topics like complex linear algebra and quantum algorithms.\nThe talk will close with future plans for QClojure, like running on real quantum hardware and quantum machine learning (QML).",
    :title "Functional Quantum Computing with QClojure",
    :session-type :talk,
    :approved-recording true},
