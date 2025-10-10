@@ -64,11 +64,11 @@
 
       [:details
        [:summary {:style "cursor: pointer; list-style: none; padding: 0.5rem 0;"}
-        [:div {:style "display: flex; align-items: center; justify-content: space-between;"}
-         [:p {:style "display: inline; margin: 0; font-size: 1rem; font-weight: bold;"}
+        [:div {:style "display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;"}
+         [:p {:style "display: inline; margin: 0; font-size: 1rem; font-weight: bold; flex: 1; min-width: 0;"}
           session-title]
          (when (seq speaker-images)
-           [:div {:style "display: flex; align-items: center; flex-shrink: 0;"}
+           [:div {:style "display: flex; align-items: center; flex-wrap: wrap; gap: 4px; max-width: 200px;"}
             speaker-images])]]
 
        ;; Expanded content

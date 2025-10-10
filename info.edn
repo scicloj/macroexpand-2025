@@ -294,7 +294,8 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :approved-civitas-notebook :not-relevant,
    :conference :macroexpand-deep,
    :preferred-time nil,
-   :speakers #{:kira-howe :siavash-mohammady :siyoung-byun},
+   :speakers #{:kira-howe :siavash-mohammady :siyoung-byun
+               :ray-mcdermott :josh-glover},
    :submission-timestamp "02/10/2025 15:39:54",
    :abstract "We will discuss the broader implications of the AI rush, a few of the ways it affects our lives, and what we might be able to do about it."
    :title "Panel: broader implications of AI",
@@ -468,6 +469,14 @@ Tomáš graduated in Mathematical Informatics from Masaryk University in 1996, a
 In 2021, he co-founded Servantes, developing software for modern publishers worldwide. This presentation reflects his recent journey, having attended machine learning classes at his alma mater last year, and represents his practical experiments applying these concepts to his publishing business with Clojure tools.
 He lives in the Czech Republic, in city of Brno."
    :images ["tomas-baranek.jpg"]}
+  :ray-mcdermott
+  {:full-name "Ray McDermott"
+   :bio "Ray has decades of experience writing commercial software for databases, finance, manufacturing and cloud services. He is a Clojure enthusiast and advocate and produces and participates in several podcasts and YouTube channels. The impact of hyper-scaled LLMs is the subject of his most recent project. While not raging, he’s gardening, out on a bike or in the woods with a camera."
+   :images ["ray-mcdermott.png"]}
+  :josh-glover
+  {:full-name "Josh Glover"
+   :bio "Josh is a software engineer, engineering leader, podcast host, and union organiser hailing from Stockholm. A technology enthusiast from early in life, he has been becoming increasingly aware of the social impacts of technology. He advocates a Luddite perspective, where the worth of technologies is determined by whether they contribute to or detract from human thriving."
+   :images ["josh-glover.jpg"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio

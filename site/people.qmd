@@ -99,6 +99,12 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
 
 
 ```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Josh Glover" src="images/josh-glover.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Josh Glover</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Josh is a software engineer, engineering leader, podcast host, and union organiser hailing from Stockholm. A technology enthusiast from early in life, he has been becoming increasingly aware of the social impacts of technology. He advocates a Luddite perspective, where the worth of technologies is determined by whether they contribute to or detract from human thriving.</p></div></div></div>
+```
+
+
+
+```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Justin Tirrell" src="images/justin-tirrell.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Justin Tirrell</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">I'm Justin, I'm a Clojure maximalist and independent software developer. I like working on trading systems and GUIs and rolling my own software tools and yak shaving.</p></div></div></div>
 ```
 
@@ -134,12 +140,6 @@ models for his 3D-Printer.</p></div></div></div>
 
 
 ```{=html}
-<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Mike Travers" src="images/mike-travers.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Mike Travers</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Mike Travers is an independent consultant and software engineer based in the San Francisco Bay Area, with over 40 years of experience designing systems that make programming more expressive and accessible. As the founder of Hyperphor (1988-present), Mike specializes in scientific knowledge management, AI applications, scientific visualization, and interaction design for commercial and academic clients. He has...</p></div></div></div>
-```
-
-
-
-```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Monty Bichouna" src="images/monty-bichouna.jpeg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Monty Bichouna</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Monty is an aspiring compiler engineer who enjoys Lisps and always wanted a reason to learn Clojure. He found an excellent reason with jank, the native Clojure dialect.</p></div></div></div>
 ```
 
@@ -147,6 +147,12 @@ models for his 3D-Printer.</p></div></div></div>
 
 ```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Peter Stromberg" src="images/peter-stromberg.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Peter Stromberg</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Peter Strömberg is a curious coder since 40+ years and is extra fascinated by making software that he uses do new things. These days he practically lives in VS Code and is making Clojure related extensions for it. Peter maintains Calva, Joyride, and Calva Backseat Driver. Backseat Driver is an AI extension for VS Code Copilot, giving the AI tools for using the Clojure REPL, as well as for structural editing.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Ray McDermott" src="images/ray-mcdermott.png" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Ray McDermott</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Deep Speaker</p><p style="margin: 0; line-height: 1.6;">Ray has decades of experience writing commercial software for databases, finance, manufacturing and cloud services. He is a Clojure enthusiast and advocate and produces and participates in several podcasts and YouTube channels. The impact of hyper-scaled LLMs is the subject of his most recent project. While not raging, he’s gardening, out on a bike or in the woods with a camera.</p></div></div></div>
 ```
 
 
@@ -191,6 +197,15 @@ models for his 3D-Printer.</p></div></div></div>
 
 ```{=html}
 <div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Timothy Pratley" src="images/timothy-pratley.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Timothy Pratley</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Timothy grew up exploring jungles, fighting kangaroos, surfing, and programming computers. After a career of leveraging computational graphs for companies he is now building Hummi.app, a diagramming app that puts the power of graphs in the hands of individuals.</p></div></div></div>
+```
+
+
+
+```{=html}
+<div style="margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"><div style="display: flex; gap: 1.5rem; align-items: flex-start;"><img alt="Tomas Baranek" src="images/tomas-baranek.jpg" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;" /><div style="flex: 1;"><h3 style="margin: 0 0 0.5rem 0; color: #333;">Tomas Baranek</h3><p style="margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;">Macroexpand-Noj Speaker</p><p style="margin: 0; line-height: 1.6;">Tomáš Baránek is a blend of publisher and programmer who brings a beginner's curiosity to data science with Clojure. As co-founder of Jan Melvil Publishing, he leads a small independent house that has released over 166 high-quality non-fiction titles since 2007, with average sales of 10,000 copies per book.
+Tomáš graduated in Mathematical Informatics from Masaryk University in 1996, and after decades in publishing, returned to coding in 2022—working almost exclusively in Clojure. His background bridges technical and literary worlds, allowing him to approach basket analysis from both perspectives: as a publisher seeking business insights and as a programmer exploring Scicloj's capabilities.
+In 2021, he co-founded Servantes, developing software for modern publishers worldwide. This presentation reflects his recent journey, having attended machine learning classes at his alma mater last year, and represents his practical experiments applying these concepts to his publishing business with Clojure tools.
+He lives in the Czech Republic, in city of Brno.</p></div></div></div>
 ```
 
 
