@@ -36,6 +36,7 @@
         speakers (:speakers session-data)
         speaker-names (format-speaker-list speakers people-data)
         abstract (:abstract session-data)
+        session-id (str/replace (name session-key) #"^session/" "")
         speaker-images (when (seq speakers)
                          (for [speaker-key speakers]
                            (let [speaker-data (get people-data speaker-key)
@@ -45,7 +46,9 @@
                                     :alt (:full-name speaker-data)
                                     :style "width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 8px;"}])))]
     (kind/hiccup
-     [:div {:style "margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem;"}
+     [:div {:id session-id
+            :class "session-card"
+            :style "margin-bottom: 1.5rem; border-left: 3px solid #ddd; padding-left: 1rem; transition: background-color 0.3s ease;"}
 
       [:details
        [:summary {:style "cursor: pointer; list-style: none; padding: 0.5rem 0;"}
@@ -120,6 +123,41 @@
      (->> other-sessions
           (map (fn [[title data]]
                  (session-card title data (:people conference-data)))))))
+
+^:kindly/hide-code
+(kind/hiccup
+ [:script {:type "text/javascript"}
+  "
+  function handleSessionAnchor() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const sessionCard = document.getElementById(hash);
+      if (sessionCard) {
+        const details = sessionCard.querySelector('details');
+        if (details && !details.open) {
+          details.open = true;
+        }
+        setTimeout(() => {
+          sessionCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          sessionCard.style.backgroundColor = '#fff3cd';
+          setTimeout(() => {
+            sessionCard.style.backgroundColor = '';
+          }, 2000);
+        }, 100);
+      }
+    }
+  }
+  
+  // Handle on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleSessionAnchor);
+  } else {
+    handleSessionAnchor();
+  }
+  
+  // Handle hash changes (clicking links on the same page)
+  window.addEventListener('hashchange', handleSessionAnchor);
+  "])
 
 ;; ---
 

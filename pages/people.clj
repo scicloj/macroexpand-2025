@@ -14,26 +14,35 @@
 ;; Meet the amazing people behind Macroexpand 2025! Our conferences bring together speakers, organizers, and community members who are passionate about growing Clojure in data science and AI.
 
 ^:kindly/hide-code
-^:kindly/hide-code
-(defn person-card [person-key person-data roles]
-  (let [name (:full-name person-data)
+(defn person-card [person-key person-data roles sessions]
+  (let [person-name (:full-name person-data)
         bio (:bio person-data)
         image (or (when-let [images (:images person-data)]
                     (str "images/" (first images)))
                   "images/silhouette.svg")
-        role-text (str/join " • " roles)]
+        role-text (str/join " • " roles)
+        session-items (mapv (fn [[session-id session-data]]
+                              (let [session-anchor (str/replace (name session-id) #"^session/" "")]
+                                [:li {:style "margin-bottom: 0.25rem;"}
+                                 [:a {:href (str "sessions.html#" session-anchor)
+                                      :style "color: #0066cc; text-decoration: none;"}
+                                  (:title session-data)]]))
+                            sessions)]
     (kind/hiccup
      [:div {:style "margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"}
       [:div {:style "display: flex; gap: 1.5rem; align-items: flex-start;"}
        [:img {:src image
-              :alt name
+              :alt person-name
               :style "width: 120px; height: 120px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"}]
        [:div {:style "flex: 1;"}
-        [:h3 {:style "margin: 0 0 0.5rem 0; color: #333;"} name]
+        [:h3 {:style "margin: 0 0 0.5rem 0; color: #333;"} person-name]
         [:p {:style "margin: 0 0 1rem 0; font-weight: bold; color: #666; font-size: 0.9rem;"} role-text]
-        [:p {:style "margin: 0; line-height: 1.6;"} bio]]]])))
+        [:p {:style "margin: 0; line-height: 1.6;"} bio]
+        (when (seq sessions)
+          [:div {:style "margin-top: 1rem;"}
+           [:p {:style "margin: 0 0 0.5rem 0; font-weight: bold; color: #555; font-size: 0.9rem;"} "Sessions:"]
+           (into [:ul {:style "margin: 0; padding-left: 1.5rem;"}] session-items)])]]])))
 
-^:kindly/hide-code
 ^:kindly/hide-code
 (defn determine-roles [person-key conference-data]
   (let [person-data (get-in conference-data [:people person-key])
@@ -68,21 +77,25 @@
                             (filter #(contains? (set (:speakers (second %))) person-key)))
         roles (if (seq other-sessions)
                 (conj roles "Speaker")
-                roles)]
-    roles))
+                roles)
+        ;; Collect all sessions
+        all-sessions (concat noj-sessions deep-sessions other-sessions)]
+    {:roles roles
+     :sessions all-sessions}))
 
 ^:kindly/hide-code
 (def all-people-with-roles
   (->> (:people conference-data)
        (map (fn [[person-key person-data]]
-              [person-key person-data (determine-roles person-key conference-data)]))
+              (let [role-data (determine-roles person-key conference-data)]
+                [person-key person-data (:roles role-data) (:sessions role-data)])))
        (filter #(seq (nth % 2))) ; Only include people with roles
        (sort-by #(:full-name (second %))))) ; Sort alphabetically by name
 
 ^:kindly/hide-code
 (kind/fragment
- (for [[person-key person-data roles] all-people-with-roles]
-   (person-card person-key person-data roles)))
+ (for [[person-key person-data roles sessions] all-people-with-roles]
+   (person-card person-key person-data roles sessions)))
 
 ;; ---
 
