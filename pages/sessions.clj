@@ -24,8 +24,8 @@
 
 ;; Welcome to the Macroexpand 2025 sessions! This year we have two focused conferences:
 
-;; - **[Macroexpand-Noj](macroexpand-noj.html)** (October 17-18) - Data Science with the Noj toolkit
-;; - **[Macroexpand-Deep](macroexpand-deep.html)** (October 24-25) - The first Clojure AI conference
+;; - **[Macroexpand-Noj](macroexpand_noj.html)** (October 17-18) - Data Science with the Noj toolkit
+;; - **[Macroexpand-Deep](macroexpand_deep.html)** (October 24-25) - The first Clojure AI conference
 
 ;; ## All Sessions
 
