@@ -158,7 +158,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   {:conference :macroexpand-noj,
    :speakers #{:daniel-szmulewicz},
    :abstract
-   "[Bioscoop](https://github.com/danielsz/bioscoop) is a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) to program videos (instead of non-linear editing). It builds upon [FFmpeg](https://ffmpeg.org/)'s filtergraphs, but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
+   "[Bioscoop](https://github.com/danielsz/bioscoop) is a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) to program videos (instead of non-linear editing). It builds upon [FFmpeg](https://ffmpeg.org/)'s [filtergraphs](https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description), but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
    :session-type :talk},
   :session/lightning-talks
