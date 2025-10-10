@@ -28,7 +28,7 @@
      :session/TBD
      :session/TBD
      :session/functional-quantum-computing-with-qclojure
-     :session/TBD
+     :session/breath-hrv
      :session/clay-workshop
      :session/clojure-civitas-workshop
      :session/noj-intro
@@ -258,6 +258,15 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    "A Clojure-based Portfolio Analysis Tool based on LLM Integration",
    :session-type :talk,
    :approved-recording true},
+  :session/breath-hrv
+  {:conference :macroexpand-noj
+   :speakers #{:daniel-slutsky}
+   :title "Exploring the Breath-HRV Connection with Noj"
+   :abstract "Does your heart beat like a clock? No. It turns out that your heart rate varies. How much it varies, that is the question. Heart Rate Variability is a healthy phenomenon that
+  relates in various ways to sleep, stress, age, various health conditions, and more. In this talk, we will see how it relates to our breath. We will learn a bit about both, see
+  some visualizations, and demonstrate their relation through data analysis with [Tablecloth](https://scicloj.github.io/tablecloth/), [Tableplot](https://scicloj.github.io/tableplot/),
+  [Clay](https://scicloj.github.io/clay/), [Fastmath](https://github.com/generateme/fastmath), and [JDSP](https://jdsp.dev/). This is a real-world application of
+  [Noj](https://scicloj.github.io/noj/) for health data, presented by the team of Endor, a Clojure startup building a wellness app using wearable biometric data."}
   :session/clay-workshop
   {:prefer-prerecorded false,
    :approved-to-speak true,
