@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/speakers.html</loc>
-    <lastmod>2025-10-11T08:49:55.016Z</lastmod>
+    <lastmod>2025-10-11T16:07:44.400Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/macroexpand_noj.html</loc>
-    <lastmod>2025-10-11T08:49:54.561Z</lastmod>
+    <lastmod>2025-10-11T16:07:43.952Z</lastmod>
   </url>
   <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/index.html</loc>
-    <lastmod>2025-10-11T08:49:54.849Z</lastmod>
+    <loc>https://scicloj.github.io/macroexpand-2025/code_of_conduct.html</loc>
+    <lastmod>2025-10-11T16:07:44.196Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/sessions.html</loc>
-    <lastmod>2025-10-11T08:49:55.003Z</lastmod>
+    <lastmod>2025-10-11T16:07:44.387Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/index.html</loc>
+    <lastmod>2025-10-11T16:07:44.230Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/macroexpand_deep.html</loc>
-    <lastmod>2025-10-11T08:49:54.815Z</lastmod>
+    <lastmod>2025-10-11T16:07:44.183Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/people.html</loc>
-    <lastmod>2025-10-11T08:49:54.216Z</lastmod>
+    <lastmod>2025-10-11T16:07:43.584Z</lastmod>
   </url>
 </urlset>
