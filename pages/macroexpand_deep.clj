@@ -184,6 +184,7 @@
                                       :render? true}))))))))
 
 ^:kindly/hide-code
+^:kindly/hide-code
 (defn columnar-schedule-table [day1-data day2-data]
   (let [deep-conf (get-in conference-info [:conferences :macroexpand-deep])
         schedule (:schedule deep-conf)
@@ -194,7 +195,8 @@
 
         day1-slots (sort (:slots day1-data))
         day2-slots (sort (:slots day2-data))
-        all-time-slots (map first day1-slots)
+        ;; Use all unique time slots from both days, sorted
+        all-time-slots (sort (distinct (concat (map first day1-slots) (map first day2-slots))))
 
         ;; Helper to format time range for multi-slot sessions
         format-time-range (fn [start-time span-count]
