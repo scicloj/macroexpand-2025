@@ -25,8 +25,8 @@
     [:session/opening
      :session/computing-with-units-in-clojure
      :session/rolling-regressions-in-clojure-for-real-time-alpha-and-beta-monitoring
-     :session/TBD
-     :session/TBD
+     :session/TBA
+     :session/open-practice
      :session/functional-quantum-computing-with-qclojure
      :session/breath-hrv
      :session/clay-workshop
@@ -56,8 +56,8 @@
    {:day1
     [:session/opening
      :session/a-clojure-based-portfolio-analysis-tool-based-on-llm-integration
+     :session/TBA
      :session/open-practice
-     :session/TBD
      :session/building-qclojure-with-ai-assistance
      :session/panel-ai-assistants
      :session/panel-ai-assistants
@@ -333,12 +333,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :approved-recording true},
   :session/conclusion
   {:title "Conclusion",
-   :abstract "TBD",
-   :session-type :administrative,
-   :speakers #{}},
-  :conference-wrap-up
-  {:title "Conference Wrap-up",
-   :abstract "TBD",
+   :abstract "We will spend sopme time together with closing thoughts.",
    :session-type :administrative,
    :speakers #{}},
   :session/compiling-probabilistic-programs-to-neural-networks
@@ -367,14 +362,9 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :title "Functional Quantum Computing with QClojure",
    :session-type :talk,
    :approved-recording true},
-  :welcome-day-2
-  {:title "Welcome Day 2",
-   :abstract "TBD",
-   :session-type :administrative,
-   :speakers #{}},
   :session/opening
   {:title "Opening & Welcome",
-   :abstract "TBD",
+   :abstract "We will just spend some time together and discuss what is coming for the day.",
    :session-type :administrative,
    :speakers #{}},
   :session/open-practice
