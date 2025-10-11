@@ -90,11 +90,30 @@
               (let [role-data (determine-roles person-key conference-data)]
                 [person-key person-data (:roles role-data) (:sessions role-data)])))
        (filter #(seq (nth % 2))) ; Only include people with roles
-       (sort-by #(:full-name (second %))))) ; Sort alphabetically by name
+       (sort-by #(:full-name (second %)))))
+
+^:kindly/hide-code
+(def speakers-only
+  (filter (fn [[person-key person-data roles sessions]]
+            (not (some #{"Organizer" "Host"} roles)))
+          all-people-with-roles))
+
+^:kindly/hide-code
+(def organizers
+  (filter (fn [[person-key person-data roles sessions]]
+            (some #{"Organizer" "Host"} roles))
+          all-people-with-roles)) ; Sort alphabetically by name
 
 ^:kindly/hide-code
 (kind/fragment
- (for [[person-key person-data roles sessions] all-people-with-roles]
+ (for [[person-key person-data roles sessions] speakers-only]
+   (person-card person-key person-data roles sessions)))
+
+;; ## Organizers
+
+^:kindly/hide-code
+(kind/fragment
+ (for [[person-key person-data roles sessions] organizers]
    (person-card person-key person-data roles sessions)))
 
 ;; ---
