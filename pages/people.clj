@@ -90,7 +90,10 @@
               (let [role-data (determine-roles person-key conference-data)]
                 [person-key person-data (:roles role-data) (:sessions role-data)])))
        (filter #(seq (nth % 2))) ; Only include people with roles
-       (sort-by #(:full-name (second %)))))
+       (sort-by (fn [[person-key person-data roles sessions]]
+                  (let [full-name (:full-name person-data)
+                        name-parts (str/split full-name #"\s+")]
+                    (last name-parts))))))
 
 ^:kindly/hide-code
 (def speakers-only
