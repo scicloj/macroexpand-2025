@@ -111,8 +111,8 @@
 (kind/md
  "| **Timeline** | **Event Details** |
   |--|--|
-  | **Ongoing** | Project idea discussions |
-  | **September 8, 2025** | Final deadline for talk proposal submissions |
+  | **September 8, 2025** | ~~Final deadline for talk proposal submissions~~ (Closed) |
+  | **Ongoing** | Registration open - sign up to attend! |
   | **October 17-18, 2025** | [Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
   | **October 24-25, 2025** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
   
@@ -125,7 +125,7 @@
 ;; - **💬 Community** - Join the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) for real-time discussions
 ;; - **📹 Recordings** - All talks will be recorded and shared publicly afterwards
 ;; - **⏱️ Format** - Most sessions are 30 minutes talk + 20 minutes discussion
-;; - **📝 Registration** - Registration form coming soon! Check back here or follow us on Zulip for updates
+;; - **📝 Registration** - [Register now for free](https://forms.gle/mQytpTua6RUPcMGb9) to receive Zoom links and updates!
 ;; - **📢 Call for Proposals** - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!
 
 ;; ## Target Audience
