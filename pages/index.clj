@@ -126,6 +126,10 @@
 
 ;; All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
 
+;; ## Code of Conduct
+
+;; We are committed to providing a welcoming and inclusive environment for all participants. Please read our [Code of Conduct](./code_of_conduct.html) to learn more about our community standards.
+
 ;; ## Contact
 
 ;; [Any questions? Let us talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
