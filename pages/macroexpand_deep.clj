@@ -15,7 +15,16 @@
 ;; A two-day online event exploring AI systems in Clojure - from LLMs and neural networks to symbolic AI and hybrid approaches. Share production applications, research insights, and novel techniques that leverage Clojure's unique strengths for AI development. For Clojure programmers at all levels and AI practitioners curious about functional approaches.
 ;;
 ;; 📌 **[How to participate, register, and join →](./#how-to-participate)**
-;;
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 2rem 0;"}
+  [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"}
+   "🎟️ Register Now (Free)"]])
+
 ;; ### Tentative Schedule
 
 ^:kindly/hide-code

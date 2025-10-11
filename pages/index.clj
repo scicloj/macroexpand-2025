@@ -64,6 +64,15 @@
     [:a {:href "https://scicloj.github.io/docs/community/groups/macroexpand/"} "Macroexpand Gatherings"]
     " series, which focuses on in-depth discussions around Clojure growth."]]])
 
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 2rem 0;"}
+  [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"}
+   "🎟️ Register Now (Free)"]])
+
 ;; ## Our Community
 
 ;; Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.

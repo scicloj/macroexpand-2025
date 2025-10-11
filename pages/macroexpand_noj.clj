@@ -15,7 +15,16 @@
 ;; A two-day online event for sharing practical data science experiences, showcasing Noj ecosystem tools, and advancing Clojure's data science capabilities through tutorials, case studies, and technical discussions. Designed for Clojure programmers at all levels interested in data science.
 ;;
 ;; 📌 **[How to participate, register, and join →](./#how-to-participate)**
-;;
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 2rem 0;"}
+  [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"}
+   "🎟️ Register Now (Free)"]])
+
 ;; ### Tentative Schedule
 
 ^:kindly/hide-code

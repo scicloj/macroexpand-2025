@@ -27,6 +27,12 @@ A two-day online event for sharing practical data science experiences, showcasin
 📌 **[How to participate, register, and join →](./#how-to-participate)**
 
 
+```{=html}
+<div style="text-align: center; margin: 2rem 0;"><a class="btn btn-gradient" href="https://forms.gle/mQytpTua6RUPcMGb9" style="display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;" target="_blank">🎟️ Register Now (Free)</a></div>
+```
+
+
+
 ### Tentative Schedule
 
 
