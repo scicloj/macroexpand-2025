@@ -182,7 +182,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :session-type :talk},
   :session/noj-intro
   {:title "Noj Intro",
-   :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablec/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the [Noj](https://scicloj.github.io/noj/) toolkit. It will be a free-form session with audience participation.",
+   :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablecloth/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the [Noj](https://scicloj.github.io/noj/) toolkit. It will be a free-form session with audience participation.",
    :session-type :workshop,
    :conference :macroexpand-noj,
    :speakers #{:daniel-slutsky}},
