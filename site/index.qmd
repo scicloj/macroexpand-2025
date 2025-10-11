@@ -1,4 +1,11 @@
 ---
+title: "Macroexpand 2025"
+description: "Clojure online conferences by Scicloj - October 17-18 & 24-25, 2025"
+image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
+twitter-card:
+  image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
+open-graph:
+  image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
 format:
   html: {toc: false, toc-depth: 4, theme: cosmo}
 
@@ -12,6 +19,7 @@ format:
 .clay-side-by-side {margin: 1em 0}
 </style>
 <script src="index_files/md-default0.js" type="text/javascript"></script><script src="index_files/md-default1.js" type="text/javascript"></script>
+
 ![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo" fig-align="center" width="120px"}
 
 
