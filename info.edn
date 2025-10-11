@@ -56,21 +56,21 @@
    {:day1
     [:session/opening
      :session/a-clojure-based-portfolio-analysis-tool-based-on-llm-integration
-     :session/practice
+     :session/open-practice
      :session/TBD
      :session/building-qclojure-with-ai-assistance
      :session/panel-ai-assistants
      :session/panel-ai-assistants
-     :session/TBD
-     :session/practice
-     :session/practice
+     :session/reliability
+     :session/open-practice
      :session/experimenting-with-llm-subliminal-learning-in-clojure
+     :session/TBD
      :session/TBD],
     :day2
     [:session/opening
      :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
-     :session/practice
-     :session/practice
+     :session/open-practice
+     :session/open-practice
      :session/building-dynamic-entity-extraction-with-bosquet
      :session/panel-broader-implications-of-ai
      :session/panel-broader-implications-of-ai
@@ -107,7 +107,12 @@
   :tutorial-video "https://www.youtube.com/watch?v=lceazLPcSZg",
   :target-audience "General Clojure programmers, including beginners"},
  :sessions
- {:session/book-basket-analysis
+ {:session/reliability
+  {:title "Architechuring reliability in LLM systems"
+   :abstract "TBA"
+   :speakers #{:siavash-mohammady}
+   :conference :macroexpand-deep}
+  :session/book-basket-analysis
   {:speakers #{:tomas-baranek}
    :title "Book Basket Analysis: A Beginner's Journey with Scicloj"
    :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with [Tablecloth](https://scicloj.github.io/tablecloth/) for data manipulation and [Kindly](https://scicloj.github.io/kindly/) for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
@@ -376,7 +381,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :speakers #{}},
   :session/open-practice
   {:title "Open Practice",
-   :abstract "TBD",
+   :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
    :session-type :practice,
    :speakers #{}},
   :session/rolling-regressions-in-clojure-for-real-time-alpha-and-beta-monitoring
