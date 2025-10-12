@@ -150,6 +150,31 @@
             :slots (schedule-vector->slots (:day2 schedule) sessions people)}}))
 
 ^:kindly/hide-code
+(defn session-type-legend []
+  (kind/hiccup
+   [:div {:class "session-legend"}
+    [:div {:class "legend-item"}
+     [:span {:class "legend-icon"} "💬"]
+     [:div {:class "legend-color session-type-talk"}]
+     [:span {:class "legend-label"} "Talk"]]
+    [:div {:class "legend-item"}
+     [:span {:class "legend-icon"} "📚"]
+     [:div {:class "legend-color session-type-tutorial"}]
+     [:span {:class "legend-label"} "Tutorial"]]
+    [:div {:class "legend-item"}
+     [:span {:class "legend-icon"} "🗣️"]
+     [:div {:class "legend-color session-type-discussion"}]
+     [:span {:class "legend-label"} "Discussion"]]
+    [:div {:class "legend-item"}
+     [:span {:class "legend-icon"} "⚙️"]
+     [:div {:class "legend-color session-type-practice"}]
+     [:span {:class "legend-label"} "Practice"]]
+    [:div {:class "legend-item"}
+     [:span {:class "legend-icon"} "📋"]
+     [:div {:class "legend-color session-type-administrative"}]
+     [:span {:class "legend-label"} "Administrative"]]]))
+
+^:kindly/hide-code
 (defn analyze-schedule-spans
   "Analyzes a schedule vector and returns info about sessions that span multiple slots.
   Returns a map of {index -> {:session-key key :span count :render? bool}}"
@@ -192,11 +217,19 @@
         day2-schedule (:day2 schedule)
         day1-spans (analyze-schedule-spans day1-schedule)
         day2-spans (analyze-schedule-spans day2-schedule)
+        sessions (:sessions conference-info)
 
         day1-slots (sort (:slots day1-data))
         day2-slots (sort (:slots day2-data))
         ;; Use all unique time slots from both days, sorted
         all-time-slots (sort (distinct (concat (map first day1-slots) (map first day2-slots))))
+
+        ;; Helper to get session-type CSS class
+        get-session-type-class (fn [session-key]
+                                 (when session-key
+                                   (let [session-type (get-in sessions [session-key :session-type])]
+                                     (when session-type
+                                       (str "session-type-" (name session-type))))))
 
         ;; Helper to format time range for multi-slot sessions
         format-time-range (fn [start-time span-count]
@@ -327,16 +360,20 @@
           (let [day1-span-info (get day1-spans idx)
                 day2-span-info (get day2-spans idx)
                 day1-session (get (into {} day1-slots) time-slot)
-                day2-session (get (into {} day2-slots) time-slot)]
+                day2-session (get (into {} day2-slots) time-slot)
+                day1-session-key (:session-key day1-span-info)
+                day2-session-key (:session-key day2-span-info)
+                day1-type-class (get-session-type-class day1-session-key)
+                day2-type-class (get-session-type-class day2-session-key)]
             [:tr
              [:td {:class "time-cell"} time-slot]
              (when (:render? day1-span-info true)
-               [:td (merge {:class "session-cell"}
+               [:td (merge {:class (str "session-cell " day1-type-class)}
                            (when (> (:span day1-span-info 1) 1)
                              {:rowspan (:span day1-span-info 1)}))
                 day1-session])
              (when (:render? day2-span-info true)
-               [:td (merge {:class "session-cell"}
+               [:td (merge {:class (str "session-cell " day2-type-class)}
                            (when (> (:span day2-span-info 1) 1)
                              {:rowspan (:span day2-span-info 1)}))
                 day2-session])]))]]
@@ -364,6 +401,9 @@
                [:div {:class "mobile-time-header"}
                 (format-time-range time-slot (:span day2-span-info 1))]
                [:div {:class "mobile-session-content"} day2-session]])))]]])))
+
+^:kindly/hide-code
+(session-type-legend)
 
 ^:kindly/hide-code
 (columnar-schedule-table (:day1 schedule-data) (:day2 schedule-data))

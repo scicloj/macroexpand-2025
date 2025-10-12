@@ -109,17 +109,20 @@
   {:title "2D CFD Simulation based optimization of airfoils using freecad & openfoam"
    :abstract "TBA"
    :speakers #{:siavash-mohammady :siyoung-byun}
-   :conferences :macroexpand-deep}
+   :conferences :macroexpand-deep
+   :session-type :talk}
   :session/reliability
   {:title "Architechuring reliability in LLM systems"
    :abstract "Large Language Models have captured the imagination of developers worldwide, yet many LLM-powered systems fail in production despite impressive demos. The root cause is often not technical incompetence, but rather an over-optimistic faith in LLM capabilities without accounting for their fundamental limitations. Just as an engineer hanging a heavy shelf wouldn't rely solely on manufacturer specifications without safety margins, building reliable LLM systems requires a \"Murphy's Law\" mindset that anticipates failure modes. Through our experience building StartCheck, a production document analysis platform, we've learned that true reliability comes from understanding and designing around core LLM limitations: input quality sensitivity, task complexity degradation, reasoning constraints, output length trade-offs, hallucinations, and consistency challenges."
    :speakers #{:siavash-mohammady}
-   :conference :macroexpand-deep}
+   :conference :macroexpand-deep
+   :session-type :talk}
   :session/book-basket-analysis
   {:speakers #{:tomas-baranek}
    :title "Book Basket Analysis: A Beginner's Journey with Scicloj"
    :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with [Tablecloth](https://scicloj.github.io/tablecloth/) for data manipulation and [Kindly](https://scicloj.github.io/kindly/) for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
-   :conference :macroexpand-noj}
+   :conference :macroexpand-noj
+   :session-type :talk}
   :session/jank-and-torch
   {:speakers #{:jianling-zhong :shantanu-sardesai :monty-bichouna}
    :title "Jank & Torch: Native Deep Learning in Clojure"
@@ -127,12 +130,14 @@
 [Jank](https://github.com/jank-lang/jank) is the native Clojure dialect built on compiler technologies like LLVM, giving it access into the same native libraries powering the Python ecosystem. As Jank heads towards its first alpha release, its most highly anticipated feature, seamless C++ interop is already capable of wrapping and using native C++ libraries for machine learning and artificial intelligence. In this talk, we will show how to leverage Jank's C++ interop to wrap the most popular deep learning library in usage right now, [libtorch](https://pytorch.org/cppdocs/), which most would have known through its Python frontend, [PyTorch](https://pytorch.org/).
 As a proof of concept, we will display an implementation of GPT-2, the LLM released in 2019 using our Torch wrapper.
 This talk will give Clojure practitioners interested in using Clojure for ML/AI a glimpse into the future of how important C++ libraries can be utilized with Jank."
-   :conference :macroexpand-deep}
+   :conference :macroexpand-deep
+   :session-type :talk}
   :session/building-event-sourced-agentic-applications-with-grain
   {:speakers #{:cameron-barre}
    :title "Building Event Sourced Agentic Applications with Grain"
    :abstract "Learn how ObneyAI uses its open source Clojure framework called [Grain](https://github.com/ObneyAI/grain) to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
-   :conference :macroexpand-deep}
+   :conference :macroexpand-deep
+   :session-type :talk}
   :session/gnn
   {:conference :macroexpand-deep,
    :speakers #{:jelena-losic},
@@ -140,7 +145,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using [libpython-clj](https://github.com/clj-python/libpython-clj) to call [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development. After the talk and discussion, we will practice some things in the REPL together: using PyTorch from Clojure, and maybe more.",
    :title
    "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability (+ Practice)",
-   :session-type :talk},
+   :session-type :tutorial},
   :session/building-realtime-voice-ai-agents-with-clojure---best-practices
   {:conference :macroexpand-deep,
    :speakers #{:stoica-ovidiu},
@@ -160,7 +165,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/TBD
   {:title "TBD",
    :abstract "TBD",
-   :session-type :placeholder,
+   :session-type :administrative,
    :speakers #{}},
   :session/growing-a-dsl
   {:conference :macroexpand-noj,
@@ -172,7 +177,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/lightning-talks
   {:title "Lightning Talks",
    :abstract "Various short talks by conference participants",
-   :session-type :lightning,
+   :session-type :discussion,
    :speakers #{}},
   :session/noj-foundations
   {:title "Noj Foundations",
@@ -191,7 +196,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/noj-intro
   {:title "Noj Intro",
    :abstract "We will practice basic data exploration with [Tablecloth](https://scicloj.github.io/tablecloth/) and [Tableplot](https://scicloj.github.io/tableplot/), and maybe a few other parts of the [Noj](https://scicloj.github.io/noj/) toolkit. It will be a free-form session with audience participation.",
-   :session-type :workshop,
+   :session-type :tutorial,
    :conference :macroexpand-noj,
    :speakers #{:daniel-slutsky}},
   :session/experimenting-with-llm-subliminal-learning-in-clojure
@@ -204,7 +209,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/clojure-civitas-workshop
   {:title "Clojure Civitas Workshop",
    :abstract "We will explore the workflow and ergonomics for publishing at [Clojure Civitas](https://clojurecivitas.github.io), the new platform where Clojurians share their ideas and explorations.",
-   :session-type :workshop,
+   :session-type :tutorial,
    :conference :macroexpand-noj,
    :speakers #{:timothy-pratley}},
   :session/computing-with-units-in-clojure
@@ -274,7 +279,8 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   relates in various ways to sleep, stress, age, various health conditions, and more. In this talk, we will see how it relates to our breath. We will learn a bit about both, see
   some visualizations, and demonstrate their relation through data analysis with [Tablecloth](https://scicloj.github.io/tablecloth/), [Tableplot](https://scicloj.github.io/tableplot/),
   [Clay](https://scicloj.github.io/clay/), [Fastmath](https://github.com/generateme/fastmath), and [JDSP](https://jdsp.dev/). This is a real-world application of
-  [Noj](https://scicloj.github.io/noj/) for health data, presented by the team of Endor, a Clojure startup building a wellness app using wearable biometric data."}
+  [Noj](https://scicloj.github.io/noj/) for health data, presented by the team of Endor, a Clojure startup building a wellness app using wearable biometric data."
+   :session-type :talk}
   :session/clay-workshop
   {:prefer-prerecorded false,
    :approved-to-speak true,
@@ -285,12 +291,12 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :submission-timestamp "02/10/2025 15:38:37",
    :abstract "We will learn about how to use [Clay](https://scicloj.github.io/clay/) for interactive data visualization, documentation, and publishing.",
    :title "Clay Workshop",
-   :session-type :talk,
+   :session-type :tutorial,
    :approved-recording true},
   :break
   {:title "Break",
    :abstract "TBD",
-   :session-type :break,
+   :session-type :administrative,
    :speakers #{}},
   :session/elements-of-malli
   {:prefer-prerecorded false,
@@ -303,7 +309,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :abstract
    "[Malli](https://github.com/metosin/malli) is a schema validation library, similar to spec. Unlike spec, it sets its aim higher, aiming for all schema-related needs, like explanation, coercion, parsing, generation, and the best performance possible.\nWe'll go over Malli's building blocks, how it differs from spec, how to use it effectively, and engage in a non trivial example.",
    :title "Elements of Malli",
-   :session-type :talk,
+   :session-type :tutorial,
    :approved-recording true},
   :session/panel-broader-implications-of-ai
   {:prefer-prerecorded false,
@@ -316,13 +322,14 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :submission-timestamp "02/10/2025 15:39:54",
    :abstract "We will discuss the broader implications of the AI rush, a few of the ways it affects our lives, and what we might be able to do about it."
    :title "Panel: broader implications of AI",
-   :session-type :talk,
+   :session-type :discussion,
    :approved-recording true},
   :session/panel-ai-assistants
   {:speakers #{:peter-stromberg :bruce-hauman :eric-dallo},
    :conference :macroexpand-deep,
    :title "Panel: AI assistants"
-   :abstract "We will have a conversation with a few of the toolmakers behind Clojure's main AI assistants."},
+   :abstract "We will have a conversation with a few of the toolmakers behind Clojure's main AI assistants."
+   :session-type :discussion},
   :session/building-dynamic-entity-extraction-with-bosquet
   {:prefer-prerecorded false,
    :approved-to-speak true,

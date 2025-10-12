@@ -215,3 +215,65 @@ table.gradient-table  {
     }
   }
 }
+
+// Session type colors and styles
+$session-type-talk: #E3F2FD;           // Light blue
+$session-type-tutorial: #FFF3E0;       // Light orange
+$session-type-discussion: #F3E5F5;     // Light purple
+$session-type-practice: #E8F5E9;       // Light green
+$session-type-administrative: #F5F5F5; // Light gray
+
+.session-type-talk {
+  background-color: $session-type-talk !important;
+}
+
+.session-type-tutorial {
+  background-color: $session-type-tutorial !important;
+}
+
+.session-type-discussion {
+  background-color: $session-type-discussion !important;
+}
+
+.session-type-practice {
+  background-color: $session-type-practice !important;
+}
+
+.session-type-administrative {
+  background-color: $session-type-administrative !important;
+}
+
+// Session type legend
+.session-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  justify-content: center;
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+
+    .legend-icon {
+      font-size: 1.2rem;
+    }
+
+    .legend-color {
+      width: 40px;
+      height: 24px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+
+    .legend-label {
+      font-weight: 500;
+    }
+  }
+}
