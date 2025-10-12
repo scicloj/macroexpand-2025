@@ -484,6 +484,20 @@ He lives in the Czech Republic, in city of Brno."
   {:full-name "Josh Glover"
    :bio "Josh is a software engineer, engineering leader, podcast host, and union organiser hailing from Stockholm. A technology enthusiast from early in life, he has been becoming increasingly aware of the social impacts of technology. He advocates a Luddite perspective, where the worth of technologies is determined by whether they contribute to or detract from human thriving."
    :images ["josh-glover.jpg"]}
+  :kapil-reddyi
+  {:full-name "Kapil Reddy"
+   :bio "
+I'm Kapil 👋, founder of Unravel.tech and former Head of Platform Engineering at Helpshift. I've been working with Clojure for the last 15 years, and I absolutely love the language.
+
+At Unravel.tech, we're building enterprise-grade Agentic Systems and bringing GenAI and LLM capabilities to life for our clients. Some recent projects include:
+
+🤝 LLM-backed background agents that help you prepare quickly for sales calls.
+🏛️ Building AI that follows regulations for a consumer finance advisory app—because compliance shouldn't be an afterthought.
+💻 Automated migrations of large (MASSIVE) code-bases. The kind that makes devs lose sleep.
+
+I'm particularly passionate about prompt optimizations and evals—the unglamorous but crucial work that makes AI systems production-ready. In my free time, I'm building foundations to make Clojure LLM-friendly, because I believe the language deserves first-class support in the AI world. Whether you love or hate LLMs and GenAI, if you want to talk about it, come find me!"
+   :images ["kapil-reddy.png"]
+   :roles [:host]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio

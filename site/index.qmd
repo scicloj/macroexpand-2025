@@ -81,6 +81,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 [![Jianling Zhong](images/jianling-zhong.jpeg){width="80px" height="80px" .person-photo}](./people.html#jianling-zhong)
 [![Josh Glover](images/josh-glover.jpg){width="80px" height="80px" .person-photo}](./people.html#josh-glover)
 [![Justin Tirrell](images/justin-tirrell.jpeg){width="80px" height="80px" .person-photo}](./people.html#justin-tirrell)
+[![Kapil Reddy](images/kapil-reddy.png){width="80px" height="80px" .person-photo}](./people.html#kapil-reddyi)
 [![Kira Howe](images/kira-howe.jpeg){width="80px" height="80px" .person-photo}](./people.html#kira-howe)
 [![Ludger Solbach](images/ludger-solbach.jpg){width="80px" height="80px" .person-photo}](./people.html#ludger-solbach)
 [![Luke Zeitlin](images/luke-zeitlin.jpg){width="80px" height="80px" .person-photo}](./people.html#luke-zeitlin)
