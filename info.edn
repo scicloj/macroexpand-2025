@@ -66,7 +66,8 @@
      :session/experimenting-with-llm-subliminal-learning-in-clojure],
     :day2
     [:session/opening
-     :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
+     :session/gnn
+     :session/gnn
      :session/open-practice
      :session/open-practice
      :session/building-dynamic-entity-extraction-with-bosquet
@@ -133,13 +134,13 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :title "Building Event Sourced Agentic Applications with Grain"
    :abstract "Learn how ObneyAI uses its open source Clojure framework called [Grain](https://github.com/ObneyAI/grain) to build Event Sourced applications with first-class agentic workflows that blend the best of the Clojure and Python ecosystems."
    :conference :macroexpand-deep}
-  :session/bridging-worlds-building-graph-neural-networks-with-clojure-and-python-interoperability
+  :session/gnn
   {:conference :macroexpand-deep,
    :speakers #{:jelena-losic},
    :abstract
-   "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using [libpython-clj](https://github.com/clj-python/libpython-clj) to call [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development.",
+   "Discover how to build Graph Neural Networks by combining Clojure's functional elegance with Python's ML ecosystem. This talk demonstrates practical interoperability using [libpython-clj](https://github.com/clj-python/libpython-clj) to call [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) from Clojure, creating powerful GNN solutions while maintaining REPL-driven development workflows. We'll live-code a complete Graph Convolutional Network, from data ingestion to visualization, showing how Clojure's immutability and Python's deep learning capabilities create a useful combination for modern AI development. After the talk and discussion, we will practice some things in the REPL together: using PyTorch from Clojure, and maybe more.",
    :title
-   "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability",
+   "Bridging Worlds: Building Graph Neural Networks with Clojure and Python Interoperability (+ Practice)",
    :session-type :talk},
   :session/building-realtime-voice-ai-agents-with-clojure---best-practices
   {:conference :macroexpand-deep,
