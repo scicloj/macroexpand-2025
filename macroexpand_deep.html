@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-43d56f374df8285c4366b18306adefc2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9244e74c61ed8b041ec5b7cb31d4a2f2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="about-the-conference">About the Conference</h3>
 <p>A two-day online event exploring AI systems in Clojure - from LLMs and neural networks to symbolic AI and hybrid approaches. Share production applications, research insights, and novel techniques that leverage Clojure’s unique strengths for AI development. For Clojure programmers at all levels and AI practitioners curious about functional approaches.</p>
 <p>📌 <strong><a href="./#how-to-participate">How to participate, register, and join →</a></strong></p>
-<div style="text-align: center; margin: 2rem 0;"><a class="btn btn-gradient" href="https://forms.gle/mQytpTua6RUPcMGb9" style="display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;" target="_blank">🎟️ Register Now (Free)</a></div>
+<div style="text-align: center; margin: 2rem 0;"><a aria-label="Register for Macroexpand-Deep conference - opens in new window" class="btn btn-gradient" href="https://forms.gle/mQytpTua6RUPcMGb9" style="display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;" target="_blank">🎟️ Register Now (Free)</a></div>
 </section>
 <section id="tentative-schedule" class="level3">
 <h3 class="anchored" data-anchor-id="tentative-schedule">Tentative Schedule</h3>
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
           }
         }
       </style>
-<table class="schedule-table caption-top table">
+<table class="schedule-table caption-top table" aria-label="Conference schedule for October 24-25, 2025" role="table">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
@@ -275,9 +275,9 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th id="time-header-deep" data-quarto-table-cell-role="th">Time</th>
-<th data-quarto-table-cell-role="th">Friday, October 24</th>
-<th data-quarto-table-cell-role="th">Saturday, October 25</th>
+<th id="time-header-deep" data-quarto-table-cell-role="th" scope="col">Time</th>
+<th data-quarto-table-cell-role="th" scope="col">Friday, October 24</th>
+<th data-quarto-table-cell-role="th" scope="col">Saturday, October 25</th>
 </tr>
 </thead>
 <tbody>
@@ -987,6 +987,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Update timezone notice
   const timezoneNotice = document.getElementById('timezone-notice-deep');
   if (timezoneNotice) {
+    timezoneNotice.setAttribute('aria-live', 'polite');
     timezoneNotice.innerHTML = '<em>Times shown in your local timezone: ' + userTimezone + '</em>';
   }
   
