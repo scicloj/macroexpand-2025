@@ -112,7 +112,7 @@
    :conferences :macroexpand-deep}
   :session/reliability
   {:title "Architechuring reliability in LLM systems"
-   :abstract "TBA"
+   :abstract "Large Language Models have captured the imagination of developers worldwide, yet many LLM-powered systems fail in production despite impressive demos. The root cause is often not technical incompetence, but rather an over-optimistic faith in LLM capabilities without accounting for their fundamental limitations. Just as an engineer hanging a heavy shelf wouldn't rely solely on manufacturer specifications without safety margins, building reliable LLM systems requires a \"Murphy's Law\" mindset that anticipates failure modes. Through our experience building StartCheck, a production document analysis platform, we've learned that true reliability comes from understanding and designing around core LLM limitations: input quality sensitivity, task complexity degradation, reasoning constraints, output length trade-offs, hallucinations, and consistency challenges."
    :speakers #{:siavash-mohammady}
    :conference :macroexpand-deep}
   :session/book-basket-analysis
