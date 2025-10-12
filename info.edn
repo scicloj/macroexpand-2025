@@ -109,7 +109,7 @@
   {:title "2D CFD Simulation based optimization of airfoils using freecad & openfoam"
    :abstract "TBA"
    :speakers #{:siavash-mohammady :siyoung-byun}
-   :conferences :macroexpand-deep
+   :conference :macroexpand-deep
    :session-type :talk}
   :session/reliability
   {:title "Architecting reliability in LLM systems"
@@ -161,6 +161,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
  It will focus on discussing the state of our community and initiating new projects for the near future.
  The session will begin by a few brief experience reports and proposals by participants. Then we will expand the discussion till we converge to actionable steps we will follow up on."
    :session-type :discussion,
+   :conference :macroexpand-noj,
    :speakers #{}},
   :session/TBD
   {:title "TBD",
@@ -218,7 +219,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :approved-civitas-notebook true,
    :conference :macroexpand-noj,
    :preferred-time
-   "October 17th, 10 AM CET — or another timeslot, preferrably before noon on the day of the conference.",
+   "October 17th, 10 AM CET — or another timeslot, preferably before noon on the day of the conference.",
    :speakers #{:teodor-heggelund},
    :submission-timestamp "22/09/2025 11:11:54",
    :abstract
@@ -429,7 +430,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   :teodor-heggelund
   {:full-name "Teodor Heggelund",
    :bio
-   "Teodor has designed floating bridges, hotels and high-pressure container with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.",
+   "Teodor has designed floating bridges, hotels and high-pressure containers with engineering, and built tools for engineers, journalists and knitters with software. He wants great tools and workflows for computation.",
    :images ["teodor-heggelund.jpg"]},
   :matthias-buehlmaier
   {:full-name "Matthias Buehlmaier",
@@ -454,7 +455,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
   :jelena-losic
   {:full-name "Jelena Losic",
    :bio
-   "I am Jelena, function programming developer with 10 years of industry experience and mathematical educational background. I am curious about the networks and laws that are applicable in large scales, leading to better understanding of big data.",
+   "I am Jelena, functional programming developer with 10 years of industry experience and mathematical educational background. I am curious about the networks and laws that are applicable in large scales, leading to better understanding of big data.",
    :images ["jelena-losic.jpeg"]},
   :daniel-szmulewicz
   {:full-name "Daniel Szmulewicz",
@@ -462,7 +463,7 @@ Beyond his tool building chops, Bruce is guided by a profound respect for users 
    :images ["daniel-szmulewicz.jpg"]},
   :eric-dallo
   {:full-name "Eric Dallo"
-   :bio "Eric Dallo is a Emacs, NixOS fanatic, he loves programming, especially when focused on dev tooling, He maintains clojure-lsp, ECA, deps-bin, lsp-mode, and other related libraries, Eric works with Clojure at Nubank and currently is focused on AI pair programming mutli-editors with ECA."
+   :bio "Eric Dallo is a Emacs, NixOS fanatic, he loves programming, especially when focused on dev tooling, He maintains clojure-lsp, ECA, deps-bin, lsp-mode, and other related libraries, Eric works with Clojure at Nubank and currently is focused on AI pair programming multi-editors with ECA."
    :images ["eric-dallo.jpeg"]}
   :jianling-zhong
   {:full-name "Jianling Zhong"
