@@ -80,7 +80,8 @@
   [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
        :target "_blank"
        :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"}
+       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"
+       :aria-label "Register for Macroexpand 2025 conferences - opens in new window"}
    "🎟️ Register Now (Free)"]])
 
 ;; ## Our Community

@@ -170,6 +170,29 @@ table.gradient-table  {
     &:hover {
       transform: scale(1.15);
     }
+
+    &:focus {
+      outline: 3px solid $primary-blue;
+      outline-offset: 2px;
+      transform: scale(1.15);
+    }
+  }
+}
+
+// Skip navigation link
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:focus {
+    top: 0;
   }
 }
 

@@ -22,7 +22,8 @@
   [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
        :target "_blank"
        :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"}
+       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"
+       :aria-label "Register for Macroexpand-Deep conference - opens in new window"}
    "🎟️ Register Now (Free)"]])
 
 ;; ### Tentative Schedule
@@ -349,12 +350,14 @@
       "]
 
       ;; Desktop table layout with ultra-specific selectors
-      [:table {:class "schedule-table"}
+      [:table {:class "schedule-table"
+               :role "table"
+               :aria-label "Conference schedule for October 24-25, 2025"}
        [:thead
         [:tr
-         [:th {:id "time-header-deep"} "Time"]
-         [:th (:date day1-data)]
-         [:th (:date day2-data)]]]
+         [:th {:id "time-header-deep" :scope "col"} "Time"]
+         [:th {:scope "col"} (:date day1-data)]
+         [:th {:scope "col"} (:date day2-data)]]]
        [:tbody
         (for [[idx time-slot] (map-indexed vector all-time-slots)]
           (let [day1-span-info (get day1-spans idx)
@@ -450,6 +453,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Update timezone notice
   const timezoneNotice = document.getElementById('timezone-notice-deep');
   if (timezoneNotice) {
+    timezoneNotice.setAttribute('aria-live', 'polite');
     timezoneNotice.innerHTML = '<em>Times shown in your local timezone: ' + userTimezone + '</em>';
   }
   
