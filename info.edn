@@ -274,7 +274,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :approved-recording true},
   :session/breath-hrv
   {:conference :macroexpand-noj
-   :speakers #{:daniel-slutsky}
+   :speakers #{:tiril-elstad :pierre-baille :daniel-slutsky}
    :title "Exploring the Breath-HRV Connection with Noj"
    :abstract "Does your heart beat like a clock? No. It turns out that your heart rate varies. How much it varies, that is the question. Heart Rate Variability is a healthy phenomenon that
   relates in various ways to sleep, stress, age, various health conditions, and more. In this talk, we will see how it relates to our breath. We will learn a bit about both, see
@@ -506,6 +506,14 @@ At Unravel.tech, we're building enterprise-grade Agentic Systems and bringing Ge
 I'm particularly passionate about prompt optimizations and evals—the unglamorous but crucial work that makes AI systems production-ready. In my free time, I'm building foundations to make Clojure LLM-friendly, because I believe the language deserves first-class support in the AI world. Whether you love or hate LLMs and GenAI, if you want to talk about it, come find me!"
    :images ["kapil-reddy.png"]
    :roles [:host]}
+  :pierre-baille
+  {:full-name "Pierre Baille"
+   :bio "Pierre comes from a music background and transitioned to programming gradually by trying to generate music. He works at Endor Global and is interested in generative music/graphics and programming languages."
+   :images ["pierre-baille.jpeg"]}
+  :tiril-elstad
+  {:full-name "Tiril Elstad"
+   :bio "Tiril is a medical doctor, HRV researcher, yoga teacher and CEO of Endor Global. Her interest is holistic health and well-being."
+   :images ["tiril-elstad.png"]}
   :peter-stromberg
   {:full-name "Peter Stromberg",
    :bio
