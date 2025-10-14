@@ -2,6 +2,10 @@
 
 /*-- scss:rules --*/
 
+// Hide title on index page (where we have custom header)
+#title-block-header.quarto-title-block {
+  display: none !important;
+}
     
 // variables
 // color variables
