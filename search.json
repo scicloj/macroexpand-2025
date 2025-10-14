@@ -56,6 +56,13 @@
     "text": "Join the Zulip Chat\nThe Clojurians Zulip chat is our primary communication channel - essential for discussions, questions, and connecting with others during the conferences.\n\nVisit clojurians.zulipchat.com to join\nGo to the #macroexpand-2025 channel\nIntroduce yourself in the hello thread!"
   },
   {
+    "objectID": "participation.html#propose-a-lightning-talk",
+    "href": "participation.html#propose-a-lightning-talk",
+    "title": "How to Participate",
+    "section": "⚡ Propose a Lightning Talk",
+    "text": "⚡ Propose a Lightning Talk\nWant to share a quick idea? We’re accepting 5-minute lightning talk proposals for both conferences!\nWhat makes a great lightning talk:\n\nDemo of a library or tool you’ve built\nQuick tip or technique you’ve discovered\nWork-in-progress showcase\nDiscussion starter on a specific topic\nYour first speaking experience!\n\nHow to propose:\nHead to the #macroexpand-2025&gt;lightning talks proposals Zulip topic thread. and share your idea. Just describe what you’d like to talk about - no formal application needed. The organizers will help you refine it and find a slot in the schedule.\n⚡ Propose Your Lightning Talk"
+  },
+  {
     "objectID": "participation.html#prepare-for-the-conferences",
     "href": "participation.html#prepare-for-the-conferences",
     "title": "How to Participate",
@@ -124,6 +131,13 @@
     "title": "Macroexpand 2025",
     "section": "How to Participate",
     "text": "How to Participate\n\n🎟️ Free & Online - Both conferences are completely free to attend!\n💻 Platform - Join via Zoom (link provided upon registration)\n💬 Community - Join the Clojurians Zulip chat for real-time discussions\n📹 Recordings - All talks will be recorded and shared publicly afterwards\n⏱️ Format - Most sessions are 30 minutes talk + 20 minutes discussion\n📝 Registration - Register now for free to receive Zoom links and updates!\n📖 Details - See our Participation Guide for complete instructions on Zoom, Zulip, and more\n📢 Call for Proposals - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!"
+  },
+  {
+    "objectID": "index.html#lightning-talks",
+    "href": "index.html#lightning-talks",
+    "title": "Macroexpand 2025",
+    "section": "⚡ Lightning Talks",
+    "text": "⚡ Lightning Talks\nGot a 5-minute idea? We welcome lightning talk proposals for both conferences!\nLightning talks are quick, focused presentations - perfect for:\n\nSharing a cool library or technique\nDemonstrating a work-in-progress\nSparking discussion on a specific topic\nFirst-time speakers testing the waters\n\nHow to propose: Simply share your idea in the #macroexpand-2025&gt;lightning talks proposals Zulip topic thread. No formal submission required!\n⚡ Propose a Lightning Talk"
   },
   {
     "objectID": "index.html#target-audience",
