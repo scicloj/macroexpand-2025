@@ -49,10 +49,18 @@ a:not([class]) {
   padding: 0.5rem 1rem;
   border-radius: $default-border-radius;
   font-weight: bold;
-  transition: background-color .3s ease;
+  transition: all .3s ease;
+  box-shadow: $default-box-shadow;
 
   &:hover {
     color: $on-primary;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 15px;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: $default-box-shadow;
   }
 }
 
@@ -298,5 +306,77 @@ $session-type-administrative: #F5F5F5; // Light gray
     .legend-label {
       font-weight: 500;
     }
+  }
+}
+
+// Session card hover effects
+.session-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px;
+    border-left-color: $primary-blue !important;
+  }
+
+  details {
+    summary {
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba($primary-blue, 0.05);
+      }
+    }
+  }
+}
+
+// Person card hover effects (for people page)
+.person-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px;
+    border-color: $primary-blue;
+  }
+}
+
+// Schedule table hover effects
+table.schedule-table {
+  tbody tr {
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba($primary-blue, 0.08) !important;
+      transform: scale(1.01);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    }
+  }
+
+  // Also style session cells on hover
+  .session-cell {
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba($primary-blue, 0.12) !important;
+    }
+  }
+}
+
+// Mobile schedule card hover effects
+.mobile-time-slot {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-color: $primary-blue !important;
   }
 }

@@ -29,7 +29,7 @@
                                   (:title session-data)]]))
                             sessions)]
     (kind/hiccup
-     [:div {:style "margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"}
+     [:div {:class "person-card" :style "margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #eee; border-radius: 8px; background: #fafafa;"}
       [:div {:style "display: flex; gap: 1.5rem; align-items: flex-start;"}
        [:img {:src image
               :alt person-name
