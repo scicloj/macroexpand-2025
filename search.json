@@ -35,6 +35,55 @@
     "text": "Supported by: \n\nCode of Conduct\nMacroexpand is dedicated to providing a welcoming, inclusive experience for everyone.\nWe expect all participants to be respectful and considerate in all interactions, welcome newcomers, and support learning.\nWe do not tolerate harassment, discriminatory behavior, or behavior that interrupts sessions or makes others uncomfortable.\nIf you experience or witness unacceptable behavior, please contact the organizers immediately by a Direct Message at the Zulip chat. Participants who violate these guidelines may be asked to leave the conference.\nBy participating, you agree to follow this code of conduct."
   },
   {
+    "objectID": "participation.html",
+    "href": "participation.html",
+    "title": "How to Participate",
+    "section": "",
+    "text": "Supported by:"
+  },
+  {
+    "objectID": "participation.html#getting-your-zoom-link",
+    "href": "participation.html#getting-your-zoom-link",
+    "title": "How to Participate",
+    "section": "Getting Your Zoom Link",
+    "text": "Getting Your Zoom Link\nRegister here (free) to receive calendar invites with Zoom links via email. Check your spam folder if you don’t see them!"
+  },
+  {
+    "objectID": "participation.html#join-the-zulip-chat",
+    "href": "participation.html#join-the-zulip-chat",
+    "title": "How to Participate",
+    "section": "Join the Zulip Chat",
+    "text": "Join the Zulip Chat\nThe Clojurians Zulip chat is our primary communication channel - essential for discussions, questions, and connecting with others during the conferences.\n\nVisit scicloj.github.io/docs/community/chat to join\nGo to the #macroexpand-2025 channel\nIntroduce yourself in the hello thread!"
+  },
+  {
+    "objectID": "participation.html#prepare-for-the-conferences",
+    "href": "participation.html#prepare-for-the-conferences",
+    "title": "How to Participate",
+    "section": "Prepare for the Conferences",
+    "text": "Prepare for the Conferences\n\nInstall Zoom or use it from your browser, and test your audio/video\nCheck the schedules: Macroexpand-Noj (Oct 17-18) and Macroexpand-Deep (Oct 24-25)\nReview the Sessions page for talk details\nRead our Code of Conduct"
+  },
+  {
+    "objectID": "participation.html#during-the-conferences",
+    "href": "participation.html#during-the-conferences",
+    "title": "How to Participate",
+    "section": "During the Conferences",
+    "text": "During the Conferences\n\nJoin 5-10 minutes early on the first day\nKeep Zulip open for real-time discussions\nMute your microphone when not speaking\nUse “Raise Hand” for questions during Q&A\nParticipate in Open Practice sessions to try out tools hands-on"
+  },
+  {
+    "objectID": "participation.html#recordings",
+    "href": "participation.html#recordings",
+    "title": "How to Participate",
+    "section": "Recordings",
+    "text": "Recordings\nAll talks will be recorded and shared on Scicloj’s YouTube channel. By participating, you consent to being recorded."
+  },
+  {
+    "objectID": "participation.html#need-help",
+    "href": "participation.html#need-help",
+    "title": "How to Participate",
+    "section": "Need Help?",
+    "text": "Need Help?\nPost in the #macroexpand-2025 channel or contact the organizers.\n\nSee you on Zoom and Zulip! 👋"
+  },
+  {
     "objectID": "sessions.html",
     "href": "sessions.html",
     "title": "Sessions",
@@ -74,7 +123,7 @@
     "href": "index.html#how-to-participate",
     "title": "Macroexpand 2025",
     "section": "How to Participate",
-    "text": "How to Participate\n\n🎟️ Free & Online - Both conferences are completely free to attend!\n💻 Platform - Join via Zoom (link provided upon registration)\n💬 Community - Join the Clojurians Zulip chat for real-time discussions\n📹 Recordings - All talks will be recorded and shared publicly afterwards\n⏱️ Format - Most sessions are 30 minutes talk + 20 minutes discussion\n📝 Registration - Register now for free to receive Zoom links and updates!\n📢 Call for Proposals - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!"
+    "text": "How to Participate\n\n🎟️ Free & Online - Both conferences are completely free to attend!\n💻 Platform - Join via Zoom (link provided upon registration)\n💬 Community - Join the Clojurians Zulip chat for real-time discussions\n📹 Recordings - All talks will be recorded and shared publicly afterwards\n⏱️ Format - Most sessions are 30 minutes talk + 20 minutes discussion\n📝 Registration - Register now for free to receive Zoom links and updates!\n📖 Details - See our Participation Guide for complete instructions on Zoom, Zulip, and more\n📢 Call for Proposals - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!"
   },
   {
     "objectID": "index.html#target-audience",
