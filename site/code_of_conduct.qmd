@@ -13,6 +13,12 @@ format:
 </style>
 <script src="code_of_conduct_files/md-default0.js" type="text/javascript"></script><script src="code_of_conduct_files/md-default1.js" type="text/javascript"></script>
 
+```{=html}
+<div style="display: flex; justify-content: flex-end; margin: 1rem 0; padding: 0.5rem; background: #f8f9fa; border-radius: 6px; border: 1px solid #e0e0e0;"><div style="display: flex; align-items: center; gap: 0.5rem;"><span style="font-size: 0.9rem; color: #666;">Supported by: </span><a href="./index.html#supporting-companies" key="techascent" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem; text-decoration: none;"><img alt="TechAscent mark" src="images/ta-mark-red.svg" style="height: 20px; width: auto;" /><img alt="TechAscent logo" src="images/ta-type.svg" style="height: 20px; width: auto;" /></a></div></div>
+```
+
+
+
 # Code of Conduct
 
 Macroexpand is dedicated to providing a welcoming, inclusive experience for everyone.

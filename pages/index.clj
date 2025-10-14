@@ -19,6 +19,24 @@
 (def conference-data
   (edn/read-string (slurp "info.edn")))
 
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "display: flex; justify-content: flex-end; margin: 1rem 0; padding: 0.5rem; background: #f8f9fa; border-radius: 6px; border: 1px solid #e0e0e0;"}
+  [:div {:style "display: flex; align-items: center; gap: 0.5rem;"}
+   [:span {:style "font-size: 0.9rem; color: #666;"} "Supported by: "]
+   (for [[company-key company-data] (:supporting-companies conference-data)]
+     [:a {:key (name company-key)
+          :href "#supporting-companies"
+          :style "display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem; text-decoration: none;"}
+      (when-let [logo-mark (:logo-mark company-data)]
+        [:img {:src logo-mark
+               :alt (str (:name company-data) " mark")
+               :style "height: 20px; width: auto;"}])
+      (when-let [logo (:logo company-data)]
+        [:img {:src logo
+               :alt (str (:name company-data) " logo")
+               :style "height: 20px; width: auto;"}])])]])
+
 ;; ![](images/sci-cloj-logo-transparent.svg){fig-alt="Scicloj logo" fig-align="center" width="120px"}
 
 ^:kindly/hide-code
@@ -149,6 +167,38 @@
 ;; ## Code of Conduct
 
 ;; We are committed to providing a welcoming and inclusive environment for all participants. Please read our [Code of Conduct](./code_of_conduct.html) to learn more about our community standards.
+
+;; ## Supporting Companies {#supporting-companies}
+
+;; We are grateful to the following companies for their support of these conferences:
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border: 1px solid #e0e0e0;"}
+  (for [[company-key company-data] (:supporting-companies conference-data)]
+    [:div {:key (name company-key) :style "margin-bottom: 1rem; display: flex; align-items: center; gap: 1.5rem;"}
+     [:div {:style "display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0;"}
+      (when-let [logo-mark (:logo-mark company-data)]
+        [:a {:href (:url company-data)
+             :target "_blank"}
+         [:img {:src logo-mark
+                :alt (str (:name company-data) " mark")
+                :style "height: 30px; width: auto;"}]])
+      (when-let [logo (:logo company-data)]
+        [:a {:href (:url company-data)
+             :target "_blank"}
+         [:img {:src logo
+                :alt (str (:name company-data) " logo")
+                :style "height: 30px; width: auto;"}]])]
+     [:div
+      [:h3 {:style "margin: 0 0 0.5rem 0;"}
+       [:a {:href (:url company-data)
+            :target "_blank"
+            :style "color: #4299e1; text-decoration: none;"}
+        (:name company-data)]]
+      [:p {:style "margin: 0; color: #666;"} (:description company-data)]]])])
+
+;; **Interested in supporting these conferences?** We welcome companies who share our vision of growing the Clojure ecosystem. Please [contact us](https://scicloj.github.io/docs/community/contact/) to discuss how your company can get involved.
 
 ;; ## Contact
 

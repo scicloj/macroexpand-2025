@@ -10,6 +10,24 @@
   (edn/read-string (slurp "info.edn")))
 
 ^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "display: flex; justify-content: flex-end; margin: 1rem 0; padding: 0.5rem; background: #f8f9fa; border-radius: 6px; border: 1px solid #e0e0e0;"}
+  [:div {:style "display: flex; align-items: center; gap: 0.5rem;"}
+   [:span {:style "font-size: 0.9rem; color: #666;"} "Supported by: "]
+   (for [[company-key company-data] (:supporting-companies conference-data)]
+     [:a {:key (name company-key)
+          :href "./index.html#supporting-companies"
+          :style "display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 0.5rem; text-decoration: none;"}
+      (when-let [logo-mark (:logo-mark company-data)]
+        [:img {:src logo-mark
+               :alt (str (:name company-data) " mark")
+               :style "height: 20px; width: auto;"}])
+      (when-let [logo (:logo company-data)]
+        [:img {:src logo
+               :alt (str (:name company-data) " logo")
+               :style "height: 20px; width: auto;"}])])]])
+
+^:kindly/hide-code
 ;; sanitize-filename function removed - no longer needed for individual session pages
 
 ^:kindly/hide-code

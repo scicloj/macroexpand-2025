@@ -595,5 +595,12 @@ I'm particularly passionate about prompt optimizations and evals—the unglamoro
   :noj "https://scicloj.github.io/noj/",
   :macroexpand-gatherings
   "https://scicloj.github.io/docs/community/groups/macroexpand/",
-  :scinoj-light "https://scicloj.github.io/scinoj-light-1/"}}
+  :scinoj-light "https://scicloj.github.io/scinoj-light-1/"},
+ :supporting-companies
+ {:techascent
+  {:name "TechAscent"
+   :url "https://techascent.com/"
+   :logo "images/ta-type.svg"
+   :logo-mark "images/ta-mark-red.svg"
+   :description "Supporting these conferences through open-source contributions"}}}
 
