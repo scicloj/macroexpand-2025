@@ -69,14 +69,3 @@ Post in the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow
 ---
 
 See you on Zoom and Zulip! 👋
-
-
-```{=html}
-<div style="background-color:grey;height:2px;width:100%;"></div>
-```
-
-
-
-```{=html}
-<div><pre><small><small>source: <a href="https://github.com/scicloj/macroexpand-2025/blob/main/pages/participation.clj">pages/participation.clj</a></small></small></pre></div>
-```

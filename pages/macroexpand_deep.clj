@@ -403,29 +403,33 @@
                              {:rowspan (:span day2-span-info 1)}))
                 day2-session])]))]]
 
-      ;; Mobile stacked layout - now respects spans
+      ;; Mobile stacked layout - now respects spans and has color classes
       [:div {:class "mobile-schedule"}
        [:div {:class "mobile-day-section"}
         [:h3 (:date day1-data)]
         (for [[idx time-slot] (map-indexed vector all-time-slots)]
           (let [day1-span-info (get day1-spans idx)
-                day1-session (get (into {} day1-slots) time-slot)]
+                day1-session (get (into {} day1-slots) time-slot)
+                day1-session-key (:session-key day1-span-info)
+                day1-type-class (get-session-type-class day1-session-key)]
             (when (:render? day1-span-info true)
               [:div {:class "mobile-time-slot"}
                [:div {:class "mobile-time-header"}
                 (format-time-range time-slot (:span day1-span-info 1))]
-               [:div {:class "mobile-session-content"} day1-session]])))]
+               [:div {:class (str "mobile-session-content " day1-type-class)} day1-session]])))]
 
        [:div {:class "mobile-day-section"}
         [:h3 (:date day2-data)]
         (for [[idx time-slot] (map-indexed vector all-time-slots)]
           (let [day2-span-info (get day2-spans idx)
-                day2-session (get (into {} day2-slots) time-slot)]
+                day2-session (get (into {} day2-slots) time-slot)
+                day2-session-key (:session-key day2-span-info)
+                day2-type-class (get-session-type-class day2-session-key)]
             (when (:render? day2-span-info true)
               [:div {:class "mobile-time-slot"}
                [:div {:class "mobile-time-header"}
                 (format-time-range time-slot (:span day2-span-info 1))]
-               [:div {:class "mobile-session-content"} day2-session]])))]]])))
+               [:div {:class (str "mobile-session-content " day2-type-class)} day2-session]])))]]])))
 
 ^:kindly/hide-code
 (session-type-legend)
