@@ -1,19 +1,14 @@
-^:kindly/hide-code
+^{:kindly/hide-code true
+  :clay {:quarto {:title "Macroexpand 2025"
+                  :description "Clojure online conferences by Scicloj - October 17-18 & 24-25, 2025"
+                  :image "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
+                  :twitter-card {:image "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"}
+                  :open-graph {:image "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"}}}}
 (ns index
   "Main index page for Macroexpand 2025"
   (:require [clojure.edn :as edn]
             [clojure.string :as str]
             [scicloj.kindly.v4.kind :as kind]))
-
-;; ---
-;; title: "Macroexpand 2025"
-;; description: "Clojure online conferences by Scicloj - October 17-18 & 24-25, 2025"
-;; image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
-;; twitter-card:
-;;   image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
-;; open-graph:
-;;   image: "https://scicloj.github.io/macroexpand-2025/images/sci-cloj-logo-transparent.png"
-;; ---
 
 ^:kindly/hide-code
 (def conference-data
