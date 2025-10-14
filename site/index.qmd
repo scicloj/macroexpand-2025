@@ -82,7 +82,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 [![Jianling Zhong](images/jianling-zhong.jpeg){width="80px" height="80px" .person-photo}](./people.html#jianling-zhong)
 [![Josh Glover](images/josh-glover.jpg){width="80px" height="80px" .person-photo}](./people.html#josh-glover)
 [![Justin Tirrell](images/justin-tirrell.jpeg){width="80px" height="80px" .person-photo}](./people.html#justin-tirrell)
-[![Kapil Reddy](images/kapil-reddy.png){width="80px" height="80px" .person-photo}](./people.html#kapil-reddyi)
+[![Kapil Reddy](images/kapil-reddy.png){width="80px" height="80px" .person-photo}](./people.html#kapil-reddy)
 [![Kira Howe](images/kira-howe.jpeg){width="80px" height="80px" .person-photo}](./people.html#kira-howe)
 [![Ludger Solbach](images/ludger-solbach.jpg){width="80px" height="80px" .person-photo}](./people.html#ludger-solbach)
 [![Luke Zeitlin](images/luke-zeitlin.jpg){width="80px" height="80px" .person-photo}](./people.html#luke-zeitlin)
@@ -110,7 +110,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 
 | **Timeline** | **Event Details** |
   |--|--|
-  | **September 8, 2025** | ~~Final deadline for talk proposal submissions~~ (Closed) |
+  | **September 8, 2024** | ~~Final deadline for talk proposal submissions~~ (Closed) |
   | **Ongoing** | Registration open - sign up to attend! |
   | **October 17-18, 2025** | [Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
   | **October 24-25, 2025** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
@@ -147,7 +147,7 @@ The kind of audience we have in mind is of general Clojure programmers. Some tal
 
 ## Chat
 
-All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
+All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) in the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/).
 
 
 ## Code of Conduct

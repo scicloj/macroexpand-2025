@@ -33,6 +33,6 @@
 
 ;; We do not tolerate harassment, discriminatory behavior, or behavior that interrupts sessions or makes others uncomfortable.
 
-;; If you experience or witness unacceptable behavior, please contact the [organizers](people.html#organizers) immediately by a Direct Message at the [Zulip chat](https://scicloj.github.io/docs/community/chat/). Participants who violate these guidelines may be asked to leave the conference.
+;; If you experience or witness unacceptable behavior, please contact the [organizers](./people.html#organizers) immediately by a Direct Message at the [Zulip chat](https://scicloj.github.io/docs/community/chat/). Participants who violate these guidelines may be asked to leave the conference.
 
 ;; By participating, you agree to follow this code of conduct.

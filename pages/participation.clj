@@ -37,7 +37,7 @@
 
 ;; The [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) is our primary communication channel - essential for discussions, questions, and connecting with others during the conferences.
 
-;; 1. Visit [scicloj.github.io/docs/community/chat](https://clojurians.zulipchat.com/) to join
+;; 1. Visit [clojurians.zulipchat.com](https://clojurians.zulipchat.com/) to join
 ;; 2. Go to the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/)
 ;; 3. [Introduce yourself in the hello thread](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/hello)!
 
