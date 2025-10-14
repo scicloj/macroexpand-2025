@@ -19,6 +19,7 @@ website:
     search: true
     right:
     - {href: index.qmd, text: Home}
+    - {href: participation.qmd, text: Participate}
     - {href: sessions.qmd, text: Sessions}
     - {href: people.qmd, text: People}
     - {href: macroexpand_noj.qmd, text: "Macroexpand-Noj"}

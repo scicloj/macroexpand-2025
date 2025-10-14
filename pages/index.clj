@@ -142,6 +142,7 @@
 ;; - **📹 Recordings** - All talks will be recorded and shared publicly afterwards
 ;; - **⏱️ Format** - Most sessions are 30 minutes talk + 20 minutes discussion
 ;; - **📝 Registration** - [Register now for free](https://forms.gle/mQytpTua6RUPcMGb9) to receive Zoom links and updates!
+;; - **📖 Details** - See our [Participation Guide](./participation.html) for complete instructions on Zoom, Zulip, and more
 ;; - **📢 Call for Proposals** - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!
 
 ;; ## Target Audience
