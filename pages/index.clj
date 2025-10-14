@@ -145,6 +145,29 @@
 ;; - **📖 Details** - See our [Participation Guide](./participation.html) for complete instructions on Zoom, Zulip, and more
 ;; - **📢 Call for Proposals** - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!
 
+;; ## ⚡ Lightning Talks
+
+;; Got a 5-minute idea? We welcome lightning talk proposals for both conferences!
+
+;; Lightning talks are quick, focused presentations - perfect for:
+
+;; - Sharing a cool library or technique
+;; - Demonstrating a work-in-progress
+;; - Sparking discussion on a specific topic
+;; - First-time speakers testing the waters
+
+;; **How to propose:** Simply share your idea in the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip topic thread. No formal submission required!
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 1.5rem 0;"}
+  [:a {:href "https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none; font-size: 1rem; padding: 0.6rem 1.2rem;"
+       :aria-label "Propose a lightning talk on Zulip - opens in new window"}
+   "⚡ Propose a Lightning Talk"]])
+
 ;; ## Target Audience
 
 ;; The kind of audience we have in mind is of general Clojure programmers. Some talks will also be useful and interesting for people who are new to Clojure as well.

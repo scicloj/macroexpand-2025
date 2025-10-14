@@ -41,6 +41,32 @@
 ;; 2. Go to the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/)
 ;; 3. [Introduce yourself in the hello thread](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/hello)!
 
+;; ## ⚡ Propose a Lightning Talk
+
+;; Want to share a quick idea? We're accepting 5-minute lightning talk proposals for both conferences!
+
+;; **What makes a great lightning talk:**
+
+;; - Demo of a library or tool you've built
+;; - Quick tip or technique you've discovered
+;; - Work-in-progress showcase
+;; - Discussion starter on a specific topic
+;; - Your first speaking experience!
+
+;; **How to propose:**
+
+;; Head to the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip topic thread. and share your idea. Just describe what you'd like to talk about - no formal application needed. The organizers will help you refine it and find a slot in the schedule.
+
+^:kindly/hide-code
+(kind/hiccup
+ [:div {:style "text-align: center; margin: 1.5rem 0;"}
+  [:a {:href "https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/"
+       :target "_blank"
+       :class "btn btn-gradient"
+       :style "display: inline-block; text-decoration: none; font-size: 1rem; padding: 0.6rem 1.2rem;"
+       :aria-label "Propose a lightning talk on Zulip - opens in new window"}
+   "⚡ Propose Your Lightning Talk"]])
+
 ;; ## Prepare for the Conferences
 
 ;;
