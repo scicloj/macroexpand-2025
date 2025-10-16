@@ -168,7 +168,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/TBD
   {:title "TBD",
    :abstract "TBD",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}},
   :session/growing-a-dsl
   {:conference :macroexpand-noj,
@@ -232,7 +232,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :closing-day-1
   {:title "Closing Day 1",
    :abstract "TBD",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}},
   :session/building-qclojure-with-ai-assistance
   {:prefer-prerecorded :maybe,
@@ -299,7 +299,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :break
   {:title "Break",
    :abstract "TBD",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}},
   :session/elements-of-malli
   {:prefer-prerecorded false,
@@ -349,7 +349,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/conclusion
   {:title "Conclusion",
    :abstract "We will spend some time together with closing thoughts.",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}},
   :session/compiling-probabilistic-programs-to-neural-networks
   {:prefer-prerecorded false,
@@ -380,12 +380,12 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/opening
   {:title "Opening & Welcome",
    :abstract "We will just spend some time together and discuss what is coming for the day.",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}},
   :session/open-chat
   {:title "Open Chat",
    :abstract "A break to relax and spend some time together for those who wish to join the call. Anybody is invited to join and leave and just talk about anything.",
-   :session-type :administrative,
+   :session-type :community,
    :speakers #{}}
   :session/open-practice
   {:title "Open Practice",
@@ -421,7 +421,8 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :documentation "Documentation",
   :ai-application "AI Application",
   :research "Research & Theory",
-  :production "Production Systems"},
+  :production "Production Systems",
+  :community "Community"},
  :people
  {:bruce-hauman
   {:full-name "Bruce Hauman"

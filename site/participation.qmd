@@ -52,7 +52,7 @@ Want to share a quick idea? We're accepting 5-minute lightning talk proposals fo
 
 **How to propose:**
 
-Head to the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip channel and share your idea. Just describe what you'd like to talk about - no formal application needed. The organizers will help you refine it and find a slot in the schedule.
+Head to the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip topic thread. and share your idea. Just describe what you'd like to talk about - no formal application needed. The organizers will help you refine it and find a slot in the schedule.
 
 
 ```{=html}

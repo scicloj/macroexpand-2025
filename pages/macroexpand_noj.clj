@@ -193,9 +193,9 @@
      [:div {:class "legend-color session-type-practice"}]
      [:span {:class "legend-label"} "Practice"]]
     [:div {:class "legend-item"}
-     [:span {:class "legend-icon"} "📋"]
-     [:div {:class "legend-color session-type-administrative"}]
-     [:span {:class "legend-label"} "Administrative"]]]))
+     [:span {:class "legend-icon"} "🤝"]
+     [:div {:class "legend-color session-type-community"}]
+     [:span {:class "legend-label"} "Community"]]]))
 
 ^:kindly/hide-code
 (defn analyze-schedule-spans
