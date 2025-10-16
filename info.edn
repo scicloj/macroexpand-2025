@@ -275,7 +275,7 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
   :session/breath-hrv
   {:conference :macroexpand-noj
    :speakers #{:tiril-elstad :pierre-baille :daniel-slutsky}
-   :title "Exploring the Breath-HRV Connection with Noj"
+   :title "Exploring the Breath-Heart Connection"
    :abstract "Does your heart beat like a clock? No. It turns out that your heart rate varies. How much it varies, that is the question. Heart Rate Variability is a healthy phenomenon that
   relates in various ways to sleep, stress, age, various health conditions, and more. In this talk, we will see how it relates to our breath. We will learn a bit about both, see
   some visualizations, and demonstrate their relation through data analysis with [Tablecloth](https://scicloj.github.io/tablecloth/), [Tableplot](https://scicloj.github.io/tableplot/),
