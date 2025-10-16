@@ -107,7 +107,7 @@
  :sessions
  {:session/cfd2d
   {:title "2D CFD Simulation based optimization of airfoils using freecad & openfoam"
-   :abstract "TBA"
+   :abstract "This talk presents a 2D airfoil optimization approach using FluidX3D for CFD simulation and genetic algorithms, implemented in Clojure. The presentation covers the architecture, showing how FluidX3D evaluates airfoil fitness by computing aerodynamic properties, and how the genetic algorithm encodes airfoil geometries using parametric representations. LLMs are integrated at various stages of the optimization pipeline to guide mutation strategies, suggest promising crossover operations, and analyze population diversity."
    :speakers #{:siavash-mohammady :siyoung-byun}
    :conference :macroexpand-deep
    :session-type :talk}
