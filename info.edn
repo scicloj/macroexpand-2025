@@ -25,8 +25,8 @@
     [:session/opening
      :session/computing-with-units-in-clojure
      :session/rolling-regressions-in-clojure-for-real-time-alpha-and-beta-monitoring
-     :session/TBA
      :session/open-practice
+     :session/open-chat
      :session/functional-quantum-computing-with-qclojure
      :session/breath-hrv
      :session/clay-workshop
@@ -382,6 +382,11 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :abstract "We will just spend some time together and discuss what is coming for the day.",
    :session-type :administrative,
    :speakers #{}},
+  :session/open-chat
+  {:title "Open Chat",
+   :abstract "A break to relax and spend some time together for those who wish to join the call. Anybody is invited to join and leave and just talk about anything.",
+   :session-type :administrative,
+   :speakers #{}}
   :session/open-practice
   {:title "Open Practice",
    :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
