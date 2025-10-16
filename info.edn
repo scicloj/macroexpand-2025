@@ -120,7 +120,9 @@
   :session/book-basket-analysis
   {:speakers #{:tomas-baranek}
    :title "Book Basket Analysis: A Beginner's Journey with Scicloj"
-   :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with [Tablecloth](https://scicloj.github.io/tablecloth/) for data manipulation and [Kindly](https://scicloj.github.io/kindly/) for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise."
+   :abstract "As a newcomer to data science and Scicloj, I'll share my exploration of market basket analysis applied to publishing sales data. This case study demonstrates how even data science beginners can implement correlation analysis and the Apriori algorithm using Clojure tools. I'll walk through my learning process with [Tablecloth](https://scicloj.github.io/tablecloth/) for data manipulation and [Kindly](https://scicloj.github.io/kindly/) for visualizations, focusing on practical solutions rather than theoretical complexity. Join me to see how entry-level Scicloj implementations can transform customer order histories into meaningful cross-selling recommendations, proving that useful data insights are accessible without deep expertise.
+
+[Read more at Clojure Civitas](https://clojurecivitas.github.io/data_analysis/book_sales_analysis/about_apriori.html)."
    :conference :macroexpand-noj
    :session-type :talk}
   :session/jank-and-torch
