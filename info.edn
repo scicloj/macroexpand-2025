@@ -43,7 +43,7 @@
      :session/macroexpand-3
      :session/noj-foundations
      :session/elements-of-malli
-     :session/lightning-talks
+     :session/lightning-talks-1
      :session/conclusion]}},
   :macroexpand-deep
   {:name "Macroexpand-Deep",
@@ -74,7 +74,7 @@
      :session/panel-broader-implications-of-ai
      :session/building-realtime-voice-ai-agents-with-clojure---best-practices
      :session/building-event-sourced-agentic-applications-with-grain
-     :session/lightning-talks
+     :session/lightning-talks-2
      :session/jank-and-torch
      :session/conclusion]}}},
  :preferred-topics
@@ -177,8 +177,13 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    "[Bioscoop](https://github.com/danielsz/bioscoop) is a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) to program videos (instead of non-linear editing). It builds upon [FFmpeg](https://ffmpeg.org/)'s [filtergraphs](https://ffmpeg.org/ffmpeg-filters.html#Filtergraph-description), but it transforms the notoriously complex and\nerror-prone string-based syntax with a structured, data-first\napproach amenable to composition and enhanced programmability.",
    :title "Growing a DSL",
    :session-type :talk},
-  :session/lightning-talks
-  {:title "Lightning Talks",
+  :session/lightning-talks-1
+  {:title "Lightning Talks 1",
+   :abstract "Various short talks by conference participants",
+   :session-type :discussion,
+   :speakers #{}}
+  :session/lightning-talks-2
+  {:title "Lightning Talks 2",
    :abstract "Various short talks by conference participants",
    :session-type :discussion,
    :speakers #{}},
