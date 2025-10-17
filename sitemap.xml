@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/speakers.html</loc>
-    <lastmod>2025-10-16T16:00:21.118Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/macroexpand_noj.html</loc>
-    <lastmod>2025-10-16T16:00:20.521Z</lastmod>
-  </url>
-  <url>
     <loc>https://scicloj.github.io/macroexpand-2025/code_of_conduct.html</loc>
-    <lastmod>2025-10-16T16:00:20.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/participation.html</loc>
-    <lastmod>2025-10-16T16:00:21.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scicloj.github.io/macroexpand-2025/sessions.html</loc>
-    <lastmod>2025-10-16T16:00:21.062Z</lastmod>
+    <lastmod>2025-10-17T05:53:31.295Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/index.html</loc>
-    <lastmod>2025-10-16T16:00:20.894Z</lastmod>
+    <lastmod>2025-10-17T05:53:31.264Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/macroexpand_deep.html</loc>
-    <lastmod>2025-10-16T16:00:20.804Z</lastmod>
+    <lastmod>2025-10-17T05:53:32.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/speakers.html</loc>
+    <lastmod>2025-10-17T05:53:31.817Z</lastmod>
   </url>
   <url>
     <loc>https://scicloj.github.io/macroexpand-2025/people.html</loc>
-    <lastmod>2025-10-16T16:00:20.115Z</lastmod>
+    <lastmod>2025-10-17T05:53:31.173Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/participation.html</loc>
+    <lastmod>2025-10-17T05:53:30.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/sessions.html</loc>
+    <lastmod>2025-10-17T05:53:31.517Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scicloj.github.io/macroexpand-2025/macroexpand_noj.html</loc>
+    <lastmod>2025-10-17T05:53:31.792Z</lastmod>
   </url>
 </urlset>
