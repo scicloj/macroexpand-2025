@@ -25,7 +25,7 @@
     [:session/opening
      :session/computing-with-units-in-clojure
      :session/rolling-regressions-in-clojure-for-real-time-alpha-and-beta-monitoring
-     :session/open-practice
+     :session/open-practice-1
      :session/open-chat
      :session/functional-quantum-computing-with-qclojure
      :session/breath-hrv
@@ -37,7 +37,7 @@
     [:session/opening
      :session/growing-a-dsl
      :session/book-basket-analysis
-     :session/open-practice
+     :session/open-practice-2
      :session/computer-graphics-with-clojure-lwjgl-and-fastmath
      :session/macroexpand-3
      :session/macroexpand-3
@@ -57,18 +57,18 @@
     [:session/opening
      :session/a-clojure-based-portfolio-analysis-tool-based-on-llm-integration
      :session/cfd2d
-     :session/open-practice
+     :session/open-practice-3
      :session/building-qclojure-with-ai-assistance
      :session/panel-ai-assistants
      :session/panel-ai-assistants
      :session/reliability
-     :session/open-practice
+     :session/open-practice-4
      :session/experimenting-with-llm-subliminal-learning-in-clojure],
     :day2
     [:session/opening
      :session/gnn
      :session/gnn
-     :session/open-practice
+     :session/open-practice-5
      :session/building-dynamic-entity-extraction-with-bosquet
      :session/panel-broader-implications-of-ai
      :session/panel-broader-implications-of-ai
@@ -387,8 +387,28 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :abstract "A break to relax and spend some time together for those who wish to join the call. Anybody is invited to join and leave and just talk about anything.",
    :session-type :community,
    :speakers #{}}
-  :session/open-practice
-  {:title "Open Practice",
+  :session/open-practice-1
+  {:title "Open Practice 1",
+   :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
+   :session-type :practice,
+   :speakers #{}}
+  :session/open-practice-2
+  {:title "Open Practice 2",
+   :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
+   :session-type :practice,
+   :speakers #{}}
+  :session/open-practice-3
+  {:title "Open Practice 3",
+   :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
+   :session-type :practice,
+   :speakers #{}}
+  :session/open-practice-4
+  {:title "Open Practice 4",
+   :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
+   :session-type :practice,
+   :speakers #{}}
+  :session/open-practice-5
+  {:title "Open Practice 5",
    :abstract "We will spend some time together practicing the tools, methods, and ideas we have seen at other talks.",
    :session-type :practice,
    :speakers #{}},
