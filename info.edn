@@ -542,6 +542,11 @@ I'm particularly passionate about prompt optimizations and evals—the unglamoro
    :bio
    "Author of Bosquet, Clojure user since its v1.0. I have been working with unstructured text data processing for over a decade - hence the topic of the talk.",
    :images ["zygimantas-medelis.jpeg"]},
+  :iain-wood
+  {:full-name "Iain Wood"
+   :images ["iain-wood.jpg"]
+   :bio "Clojure programmer, sysadmin, project manager, test-engineer, dive-photographer, luthier and English teacher, currently \"retired\". Emacs and clean code fanatic."
+   :roles [:host]}
   :siavash-mohammady
   {:full-name "Siavash Mohammady"
    :images ["siavash-mohammady.png"]
