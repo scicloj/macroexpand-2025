@@ -61,8 +61,8 @@
      :session/building-qclojure-with-ai-assistance
      :session/panel-ai-assistants
      :session/panel-ai-assistants
-     :session/reliability
      :session/open-practice-4
+     :session/reliability
      :session/experimenting-with-llm-subliminal-learning-in-clojure],
     :day2
     [:session/opening
