@@ -63,7 +63,8 @@
      :session/panel-ai-assistants
      :session/open-practice-4
      :session/reliability
-     :session/experimenting-with-llm-subliminal-learning-in-clojure],
+     :session/experimenting-with-llm-subliminal-learning-in-clojure
+     :session/compiling-probabilistic-programs-to-neural-networks],
     :day2
     [:session/opening
      :session/gnn
