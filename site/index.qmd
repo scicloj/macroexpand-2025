@@ -68,6 +68,7 @@ open-graph: {title: Macroexpand 2025, image: 'https://scicloj.github.io/macroexp
 Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.
 
 ::: {.people-gallery}
+[![Alex Henderson](images/alex-henderson.jpeg){width="80px" height="80px" .person-photo}](./people.html#alex-henderson)
 [![Ben Sless](images/ben-sless.jpg){width="80px" height="80px" .person-photo}](./people.html#ben-sless)
 [![Bruce Hauman](images/bruce-hauman.jpg){width="80px" height="80px" .person-photo}](./people.html#bruce-hauman)
 [![Cameron Barre](images/cameron-barre.jpeg){width="80px" height="80px" .person-photo}](./people.html#cameron-barre)
@@ -77,6 +78,7 @@ Meet the amazing people behind Macroexpand 2025! Click on any photo to learn mor
 [![Edward Widjaja](images/edward-widjaja.jpg){width="80px" height="80px" .person-photo}](./people.html#edward-widjaja)
 [![Eric Dallo](images/eric-dallo.jpeg){width="80px" height="80px" .person-photo}](./people.html#eric-dallo)
 [![Harold](images/harold.jpeg){width="80px" height="80px" .person-photo}](./people.html#harold)
+[![Iain Wood](images/iain-wood.jpg){width="80px" height="80px" .person-photo}](./people.html#iain-wood)
 [![Jan Wedekind](images/jan-wedekind.png){width="80px" height="80px" .person-photo}](./people.html#jan-wedekind)
 [![Jelena Losic](images/jelena-losic.jpeg){width="80px" height="80px" .person-photo}](./people.html#jelena-losic)
 [![Jianling Zhong](images/jianling-zhong.jpeg){width="80px" height="80px" .person-photo}](./people.html#jianling-zhong)

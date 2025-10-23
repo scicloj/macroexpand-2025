@@ -68,7 +68,6 @@
     :day2
     [:session/opening
      :session/gnn
-     :session/gnn
      :session/open-practice-5
      :session/building-dynamic-entity-extraction-with-bosquet
      :session/panel-broader-implications-of-ai

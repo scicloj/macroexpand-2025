@@ -149,15 +149,16 @@
 ^:kindly/hide-code
 (defn schedule-vector->slots
   "Convert schedule vector to time slot map with session cards"
-  [schedule-vec sessions-data people-data]
-  (let [start-hour 9]
-    (into {}
-          (map-indexed
-           (fn [idx session-key]
-             (let [hour (+ start-hour idx)]
-               [(format "%02d:00" hour)
-                (session-key->display session-key sessions-data people-data)]))
-           schedule-vec))))
+  ([schedule-vec sessions-data people-data]
+   (schedule-vector->slots schedule-vec sessions-data people-data 9))
+  ([schedule-vec sessions-data people-data start-hour]
+   (into {}
+         (map-indexed
+          (fn [idx session-key]
+            (let [hour (+ start-hour idx)]
+              [(format "%02d:00" hour)
+               (session-key->display session-key sessions-data people-data)]))
+          schedule-vec))))
 
 ^:kindly/hide-code
 (def schedule-data
@@ -168,9 +169,9 @@
         sessions (:sessions conference-info)
         people (:people conference-info)]
     {:day1 {:date (date-string->day-name date1)
-            :slots (schedule-vector->slots (:day1 schedule) sessions people)}
+            :slots (schedule-vector->slots (:day1 schedule) sessions people 9)}
      :day2 {:date (date-string->day-name date2)
-            :slots (schedule-vector->slots (:day2 schedule) sessions people)}}))
+            :slots (schedule-vector->slots (:day2 schedule) sessions people 10)}}))
 
 ^:kindly/hide-code
 (defn session-type-legend []
@@ -244,8 +245,10 @@
 
         day1-slots (sort (:slots day1-data))
         day2-slots (sort (:slots day2-data))
+        day1-time-slots (into [] (map first day1-slots))
+        day2-time-slots (into [] (map first day2-slots))
         ;; Use all unique time slots from both days, sorted
-        all-time-slots (sort (distinct (concat (map first day1-slots) (map first day2-slots))))
+        all-time-slots (sort (distinct (concat day1-time-slots day2-time-slots)))
 
         ;; Helper to get CSS class for session type
         get-session-type-class (fn [session-key]
@@ -381,9 +384,11 @@
          [:th {:scope "col"} (:date day1-data)]
          [:th {:scope "col"} (:date day2-data)]]]
        [:tbody
-        (for [[idx time-slot] (map-indexed vector all-time-slots)]
-          (let [day1-span-info (get day1-spans idx)
-                day2-span-info (get day2-spans idx)
+        (for [time-slot all-time-slots]
+          (let [day1-idx (.indexOf day1-time-slots time-slot)
+                day2-idx (.indexOf day2-time-slots time-slot)
+                day1-span-info (when (>= day1-idx 0) (get day1-spans day1-idx))
+                day2-span-info (when (>= day2-idx 0) (get day2-spans day2-idx))
                 day1-session (get (into {} day1-slots) time-slot)
                 day2-session (get (into {} day2-slots) time-slot)
                 day1-session-key (:session-key day1-span-info)
@@ -407,7 +412,7 @@
       [:div {:class "mobile-schedule"}
        [:div {:class "mobile-day-section"}
         [:h3 (:date day1-data)]
-        (for [[idx time-slot] (map-indexed vector all-time-slots)]
+        (for [[idx time-slot] (map-indexed vector day1-time-slots)]
           (let [day1-span-info (get day1-spans idx)
                 day1-session (get (into {} day1-slots) time-slot)
                 day1-session-key (:session-key day1-span-info)
@@ -420,7 +425,7 @@
 
        [:div {:class "mobile-day-section"}
         [:h3 (:date day2-data)]
-        (for [[idx time-slot] (map-indexed vector all-time-slots)]
+        (for [[idx time-slot] (map-indexed vector day2-time-slots)]
           (let [day2-span-info (get day2-spans idx)
                 day2-session (get (into {} day2-slots) time-slot)
                 day2-session-key (:session-key day2-span-info)
