@@ -37,9 +37,9 @@
 
 ;; The [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) is our primary communication channel - essential for discussions, questions, and connecting with others during the conferences.
 
-;; 1. Visit [clojurians.zulipchat.com](https://clojurians.zulipchat.com/) to join
-;; 2. Go to the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/)
-;; 3. [Introduce yourself in the hello thread](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/hello)!
+;; 1. Visit [clojurians.zulipchat.com](https://clojurians.zulipchat.com/) to join.
+;; 2. Go to the [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) channel.
+;; 3. Introduce yourself in the [#macroexpand-2025 > hello](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/hello) topic thread!
 
 ;; ## ⚡ Propose a Lightning Talk
 
@@ -87,6 +87,9 @@
 ;; ## Recordings
 
 ;; All talks will be recorded and shared on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj). By participating, you consent to being recorded.
+
+;; During the conferences, a temporary recording is shared internally at the Zulip chat as an unlisted live stream. See the [#macroexpand-2025 > live-stream](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/live.20stream/) topic thread.
+
 
 ;; ## Need Help?
 
