@@ -89,15 +89,6 @@
        (sort-by #(:full-name (second %)))))
 
 ^:kindly/hide-code
-(kind/hiccup
- ;; Description
- [:div {:class "conf-intro__description"}
-  "Macroexpand 2025 was a pair of online Clojure conferences organised by "
-  [:a {:href "https://scicloj.github.io/"} "Scicloj"]
-  ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
-  [:strong "Noj"] " and " [:strong "AI"] "."])
-
-^:kindly/hide-code
 (kind/md
  (str "::: {.people-gallery}\n"
       (apply str
@@ -108,6 +99,15 @@
                        anchor (str "#" (name person-key))]
                    (str "[![" nam "](" image-path "){width=\"80px\" height=\"80px\" .person-photo}](./people.html" anchor ")\n")))))
       ":::\n\n"))
+
+^:kindly/hide-code
+(kind/hiccup
+ ;; Description
+ [:div {:class "conf-intro__description"}
+  "Macroexpand 2025 was a pair of online Clojure conferences organised by "
+  [:a {:href "https://scicloj.github.io/"} "Scicloj"]
+  ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
+  [:strong "Noj"] " and " [:strong "AI"] "."])
 
 ;; ## Event Timeline
 
