@@ -74,14 +74,7 @@
 
     [:div {:class "conf-intro__title-wrapper"}
      [:h1 {:class "conf-intro__title"} "Macroexpand 2025"]
-     [:div {:class "conf-intro__subtitle"} "Clojure through Data and AI"]]]
-
-   ;; Description
-   [:div {:class "conf-intro__description"}
-    "Macroexpand 2025 was a pair of online Clojure conferences organised by "
-    [:a {:href "https://scicloj.github.io/"} "Scicloj"]
-    ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
-    [:strong "Noj"] " and " [:strong "AI"] "."]]])
+     [:div {:class "conf-intro__subtitle"} "Clojure through Data and AI"]]]]])
 
 ^:kindly/hide-code
 (kind/hiccup
@@ -94,6 +87,15 @@
   (->> (:people conference-data)
        (filter #(:images (second %)))
        (sort-by #(:full-name (second %)))))
+
+^:kindly/hide-code
+(kind/hiccup
+ ;; Description
+ [:div {:class "conf-intro__description"}
+  "Macroexpand 2025 was a pair of online Clojure conferences organised by "
+  [:a {:href "https://scicloj.github.io/"} "Scicloj"]
+  ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
+  [:strong "Noj"] " and " [:strong "AI"] "."])
 
 ^:kindly/hide-code
 (kind/md
