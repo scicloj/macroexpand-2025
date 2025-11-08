@@ -28,27 +28,25 @@
 
 ;; ## Macroexpand-Noj - growing the Noj ecosystem
 ;; 
-;; **📅 October 17-18, 2025 | Online Conference**
+;; **📅 October 17-18, 2024 | Online Conference**
 ;;
-;; The Macroexpand-Noj conference is focused on the growth of the [Noj](https://scicloj.github.io/noj) toolkit for data science. Noj is a Clojure toolkit that brings together data processing, visualization, and scientific computing libraries into a cohesive whole. This conference is one of the [Macroexpand 2025](./) pair of conferences organized by [Scicloj](https://scicloj.github.io/).
+;; The Macroexpand-Noj conference focused on the growth of the [Noj](https://scicloj.github.io/noj) toolkit for data science. Noj is a Clojure toolkit that brings together data processing, visualization, and scientific computing libraries into a cohesive whole. This conference was one of the [Macroexpand 2025](./) pair of conferences organized by [Scicloj](https://scicloj.github.io/).
 ;; 
 ;; ### About the Conference
 ;;
-;; A two-day online event for sharing practical data science experiences, showcasing Noj ecosystem tools, and advancing Clojure's data science capabilities through tutorials, case studies, and technical discussions. Designed for Clojure programmers at all levels interested in data science.
+;; A two-day online event that brought together the community to share practical data science experiences, showcase Noj ecosystem tools, and advance Clojure's data science capabilities through tutorials, case studies, and technical discussions.
 ;;
-;; 📌 **[How to participate, register, and join →](./#how-to-participate)**
+;; 📹 **Recordings will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**
 
 ^:kindly/hide-code
 (kind/hiccup
- [:div {:style "text-align: center; margin: 2rem 0;"}
-  [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
-       :target "_blank"
-       :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"
-       :aria-label "Register for Macroexpand-Noj conference - opens in new window"}
-   "🎟️ Register Now (Free)"]])
+ [:div {:style "text-align: center; margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; border: 2px solid #0ea5e9;"}
+  [:h3 {:style "margin: 0 0 0.5rem 0; color: #0369a1;"} "Thank you for attending! 🎉"]
+  [:p {:style "margin: 0; font-size: 1rem; color: #666;"}
+   "Recordings coming soon to "
+   [:a {:href "https://www.youtube.com/@Scicloj" :target "_blank" :style "color: #0284c7; text-decoration: underline;"} "Scicloj's YouTube channel"] "."]])
 
-;; ### Tentative Schedule
+;; ### Schedule
 
 ^:kindly/hide-code
 (def conference-info
@@ -441,14 +439,11 @@
 (kind/hiccup
  [:div
   [:p {:id "timezone-notice" :style "margin-top: 1rem; color: #666; font-size: 0.9rem;"}
-   [:em "Detecting your timezone..."]]
+   [:em "Detecting your timezone..."]]])
 
-  [:p {:style "margin-top: 0.5rem; font-style: italic; color: #666;"}
-   "* Schedule is subject to change. Final schedule with confirmed speakers will be published closer to the conference date."]])
-
-;; ### Connect & Discuss
+;; ### Continue the Conversation
 ;;
-;; Join the conversation at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) where we coordinate projects and help each other with data science in Clojure.
+;; The [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) Zulip channel remains active! Join the ongoing discussion about data science in Clojure, ask questions, and connect with the community.
 
 ^:kindly/hide-code
 (kind/hiccup

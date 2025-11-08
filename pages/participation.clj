@@ -25,76 +25,44 @@
                :alt (str (:name company-data) " logo")
                :style "height: 20px; width: auto;"}])])]])
 
-;; # How to Participate
+;; # Macroexpand 2025 - Thank You!
 
-;; Welcome to Macroexpand 2025! Here's everything you need to get started.
+;; Thank you for being part of Macroexpand 2025! The conferences have concluded, but the community continues.
 
-;; ## Getting Your Zoom Link
+;; ## Recordings Coming Soon
 
-;; [Register here](https://forms.gle/mQytpTua6RUPcMGb9) (free) to receive calendar invites with Zoom links via email. Check your spam folder if you don't see them!
+;; All talks were recorded and will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj). Subscribe to get notified when recordings are published!
 
-;; ## Join the Zulip Chat
+;; ## Continue the Conversation on Zulip
 
-;; The [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) is our primary communication channel - essential for discussions, questions, and connecting with others during the conferences.
+;; The [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) Zulip channel remains active for ongoing discussions!
 
-;; 1. Visit [clojurians.zulipchat.com](https://clojurians.zulipchat.com/) to join.
-;; 2. Go to the [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) channel.
-;; 3. Introduce yourself in the [#macroexpand-2025 > hello](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/hello) topic thread!
+;; Join to:
+;; - Ask questions about the talks and projects
+;; - Share insights and follow-up discussions
+;; - Connect with speakers and other attendees
+;; - Explore collaboration opportunities
 
-;; ## ⚡ Propose a Lightning Talk
+;; New to Zulip? Visit [clojurians.zulipchat.com](https://clojurians.zulipchat.com/) to join the Clojurians community.
 
-;; Want to share a quick idea? We're accepting 5-minute lightning talk proposals for both conferences!
+;; ## Conference Information
 
-;; **What makes a great lightning talk:**
+;; The conferences took place on:
+;; - **[Macroexpand-Noj](./macroexpand_noj.html)**: October 17-18, 2024 - Growing the Noj data science ecosystem
+;; - **[Macroexpand-Deep](./macroexpand_deep.html)**: October 24-25, 2024 - The first Clojure AI conference
 
-;; - Demo of a library or tool you've built
-;; - Quick tip or technique you've discovered
-;; - Work-in-progress showcase
-;; - Discussion starter on a specific topic
-;; - Your first speaking experience!
+;; Browse the [Sessions page](./sessions.html) to see all the talks and speakers, or check out the conference schedules for the full program.
 
-;; **How to propose:**
+;; ## Stay Connected
 
-;; Head to the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip topic thread. and share your idea. Just describe what you'd like to talk about - no formal application needed. The organizers will help you refine it and find a slot in the schedule.
+;; - **Zulip**: Join ongoing discussions in [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/)
+;; - **YouTube**: Subscribe to [Scicloj's channel](https://www.youtube.com/@Scicloj) for recordings (coming soon)
+;; - **Community**: Explore the [Scicloj community](https://scicloj.github.io/) and get involved in Clojure data science and AI projects
 
-^:kindly/hide-code
-(kind/hiccup
- [:div {:style "text-align: center; margin: 1.5rem 0;"}
-  [:a {:href "https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/"
-       :target "_blank"
-       :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1rem; padding: 0.6rem 1.2rem;"
-       :aria-label "Propose a lightning talk on Zulip - opens in new window"}
-   "⚡ Propose Your Lightning Talk"]])
+;; ## Questions?
 
-;; ## Prepare for the Conferences
-
-;;
-;; - Install [Zoom](https://zoom.us/download) or use it from your browser, and test your audio/video
-;; - Check the schedules: [Macroexpand-Noj](./macroexpand_noj.html) (Oct 17-18) and [Macroexpand-Deep](./macroexpand_deep.html) (Oct 24-25)
-;; - Review the [Sessions page](./sessions.html) for talk details
-;; - Read our [Code of Conduct](./code_of_conduct.html)
-
-;; ## During the Conferences
-
-;;
-;; - Join 5-10 minutes early on the first day
-;; - Keep Zulip open for real-time discussions
-;; - Mute your microphone when not speaking
-;; - Use "Raise Hand" for questions during Q&A
-;; - Participate in Open Practice sessions to try out tools hands-on
-
-;; ## Recordings
-
-;; All talks will be recorded and shared on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj). By participating, you consent to being recorded.
-
-;; During the conferences, a temporary recording is shared internally at the Zulip chat as an unlisted live stream. See the [#macroexpand-2025 > live-stream](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/live.20stream/) topic thread.
-
-
-;; ## Need Help?
-
-;; Post in the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) or [contact the organizers](https://scicloj.github.io/docs/community/contact/).
+;; Feel free to post in the [#macroexpand-2025 channel](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) or [contact the organizers](https://scicloj.github.io/docs/community/contact/).
 
 ;; ---
 
-;; See you on Zoom and Zulip! 👋
+;; Thank you for being part of Macroexpand 2025! 🎉

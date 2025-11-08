@@ -78,9 +78,9 @@
 
    ;; Description
    [:div {:class "conf-intro__description"}
-    "Macroexpand 2025 is a pair of online Clojure conferences organised by "
+    "Macroexpand 2025 was a pair of online Clojure conferences organised by "
     [:a {:href "https://scicloj.github.io/"} "Scicloj"]
-    ". They will focus on two high-priority topics on our journey to make Clojure grow to new fields: "
+    ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
     [:strong "Noj"] " and " [:strong "AI"] "."
 
     [:br] [:br]
@@ -91,13 +91,13 @@
 
 ^:kindly/hide-code
 (kind/hiccup
- [:div {:style "text-align: center; margin: 2rem 0;"}
-  [:a {:href "https://forms.gle/mQytpTua6RUPcMGb9"
-       :target "_blank"
-       :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1.1rem; padding: 0.75rem 1.5rem;"
-       :aria-label "Register for Macroexpand 2025 conferences - opens in new window"}
-   "🎟️ Register Now (Free)"]])
+ [:div {:style "text-align: center; margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; border: 2px solid #0ea5e9;"}
+  [:h2 {:style "margin: 0 0 1rem 0; color: #0369a1;"} "Thank You! 🎉"]
+  [:p {:style "margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;"}
+   "Thank you to all our amazing speakers, participants, and supporters who made Macroexpand 2025 a success!"]
+  [:p {:style "margin: 0; font-size: 1rem; color: #666;"}
+   "📹 Recordings will be available soon on "
+   [:a {:href "https://www.youtube.com/@Scicloj" :target "_blank" :style "color: #0284c7; text-decoration: underline;"} "Scicloj's YouTube channel"] "."]])
 
 ;; ## Our Community
 
@@ -127,46 +127,21 @@
 (kind/md
  "| **Timeline** | **Event Details** |
   |--|--|
-  | **September 8, 2025** | ~~Final deadline for talk proposal submissions~~ (Closed) |
-  | **Ongoing** | Registration open - sign up to attend! |
-  | **October 17-18, 2025** | [Macroexpand-Noj](./macroexpand_noj.html) Focus: Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
-  | **October 24-25, 2025** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
+  | **September 8, 2024** | Talk proposal deadline (Closed) |
+  | **October 17-18, 2024** | [Macroexpand-Noj](./macroexpand_noj.html) - Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
+  | **October 24-25, 2024** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
+  | **Coming Soon** | Recordings on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj) |
   
   : {.gradient-table}")
 
-;; ## How to Participate
+;; ## Conference Format
 
-;; -  **🎟️ Free & Online** - Both conferences are completely free to attend!
-;; - **💻 Platform** - Join via Zoom (link provided upon registration)
-;; - **💬 Community** - Join the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/) for real-time discussions
-;; - **📹 Recordings** - All talks will be recorded and shared publicly afterwards
-;; - **⏱️ Format** - Most sessions are 30 minutes talk + 20 minutes discussion
-;; - **📝 Registration** - [Register now for free](https://forms.gle/mQytpTua6RUPcMGb9) to receive Zoom links and updates!
-;; - **📖 Details** - See our [Participation Guide](./participation.html) for complete instructions on Zoom, Zulip, and more
-;; - **📢 Call for Proposals** - The proposal deadline has passed (September 8, 2025). Thank you to all who submitted!
-
-;; ## ⚡ Lightning Talks
-
-;; Got a 5-minute idea? We welcome lightning talk proposals for both conferences!
-
-;; Lightning talks are quick, focused presentations - perfect for:
-
-;; - Sharing a cool library or technique
-;; - Demonstrating a work-in-progress
-;; - Sparking discussion on a specific topic
-;; - First-time speakers testing the waters
-
-;; **How to propose:** Simply share your idea in the [#macroexpand-2025>lightning talks proposals](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/) Zulip topic thread. No formal submission required!
-
-^:kindly/hide-code
-(kind/hiccup
- [:div {:style "text-align: center; margin: 1.5rem 0;"}
-  [:a {:href "https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/topic/lightning.20talks.20proposals/"
-       :target "_blank"
-       :class "btn btn-gradient"
-       :style "display: inline-block; text-decoration: none; font-size: 1rem; padding: 0.6rem 1.2rem;"
-       :aria-label "Propose a lightning talk on Zulip - opens in new window"}
-   "⚡ Propose a Lightning Talk"]])
+;; -  **🎟️ Free & Online** - Both conferences were completely free to attend
+;; - **💻 Platform** - Held via Zoom with live streaming
+;; - **💬 Community** - Discussions took place on the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/)
+;; - **📹 Recordings** - All talks were recorded and will be shared soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)
+;; - **⏱️ Format** - Most sessions were 30 minutes talk + 20 minutes discussion
+;; - **💬 Continue the Conversation** - The [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) Zulip channel remains active for ongoing discussions!
 
 ;; ## Target Audience
 
@@ -183,7 +158,7 @@
 
 ;; ## Chat
 
-;; All communication of the conference will take place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). A dedicated channel will be created soon.
+;; All communication for the conferences took place at the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/). The [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) channel remains active - feel free to continue discussions, share insights, and connect with the community!
 
 ;; ## Code of Conduct
 

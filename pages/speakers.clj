@@ -27,26 +27,27 @@
 
 ;; ## Speakers
 ;; 
-;; At the Macroexpand conferences, we focus on talks and projects that help Clojure grow.
+;; At the Macroexpand conferences, we focused on talks and projects that help Clojure grow.
 ;; 
-;; Our guidelines, based on experience, ensure your work on the talk will be meaningful and fruitful. All talks should cover active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. A good talk combines good storytelling with actual progress on your projects.
+;; Our guidelines, based on experience, ensured that work on each talk was meaningful and fruitful. All talks covered active projects, ranging from short-term experiments to long-term reports, from analyses to documentation or library improvements. Good talks combined storytelling with actual progress on projects.
 ;; 
-;; Note these guidelines may differ from typical tech conference requirements. If you have any questions, ideas, or requests, please reach out to discuss and find the best approach.
-;;
-;; ### Guidelines
+;; ### Speaker Guidelines
 ;; 
-;; - Contact us early with project ideas - we can help shape them and suggest new ones.
-;; - All talks must include clear notes and reproducible code, hosted on [Clojure Civitas](https://clojurecivitas.github.io/) or [Clojure Data Tutorials](https://scicloj.github.io/clojure-data-tutorials/).
-;; - We recommend Timothy Pratley's 🎥 [tutorial](https://www.youtube.com/watch?v=lceazLPcSZg) to Clojure Civitas as a way to get started.
-;; - If these hosting options do not work for you, let us discuss alternatives.
-;; - It is highly preferred to create notes which are fully reproducible, including all the data and clear usage instructions.
-;; - The kind of audience you should have in mind is of general Clojure programmers. We do recommend making your talk useful and interesting for people who are new to Clojure as well.
-;; - Talk *proposals* should also contain self-contained notes hosted at these spaces and serving as a meaningful proof-of-concept.
-;; - Each of the two conferences, [Macroexpand-Noj](./macroexpand_noj.html) & [Macroexpand-Deep](./macroexpand_deep.html), has a list of preferred topics, that will be prioritized.
-;; - Team presentations are welcome.
-;; - We encourage collaboration with friends from other fields, including non-programmers.
-;; - If you want to create a project for the conference but prefer not to be the one presenting it, you can collaborate with others who will present on your behalf.
-;; - We may help you team up with co-presenters.
-;; - We are here to help - reach out to brainstorm ideas or find collaborators.
+;; The conferences followed these guidelines:
 ;; 
-;; [Let us talk](https://scicloj.github.io/docs/community/contact/){class="btn btn-gradient" target="_blank"}
+;; - Speakers worked with organizers early to shape project ideas
+;; - All talks included clear notes and reproducible code, hosted on [Clojure Civitas](https://clojurecivitas.github.io/) or [Clojure Data Tutorials](https://scicloj.github.io/clojure-data-tutorials/)
+;; - Notes were fully reproducible, including all data and clear usage instructions
+;; - Talks were designed for general Clojure programmers, with accessibility for newcomers
+;; - Each conference ([Macroexpand-Noj](./macroexpand_noj.html) & [Macroexpand-Deep](./macroexpand_deep.html)) had a list of preferred topics that were prioritized
+;; - Team presentations and cross-field collaborations were encouraged
+;; 
+;; ### Thank You to Our Speakers
+;; 
+;; We're grateful to all the speakers who shared their work and insights with the community. Your contributions made these conferences a success!
+;; 
+;; See the full list of sessions and speakers on the [Sessions page](./sessions.html), and check out the conference schedules:
+;; - [Macroexpand-Noj Schedule](./macroexpand_noj.html) (October 17-18, 2024)
+;; - [Macroexpand-Deep Schedule](./macroexpand_deep.html) (October 24-25, 2024)
+;; 
+;; 📹 **Recordings will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**

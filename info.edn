@@ -16,10 +16,10 @@
  {:macroexpand-noj
   {:name "Macroexpand-Noj",
    :subtitle "Growing the Noj ecosystem",
-   :dates ["2025-10-17" "2025-10-18"],
+   :dates ["2024-10-17" "2024-10-18"],
    :focus "Data Science with the Noj toolkit",
    :description
-   "A two-day online event bringing together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities.",
+   "A two-day online event that brought together practitioners, library authors, and data enthusiasts to share knowledge, showcase projects, and collaborate on growing Clojure's data science capabilities.",
    :schedule
    {:day1
     [:session/opening
@@ -48,10 +48,10 @@
   :macroexpand-deep
   {:name "Macroexpand-Deep",
    :subtitle "The first Clojure AI conference",
-   :dates ["2025-10-24" "2025-10-25"],
+   :dates ["2024-10-24" "2024-10-25"],
    :focus "AI systems development in Clojure",
    :description
-   "The first dedicated Clojure AI conference, exploring AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches.",
+   "The first dedicated Clojure AI conference, which explored AI systems broadly - from large language models and neural networks to symbolic AI and hybrid approaches.",
    :schedule
    {:day1
     [:session/opening
