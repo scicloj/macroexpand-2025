@@ -81,13 +81,7 @@
     "Macroexpand 2025 was a pair of online Clojure conferences organised by "
     [:a {:href "https://scicloj.github.io/"} "Scicloj"]
     ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
-    [:strong "Noj"] " and " [:strong "AI"] "."
-
-    [:br] [:br]
-
-    "These conferences are related to and informed by the "
-    [:a {:href "https://scicloj.github.io/docs/community/groups/macroexpand/"} "Macroexpand Gatherings"]
-    " series, which focuses on in-depth discussions around Clojure growth."]]])
+    [:strong "Noj"] " and " [:strong "AI"] "."]]])
 
 ^:kindly/hide-code
 (kind/hiccup
@@ -98,10 +92,6 @@
   [:p {:style "margin: 0; font-size: 1rem; color: #666;"}
    "📹 Recordings will be available soon on "
    [:a {:href "https://www.youtube.com/@Scicloj" :target "_blank" :style "color: #0284c7; text-decoration: underline;"} "Scicloj's YouTube channel"] "."]])
-
-;; ## Our Community
-
-;; Meet the amazing people behind Macroexpand 2025! Click on any photo to learn more about our speakers and organizers on the [People](./people.html) page.
 
 ^:kindly/hide-code
 (def people-with-images
