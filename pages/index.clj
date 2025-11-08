@@ -87,7 +87,7 @@
 (kind/hiccup
  [:div {:style "text-align: center; margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; border: 2px solid #0ea5e9;"}
   [:p {:style "margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;"}
-   "Thank you to all our amazing speakers, participants, and supporters who made Macroexpand 2025 💮"]])
+   "Thank you to all our amazing people who made Macroexpand 2025 💮"]])
 
 ^:kindly/hide-code
 (def people-with-images
