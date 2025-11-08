@@ -107,7 +107,8 @@
   "Macroexpand 2025 was a pair of online Clojure conferences organised by "
   [:a {:href "https://scicloj.github.io/"} "Scicloj"]
   ". They focused on two high-priority topics on our journey to make Clojure grow to new fields: "
-  [:strong "Noj"] " and " [:strong "AI"] "."])
+  [:strong "Noj"] " and " [:strong "AI"] "."
+  [:br] [:br]])
 
 ;; ## Event Timeline
 
