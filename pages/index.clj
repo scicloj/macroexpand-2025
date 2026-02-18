@@ -119,7 +119,7 @@
   | **September 8, 2024** | Talk proposal deadline (Closed) |
   | **October 17-18, 2024** | [Macroexpand-Noj](./macroexpand_noj.html) - Growing the [Noj](https://scicloj.github.io/noj/) ecosystem |
   | **October 24-25, 2024** | [Macroexpand-Deep](./macroexpand_deep.html) - The first Clojure AI conference |
-  | **Coming Soon** | Recordings on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj) |
+  | **Recordings** | Being published on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj) |
   
   : {.gradient-table}")
 
@@ -128,7 +128,7 @@
 ;; -  **🎟️ Free & Online** - Both conferences were completely free to attend
 ;; - **💻 Platform** - Held via Zoom with live streaming
 ;; - **💬 Community** - Discussions took place on the [Clojurians Zulip chat](https://scicloj.github.io/docs/community/chat/)
-;; - **📹 Recordings** - All talks were recorded and will be shared soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)
+;; - **📹 Recordings** - All talks were recorded and are being published on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)
 ;; - **⏱️ Format** - Most sessions were 30 minutes talk + 20 minutes discussion
 ;; - **💬 Continue the Conversation** - The [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/) Zulip channel remains active for ongoing discussions!
 

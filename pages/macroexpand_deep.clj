@@ -36,14 +36,14 @@
 ;;
 ;; A two-day online event that explored AI systems in Clojure - from LLMs and neural networks to symbolic AI and hybrid approaches. Speakers shared production applications, research insights, and novel techniques that leverage Clojure's unique strengths for AI development.
 ;;
-;; 📹 **Recordings will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**
+;; 📹 **Recordings are being published on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**
 
 ^:kindly/hide-code
 (kind/hiccup
  [:div {:style "text-align: center; margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; border: 2px solid #0ea5e9;"}
   [:h3 {:style "margin: 0 0 0.5rem 0; color: #0369a1;"} "Thank you for attending! 🎉"]
   [:p {:style "margin: 0; font-size: 1rem; color: #666;"}
-   "Recordings coming soon to "
+   "Recordings are being published on "
    [:a {:href "https://www.youtube.com/@Scicloj" :target "_blank" :style "color: #0284c7; text-decoration: underline;"} "Scicloj's YouTube channel"] "."]])
 
 ;; ### Schedule
@@ -123,7 +123,19 @@
                 [:div
                  [:h5 {:style "margin-bottom: 0.5rem;"} (:full-name speaker-data)]
                  [:p (:bio speaker-data)]]
-                [:div {:style "clear: both;"}]]))])]]])))
+                [:div {:style "clear: both;"}]]))])
+
+        ;; Video recording
+        (when-let [youtube-id (:youtube-id session-data)]
+          [:div {:style "margin-top: 1.5rem;"}
+           [:h4 "Recording"]
+           [:div {:style "position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"}
+            [:iframe {:style "position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                      :src (str "https://www.youtube.com/embed/" youtube-id)
+                      :title session-title
+                      :frameborder "0"
+                      :allow "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      :allowfullscreen true}]]])]]])))
 
 ^:kindly/hide-code
 (defn session-key->display

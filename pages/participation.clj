@@ -29,9 +29,9 @@
 
 ;; Thank you for being part of Macroexpand 2025! The conferences have concluded, but the community continues.
 
-;; ## Recordings Coming Soon
+;; ## Recordings
 
-;; All talks were recorded and will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj). Subscribe to get notified when recordings are published!
+;; All talks were recorded and are being published on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj). Subscribe to get notified when recordings are published!
 
 ;; ## Continue the Conversation on Zulip
 
@@ -56,7 +56,7 @@
 ;; ## Stay Connected
 
 ;; - **Zulip**: Join ongoing discussions in [#macroexpand-2025](https://clojurians.zulipchat.com/#narrow/channel/536233-macroexpand-2025/)
-;; - **YouTube**: Subscribe to [Scicloj's channel](https://www.youtube.com/@Scicloj) for recordings (coming soon)
+;; - **YouTube**: Subscribe to [Scicloj's channel](https://www.youtube.com/@Scicloj) for recordings
 ;; - **Community**: Explore the [Scicloj community](https://scicloj.github.io/) and get involved in Clojure data science and AI projects
 
 ;; ## Questions?

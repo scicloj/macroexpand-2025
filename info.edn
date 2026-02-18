@@ -331,7 +331,8 @@ This talk will give Clojure practitioners interested in using Clojure for ML/AI 
    :abstract "We will discuss the broader implications of the AI rush, a few of the ways it affects our lives, and what we might be able to do about it."
    :title "Panel: broader implications of AI",
    :session-type :discussion,
-   :approved-recording true},
+   :approved-recording true,
+   :youtube-id "lCUkYcz1huU"},
   :session/panel-ai-assistants
   {:speakers #{:peter-stromberg :bruce-hauman :eric-dallo},
    :conference :macroexpand-deep,

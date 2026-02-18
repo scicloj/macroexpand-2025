@@ -50,4 +50,4 @@
 ;; - [Macroexpand-Noj Schedule](./macroexpand_noj.html) (October 17-18, 2024)
 ;; - [Macroexpand-Deep Schedule](./macroexpand_deep.html) (October 24-25, 2024)
 ;; 
-;; 📹 **Recordings will be available soon on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**
+;; 📹 **Recordings are being published on [Scicloj's YouTube channel](https://www.youtube.com/@Scicloj)**

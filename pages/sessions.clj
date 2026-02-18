@@ -99,7 +99,19 @@
                 [:div
                  [:h5 {:style "margin-bottom: 0.5rem;"} (:full-name speaker-data)]
                  [:p (:bio speaker-data)]]
-                [:div {:style "clear: both;"}]]))])]]])))
+                [:div {:style "clear: both;"}]]))])
+
+        ;; Video recording
+        (when-let [youtube-id (:youtube-id session-data)]
+          [:div {:style "margin-top: 1.5rem;"}
+           [:h4 "Recording"]
+           [:div {:style "position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"}
+            [:iframe {:style "position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                      :src (str "https://www.youtube.com/embed/" youtube-id)
+                      :title session-title
+                      :frameborder "0"
+                      :allow "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      :allowfullscreen true}]]])]]])))
 
 ^:kindly/hide-code
 (def session-card session-card-new)
